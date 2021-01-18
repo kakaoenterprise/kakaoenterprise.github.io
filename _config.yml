@@ -1,0 +1,39 @@
+# Site settings
+title:          Kakao Enterprise AI Lab 논문플랫폼
+description:    "AI Lab 성과를 한데 모았습니다."
+url:            "https://pages.github.kakaocorp.com/ailab-papers"
+
+# Google Analytics
+# google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         Kakao Enterprise AI Lab
+  email:        ailab-papers@kakaoenterprise.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale
