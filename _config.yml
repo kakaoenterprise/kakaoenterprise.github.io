@@ -1,10 +1,7 @@
 # Site settings
-title:          Kakao Enterprise AI Lab 논문플랫폼
-description:    "AI Lab 성과를 한데 모았습니다."
+title:          Kakao Enterprise AI Lab
+description:    "Kakao Enterprise AI Lab"
 url:            "https://pages.github.kakaocorp.com/ailab-papers"
-
-# Google Analytics
-# google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
@@ -15,6 +12,7 @@ author:
 markdown:       kramdown
 include:
   - _pages
+future:         true
 
 # Assets
 sass:
@@ -34,6 +32,3 @@ paginate:       5
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor ]
-
-# Disqus (Set to your disqus id)
-disqus:         jekyll-tale

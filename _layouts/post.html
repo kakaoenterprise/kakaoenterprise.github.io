@@ -4,28 +4,26 @@ layout: default
 
 <div class="post">
   <div class="post-info">
-    <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %}
-
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
+    <h4 class="catalogue-research-area">{{ page.research-area }}</h4>
   </div>
-
   <h1 class="post-title">{{ page.title }}</h1>
+
+  {{ page.authors | join: ", " }}
+
+  <h4>{{ page.publisher }}<h4>
+  <h4>{{ page.published-date }}<h4>
+
   <div class="post-line"></div>
 
   {{ content }}
-</div>
 
-{% if page.comments %}
-  {% include disqus_comments.html %}
-{% endif %}
+  <div class="post-line"></div>
+  <div class="post-tag-box-container">
+    {% for tag in page.tags %}
+      <div class="post-tag-box">{{ tag }}</div>
+    {% endfor %}
+  </div>
+</div>
 
 <div class="pagination">
   {% if page.next.url %}
@@ -35,5 +33,4 @@ layout: default
     <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
   {% endif %}
 
-  <a href="#" class="top">Top</a>
 </div>

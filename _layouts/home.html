@@ -6,14 +6,15 @@ layout: default
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h4 class="catalogue-research-area">{{ post.research-area }}</h4>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
 
         <p>
-          {{ post.content | strip_html | truncatewords: 30 }}
+          {{ post.description }}
         </p>
 
+        <h4 class="catalogue-publisher">{{ post.publisher }} {{ post.published-date | date: "%Y. %m" }}</h4>
       </div>
     </a>
   {% endfor %}

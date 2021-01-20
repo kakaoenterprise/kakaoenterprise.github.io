@@ -81,12 +81,21 @@ footer,
 }
 
 footer {
-  font-family: $serif-secondary;
-  padding: 2rem 0;
   text-align: center;
-
-  span {
-    color: $default-color;
+  
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    font-family: $serif-secondary;
     font-size: .8rem;
+    color: $default-color;
+  
+    img {
+      margin: 0 0.3rem 0 0;
+      position: relative;
+      width: 1.6rem;
+    }
   }
 }
