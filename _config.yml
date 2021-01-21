@@ -31,4 +31,4 @@ permalink:      /:year-:month-:day/:title
 paginate:       5
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor ]
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor, serve.sh ]
