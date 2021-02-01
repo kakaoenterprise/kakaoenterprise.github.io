@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases"
+slug: ryansql
 description: "중첩된 SELECT문을 좀 더 정확하게 생성하는 SPC 기법을 적용한 NLI2DB 알고리즘 'RYANSQL' 제안"
 research-area: NLP
 published-date: 2020-04-01

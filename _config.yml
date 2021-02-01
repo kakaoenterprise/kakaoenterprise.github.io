@@ -27,7 +27,7 @@ plugins:
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
-permalink:      /:year-:month-:day/:title
+permalink:      /:categories/:slug
 paginate:       5
 
 # Excludes

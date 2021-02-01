@@ -3,6 +3,7 @@ layout: post
 use-katex: true
 research-area: COMPUTER VISION
 title:  "GroupFace: Learning Latent Groups and Constructing Group-based Representations for Face Recognition"
+slug: groupface
 description: "얼굴 인식에 전문화된 새로운 아키텍처인 'GroupFace' 제안"
 published-date: 2020-06-14
 publisher: CVPR
@@ -41,7 +42,7 @@ The rationale behind the effectiveness of GroupFace can summarize in two main wa
 
 Our GroupFace can be applied to many existing face recognition methods to obtain a significant improvement with a marginal increase in the resources. Especially, a hard-ensemble version of GroupFace can achieve high recognition-accuracy by adaptively using only a few additional convolutions.
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcV2PNx%2FbtqGbPyWoJy%2FEJmVNApnWevPUddUG6dCT1%2Fimg.png" width="90%" align="center">
+<img src="{{ site.url }}/assets/img/2021-02-01-papers_groupface/000.png" width="90%" align="center">
 
 {% raw %}
 [ Figure 1 ] GroupFace generates a shared feature of 4096 dimension and deploys a fully-connected layer for an instance-based representation $$\mathbf{v}_{\mathbf{x}}$$ and $$K$$ fully-connected layers for group-aware representations $$\mathbf{v}_{\mathbf{x}}^{{G}}$$ for a given sample $$\mathbf{x}$$. A group-decision-network, which is supervised by the self-distributed labeling, outputs a set of group probabilities $$\left\{ p(G_0\vert\mathbf{x}), p(G_1\vert\mathbf{x}), ..., p(G_{K-1}\vert\mathbf{x}) \right\} $$ from the instance-based representation. The final representation of 512 dimension is an aggregation of the instance-based representation and the weighted sum $$\mathbf{v}_{\mathbf{x}}^{{G}}$$ of the group-aware representations with the group probabilities. W is a weight of the function $$ g $$.
@@ -53,19 +54,19 @@ To show the effectiveness of our GroupFace, we evaluate the proposed method on v
 
 ## 1. Experimental Results
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJbUpl%2FbtqGfaVGRUh%2FOaulxgTvhpnZcaBKnbWZY0%2Fimg.png" width="80%" align="center">
+<img src="{{ site.url }}/assets/img/2021-02-01-papers_groupface/001.png" width="80%" align="center">
 
 [Table 1] Evaluation on LFW, YTF, CALFW, CPLFW, CFP-FP, AgeDB-30 and MegaFace.
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbJxly3%2FbtqGev6SkRY%2FDLS8QSqBpikbhRwvjwIZk1%2Fimg.png" width="79.5%" align="center">
+<img src="{{ site.url }}/assets/img/2021-02-01-papers_groupface/002.png" width="79.5%" align="center">
 
 [Table 2] Evaluation according to different FARs on IJB-B and IJB-C. Our GroupFace is trained by ArcFace. † denotes that a model is evaluated by using the group-aware similarity.
 
 ## 2. Ablation Studies
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbfo1wS%2FbtqGbNA4aGO%2FhzyW7zl1PRkzqHIDTKF0wK%2Fimg.png" width="40%" align="center">
+<img src="{{ site.url }}/assets/img/2021-02-01-papers_groupface/003.png" width="40%" align="center">
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbfo1wS%2FbtqGbNA4aGO%2FhzyW7zl1PRkzqHIDTKF0wK%2Fimg.png" width="40%" align="center">
+<img src="{{ site.url }}/assets/img/2021-02-01-papers_groupface/004.png" width="40%" align="center">
 
 [Table 3] Ablation studies for the proposed GroupFace on IJB-B dataset. The baseline is a recognition-model trained by ArcFace and † denotes an evaluation procedure using the group-aware similarity.
 
@@ -73,6 +74,6 @@ To show the effectiveness of our GroupFace, we evaluate the proposed method on v
 
 The trained latent groups are not always visually distinguishable because they are categorized by a non-linear function of GDN using a latent feature, not a facial attribute (e.g., hair, glasses, and mustache). However, there are two cases of groups (Group 5 and 20) that we can clearly see their visual properties; 95 of randomly-selected 100 images are men in Group 5 and 94 of randomly-selected 100 images are bald men in Group 20. Others are not described as an one visual property, however, they seems to be described as multiple visual properties such as smile women, right-profile people and scared people in Group 1.
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJgyXh%2FbtqGdRP4W7v%2F0OXbsvLBrc6KFKZ7OLaq80%2Fimg.png" width="60%" align="center">
+<img src="{{ site.url }}/assets/img/2021-02-01-papers_groupface/005.png" width="60%" align="center">
 
 [Figure 2] Example images belonging to each groups. As enormous identities (80k~) of large scale dataset cannot be mapped to a few groups (32), each group contains identities of multiple characteristics. Some groups have one common visual description with some variations while others have multi-mode visual descriptions.
