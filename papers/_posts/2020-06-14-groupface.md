@@ -25,10 +25,13 @@ tag:
 
 ☛ Tech Ground 데모 페이지 바로 가기 : **[얼굴 검출](https://labs.kakaoi.ai/facedetection)** 데모
 
+<br/>
 
 # Abstract
 
 In the field of face recognition, a model learns to distinguish millions of face images with fewer dimensional embedding features, and such vast information may not be properly encoded in the conventional model with a single branch. We propose a novel face-recognition-specialized architecture called GroupFace that utilizes multiple group-aware representations, simultaneously, to improve the quality of the embedding feature. The proposed method provides self-distributed labels that balance the number of samples belonging to each group without additional human annotations, and learns the group-aware representations that can narrow down the search space of the target identity. We prove the effectiveness of the proposed method by showing extensive ablation studies and visualizations. All the components of the proposed method can be trained in an end-to-end manner with a marginal increase of computational complexity. Finally, the proposed method achieves the state-of-the-art results with significant improvements in 1:1 face verification and 1:N face identification tasks on the following public datasets: LFW, YTF, CALFW, CPLFW, CFP, AgeDB-30, MegaFace, IJB-B and IJB-C.
+
+<br/>
 
 # Overall Architecture
 
@@ -47,6 +50,8 @@ Our GroupFace can be applied to many existing face recognition methods to obtain
 {% raw %}
 [ Figure 1 ] GroupFace generates a shared feature of 4096 dimension and deploys a fully-connected layer for an instance-based representation $$\mathbf{v}_{\mathbf{x}}$$ and $$K$$ fully-connected layers for group-aware representations $$\mathbf{v}_{\mathbf{x}}^{{G}}$$ for a given sample $$\mathbf{x}$$. A group-decision-network, which is supervised by the self-distributed labeling, outputs a set of group probabilities $$\left\{ p(G_0\vert\mathbf{x}), p(G_1\vert\mathbf{x}), ..., p(G_{K-1}\vert\mathbf{x}) \right\} $$ from the instance-based representation. The final representation of 512 dimension is an aggregation of the instance-based representation and the weighted sum $$\mathbf{v}_{\mathbf{x}}^{{G}}$$ of the group-aware representations with the group probabilities. W is a weight of the function $$ g $$.
 {% endraw %}
+
+<br/>
 
 # Experiments
 
@@ -69,6 +74,8 @@ To show the effectiveness of our GroupFace, we evaluate the proposed method on v
 <img src="{{ site.url }}/assets/img/2020-06-14/004.png" width="40%" align="center">
 
 [Table 3] Ablation studies for the proposed GroupFace on IJB-B dataset. The baseline is a recognition-model trained by ArcFace and † denotes an evaluation procedure using the group-aware similarity.
+
+<br/>
 
 # Visualization
 
