@@ -41,7 +41,7 @@ Experiments
 
 We test our model on two datasets, YELP and AMAZON. The Yelp dataset is for business reviews, and the Amazon dataset is product reviews. Both datasets are labeled negative and positive and statistics are shown in Table 1.
 
-<img src="{{ site.url }}/assets/img/2020-12-15-Stable-Style-Transformer/002.png" width="" align="center">
+<img src="{{ site.url }}/assets/img/2020-12-15-Stable-Style-Transformer/002.png" align="center">
 
 [ Table 1 ] (Sentiment) Dataset statistics
 
@@ -49,7 +49,7 @@ We test our model on two datasets, YELP and AMAZON. The Yelp dataset is for busi
 
 We show that filtering out unstable systems through human evaluation is expensive, so selecting a stable system through automatic evaluation can be helpful. The proposed direct and model-agnostic deletion method allows the classifier to intuitively delete attribute markers and easily handle the trade-off of content and style.
 
-<img src="{{ site.url }}/assets/img/2020-12-15-Stable-Style-Transformer/003.png" width="" align="center">
+<img src="{{ site.url }}/assets/img/2020-12-15-Stable-Style-Transformer/003.png" align="center">
 
 [ Table 2 ] Automatic evaluation results of the Yelp dataset (s: self, h: human, G: geometric mean, f: fine-tuned, p: pre-trained). The red indicates that the evaluation score is significantly worse than other systems. Our model is referred to as SST(α, β). The bold black indicates the better performance of our systems for the four metrics that determine it is a stable system.
 
