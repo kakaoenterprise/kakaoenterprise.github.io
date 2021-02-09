@@ -2,7 +2,7 @@
 layout: post
 research-area: SPEECH/VOICE
 title: "U-Convolution Based Residual Eco Suppression With Multiple Encoders"
-slug: AAAI2021-multi-turn-response-selection
+slug: aaa2021-u-convolution-based-residual-eco-suppression
 description:
 published-date: 2021-06-05
 publisher: ICASSP
