@@ -2,7 +2,7 @@
 layout: post
 research-area: COMPUTER VISION
 title: Refining faster-RCNN for accurate object detection
-slug: iapr_mva2017-faster-rnnn-for-object-detection
+slug: iapr-mva2017-faster-rnnn-for-object-detection
 description:
 published-date: 2017-05-08
 publisher: IAPR MVA
