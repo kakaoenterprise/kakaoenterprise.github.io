@@ -7,9 +7,15 @@ description:
 published-date: 2019-10-11
 publisher: 한글 및 한국어정보처리 학술대회
 authors:
+  - eileen.aa:카카오엔터프라이즈
+  - kaylee.j:카카오엔터프라이즈
+  - heuristic.c:카카오엔터프라이즈
+  - jason.ng:카카오엔터프라이즈
 paper: http://hclt.kr/symp/?lnb=conference
 code:
 tag:
+  - open domain
+  -
 ---
 
 카카오엔터프라이즈 AI Lab(안애림, 이서진, 최동현, 김응균)이 한국외국어대학교(남지순)와 함께 쓴 논문 ‘오픈도메인 질의문 자동 분류를 위한 주석 말뭉치 구축 연구’가 제31회 한글 및 한국어정보처리 학술대회에 실렸습니다. 한글날을 맞이해 매년 10월마다 열리는 한글 및 한국어정보처리 학술대회는 전산언어학과 언어학, 인공지능과 관련된 다양한 주제의 연구 논문을 다루고 있습니다.

@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: SPEECH/VOICE
+research-area: SPEECH/AUDIO
 title: "U-Convolution Based Residual Eco Suppression With Multiple Encoders"
 slug: aaa2021-u-convolution-based-residual-eco-suppression
 description:

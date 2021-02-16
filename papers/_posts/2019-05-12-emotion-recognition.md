@@ -3,7 +3,7 @@ layout: post
 research-area: NLP
 title: DNN-based Emotion Recognition based on Bottleneck Acoustic Features and Lexical Features
 slug: icassp2019-emotion-recognition
-description: icassp2019-emotion-recognition
+description:
 published-date: 2019-05-12
 publisher: ICASSP
 authors:
