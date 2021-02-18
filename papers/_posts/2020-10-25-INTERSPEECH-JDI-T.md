@@ -4,16 +4,16 @@ research-area: SPEECH/AUDIO
 title: "JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment"
 slug: interspeech2020-jdi-t
 description: 음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련하는 아키텍처 'JDI-T' 제안
-published-date: 2020-05-15
+published-date: 2020-10-26
 publisher: INTERSPEECH
 authors:
-- satoshi.2020:카카오
+- satoshi.2018:카카오
 - taylor.martin:카카오엔터프라이즈
 - leo.o:카카오엔터프라이즈
 - abigail.p:카카오엔터프라이즈
 - montae.k:카카오엔터프라이즈
 - jeff.rey:카카오엔터프라이즈
-paper: https://arxiv.org/abs/2005.07799
+paper: https://www.isca-speech.org/archive/Interspeech_2020/pdfs/2123.pdf
 code:
 tag:
   - TTS
@@ -35,16 +35,14 @@ We propose Jointly trained Duration Informed Transformer (JDI-T), a feed-forward
 The proposed model, consisting of the feed-forward Transformer, the duration predictor, and the autoregressive Transformer, is trained jointly without explicit alignments. After joint training, only the feed-forward Transformer with the duration predictor is used for fast and robust conversion from phoneme sequences to mel-spectrogram.
 
 <img src="{{ site.url }}/assets/img/2020-10-25-jdi-t/001.png" align="center">
-
-[ Figure 1 ] An illustration of our proposed joint training framework (Auxiliary loss for attention is omitted for brevity.)
+<em>[ Figure 1 ] An illustration of our proposed joint training framework (Auxiliary loss for attention is omitted for brevity.)</em>
 
 # Experiments
 
 To evaluate the effectiveness of the proposed model, we conduct the Mean Opinion Score(MOS) test . The proposed model, JDI-T, is compared with three different models, including Tacotron2, Transformer, and FastSpeech. Table 1 shows the results on two different datasets; the Internal and the KSS.
 
 <img src="{{ site.url }}/assets/img/2020-10-25-jdi-t/002.png" width="40%" align="center">
-
-[ Table 1 ] Mean opinion scores (5-point scale)
+<em>[ Table 1 ] Mean opinion scores(5-point scale)</em>
 
 The score of our proposed model, which is also non-autoregressive and duration informed model like FastSpeech, is better than FastSpeech and even achieves the highest score among the TTS models in the Internal dataset. These results show that the joint training of the proposed model is beneficial for improving the audio quality as well as for simplifying the training pipeline.
 

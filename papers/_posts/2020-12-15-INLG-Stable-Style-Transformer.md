@@ -33,25 +33,18 @@ Text style transfer is the task that generates a sentence by preserving the cont
 Our approach consists of two stages: Delete and Generate framework in Fig. 1. The first stage is the Delete process with a pre-trained style classifier. The pre-trained style classifier finds and deletes tokens that contain a lot of style attributes. The second stage is encoding the content tokens and combining them with a target style to generate a sentence. Both the encoder and the decoder have the Transformer structure, which is better than RNN and robust to long dependency.
 
 <img src="{{ site.url }}/assets/img/2020-12-15-stable-style-transformer/001.png" width="" align="center">
-
-[ Figure 1 ] The proposed model framework consists of the Delete and Generate process.
-Experiments
-
-<br/>
+<em>[ Figure 1 ] The proposed model framework consists of the Delete and Generate process.
+Experiments</em>
 
 We test our model on two datasets, YELP and AMAZON. The Yelp dataset is for business reviews, and the Amazon dataset is product reviews. Both datasets are labeled negative and positive and statistics are shown in Table 1.
 
 <img src="{{ site.url }}/assets/img/2020-12-15-stable-style-transformer/002.png" align="center">
-
-[ Table 1 ] (Sentiment) Dataset statistics
-
-<br/>
+<em>[ Table 1 ] (Sentiment) Dataset statistics</em>
 
 We show that filtering out unstable systems through human evaluation is expensive, so selecting a stable system through automatic evaluation can be helpful. The proposed direct and model-agnostic deletion method allows the classifier to intuitively delete attribute markers and easily handle the trade-off of content and style.
 
 <img src="{{ site.url }}/assets/img/2020-12-15-stable-style-transformer/003.png" align="center">
-
-[ Table 2 ] Automatic evaluation results of the Yelp dataset (s: self, h: human, G: geometric mean, f: fine-tuned, p: pre-trained). The red indicates that the evaluation score is significantly worse than other systems. Our model is referred to as SST(α, β). The bold black indicates the better performance of our systems for the four metrics that determine it is a stable system.
+<em>[ Table 2 ] Automatic evaluation results of the Yelp dataset (s: self, h: human, G: geometric mean, f: fine-tuned, p: pre-trained). The red indicates that the evaluation score is significantly worse than other systems. Our model is referred to as SST(α, β). The bold black indicates the better performance of our systems for the four metrics that determine it is a stable system.</em>
 
 <br/>
 

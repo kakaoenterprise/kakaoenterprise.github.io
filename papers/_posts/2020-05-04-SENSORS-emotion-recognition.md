@@ -5,7 +5,7 @@ title: "Affective Latent Representation of Acoustic and Lexical Features for Emo
 slug: mdpi2020-emotion-recognition
 description: 음성의 음향・어휘 특성을 동시에 반영해 사람의 감정을 효과적으로 인식하는 아키텍처 제안
 published-date: 2020-05-04
-publisher: MDPI
+publisher: SENSORS
 authors:
   - chris.ekim:GIST/카카오엔터프라이즈
   - 송형찬:GIST
@@ -23,5 +23,4 @@ In this paper, we propose a novel emotion recognition method based on the underl
 <br/>
 
 <img src="{{ site.url }}/assets/img/2020-05-04-emotion-recognition/001.jpg" align="center">
-
-[ figure 1 ] Overview of the proposed multimodal emotion recognition framework integrating the acoustic and lexical features.
+<em>[ figure 1 ] Overview of the proposed multimodal emotion recognition framework integrating the acoustic and lexical features.</em>

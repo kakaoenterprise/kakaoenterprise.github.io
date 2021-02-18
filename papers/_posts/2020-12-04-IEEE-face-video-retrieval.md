@@ -7,12 +7,13 @@ description:
 published-date: 2020-12-04
 publisher: IEEE Transactions on Image Processing
 authors:
-  - stephan.m:성균관대학교/카카오엔터프라이즈
+  - stephen.m:성균관대학교/카카오엔터프라이즈
   - 길이만:성균관대학교
 paper: https://ieeexplore.ieee.org/document/9282191
 code:
 tag:
-  - Retrieval
+  - Face Video Retrieval
+  - Metric Learning
 ---
 
 # Abstract

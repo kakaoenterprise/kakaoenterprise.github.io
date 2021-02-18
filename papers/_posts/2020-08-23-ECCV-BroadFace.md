@@ -39,37 +39,26 @@ The datasets of face recognition contain an enormous number of identities and in
 We introduce BroadFace, which is a simple yet effective way to cover a large number of instances and identities. BroadFace learns globally well-optimized identity-representative vectors from a massive number of embedding vectors. For example, on a single Nvidia V100 GPU, the size of a mini-batch for ResNet-100 is at most 256, whereas BroadFace can utilize more than 8k instances at once. The following describes each step.
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/001.png" width="95%" align="center">
-
-
-[ Figure 1 ] Learning process of the proposed method. BroadFace deploys large queues to store embedding vectors and their corresponding identity-representative vectors per iteration. The embedding vectors of the past instances stored in the queues are used to compute loss for identity-representative vectors. BroadFace effectively learns from tens of thousands of instances for each iteration.
-Experiments
-
-To show the effectiveness of our BroadFace, we evaluate the proposed method on various public datasets and achieve the state-of-the-art accuracy on all of the datasets. We also perform extensive ablation studies on the it’s behaviors.
+<em>[ Figure 1 ] Learning process of the proposed method. BroadFace deploys large queues to store embedding vectors and their corresponding identity-representative vectors per iteration. The embedding vectors of the past instances stored in the queues are used to compute loss for identity-representative vectors. BroadFace effectively learns from tens of thousands of instances for each iteration.</em>
 
 <br/>
+
+# Experiments
+
+To show the effectiveness of our BroadFace, we evaluate the proposed method on various public datasets and achieve the state-of-the-art accuracy on all of the datasets. We also perform extensive ablation studies on the it’s behaviors.
 
 ## 1. Experimental Results
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/002.png" width="95%" align="center">
-
-[ Table 1 ] Verification accuracy (%) on LFW and YTF.
-
-<br/>
+<em>[ Table 1 ] Verification accuracy (%) on LFW and YTF.</em>
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/003.png" width="95%" align="center">
-
-[ Table 2 ] Verification evaluation with a True Accept Rate at a certain False Accept Rate(TAR@FAR) from 1e-4 to 1e-6 on IJB-B and IJB-C. † denotes BroadFace trained by CosFace[40].
-
-<br/>
+<em>[ Table 2 ] Verification evaluation with a True Accept Rate at a certain False Accept Rate(TAR@FAR) from 1e-4 to 1e-6 on IJB-B and IJB-C. † denotes BroadFace trained by CosFace[40].</em>
 
 ## 2. Ablation Studies
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/004.png" width="95%" align="center">
-
-[ Table 3 ] Effects of BroadFace varying the size of the queue and the type of the backbone network on IJB-B dataset in face recognition.
-
-<br/>
+<em>[ Table 3 ] Effects of BroadFace varying the size of the queue and the type of the backbone network on IJB-B dataset in face recognition.</em>
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/005.png" width="95%" align="center">
-
-[ Figure 2 ] (a) the recall depending on the size of the queue in BroadFace with and without our compensation function; the red line indicates the recall of ArcFace (baseline) on the test set. (b) the learning curve for the test set when the size of the queue is 32k; ArcFace reaches the highest recall at the 45th epoch, our BroadFace reaches the highest recall at the 10th epoch, and the learning process collapses without our compensation function.
+<em>[ Figure 2 ] (a) the recall depending on the size of the queue in BroadFace with and without our compensation function; the red line indicates the recall of ArcFace (baseline) on the test set. (b) the learning curve for the test set when the size of the queue is 32k; ArcFace reaches the highest recall at the 45th epoch, our BroadFace reaches the highest recall at the 10th epoch, and the learning process collapses without our compensation function.</em>

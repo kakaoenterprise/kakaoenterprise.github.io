@@ -40,8 +40,7 @@ SLNI is a regularizer that promotes sparse and decorrelated representations by p
 Unlike the naive model, our model trained with SLNI shows stable performance across all training conditions, including the Compound setting where the naive model completely degenerates. Further- more, there is no evident performance decrease in supervised directions.
 
 <img src="{{ site.url }}/assets/img/2020-11-16-stable-zero-shot-nmt/001.png" align="center">
-
-[ Table 1 ] Averaged BLEU scores for zero-shot (ZS) and supervised (SV) tasks, and ratio(%) of zero-shot outputs wrongly decoded into English.
+<em>[ Table 1 ] Averaged BLEU scores for zero-shot (ZS) and supervised (SV) tasks, and ratio(%) of zero-shot outputs wrongly decoded into English.</em>
 
 <br/>
 

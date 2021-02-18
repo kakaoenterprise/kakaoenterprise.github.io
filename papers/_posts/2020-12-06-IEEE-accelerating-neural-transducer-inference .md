@@ -4,7 +4,7 @@ research-area: SPEECH/AUDIO
 title: "Accelerating Neural Transducer Inference via Adaptive Expansion Search"
 slug: ieee2020-accelerating-neural-transducer-inference
 description: E2E 음성인식의 가속화를 위한 적응적 검색 기법 ‘AES’ 제안
-published-date: 2020-12-06
+published-date: 2020-11-06
 publisher: IEEE Signal Processing Letters
 authors:
   - jaytee.k:카카오엔터프라이즈

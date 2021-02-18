@@ -13,7 +13,7 @@ authors:
 paper: https://papers.nips.cc/paper/2020/file/c5d736809766d46260d816d8dbc9eb44-Paper.pdf
 code: https://github.com/jik876/hifi-gan
 tag:
-  - synthesis
+  - speech synthesis
 ---
 
 시작하며
@@ -38,14 +38,11 @@ Several recent studies on speech synthesis have employed generative adversarial 
 HiFi-GAN consists of one generator and two discriminators: multi-scale and multi-period discrimina- tors. The generator and discriminators are trained adversarially, along with two additional losses for improving training stability and model performance.
 
 <img src="{{ site.url }}/assets/img/2020-12-15-hifi-gan/001.png" align="center">
-
-{% raw %}
-[ Figure 1 ] The generator upsamples mel-spectrograms up to $$\vert k_{u} \vert$$ times to match the temporal resolution of raw waveforms. A MRF module adds features from $$\vert k_{r} \vert$$ residual blocks of different kernel sizes and dilation rates. Lastly, the $$n$$-th residual block with kernel size $$k_{r}[n]$$ and dilation rates $$D_{r}[n]$$ in a MRF module is depicted.
-{% endraw %}
+<em>{% raw %}[ Figure 1 ] The generator upsamples mel-spectrograms up to $$\vert k_{u} \vert$$ times to match the temporal resolution of raw waveforms. A MRF module adds features from $$\vert k_{r} \vert$$ residual blocks of different kernel sizes and dilation rates. Lastly, the $$n$$-th residual block with kernel size $$k_{r}[n]$$ and dilation rates $$D_{r}[n]$$ in a MRF module is depicted.
+{% endraw %}</em>
 
 <img src="{{ site.url }}/assets/img/2020-12-15-hifi-gan/002.png" align="center">
-
-[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.
+<em>[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.
 
 <br/>
 
@@ -54,5 +51,4 @@ HiFi-GAN consists of one generator and two discriminators: multi-scale and multi
 To evaluate the performance of our models in terms of both quality and speed, we performed the MOS test and the speed measurement. For easy comparison of audio quality, synthesis speed and model size, the results are compiled and presented in Table1. Remarkably, all variations of HiFi-GAN scored higher than the other model. Moreover, it shows a significant improvement in terms of synthesis speed.
 
 <img src="{{ site.url }}/assets/img/2020-12-15-hifi-gan/003.png" align="center">
-
-[ Table 1 ] Comparison of the MOS and the synthesis speed. Speed of n kHz means that the model can generate n × 1000 raw audio samples per second. The numbers in () mean the speed compared to real time.
+<em>[ Table 1 ] Comparison of the MOS and the synthesis speed. Speed of n kHz means that the model can generate n × 1000 raw audio samples per second. The numbers in () mean the speed compared to real time.</em>

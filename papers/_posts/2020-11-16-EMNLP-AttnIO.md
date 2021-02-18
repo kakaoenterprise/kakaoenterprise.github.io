@@ -34,8 +34,7 @@ Retrieving the proper knowledge relevant to conversational context is an importa
 AttnIO models the KG traversal mechanism into two sub-processes: incoming attention flow, and outgoing attention flow . At each decoding step, Incoming Attention Flow updates the representation of each node by aggregating messages coming from incoming edges. Outgoing Attention Flow then models path traversal on the knowledge graph by propagating attention from each node through outgoing edges, using the node representation from Incoming Attention Flow.
 
 <img src="{{ site.url }}/assets/img/2020-11-16-attnio/001.png" width="65%" align="center">
-
-[ Figure 1 ] AttnIO Model Overview
+<em>[ Figure 1 ] AttnIO Model Overview</em>
 
 <br/>
 
@@ -44,9 +43,7 @@ AttnIO models the KG traversal mechanism into two sub-processes: incoming attent
 The empirical evaluations on OpenDialKG dataset show the strength of At- tnIO in knowledge retrieval compared to baselines. AttnIO can also be trained to generate proper paths even in a more affordable setting of target super- vision. Lastly, we show through case study that our model enjoys from transparent interpretation of path reasoning process, and is capable of intuitively modeling knowledge exploration depending on the dialog characteristics.
 
 <img src="{{ site.url }}/assets/img/2020-11-16-attnio/002.png" align="center">
-
-
-[ Table 1 ] Performance of AttnIO in OpenDialKG, in comparison with baselines and ablation models. Results of the above 4 baselines (from Seq2Seq to DialKG Walker) are directly taken from Moon et al. (2019), as their code or implementation details are not available. Our model trained with all path supervision (AttnIO-AS) significantly outperforms all baselines.
+<em>[ Table 1 ] Performance of AttnIO in OpenDialKG, in comparison with baselines and ablation models. Results of the above 4 baselines (from Seq2Seq to DialKG Walker) are directly taken from Moon et al. (2019), as their code or implementation details are not available. Our model trained with all path supervision (AttnIO-AS) significantly outperforms all baselines.</em>
 
 <br/>
 
