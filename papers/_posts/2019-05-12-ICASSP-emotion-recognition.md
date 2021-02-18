@@ -7,7 +7,7 @@ description:
 published-date: 2019-05-12
 publisher: ICASSP
 authors:
-  - chris.ekim:GIST/카카오
+  - chris:GIST/카카오
   - 신종원:GIST
 paper: https://ieeexplore.ieee.org/document/8683077
 code:

@@ -7,8 +7,8 @@ description: 강건한 제로샷 번역 모델을 위해 정규화 기법 'SLNI'
 published-date: 2020-11-16
 publisher: EMNLP Findings
 authors:
-  - meta.mon:카카오엔터프라이즈
-  - james.ryu:카카오엔터프라이즈
+  - meta:카카오엔터프라이즈
+  - james:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.findings-emnlp.205.pdf
 code:
 tag:

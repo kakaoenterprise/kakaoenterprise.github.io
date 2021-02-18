@@ -7,8 +7,8 @@ description:
 published-date: 2021-02-02
 publisher: AAAI
 authors:
-  - aiden.d:카카오엔터프라이즈
-  - tony.n:카카오엔터프라이즈
+  - aiden:카카오엔터프라이즈
+  - tony:카카오엔터프라이즈
 paper:
 code:
 tag:

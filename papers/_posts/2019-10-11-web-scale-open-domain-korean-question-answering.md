@@ -7,8 +7,8 @@ description:
 published-date: 2019-10-11
 publisher: 한글 및 한국어정보처리 학술대회
 authors:
-  - heuristic.c:카카오
-  - jason.jg:김응균
+  - heuristic:카카오
+  - jason:김응균
   - 신동렬:성균관대학교
 paper: http://hclt.kr/symp/?lnb=conference
 code:

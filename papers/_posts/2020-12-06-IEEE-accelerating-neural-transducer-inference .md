@@ -7,9 +7,9 @@ description: E2E 음성인식의 가속화를 위한 적응적 검색 기법 ‘
 published-date: 2020-11-06
 publisher: IEEE Signal Processing Letters
 authors:
-  - jaytee.k:카카오엔터프라이즈
-  - tony.l:카카오
-  - chris.ekim:카카오엔터프라이즈
+  - jaytee:카카오엔터프라이즈
+  - tony:카카오
+  - chris:카카오엔터프라이즈
 paper: https://ieeexplore.ieee.org/document/9250505
 code:
 tag:

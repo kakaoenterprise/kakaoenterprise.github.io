@@ -7,7 +7,7 @@ description: 비병렬 데이터셋을 활용한 새로운 텍스트 스타일 �
 published-date: 2020-12-15
 publisher: INLG
 authors:
-  - rung.joo:카카오엔터프라이즈
+  - rung:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.inlg-1.25/
 code: https://github.com/rungjoo/Stable-Style-Transformer
 tag:

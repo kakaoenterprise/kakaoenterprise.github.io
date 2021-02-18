@@ -8,8 +8,8 @@ published-date: 2018-07-04
 publisher: arXiv
 authors:
   - 김민성:영남대학교
-  - isaac.giant:카카오
-  - joshua.ai:카카오
+  - isaac:카카오
+  - joshua:카카오
   - 최현철:영남대학교
 paper: https://arxiv.org/pdf/1807.01493.pdf
 code:

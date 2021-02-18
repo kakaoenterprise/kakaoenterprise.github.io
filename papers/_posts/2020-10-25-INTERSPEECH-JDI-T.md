@@ -7,12 +7,12 @@ description: 음성합성 모델과 음소-오디오 정렬 모델을 한꺼번�
 published-date: 2020-10-26
 publisher: INTERSPEECH
 authors:
-- satoshi.2018:카카오
-- taylor.martin:카카오엔터프라이즈
-- leo.o:카카오엔터프라이즈
-- abigail.p:카카오엔터프라이즈
-- montae.k:카카오엔터프라이즈
-- jeff.rey:카카오엔터프라이즈
+- satoshi:카카오
+- taylor:카카오엔터프라이즈
+- leo:카카오엔터프라이즈
+- abigail:카카오엔터프라이즈
+- montae:카카오엔터프라이즈
+- jeff:카카오엔터프라이즈
 paper: https://www.isca-speech.org/archive/Interspeech_2020/pdfs/2123.pdf
 code:
 tag:

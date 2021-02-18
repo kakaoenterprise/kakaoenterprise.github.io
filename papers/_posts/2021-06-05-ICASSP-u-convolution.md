@@ -7,9 +7,9 @@ description:
 published-date: 2021-06-05
 publisher: ICASSP
 authors:
-  - chirs.ekim:카카오엔터프라이즈
-  - jeffrey.j:카카오엔터프라이즈
-  - heize.s:카카오엔터프라이즈
+  - chirs:카카오엔터프라이즈
+  - jeffrey:카카오엔터프라이즈
+  - heize:카카오엔터프라이즈
 paper:
 code:
 tag:

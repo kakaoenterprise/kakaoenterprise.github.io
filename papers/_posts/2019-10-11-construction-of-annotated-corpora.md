@@ -7,10 +7,10 @@ description:
 published-date: 2019-10-11
 publisher: 한글 및 한국어정보처리 학술대회
 authors:
-  - eileen.aa:카카오엔터프라이즈
-  - kaylee.j:카카오엔터프라이즈
-  - heuristic.c:카카오엔터프라이즈
-  - jason.ng:카카오엔터프라이즈
+  - eileen:카카오엔터프라이즈
+  - kaylee:카카오엔터프라이즈
+  - heuristic:카카오엔터프라이즈
+  - jason:카카오엔터프라이즈
 paper: http://hclt.kr/symp/?lnb=conference
 code:
 tag:

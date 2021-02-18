@@ -8,11 +8,11 @@ published-date: 2021-02-02
 publisher: AAAI
 authors:
   - 황태선:고려대학교
-  - jude.leee:카카오
+  - jude:카카오
   - 오동석:고려대학교
   - 이찬희:고려대학교
-  - mat.h:카카오엔터프라이즈
-  - hubert.std:카카오엔터프라이즈
+  - mat:카카오엔터프라이즈
+  - hubert:카카오엔터프라이즈
   - 이새벽:Wisenut Inc/고려대학교
 paper:
 code:

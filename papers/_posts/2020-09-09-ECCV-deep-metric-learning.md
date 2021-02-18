@@ -7,8 +7,8 @@ description: 여러 모델간 상호학습 방식으로 이미지 검색 성능�
 published-date: 2020-09-09
 publisher: ECCV workshop on TASKCV
 authors:
-  - tony.n:카카오
-  - dandelin.k:카카오
+  - tony:카카오
+  - dandelin:카카오
   - 유기현:카카오엔터프라이즈/POSTECH
   - 조민수:POSTECH
 paper: https://arxiv.org/abs/2009.04170

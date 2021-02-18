@@ -7,8 +7,8 @@ description: 패션 이미지를 효율적으로 검색하는 새로운 거리�
 published-date: 2020-06-14
 publisher: CVPR workshop on CVFAD
 authors:
-  - michael.jy:카카오엔터프라이즈
-  - joshua.ai:카카오엔터프라이즈
+  - michael:카카오엔터프라이즈
+  - joshua:카카오엔터프라이즈
 paper: "https://drive.google.com/file/d/1co4JkFhxob75MyV8yws-8mgGqGw2PrC8/view?fbclid=IwAR3z4hL31A5HoyPJs4v3aVlw4TStOJtCEn1bnWY_EixQrUSMyJdJokqfR5c"
 code:
 tag:

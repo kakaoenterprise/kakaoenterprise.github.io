@@ -7,8 +7,8 @@ description:
 published-date: 2017-05-08
 publisher: IAPR MVA
 authors:
-  - joshua.ai:카카오
-  - michael.jy:카카오
+  - joshua:카카오
+  - michael:카카오
 paper: http://www.mva-org.jp/Proceedings/2017USB/papers/15-26.pdf
 code:
 tag:

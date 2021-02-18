@@ -7,9 +7,9 @@ description: 대화 맥락에 따른 지식 그래프 경로 탐색 모델 'Attn
 published-date: 2020-11-16
 publisher: EMNLP
 authors:
-  - hoony.jung:카카오엔터프라이즈
-  - meta.mon:카카오엔터프라이즈
-  - james.ryu:카카오엔터프라이즈
+  - hoony:카카오엔터프라이즈
+  - meta:카카오엔터프라이즈
+  - james:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.emnlp-main.280.pdf
 code:
 tag:

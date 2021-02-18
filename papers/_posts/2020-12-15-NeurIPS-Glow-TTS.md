@@ -7,9 +7,9 @@ description: 플로우 기반 생성 모델과 동적 프로그래밍을 활용�
 published-date: 2020-12-15
 publisher: NeurIPS Oral
 authors:
-  - jay.xyz:카카오엔터프라이즈
+  - jay:카카오엔터프라이즈
   - 김성원:서울대학교
-  - henry.k:카카오엔터프라이즈
+  - henry:카카오엔터프라이즈
   - 윤성로:서울대학교
 paper: https://papers.nips.cc/paper/2020/file/5c3b99e8f92532e5ad1556e53ceea00c-Paper.pdf
 code: https://github.com/jaywalnut310/glow-tts

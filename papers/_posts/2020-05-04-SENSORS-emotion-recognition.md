@@ -2,12 +2,12 @@
 layout: post
 research-area: SPEECH
 title: "Affective Latent Representation of Acoustic and Lexical Features for Emotion Recognition"
-slug: mdpi2020-emotion-recognition
+slug: sensors2020-emotion-recognition
 description: 음성의 음향・어휘 특성을 동시에 반영해 사람의 감정을 효과적으로 인식하는 아키텍처 제안
 published-date: 2020-05-04
 publisher: SENSORS
 authors:
-  - chris.ekim:GIST/카카오엔터프라이즈
+  - chris:GIST/카카오엔터프라이즈
   - 송형찬:GIST
   - 신종원:GIST
 paper: https://www.mdpi.com/1424-8220/20/9/2614

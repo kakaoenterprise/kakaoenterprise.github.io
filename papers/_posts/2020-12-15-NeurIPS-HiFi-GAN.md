@@ -3,13 +3,13 @@ layout: post
 use-katex: true
 research-area: SPEECH/AUDIO
 title: "HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis"
-slug: NeurIPS2020-hifi-gan
+slug: neurips2020-hifi-gan
 description: 고품질의 음성 오디오를 빠르게 합성하는 TTS 모델 'Hi-Fi GAN' 제안
 published-date: 2020-12-15
 publisher: NeurIPS
 authors:
-    - henry.k:카카오엔터프라이즈
-    - jay.xyz:카카오엔터프라이즈
+    - henry:카카오엔터프라이즈
+    - jay:카카오엔터프라이즈
 paper: https://papers.nips.cc/paper/2020/file/c5d736809766d46260d816d8dbc9eb44-Paper.pdf
 code: https://github.com/jik876/hifi-gan
 tag:

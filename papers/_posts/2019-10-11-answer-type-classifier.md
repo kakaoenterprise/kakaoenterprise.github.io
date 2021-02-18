@@ -7,9 +7,9 @@ description:
 published-date: 2019-10-11
 publisher: 한글 및 한국어정보처리 학술대회
 authors:
-  - john.w:카카오
-  - heuristic.c:카카오
-  - jason.ng:카카오
+  - john:카카오
+  - heuristic:카카오
+  - jason:카카오
 paper: http://hclt.kr/symp/?lnb=conference
 code:
 tag:

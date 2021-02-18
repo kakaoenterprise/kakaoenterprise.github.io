@@ -7,13 +7,13 @@ description: 텍스트 요약 모델을 평가하는 새로운 척도 'RDASS' �
 published-date: 2020-04-29
 publisher: COLING
 authors:
-  - jude.lee:카카오
-  - index.sh:카카오엔터프라이즈
+  - jude:카카오
+  - index:카카오엔터프라이즈
   - 황태선:고려대학교
-  - john.w:카카오엔터프라이즈
-  - kobi.k:카카오엔터프라이즈
-  - daniel.lee:카카오엔터프라이즈
-  - jason.ng:김응균
+  - john:카카오엔터프라이즈
+  - kobi:카카오엔터프라이즈
+  - daniel:카카오엔터프라이즈
+  - jason:김응균
   - 조재춘:한신대학교
 paper: https://arxiv.org/abs/2005.03510
 code:

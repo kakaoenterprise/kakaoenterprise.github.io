@@ -2,12 +2,12 @@
 layout: post
 research-area: COMPUTER VISION
 title: "Face Video Retrieval Based on the Deep CNN With RBF Loss"
-slug:
+slug: ieee2020-face-video-retrieval
 description:
 published-date: 2020-12-04
 publisher: IEEE Transactions on Image Processing
 authors:
-  - stephen.m:성균관대학교/카카오엔터프라이즈
+  - stephen:성균관대학교/카카오엔터프라이즈
   - 길이만:성균관대학교
 paper: https://ieeexplore.ieee.org/document/9282191
 code:

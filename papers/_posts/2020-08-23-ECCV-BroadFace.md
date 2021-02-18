@@ -7,9 +7,9 @@ description: 수많은 사람의 얼굴을 효과적으로 학습하는 기법 '
 published-date: 2020-08-23
 publisher: ECCV
 authors:
-  - aiden.d:카카오엔터프라이즈
-  - tony.n:카카오
-  - isaac.giant:카카오엔터프라이즈
+  - aiden:카카오엔터프라이즈
+  - tony:카카오
+  - isaac:카카오엔터프라이즈
 paper: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540511.pdf
 code:
 tag:

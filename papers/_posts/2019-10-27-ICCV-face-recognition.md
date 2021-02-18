@@ -8,7 +8,7 @@ published-date: 2019-10-27
 publisher: ICCV
 authors:
   - 강봉남:POSTECH/StradVision
-  - aiden.d:POSTECH/카카오
+  - aiden:POSTECH/카카오
   - 전봉진:StradVision
   - 김대진:POSTECH
 paper: http://openaccess.thecvf.com/content_ICCV_2019/papers/Kang_Attentional_Feature-Pair_Relation_Networks_for_Accurate_Face_Recognition_ICCV_2019_paper.pdf

@@ -7,7 +7,7 @@ description:
 published-date: 2019-05-12
 publisher: ICASSP
 authors:
-  - jaytee.k:카카오
+  - jaytee:카카오
   - 한민수:KAIST
 paper: https://ieeexplore.ieee.org/document/8668449
 code:

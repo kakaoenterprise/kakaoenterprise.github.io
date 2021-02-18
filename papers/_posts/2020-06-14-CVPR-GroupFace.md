@@ -8,10 +8,10 @@ description: 얼굴 인식에 전문화된 새로운 아키텍처인 'GroupFace'
 published-date: 2020-06-14
 publisher: CVPR
 authors:
-  - aiden.d:카카오엔터프라이즈
-  - tony.n:카카오
-  - joshua.ai:카카오엔터프라이즈
-  - isaac.giant:카카오엔터프라이즈
+  - aiden:카카오엔터프라이즈
+  - tony:카카오
+  - joshua:카카오엔터프라이즈
+  - isaac:카카오엔터프라이즈
 paper: "https://openaccess.thecvf.com/content_CVPR_2020/html/Kim_GroupFace_Learning_Latent_Groups_and_Constructing_Group-Based_Representations_for_Face_CVPR_2020_paper.html"
 code:
 tag:
