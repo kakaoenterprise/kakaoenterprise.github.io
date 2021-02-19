@@ -9,7 +9,7 @@ publisher: ICIP
 authors:
   - 박지철:POSTECH
   - 정보승:POSTECH
-  - issac:카카오엔터프라이즈
+  - isaac:카카오엔터프라이즈
   - michael:카카오엔터프라이즈
   - 곽수하:POSTECH
 paper: https://ieeexplore.ieee.org/abstract/document/9190688

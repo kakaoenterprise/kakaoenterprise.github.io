@@ -8,7 +8,27 @@ layout: default
   </div>
   <h1 class="post-title">{{ page.title }}</h1>
 
-  {{ page.authors | join: ", " }}
+  {% assign formatted_authors = "" | split: "," %}
+
+  {% for author in page.authors %}
+    {% assign author_data = author | split: ":" %}
+    {% assign id =  author_data[0] %}
+    {% assign company =  author_data[1] %}
+
+    {% assign krew_data = site.data.krews[id] %}
+
+    {% if krew_data %}
+        {% assign korean_name = krew_data.korean_name %}
+    {% else %}
+        {% assign korean_name = id %}
+    {% endif %}
+
+    {% capture formatted_author %}{{ korean_name }}({{company}}){% endcapture %}
+
+    {% assign formatted_authors = formatted_authors | push: formatted_author %}
+  {% endfor %}
+
+  {{ formatted_authors | join: ", " }}
 
   <h4>{{ page.publisher }}</h4>
   <h4>{{ page.published-date }}</h4>

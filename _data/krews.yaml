@@ -1,0 +1,188 @@
+abigail:
+  korean_name: 박혜영
+  profile: abigail.png
+  github:
+  web:
+  description: ’딥러닝’이라는 마법같은 기술로 다양하고 개성있는 목소리를 만들고 싶은, 꿈쟁이 개발자입니다.
+
+aiden:
+  korean_name: 김용현
+  profile: aiden.png
+  github:
+  web:
+  description: 대학원에서 물체 검출 및 얼굴 인식을 연구하고, 현재 카카오 엔터프라이즈에서는 얼굴 인식 연구를 담당하고 있습니다.
+
+eileen:
+  korean_name:
+  profile: eileen.png
+  github:
+  web:
+  description:
+
+erin:
+  korean_name: 홍은빈
+  profile: erin.png
+  github:
+  web:
+  description: 대학원에서 딥러닝을 이용한 영상처리를 공부하면서, ‘논문’을 쓰기 위한 연구가 아닌, 실생활에 도움이 되는 기술을 만드려는 꿈을 꾸게 됐습니다. 이런 연구 경험을 바탕으로 현재 카카오엔터프라이즈에서는 이미지와 동영상을 이해하는 딥러닝 기술을 이용해 서비스를 개발하는 일을 담당하고 있습니다. 앞으로 사람보다 더 많은 걸 볼 수 있는 인공지능을 만들고 싶습니다.
+
+henry:
+  korean_name: 공정일
+  profile: henry.png
+  github:
+  web:
+  description: 여러 번 도전했다 실패했던 텍스트 분류 실험에서, 기존 접근 방식과는 비견할 수 없는 성능을 내는 딥러닝의 놀라운 매력에 크게 매료됐습니다. 현재는 카카오엔터프라이즈에서 음성합성을 비롯한 여러 분야에서 도전적인 기술을 연구하고 있습니다. 인간의 삶을 한층 풍요롭게 만드는, 더 똑똑하고 새로운 인공지능 기술을 만들고자 합니다.
+
+heuristic:
+  korean_name: 최동현
+  profile: heuristic.png
+  github:
+  web:
+  description: 어느새 30대 중반으로 접어든, 그러나 마음만은 젊게 지내는 인공지능 개발자입니다. 작년에 카카오로 이직하며 카카오미니 개발에 참여하게 되었습니다. 카카오미니에 기여를 할 수 있어서 매우 기쁘고 미니를 좀 더 똑똑하게 만들기 위하여 열심히 공부 중에 있습니다.
+
+hoony:
+  korean_name: 정재훈
+  profile: hoony.png
+  github:
+  web:
+  description: 학업과 일을 병행하며, 전문 분야에서의 기계 번역(Domain-specific Neural Machine Translation)처럼 외부 지식을 요긴하게 사용할 수 있는 자연어처리 기술을 연구하고 있습니다. ”지식을 갖춘 인공지능을 만들 수 있나”는 질문에 대한 답을 찾고 싶습니다.
+
+index:
+  korean_name: 신명철
+  profile: index.png
+  github:
+  web:
+  description: 외부 지식을 자연어 이해 과정에 인코딩하는 데 관심이 많은 개발자입니다. 최근 폭발하는 연구 결과에 짓눌려서 정신이 혼미하네요. 최대한 따라 가려고 노력하고 있습니다.
+
+isaac:
+  korean_name: 신종주
+  profile: isaac.png
+  github:
+  web:
+  description: 대학원에서 얼굴 특징점 검출을 전공한 뒤, 현재는 카카오엔터프라이즈에서 얼굴 영상과 관련된 연구 개발 조직을 맡고 있습니다. 연구 중인 얼굴 인식이 앞으로 제 두 아들이 살아갈 세상에 도움이 되었으면 좋겠습니다.
+
+james:
+  korean_name: 류성원
+  profile: james.png
+  github:
+  web:
+  description: 경영대 졸업 후, 세상에 없던 새로운 가치를 창출해보고자 뒤늦게 인공지능의 세계에 발을 내디덨습니다. 많은 이의 도움으로 현재는 카카오엔터프라이즈 컨텍스트파트에서 번역과 자연어처리를 연구하고 있습니다. 사람의 지루한 일을 덜어주고 기쁨을 주는 인공지능을 만들고 싶습니다.
+
+jason:
+  korean_name: 김응균
+  profile: jason.png
+  github:
+  web:
+  description: 한국어와 한글을 사랑하는 자연어처리 개발자입니다.
+
+jay:
+  korean_name: 김재현
+  profile: jay.png
+  github:
+  web:
+  description: 인공지능이 게임, 자율주행, 음성 비서 등 다양한 분야에 혁신을 일으키는 모습에 큰 흥미를 느꼈습니다. 현재는 카카오엔터프라이즈 컨텍스트파트에서 효율적으로 음성을 합성하는 데 필요한 기술을 연구하고 있습니다. 훌륭한 동료와 함께 인공지능 기술의 한계를 시험하고 싶습니다.
+
+jeff:
+  korean_name: 윤재삼
+  profile: jeff.png
+  github:
+  web:
+  description: 사람과 사물이 자연스럽게 연결되는 세상을 위한 음성합성 기술을 연구합니다.
+
+john:
+  korean_name: 조승우
+  profile: john.png
+  github:
+  web:
+  description: 친구들과 함께 빅데이터 감정 분석 프로젝트를 수행하며 자연어처리에 큰 흥미를 느낀 것을 계기로 학부 때는 데이터마이닝 연구실에서 빅데이터 관련 연구를, 석사 때는 기계번역과 문법 교정 관련 연구를 진행했습니다. 현재 카카오엔터프라이즈에서는 카카오 i 대화 엔진에 필요한 개체명을 인식하는 딥러닝 모델과 정답 유형 분류 딥러닝 모델 개발을 맡고 있습니다. 앞으로의 인공지능은 사람의 번거로운 일을 해소하는 데 영향력을 발휘했으면 좋겠습니다.
+
+joshua:
+  korean_name: 노명철
+  profile: joshua.png
+  github:
+  web:
+  description:
+
+kevin:
+  korean_name: 양기창
+  profile: kevin.png
+  github:
+  web:
+  description: 카카오엔터프라이즈에서 번역엔진 연구∙개발을 담당하고 있습니다. 군복무 시절부터 딥러닝에 빠져살다, 전역후 복학대신 카카오 입사를 선택했습니다. 모두가 정보 불균형함에서 벗어나 공정한 세상에서 살 수 있도록 도움을 주는 인공지능을 만들어보고자 합니다.
+
+leo:
+  korean_name: 오경환
+  profile: leo.png
+  github:
+  web:
+  description: 카카오 엔터프라이즈의 훌륭한 동료와 함께 음성합성 기술을 연구하고 만듭니다.
+
+meta:
+  korean_name: 손보경
+  profile: meta.png
+  github:
+  web:
+  description: 언어와 텍스트를 사랑합니다. 심리학과 이론 언어학을 공부하다가, 다른 방면으로 언어를 바라보기 위해 카카오엔터프라이즈 컨텍스트파트에서 번역과 자연어처리를 연구하게 되었습니다. 언어의 사용을 통해 인공지능을, 인공지능을 통해 언어의 사용을 이해하고 싶습니다.
+
+michael:
+  korean_name: 이주영
+  profile: michael.png
+  github:
+  web:
+  description: 카카오엔터프라이즈에서 쇼핑∙검색 이미지 분석 관련 연구∙개발 조직을 맡고 있습니다. 많은 사람이 즐겁게 이용할 수 있는 인공지능 기술을 만들고 싶습니다.
+
+montae:
+  korean_name: 김봉완
+  profile: montae.png
+  github:
+  web:
+  description: 훌륭한 동료들과 함께, 보다 자연스럽고 편안한 음성 합성 기술을 만들고 있습니다. 이 기술이 모두의 삶의 질을 높이는 데 도움이 됐으면 좋겠습니다.
+
+pin:
+  korean_name: 박일남
+  profile: pin.jpg
+  github:
+  web:
+  description: 한글 자연어처리에 관심이 많은 개발자입니다. 자연어처리 기술을 이용한 한국어 서비스 개발을 위해 노력하고 있습니다.
+
+rung:
+  korean_name: 이주성
+  profile: rung.png
+  github:
+  web:
+  description:
+
+samantha:
+  korean_name: 이수경
+  profile: samantha.jpg
+  github:
+  web:
+  description: 지난 2016년 3월 알파고와 이세돌 9단이 펼치는 세기의 대결을 취재한 것을 계기로 인공지능 세계에 큰 매력을 느꼈습니다. 카카오엔터프라이즈에서 인공지능을 제대로 알고 싶어하는 사람들을 위해 전문가와 함께 읽기 쉬운 콘텐츠를 쓰고 있습니다. 인공지능을 만드는 사람들의 이야기와 인공지능이 바꿀 미래 사회에 대한 글은 누구보다 쉽고, 재미있게 쓰는 사람이 되고자 합니다.
+
+satoshi:
+  korean_name: 임단
+  profile: satoshi.png
+  github:
+  web:
+  description: 기계학습에 흥미를 느껴서 대학원에서 음성인식을 연구하게 됐습니다. 운이 좋게도 현재는 카카오에서 가장 흥미로운 분야로 손꼽히는 음성합성의 연구와 개발을 담당하고 있습니다.
+
+storm:
+  korean_name: 배재경
+  profile: storm.png
+  github:
+  web:
+  description: 도전 과제를 찾고 이를 해결해 나가는 것이 재밌고 신나는 개발자입니다. 아이디어를 아낌없이 공유해 주시는 많은 훌륭한 분들이 있어서 세상이 더 빨리 나아지는 것 같습니다. 저도 그 길에 작은 보탬이 되고 싶습니다.
+
+talyor:
+  korean_name: 장원
+  profile: taylor.png
+  github:
+  web:
+  description: 보다 선명하고, 보다 인간적인 감정을 녹여낼 수 있는 미래 음성합성 기술을 연구하고 있습니다. 제 기술이 일상의 사소한 불편을 해소해나가려는 kakao i의 행보에 조금이라도 보탬이 됐으면 좋겠습니다.
+
+tony:
+  korean_name: 박원표
+  profile: tony.jpg
+  github:
+  web:
+  description: 데이터 사이언스에 관심이 생겨 덜컥 인공지능 관련 석사 과정에 진학했습니다. 카카오에서는 인공지능을 이용한 이미지처리된 연구와 개발을 맡고 있습니다. 이번 생에는 사람만큼 똑똑한 인공지능의 탄생을 꼭 보고 싶습니다.
