@@ -39,6 +39,26 @@ layout: default
   </h4>
   <h4>{{ page.published-date }}</h4>
 
+  {% if page.paper or page.code %}
+    <div class="link-button-group">
+      {% if page.paper %}
+        <a href="{{ page.paper }}" target="_blank">
+          <button class="link-button">
+            <i class="far fa-file-alt"></i> Paper
+          </button>
+        </a>
+      {% endif %}
+
+      {% if page.code %}
+        <a href="{{ page.code }}" target="_blank">
+          <button class="link-button">
+            <i class="fab fa-github"></i> Code
+          </button>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
   <div class="post-line"></div>
 
   {{ content }}
