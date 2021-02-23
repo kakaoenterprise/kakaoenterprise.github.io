@@ -1,0 +1,5 @@
+{% assign post_path = page.path | split: "/" %}
+{% assign post_filename = post_path[-1] | split: "." %}
+{% assign post_name = post_filename[0] %}
+
+<img src="{{ site.url }}/assets/img/{{ post_name }}/{{ include.name }}" width="{{ include.width }}" align="{{ include_align }}">
