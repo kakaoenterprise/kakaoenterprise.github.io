@@ -34,15 +34,15 @@ We propose Jointly trained Duration Informed Transformer (JDI-T), a feed-forward
 
 The proposed model, consisting of the feed-forward Transformer, the duration predictor, and the autoregressive Transformer, is trained jointly without explicit alignments. After joint training, only the feed-forward Transformer with the duration predictor is used for fast and robust conversion from phoneme sequences to mel-spectrogram.
 
-<img src="{{ site.url }}/assets/img/2020-10-25-jdi-t/001.png" align="center">
-<em>[ Figure 1 ] An illustration of our proposed joint training framework (Auxiliary loss for attention is omitted for brevity.)</em>
+<img src="{{ site.url }}/assets/img/2020-10-26-jdi-t/001.png" align="center">
+<em class="center">[ Figure 1 ] An illustration of our proposed joint training framework (Auxiliary loss for attention is omitted for brevity.)</em>
 
 # Experiments
 
 To evaluate the effectiveness of the proposed model, we conduct the Mean Opinion Score(MOS) test . The proposed model, JDI-T, is compared with three different models, including Tacotron2, Transformer, and FastSpeech. Table 1 shows the results on two different datasets; the Internal and the KSS.
 
-<img src="{{ site.url }}/assets/img/2020-10-25-jdi-t/002.png" width="40%" align="center">
-<em>[ Table 1 ] Mean opinion scores(5-point scale)</em>
+<img src="{{ site.url }}/assets/img/2020-10-26-jdi-t/002.png" width="40%" align="center">
+<em class="center">[ Table 1 ] Mean opinion scores(5-point scale)</em>
 
 The score of our proposed model, which is also non-autoregressive and duration informed model like FastSpeech, is better than FastSpeech and even achieves the highest score among the TTS models in the Internal dataset. These results show that the joint training of the proposed model is beneficial for improving the audio quality as well as for simplifying the training pipeline.
 

@@ -9,7 +9,7 @@ publisher: ECCV workshop on TASK-CV
 publisher-fullname: ECCV workshop on TASK-CV(Transferring and Adapting Source Knowledge in Computer Vision)
 authors:
   - tony:카카오
-  - dandelin:카카오
+  - 김원재:카카오
   - 유기현:카카오엔터프라이즈/POSTECH
   - 조민수:POSTECH
 paper: https://arxiv.org/abs/2009.04170

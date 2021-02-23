@@ -50,7 +50,7 @@ To show the effectiveness of our BroadFace, we evaluate the proposed method on v
 ## 1. Experimental Results
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/002.png" width="95%" align="center">
-<em>[ Table 1 ] Verification accuracy (%) on LFW and YTF.</em>
+<em class="center">[ Table 1 ] Verification accuracy (%) on LFW and YTF.</em>
 
 <img src="{{ site.url }}/assets/img/2020-08-23-broadface/003.png" width="95%" align="center">
 <em>[ Table 2 ] Verification evaluation with a True Accept Rate at a certain False Accept Rate(TAR@FAR) from 1e-4 to 1e-6 on IJB-B and IJB-C. † denotes BroadFace trained by CosFace[40].</em>

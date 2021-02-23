@@ -58,7 +58,7 @@ To show the effectiveness of our GroupFace, we evaluate the proposed method on v
 ## 1. Experimental Results
 
 <img src="{{ site.url }}/assets/img/2020-06-14-groupface/002.png" width="85%" align="center">
-<em>[ Table 1 ] Evaluation on LFW, YTF, CALFW, CPLFW, CFP-FP, AgeDB-30 and MegaFace. </em>
+<em class="center">[ Table 1 ] Evaluation on LFW, YTF, CALFW, CPLFW, CFP-FP, AgeDB-30 and MegaFace</em>
 
 <img src="{{ site.url }}/assets/img/2020-06-14-groupface/003.png" width="84.5%" align="center">
 <em>[ Table 2 ] Evaluation according to different FARs on IJB-B and IJB-C. Our GroupFace is trained by ArcFace. † denotes that a model is evaluated by using the group-aware similarity.</em>
