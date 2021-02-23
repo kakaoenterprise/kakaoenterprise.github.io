@@ -56,7 +56,10 @@
     font-family: $sans-serif;
     font-size: 0.9rem;
     font-style: normal;
-    text-align: center;
+    text-align: left;
+    &.center {
+        text-align: center;
+    }
   }
 
   // CSS for making emoji inline
