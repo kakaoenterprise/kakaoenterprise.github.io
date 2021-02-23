@@ -16,7 +16,6 @@ tag:
   - speech synthesis
 ---
 
-시작하며
 카카오엔터프라이즈 AI Lab(공정일, 김재현, 배재경)이 쓴 논문 ‘HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis’가 신경정보처리시스템학회(NeurIPS)에 게재 승인됐습니다. 올해 학회에는 총 9,467편 중 1,900편이 통과됐습니다.
 
 최근 음성합성 연구에서는 GAN(generative adversarial networks) 구조를 활용해 보코더(vocoder)의 음성 합성 속도와 메모리 효율을 높이는 시도가 있었습니다. 하지만 이런 방식의 보코더가 합성한 음성의 품질은 Autoregressive 모델이나 플로우 기반의 생성 모델(flow-based generative model)에 미치지 못했습니다. 이에 AI Lab은 음성 오디오의 주기적 신호를 구별해내는 방식으로 기존 제안된 모델보다 월등히 좋은 품질의 오디오를 빠르게 합성하는 HiFi-GAN을 제안했습니다.
@@ -37,11 +36,11 @@ Several recent studies on speech synthesis have employed generative adversarial 
 
 HiFi-GAN consists of one generator and two discriminators: multi-scale and multi-period discrimina- tors. The generator and discriminators are trained adversarially, along with two additional losses for improving training stability and model performance.
 
-<img src="{{ site.url }}/assets/img/2020-12-15-hifi-gan/001.png" align="center">
+{% include image.html name="001.png" align="center" %}
 <em>{% raw %}[ Figure 1 ] The generator upsamples mel-spectrograms up to $$\vert k_{u} \vert$$ times to match the temporal resolution of raw waveforms. A MRF module adds features from $$\vert k_{r} \vert$$ residual blocks of different kernel sizes and dilation rates. Lastly, the $$n$$-th residual block with kernel size $$k_{r}[n]$$ and dilation rates $$D_{r}[n]$$ in a MRF module is depicted.
 {% endraw %}</em>
 
-<img src="{{ site.url }}/assets/img/2020-12-15-hifi-gan/002.png" align="center">
+{% include image.html name="002.png" align="center" %}
 <em>[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.
 
 <br/>
@@ -50,5 +49,5 @@ HiFi-GAN consists of one generator and two discriminators: multi-scale and multi
 
 To evaluate the performance of our models in terms of both quality and speed, we performed the MOS test and the speed measurement. For easy comparison of audio quality, synthesis speed and model size, the results are compiled and presented in Table1. Remarkably, all variations of HiFi-GAN scored higher than the other model. Moreover, it shows a significant improvement in terms of synthesis speed.
 
-<img src="{{ site.url }}/assets/img/2020-12-15-hifi-gan/003.png" align="center">
+{% include image.html name="003.png" align="center" %}
 <em>[ Table 1 ] Comparison of the MOS and the synthesis speed. Speed of n kHz means that the model can generate n × 1000 raw audio samples per second. The numbers in () mean the speed compared to real time.</em>

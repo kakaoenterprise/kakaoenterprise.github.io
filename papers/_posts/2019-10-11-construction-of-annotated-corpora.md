@@ -37,10 +37,10 @@ tag:
 
 [표 1]은 두 시스템의 성능 평가 결과이며 질문 초점 기반 질의문 분류 말뭉치를 적용한 시스템의 성능은 97.72%의 상당히 높은 결과를 보였다. 반면 키워드 기반의 Baseline 시스템의 결과는 77.77%를 보였다. 이 실험 결과를 토대로, 본 논문에서 제시한 분류 방법론으로 구축된 주석 말뭉치가 기계 학습 기반의 시스템 성능 향상에 도움을 주고 있음을 확인할 수 있었다.
 
-<img src="{{ site.url }}/assets/img/2019-10-11-construction-of-annotated-corpora/001.png" align="center">
+{% include image.html name="001.png" witdh="" align="center" %}
 <em class="center">[ 표 1 ] 문장 분류기 성능 비교</em>
 
 본 연구의 효용성을 좀 더 입증하기 위해 ‘카카오 오픈 도메인 한국어 질의응답시스템’에 이를 적용하여 보았다. 이 시스템은 사용자 질의가 주어졌을 때 해당 질의로 웹 검색 후, 검색된 문서를 기계 독해를 통해 분석하고, 이를 통합하여 사용자에게 정답으로 제시한다. 이 과정에서 질의문의 육하원칙 분류 결과는 웹 검색을 위한 쿼리 확장으로 사용된다. 앞서 실험에서 결정했던 키워드 기반의 Baseline 시스템과 본 연구에서 제안한 질문 초점 기반 분류 방식의 시스템을 질의응답시스템에 적용하여 성능을 비교한 결과 1.6%p 더 나은 성능을 확인했다.
 
-<img src="{{ site.url }}/assets/img/2019-10-11-construction-of-annotated-corpora/002.png" align="center">
+{% include image.html name="002.png" witdh="" align="center" %}
 <em class="center">[ 표 2 ] ‘카카오 오픈 도메인 질의응답 시스템’ 성능 비교</em>

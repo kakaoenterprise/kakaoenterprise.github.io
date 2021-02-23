@@ -35,10 +35,10 @@ AI Lab은 오류를 포함하는 한국어 문장 분류 시스템의 성능을 
 
 실험 결과에 따르면, 제안된 시스템은 기존 관련 연구에서 제안된 형태소 기반 문장 분류 시스템과 비교하여 오류를 포함한 문장 분류 문제(KT 말뭉치)에서 24.3%p, 문법적으로 옳은 문장을 분류하는 문제(WF 말뭉치)에서 0.63%p의 성능 향상을 보였다. 통합 어절 임베딩을 사용할 경우 SM 말뭉치에 대한 성능은 크게 저하되나, 제시된 실험 결과에서 보여지듯이 띄어쓰기 없는 문장 생성 방법을 사용함으로써 이러한 통합 어절 임베딩의 단점을 극복할 수 있었다. 띄어쓰기 없는 문장 생성 방법을 사용한 시스템 어절+SG의 SM 말뭉치에 대한 성능은 88.31%인데, 이는 Baseline 시스템의 83.46% 보다 오히려 4.85%p 더 향상된 것이다.
 
-<img src="{{ site.url }}/assets/img/2019-10-11-eojeol-based-embedding/001.png" width="50%" align="center">
+{% include image.html name="001.png" witdh="50%" align="center" %}
 <em class="center">[ 표 1 ] 통합 어절 임베딩 적용 실험 결과</em>
 
 [표 2]는 동일한 데이터 노이즈 추가 방법이 적용되었을 때, 통합 형태소 임베딩과 통합 어절 임베딩간의 분류 성능 비교를 보여주고 있다.
 
-<img src="{{ site.url }}/assets/img/2019-10-11-eojeol-based-embedding/002.png" width="50%" align="center">
+{% include image.html name="002.png" witdh="50%" align="center" %}
 <em class="center">[ 표 2 ] 통합 어절 임베딩과 통합 형태소 임베딩의 비교</em>

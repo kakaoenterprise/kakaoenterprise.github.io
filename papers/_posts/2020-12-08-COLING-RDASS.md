@@ -43,7 +43,7 @@ To conduct reference and document aware semantic evaluation, we first compute co
 
 # Experiments
 
-<img src="{{ site.url }}/assets/img/2020-12-08-rdass/001.png" align="center">
+{% include image.html name="001.png" witdh="" align="center" %}
 <em class="center">[ Figure 1 ] Pearson correlations and Kendall rank of the proposed evaluation metrics with human judgment</em>
 
 Figures (1a) and (1b) show the Pearson correlation and Kendall rank, respectively, of the proposed evaluation metrics with human judgment on the 200 sampled summaries. Pearson correlation measures whether the two variables are linearly related, where 1 indicates positive linear correlation and -1 indicates negative linear correlation. And Kendall rank measures the rank correlation of the two variables, where 1 indicates two variables are similar and -1 indicates dissimilar. Both correlation measure methods are widely used in summarization tasks to analyze correlation with human judgment. In the Pearson correlation matrix, the correlation with human judgment was significantly higher for the proposed evaluation metrics than for ROUGE scores. Additionally, in the Kendall rank matrix, the proposed evaluation metrics showed highest correlation with human judgment than did the ROUGE scores. Among the proposed evaluation metrics, s(p, r) showed higher performance than s(p, d) and RDASS showed the highest correlation with human judgment. These results indicate that the proposed evaluation metrics can reflect deep semantic meaning overcoming the limitations of ROUGE which based on n-gram overlap.

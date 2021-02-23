@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: SPEECH
+research-area: SPEECH/AUDIO
 title: "Affective Latent Representation of Acoustic and Lexical Features for Emotion Recognition"
 slug: sensors2020-emotion-recognition
 description: 음성의 음향・어휘 특성을 동시에 반영해 사람의 감정을 효과적으로 인식하는 아키텍처 제안

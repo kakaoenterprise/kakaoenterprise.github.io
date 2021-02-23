@@ -31,7 +31,7 @@ Metric learning is a very important process for the efficient fashion image retr
 
 The proposed method explicitly considered the three types of distances (or similarities), each of which corresponds to three types of objective functions are defined as: 1) pairwise loss function optimized using embeddings of given samples, 2) proxy-based loss function used the similarity between proxies and embeddings of given samples, and 3) loss function minimized the similarity between proxies, respectively. Since each loss function has a different amount of contribution to optimize the method, we analyze the contribution and propose a combination method considering this. Finally, because the existing sampling strategies are mainly based on a single anchor, the sampling strategies are impossible to consider each relation of an anchor and a proxy together. We also propose a sampling strategy to consider two types of relations, at the same time.
 
-<img src="{{ site.url }}/assets/img/2020-06-14-deep-metric-learning/001.png" width="80%" align="center">
+{% include image.html name="001.png" witdh="80%" align="center" %}
 <em class="center">[ Figure 1 ] Comparison with the previous and our method</em>
 
 <br/>
@@ -40,5 +40,5 @@ The proposed method explicitly considered the three types of distances (or simil
 
 We now compare the proposed method to other state-of-the art methods on In-shop Clothes Retrieval dataset. As shown in Table 1, the proposed method improves Recall@1 by 0.4%p, it is achieved to the new state-of-the art performance.
 
-<img src="{{ site.url }}/assets/img/2020-06-14-deep-metric-learning/002.png" width="70%" align="center">
+{% include image.html name="002.png" witdh="70%" align="center" %}
 <em class="center">[ Table 1 ] Retrieval performance (Recall@K, %). Superscripts denote embedding size.</em>

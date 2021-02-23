@@ -41,7 +41,7 @@ Inspired by the fact that a human reads out text in order, without skipping any 
 
 By combining the properties of flows and dynamic programming, Glow-TTS efficiently searches for the most probable monotonic alignment between text and the latent representation of speech. The proposed model is directly trained to maximize the log-likelihood of speech with the alignment.
 
-<img src="{{ site.url }}/assets/img/2020-12-15-glow-tts/001.png" align="center">
+{% include image.html name="001.png" align="center" %}
 <em class="center">[ Figure 1 ] Training and inference procedures of Glow-TTS</em>
 
 <br/>
@@ -50,9 +50,9 @@ By combining the properties of flows and dynamic programming, Glow-TTS efficient
 
 We vary the standard deviation (i.e., temperature T ) of the prior distribution at inference; Glow-TTS shows the best performance at the temperature of 0.333. For any temperature, it shows comparable performance to Tacotron 2.
 
-<img src="{{ site.url }}/assets/img/2020-12-15-glow-tts/002.png" width="60%" align="center">
+{% include image.html name="002.png" witdh="60%" align="center" %}
 <em>[ Table 1 ] The Mean Opinion Score (MOS) of single speaker TTS models with 95% confidence intervals.
 On average, Glow-TTS shows a 15.7 times faster synthesis speed than Tacotron 2. The CER(character error rate) of Tacotron 2 starts to grow when the length of input characters exceeds about 260. On the other hand, even though our model has not seen such long texts during training, it shows robustness to long texts.</em>
 
-<img src="{{ site.url }}/assets/img/2020-12-15-glow-tts/003.png" align="center">
+{% include image.html name="003.png" align="center" %}
 <em class="center">[ Figure 2 ] Comparison of inference time and length robustness</em>
