@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: SPEECH/VIDEO
+research-area: SPEECH/AUDIO
 title: Speech Enhancement Using a Two-Stage Network for an Efficient Boosting Strategy
 slug: icassp2019-speech-enhancement
 description:

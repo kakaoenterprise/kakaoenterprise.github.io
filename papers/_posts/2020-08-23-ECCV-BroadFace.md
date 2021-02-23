@@ -11,7 +11,7 @@ authors:
   - tony:카카오
   - isaac:카카오엔터프라이즈
 paper: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540511.pdf
-code:
+code: https://github.com/kakaoenterprise/BroadFace
 tag:
   - Face Recognition
 ---
@@ -25,6 +25,10 @@ tag:
 그 결과, BroadFace를 적용한 얼굴 인식 모델은 더 많은 인물 정보를 고려하면서도, (추론 시) 연산 비용을 늘리지 않고도 최고 수준의(State-of-the-Art) 성능을 획득할 수 있었습니다. AI Lab은 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
 
 <div style="text-align: right">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</div>
+
+<br/>
+
+{% include youtube.html id="p9y-gOkWgmU" %}
 
 <br/>
 
