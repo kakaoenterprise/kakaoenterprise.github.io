@@ -14,10 +14,17 @@ aiden:
 
 chris:
   korean_name: 김의성
-  profile:
+  profile: kobi.png
   github:
   web:
   description:
+
+daniel:
+    korean_name: 이다니엘
+    profile:
+    github:
+    web:
+    description: 데이터 관찰을 좋아하는 자연어처리 개발자로, kakao i가 자연어를 이해하는 데 필요한 기술을 만들고 있습니다.
 
 eileen:
   korean_name: 안애림
@@ -158,6 +165,13 @@ kevin:
   github:
   web:
   description: 카카오엔터프라이즈에서 번역엔진 연구∙개발을 담당하고 있습니다. 군복무 시절부터 딥러닝에 빠져살다, 전역후 복학대신 카카오 입사를 선택했습니다. 모두가 정보 불균형함에서 벗어나 공정한 세상에서 살 수 있도록 도움을 주는 인공지능을 만들어보고자 합니다.
+
+kobi:
+    korean_name: 고병일
+    profile:
+    github:
+    web:
+    description: 대학원 연구실에 들어가면서 부터 자연어처리에 관심을 갖게 된 같습니다. 현재 카카오엔터프라이즈에서는 카카오 i의 대화 시스템 내 대화를 관리하는 모듈 개발과 문장 임베딩 관련 연구를 하고 있습니다.
 
 leo:
   korean_name: 오경환

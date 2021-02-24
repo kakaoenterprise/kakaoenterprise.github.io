@@ -2,7 +2,6 @@
 layout: post
 research-area: SPEECH/AUDIO
 title: "U-Convolution Based Residual Echo Suppression With Multiple Encoders"
-
 slug: aaa2021-u-convolution-based-residual-eco-suppression
 description:
 published-date: 2021-06-05

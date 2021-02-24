@@ -2,7 +2,7 @@
 layout: post
 research-area: NLP
 title: "Do Response Selection Models Really Know What's Next? Utterance Manipulation Strategies for Multi-turn Response Selection"
-slug: AAAI2021-multi-turn-response-selection
+slug: aaai2021-multi-turn-response-selection
 description:
 published-date: 2021-02-02
 publisher: AAAI

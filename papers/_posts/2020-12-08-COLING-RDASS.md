@@ -4,7 +4,7 @@ research-area: NLP
 title: "Reference and Document Aware Semantic Evaluation Methods for Korean Language Summarization"
 slug: coling2020-rdass
 description: 텍스트 요약 모델을 평가하는 새로운 척도 'RDASS' 제안
-published-date: 2020-04-29
+published-date: 2020-12-08
 publisher: COLING
 authors:
   - jude:카카오
@@ -13,9 +13,9 @@ authors:
   - john:카카오엔터프라이즈
   - kobi:카카오엔터프라이즈
   - daniel:카카오엔터프라이즈
-  - jason:김응균
+  - jason:카카오엔터프라이즈
   - 조재춘:한신대학교
-paper: https://arxiv.org/abs/2005.03510
+paper: https://www.aclweb.org/anthology/2020.coling-main.491.pdf
 code:
 tag:
   - summrization
