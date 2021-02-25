@@ -12,7 +12,7 @@ authors:
   - 김원재:카카오
   - 유기현:카카오엔터프라이즈/POSTECH
   - 조민수:POSTECH
-paper: https://arxiv.org/abs/2009.04170
+paper: https://arxiv.org/pdf/2009.04170.pdf
 code:
 tag:
   - image retrieval

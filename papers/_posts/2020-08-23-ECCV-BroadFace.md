@@ -42,7 +42,7 @@ The datasets of face recognition contain an enormous number of identities and in
 
 We introduce BroadFace, which is a simple yet effective way to cover a large number of instances and identities. BroadFace learns globally well-optimized identity-representative vectors from a massive number of embedding vectors. For example, on a single Nvidia V100 GPU, the size of a mini-batch for ResNet-100 is at most 256, whereas BroadFace can utilize more than 8k instances at once. The following describes each step.
 
-{% include image.html name="001.png" witdh="95%" align="center" %}
+{% include image.html name="001.png" width="" align="center" %}
 <em>[ Figure 1 ] Learning process of the proposed method. BroadFace deploys large queues to store embedding vectors and their corresponding identity-representative vectors per iteration. The embedding vectors of the past instances stored in the queues are used to compute loss for identity-representative vectors. BroadFace effectively learns from tens of thousands of instances for each iteration.</em>
 
 <br/>
@@ -53,16 +53,16 @@ To show the effectiveness of our BroadFace, we evaluate the proposed method on v
 
 ## 1. Experimental Results
 
-{% include image.html name="002.png" witdh="95%" align="center" %}
+{% include image.html name="002.png" width="90%" align="center" %}
 <em class="center">[ Table 1 ] Verification accuracy (%) on LFW and YTF.</em>
 
-{% include image.html name="003.png" witdh="95%" align="center" %}
+{% include image.html name="003.png" width="90%" align="center" %}
 <em>[ Table 2 ] Verification evaluation with a True Accept Rate at a certain False Accept Rate(TAR@FAR) from 1e-4 to 1e-6 on IJB-B and IJB-C. † denotes BroadFace trained by CosFace[40].</em>
 
 ## 2. Ablation Studies
 
-{% include image.html name="004.png" witdh="95%" align="center" %}
+{% include image.html name="004.png" width="85%" align="center" %}
 <em>[ Table 3 ] Effects of BroadFace varying the size of the queue and the type of the backbone network on IJB-B dataset in face recognition.</em>
 
-{% include image.html name="005.png" witdh="95%" align="center" %}
+{% include image.html name="005.png" width="95%" align="center" %}
 <em>[ Figure 2 ] (a) the recall depending on the size of the queue in BroadFace with and without our compensation function; the red line indicates the recall of ArcFace (baseline) on the test set. (b) the learning curve for the test set when the size of the queue is 32k; ArcFace reaches the highest recall at the 45th epoch, our BroadFace reaches the highest recall at the 10th epoch, and the learning process collapses without our compensation function.</em>

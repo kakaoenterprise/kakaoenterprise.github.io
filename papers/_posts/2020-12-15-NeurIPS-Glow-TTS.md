@@ -50,7 +50,7 @@ By combining the properties of flows and dynamic programming, Glow-TTS efficient
 
 We vary the standard deviation (i.e., temperature T ) of the prior distribution at inference; Glow-TTS shows the best performance at the temperature of 0.333. For any temperature, it shows comparable performance to Tacotron 2.
 
-{% include image.html name="002.png" witdh="60%" align="center" %}
+{% include image.html name="002.png" width="60%" align="center" %}
 <em>[ Table 1 ] The Mean Opinion Score (MOS) of single speaker TTS models with 95% confidence intervals.
 On average, Glow-TTS shows a 15.7 times faster synthesis speed than Tacotron 2. The CER(character error rate) of Tacotron 2 starts to grow when the length of input characters exceeds about 260. On the other hand, even though our model has not seen such long texts during training, it shows robustness to long texts.</em>
 

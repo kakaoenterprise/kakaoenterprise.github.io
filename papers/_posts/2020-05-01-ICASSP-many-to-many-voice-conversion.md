@@ -12,7 +12,7 @@ authors:
   - 이건녕:고려대학교
   - 유인철:고려대학교
   - 육동석:고려대학교
-paper: https://arxiv.org/abs/2002.06328
+paper: https://arxiv.org/pdf/2002.06328.pdf
 code:
 tag:
   - Voice Conversion

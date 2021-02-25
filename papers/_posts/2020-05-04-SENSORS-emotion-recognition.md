@@ -10,7 +10,7 @@ authors:
   - chris:GIST/카카오엔터프라이즈
   - 송형찬:GIST
   - 신종원:GIST
-paper: https://www.mdpi.com/1424-8220/20/9/2614
+paper: https://www.mdpi.com/1424-8220/20/9/2614/htm
 code:
 tag:
   - Emotion
