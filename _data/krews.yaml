@@ -21,7 +21,7 @@ chris:
 
 daniel:
     korean_name: 이다니엘
-    profile:
+    profile: daniel.png
     github:
     web:
     description: 데이터 관찰을 좋아하는 자연어처리 개발자로, kakao i가 자연어를 이해하는 데 필요한 기술을 만들고 있습니다.
@@ -147,14 +147,14 @@ joshua:
 
 jude:
     korean_name: 이동엽
-    profile:
+    profile: jude.png
     github:
     web:
     description:
 
 kaylee:
     korean_name: 이서진
-    profile:
+    profile: kaylee.png
     github:
     web:
     description: 컴퓨터가 한국어를 잘 이해하고 표현하는 걸 도와주는 언어공학자입니다.
@@ -168,7 +168,7 @@ kevin:
 
 kobi:
     korean_name: 고병일
-    profile:
+    profile: kobi.png
     github:
     web:
     description: 대학원 연구실에 들어가면서 부터 자연어처리에 관심을 갖게 된 같습니다. 현재 카카오엔터프라이즈에서는 카카오 i의 대화 시스템 내 대화를 관리하는 모듈 개발과 문장 임베딩 관련 연구를 하고 있습니다.

@@ -31,16 +31,16 @@ Using a single encoder and decoder for all directions and training with English-
 
 # Methods
 
-SLNI is a regularizer that promotes sparse and decorrelated representations by penalizing correlation between neurons. We apply SLNI on the encoder-side. Outputs of every layer normalization (after both self-attention and position-wise feed-forward sublayers) are subject to regularization.
+SLNI is a regularizer that promotes sparse and decorrelated representations by penalizing correlation between neurons. We apply SLNI on the encoder-side. Outputs of every layer normalization(after both self-attention and position-wise feed-forward sublayers) are subject to regularization.
 
 <br/>
 
 # Experiments
 
-Unlike the naive model, our model trained with SLNI shows stable performance across all training conditions, including the Compound setting where the naive model completely degenerates. Further- more, there is no evident performance decrease in supervised directions.
+Unlike the naive model, our model trained with SLNI shows stable performance across all training conditions, including the Compound setting where the naive model completely degenerates. Furthermore, there is no evident performance decrease in supervised directions.
 
 {% include image.html name="001.png" witdh="" align="center" %}
-<em>[ Table 1 ] Averaged BLEU scores for zero-shot (ZS) and supervised (SV) tasks, and ratio(%) of zero-shot outputs wrongly decoded into English.</em>
+<em>[ Table 1 ] Averaged BLEU scores for zero-shot(ZS) and supervised(SV) tasks, and ratio(%) of zero-shot outputs wrongly decoded into English.</em>
 
 <br/>
 
