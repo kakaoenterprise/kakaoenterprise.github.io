@@ -3,7 +3,7 @@
 
   &-info {
     color: $default-tint;
-    font-family: $serif-secondary;
+    font-family: $sans-serif;
     letter-spacing: 0.5px;
 
     span {
@@ -38,6 +38,7 @@
   }
 
   p {
+    font-weight: 300;
     margin: 0 0 1rem;
     text-align: justify;
   }
