@@ -6,6 +6,7 @@ slug: eccv2020-broadface
 description: 수많은 사람의 얼굴을 효과적으로 학습하는 기법 'BroadFace' 제안
 published-date: 2020-08-23
 publisher: ECCV
+publisher-fullname : European Conference on Computer Vision (ECCV)
 authors:
   - aiden:카카오엔터프라이즈
   - tony:카카오
@@ -16,13 +17,15 @@ tag:
   - Face Recognition
 ---
 
-카카오엔터프라이즈 AI Lab(김용현, 신종주)과 카카오(박원표)가 함께 쓴 논문 ‘BroadFace: Looking at Tens of Thousands of People at Once for Face Recognition’이 유럽컴퓨터비전학회(이하 ECCV)에 실렸습니다. ECCV는 컴퓨터 비전 분야의 논문을 발표하는 학술대회로, 올해에는 접수된 논문 중 26%인 1,360편이 통과됐습니다.
+카카오엔터프라이즈와 카카오의 공동 연구 논문이 유럽컴퓨터비전학회(ECCV)에 실렸습니다. ECCV는 컴퓨터 비전 분야의 논문을 발표하는 학술대회로, 올해에는 접수된 논문 중 26%인 1,360편이 통과됐습니다.
 
 얼굴 인식 모델은 수만에서 수십만 명에 달하는 인물 분류를 목표로 합니다. 미니배치(mini-batch)를 활용한 기존의 학습 방식은 한 번에 극소수의 인물만 다를 수 있어 얼굴 인식을 위한 최적의 결정 경계(decision boundary) 탐색을 어렵게 만듭니다.
 
-이에 AI Lab은 수많은 인물을 효과적으로 학습하는 기법인 BroadFace를 제안했습니다. BroadFace는 학습 과정에서 Queue에 저장해 둔 특징 벡터(embedding vector)를 활용, 분류 모델의 가중치 행렬(weight matrix)이 다수의 인물을 종합적으로 고려하도록 합니다. 이때, 특정 시점 대기열에 축적된 특징 벡터가 업데이트된 모델 가중치를 반영할 수 있게 하는 새로운 보상 기법도 마련했습니다.
+공동 연구팀은 수많은 인물을 효과적으로 학습하는 기법인 BroadFace를 제안했습니다. BroadFace는 학습 과정에서 Queue에 저장해 둔 특징 벡터(embedding vector)를 활용, 분류 모델의 가중치 행렬(weight matrix)이 다수의 인물을 종합적으로 고려하도록 합니다. 이때, 특정 시점 대기열에 축적된 특징 벡터가 업데이트된 모델 가중치를 반영할 수 있게 하는 새로운 보상 기법도 마련했습니다.
 
-그 결과, BroadFace를 적용한 얼굴 인식 모델은 더 많은 인물 정보를 고려하면서도, (추론 시) 연산 비용을 늘리지 않고도 최고 수준의(State-of-the-Art) 성능을 획득할 수 있었습니다. AI Lab은 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
+그 결과, BroadFace를 적용한 얼굴 인식 모델은 더 많은 인물 정보를 고려하면서도, (추론 시) 연산 비용을 늘리지 않고도 최고 수준의(State-of-the-Art) 성능을 획득할 수 있었습니다.
+
+카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
 
 <div style="text-align: right">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</div>
 

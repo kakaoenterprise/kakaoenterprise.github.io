@@ -6,6 +6,7 @@ slug: iapr-mva2017-faster-rnnn-for-object-detection
 description:
 published-date: 2017-05-08
 publisher: IAPR MVA
+putlisher-fullname : IAPR Workshop on MVA (Machine Vision Applications)
 authors:
   - joshua:카카오
   - michael:카카오

@@ -6,7 +6,7 @@ slug: eccv2020-deep-metric-learning
 description: 여러 모델간 상호학습 방식으로 이미지 검색 성능을 높이는 기법 제안
 published-date: 2020-09-09
 publisher: ECCV workshop on TASK-CV
-publisher-fullname: ECCV workshop on TASK-CV(Transferring and Adapting Source Knowledge in Computer Vision)
+publisher-fullname: ECCV workshop on Transferring and Adapting Source Knowledge in Computer Vision (TASK-CV)
 authors:
   - tony:카카오
   - 김원재:카카오

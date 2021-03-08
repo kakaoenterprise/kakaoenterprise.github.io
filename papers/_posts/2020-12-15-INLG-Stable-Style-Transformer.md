@@ -6,6 +6,7 @@ slug: inlg2020-stable-style-transformer
 description: 비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 'SST' 제안
 published-date: 2020-12-15
 publisher: INLG
+publisher-fullname : International Conference on Natural Language Generation (INLG)
 authors:
   - rung:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.inlg-1.25.pdf
@@ -14,11 +15,13 @@ tag:
   - Style Transfer
 ---
 
-카카오엔터프라이즈 AI Lab(이주성)이 쓴 논문 'Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer(이하 SST)'가 자연어생성국제학술대회(이하 INLG)<sup id="a1">[1](#f1)</sup>에 게재 승인됐습니다.
+카카오엔터프라이즈 논문이 자연어생성국제학술대회(이하 INLG)<sup id="a1">[1](#f1)</sup>에 게재 승인됐습니다.
 
-텍스트 스타일 변환(text style transfer)은 입력 문장의 내용(content)은 보전하면서, 문장의 속성(attribute)에 해당하는 값을 바꾸는 태스크를 가리킵니다. 이번 논문에서 AI Lab은 기존 방식대로 비병렬 데이터셋을 활용해 좀 더 자연스러운 문장을 생성하는 새로운 텍스트 스타일 변환 모델인 SST를 제안했습니다. 스타일 변환은 두 단계를 걸쳐 진행됩니다. 첫 번째, 분류기(classifier)를 통해 문장에서 속성을 표현하는 부분을 가리키는 토큰을 삭제합니다. 두 번째, 인코더와 디코더를 통해 속성을 제외한 나머지 문장 토큰에 변환하려는 스타일을 합쳐서 문장을 생성합니다. 그 결과, AI Lab은 SST가 자동화된 평가 척도에서 문장을 안정적으로 합성함을 확인할 수 있었습니다.
+카카오엔터프라이즈는 비병렬 데이터셋을 이용해 자연스러운 문장을 생성하는 새로운 텍스트 스타일 변환(text style transfer) 모델인 Stable Style Transformer(이하 SST)를 제안했습니다. 텍스트 스타일 변환은 입력 문장의 내용(content)은 보전하면서, 문장의 속성(attribute)에 해당하는 값을 바꾸는 태스크를 가리킵니다.
 
-AI Lab은 텍스트 스타일 변환뿐만 아니라 사람의 감정이나 대화 상황을 이해하는 공감적 대화(empathetic conversation), 데이터를 문장으로 표현하기(data-to-text), 페르소나 채팅(persona chat)<sup id="a2">[2](#f2)</sup>과 같이 원하는 조건에 따라 문장을 생성하는 자연어 생성에 관한 다양한 연구를 진행할 계획입니다.
+SST의 스타일 변환은 두 단계를 걸쳐 진행됩니다. 첫 번째, 분류기(classifier)를 통해 문장에서 속성을 표현하는 부분을 가리키는 토큰을 삭제합니다. 두 번째, 인코더와 디코더를 통해 속성을 제외한 나머지 문장 토큰에 변환하려는 스타일을 합쳐서 문장을 생성합니다. 그 결과 카카오엔터프라이즈는 자동화된 평가 척도에서 문장을 안정적으로 합성함을 확인할 수 있었습니다.
+
+카카오엔터프라이즈는 텍스트 스타일 변환뿐만 아니라 사람의 감정이나 대화 상황을 이해하는 공감적 대화(empathetic conversation), 데이터를 문장으로 표현하기(data-to-text), 페르소나 채팅(persona chat)<sup id="a2">[2](#f2)</sup>과 같이 원하는 조건에 따라 문장을 생성하는 자연어 생성에 관한 다양한 연구를 진행할 계획입니다.
 
 <br/>
 

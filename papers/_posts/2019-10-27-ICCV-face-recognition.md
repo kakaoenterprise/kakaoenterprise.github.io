@@ -6,6 +6,7 @@ slug: iccv2019-face-recognition
 description:
 published-date: 2019-10-27
 publisher: ICCV
+publisher-fullname : International Conference on Computer Vision (ICCV)
 authors:
   - 강봉남:POSTECH/StradVision
   - aiden:POSTECH/카카오

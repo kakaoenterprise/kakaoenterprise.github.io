@@ -4,9 +4,10 @@ use-katex: true
 research-area: COMPUTER VISION
 title: "GroupFace: Learning Latent Groups and Constructing Group-based Representations for Face Recognition"
 slug: cvpr2020-groupface
-description: 얼굴 인식에 전문화된 새로운 아키텍처인 'GroupFace' 제안
+description: 얼굴 인식에 전문화된 새로운 아키텍처 'GroupFace' 제안
 published-date: 2020-06-14
 publisher: CVPR
+publisher-fullname : Computer Vision and Pattern Recognition (CVPR)
 authors:
   - aiden:카카오엔터프라이즈
   - tony:카카오
@@ -19,9 +20,13 @@ tag:
  - Face Recognition
 ---
 
-카카오엔터프라이즈 AI Lab(김용현, 노명철, 신종주)이 카카오(박원표)와 공동으로 쓴 논문 ‘GroupFace: Learning Latent Groups and Constructing Group-based Representations for Face Recognition’이 컴퓨터 비전 및 패턴 인식 컨퍼런스(CVPR)에 실렸습니다. CVPR는 컴퓨터 비전과 패턴 인식 분야의 논문을 발표하는 세계 최대 규모의 학술 대회로, IEEE(Institute of Electrical and Electronics Engineers)와 CVF(Computer Vision Foundation)가 공동 주최합니다. 올해 CVPR에는 접수된 논문 중 25%인 1,470편이 통과됐습니다.
+카카오엔터프라이즈와 카카오의 공동 연구 논문이 컴퓨터 비전 및 패턴 인식 컨퍼런스(CVPR)에 실렸습니다.
 
-이번 논문에서 AI Lab은 얼굴 인식에 전문화된 새로운 아키텍처인 GroupFace를 제안했습니다. GroupFace는 얼굴의 유사성을 그룹화해 표현하는 여러 개의 특징 벡터(group-aware representation)를 적용해 모델의 표현력을 높였습니다. 사람의 개입 없이도 각 그룹에 속하는 샘플 수의 균형을 맞추는 Self-distributed Label 기법도 적용했습니다. 그 결과, 제안된 방법은 1:1 얼굴 검증과 1:N 얼굴 인식 작업에서 최소한의 추가 연산만으로 여러 데이터셋에 대해 현재 최고 수준의(SOTA) 성능을 얻을 수 있었습니다. AI Lab은 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
+공동 연구팀은 얼굴 인식에 전문화된 새로운 아키텍처인 GroupFace를 제안했습니다. GroupFace는 얼굴의 유사성을 그룹화해 표현하는 여러 개의 특징 벡터(group-aware representation)를 적용해 모델의 표현력을 높였습니다. 사람의 개입 없이도 각 그룹에 속하는 샘플 수의 균형을 맞추는 Self-distributed Label 기법도 적용했습니다.
+
+공동 연구팀이 1:1 얼굴 검증과 1:N 얼굴 인식 작업에서 최소한의 추가 연산만으로 여러 데이터셋에 대해 현재 최고 수준의(SOTA) 성능을 얻을 수 있었습니다.
+
+카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
 
 <div style="text-align: right">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</div>
 

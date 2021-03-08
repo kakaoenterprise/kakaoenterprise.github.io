@@ -6,6 +6,7 @@ slug: icassp2019-emotion-recognition
 description:
 published-date: 2019-05-12
 publisher: ICASSP
+publisher-fullname : International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
 authors:
   - chris:GIST/카카오
   - 신종원:GIST

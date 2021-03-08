@@ -7,6 +7,7 @@ slug: neurips2020-hifi-gan
 description: 고품질의 음성 오디오를 빠르게 합성하는 TTS 모델 'Hi-Fi GAN' 제안
 published-date: 2020-12-15
 publisher: NeurIPS
+publisher-fullname: Neural Information Processing Systems (NeurIPS)
 authors:
     - henry:카카오엔터프라이즈
     - jay:카카오엔터프라이즈
@@ -16,13 +17,13 @@ tag:
   - speech synthesis
 ---
 
-카카오엔터프라이즈 AI Lab(공정일, 김재현, 배재경)이 쓴 논문 ‘HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis’가 신경정보처리시스템학회(NeurIPS)에 게재 승인됐습니다. 올해 학회에는 총 9,467편 중 1,900편이 통과됐습니다.
+최근 음성합성 연구에서는 GAN(generative adversarial networks) 구조를 활용해 보코더(vocoder)의 음성 합성 속도와 메모리 효율을 높이는 시도가 있었습니다. 하지만 이런 방식의 보코더가 합성한 음성의 품질은 Autoregressive 모델이나 플로우 기반의 생성 모델(flow-based generative model)에 미치지 못했습니다.
 
-최근 음성합성 연구에서는 GAN(generative adversarial networks) 구조를 활용해 보코더(vocoder)의 음성 합성 속도와 메모리 효율을 높이는 시도가 있었습니다. 하지만 이런 방식의 보코더가 합성한 음성의 품질은 Autoregressive 모델이나 플로우 기반의 생성 모델(flow-based generative model)에 미치지 못했습니다. 이에 AI Lab은 음성 오디오의 주기적 신호를 구별해내는 방식으로 기존 제안된 모델보다 월등히 좋은 품질의 오디오를 빠르게 합성하는 HiFi-GAN을 제안했습니다.
+이에 카카오엔터프라이즈는 음성 오디오의 주기적 신호를 구별해내는 방식으로 기존 제안된 모델보다 월등히 좋은 품질의 오디오를 빠르게 합성하는 HiFi-GAN을 제안했습니다.
 
-AI Lab은 메모리 효율성 및 속도와 관련된 초매개변수(hyperparameter)를 조정하고, 이 값을 조합한 3가지 버전의 세부 모델로 실험을 진행했습니다. 첫 번째 버전은 인간과 비슷한 수준의 고품질 오디오를 실시간의 167.9배 속도로 합성합니다. 두번째 버전은 비교 모델 중 가장 적은 매개변수를 사용하면서도 가장 좋은 음질을 생성합니다. 세 번째 버전은 GPU에서 실시간의 1,186.8배, CPU에서 13.4배 더 빠르게 기존 모델과 비슷한 품질의 오디오를 합성합니다.
+카카오엔터프라이즈는 메모리 효율성 및 속도와 관련된 초매개변수(hyperparameter)를 조정하고, 이 값을 조합한 3가지 버전의 세부 모델로 실험을 진행했습니다. 첫 번째 버전은 인간과 비슷한 수준의 고품질 오디오를 실시간의 167.9배 속도로 합성합니다. 두번째 버전은 비교 모델 중 가장 적은 매개변수를 사용하면서도 가장 좋은 음질을 생성합니다. 세 번째 버전은 GPU에서 실시간의 1,186.8배, CPU에서 13.4배 더 빠르게 기존 모델과 비슷한 품질의 오디오를 합성합니다.
 
-AI Lab은 이번 연구로 얻은 기술력과 경험을 바탕으로 음질 개선, 맥락에 따라 다양한 스타일의 발화 생성 등 다양한 태스크를 수행하는 오디오 합성 기술을 연구할 계획입니다.
+카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 음질 개선, 맥락에 따라 다양한 스타일의 발화 생성 등 다양한 태스크를 수행하는 오디오 합성 기술을 연구할 계획입니다.
 
 <br/>
 

@@ -6,6 +6,7 @@ slug: icassp2019-speech-enhancement
 description:
 published-date: 2019-05-12
 publisher: ICASSP
+publisher-fullname : International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
 authors:
   - jaytee:카카오
   - 한민수:KAIST

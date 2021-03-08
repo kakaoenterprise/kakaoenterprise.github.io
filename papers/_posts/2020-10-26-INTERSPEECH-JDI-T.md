@@ -6,6 +6,7 @@ slug: interspeech2020-jdi-t
 description: 음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련하는 아키텍처 'JDI-T' 제안
 published-date: 2020-10-26
 publisher: INTERSPEECH
+publisher-fullname : Conference of the International Speech Communication Association (INTERSPEECH)
 authors:
 - satoshi:카카오
 - taylor:카카오엔터프라이즈

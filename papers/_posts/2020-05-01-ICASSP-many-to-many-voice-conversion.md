@@ -3,9 +3,10 @@ layout: post
 research-area: SPEECH/AUDIO
 title: "Many-to-Many Voice Conversion using Conditional Cycle-Consistent Adversarial Networks"
 slug: icassp2020-many-to-many-voice-conversion
-description: CycleGAN을 활용해 다자 간 음성 스타일을 변환하는 기법 제안
+description: CycleGAN을 활용해 다자 간의 음성 스타일을 변환하는 기법 제안
 published-date: 2020-02-15
 publisher: ICASSP
+publisher-fullname: International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
 authors:
   - 이신동:고려대학교/카카오엔터프라이즈
   - 고봉구:고려대학교
