@@ -143,14 +143,14 @@ joshua:
   profile: joshua.png
   github:
   web:
-  description:
+  description: 카카오엔터프라이즈에서 훌륭한 동료들과 함께 얼굴 인식 관련 기술을 연구∙개발하고 있습니다. 기계의 성능 수치보다는, 사람의 행복 지수를 높이는 인공지능 기술을 만들고 싶습니다.
 
 jude:
     korean_name: 이동엽
     profile: jude.png
     github:
     web:
-    description:
+    description: 학부생 때 상품의 이미지와 텍스트를 활용한 카테고리 분류 프로젝트에 참가한 것을 계기로, 자연어처리 기술을 좀 더 체계적으로 공부해보고자 대학원에 진학했습니다. 석사 과정에서는 목적지향적 대화 시스템을 연구했습니다. 현재 카카오에서 대화 요약 및 사족 제거와 관련된 연구를 진행하고 있습니다.
 
 kaylee:
     korean_name: 이서진
