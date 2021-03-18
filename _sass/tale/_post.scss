@@ -74,4 +74,18 @@
     padding: 0;
     margin: 0;
   }
+
+  .reversefootnote {
+    visibility: hidden;
+    position: relative;
+  }
+
+  .reversefootnote:after {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    line-height: 1.5;
+    width: max-content;
+    content: "본문으로";
+  }
 }
