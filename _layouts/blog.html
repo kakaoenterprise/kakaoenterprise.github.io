@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="catalogue">
+  {% for post in site.categories.blog %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+      <div>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+          {{ post.description }}
+        </p>
+
+        <h4 class="catalogue-publisher">{{ post.publisher }} {{ post.published-date | date: "%Y. %m" }}</h4>
+      </div>
+    </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="catalogue">
+  {% for post in paginator.posts %}
+    {% if post.categories contains "papers" %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+        <div>
+          <h4 class="catalogue-research-area">{{ post.research-area }}</h4>
+          <h1 class="catalogue-title">{{ post.title }}</h1>
+          <div class="catalogue-line"></div>
+
+          <p>
+            {{ post.description }}
+          </p>
+
+          <h4 class="catalogue-publisher">{{ post.publisher }} {{ post.published-date | date: "%Y. %m" }}</h4>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span>{{ page }}</span>
+    {% elsif page == 1 %}
+      <span><a href="{{ '/' | relative_url }}">{{ page }}</a></span>
+    {% else %}
+      <span><a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></span>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+</div>
