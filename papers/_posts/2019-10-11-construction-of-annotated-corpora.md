@@ -47,9 +47,10 @@ tag:
 {% include image.html name="002.png" width="" align="center" %}
 <em class="center">[ 표 2 ] ‘카카오 오픈 도메인 질의응답 시스템’ 성능 비교</em>
 
+<br/>
 
 -----
 
-# footnote
+### 각주
 
 [^1]: 자연어 질문에서 사용자가 궁금해하는 대상을 지창한다.

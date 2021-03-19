@@ -16,11 +16,11 @@ tag:
   - Fasion
 ---
 
-카카오엔터프라이즈 논문이 컴퓨터 비전 및 패턴 인식 컨퍼런스(CVPR) 워크숍 주제 중 하나인 CVFAD(Computer Vision for Fashion, Art and Design)에 게재 승인됐습니다.
+카카오엔터프라이즈 논문이 CVPR(컴퓨터 비전 및 패턴 인식 컨퍼런스) 워크숍 주제 중 하나인 CVFAD에 게재 승인됐습니다.
 
 올해로 3번째 열린 CVFAD에서는 패션, 예술, 디자인 등의 창의성이 요구되는 분야에 필요한 생성 모델(generative models), 검색(retrieval), 제품 추천(product recommendation), 이미지 분할(image segmentation), 속성 인식(attribute discovery), 트렌드 예측(trend forecast) 등에 관한 최신의 컴퓨터 비전과 머신러닝 방법론을 다룹니다.
 
-카카오엔터프라이즈는 패션 이미지를 효율적으로 검색하는 거리 학습(metric learning) 방법론을 제안했습니다. 기존의 페어(pair)/트리플렛(triplet) 기반 손실 함수와 프록시(proxy) 기반 손실 함수를 동시에 훈련하면서도, 이 과정에서 발생하는 샘플링(sampling)과 초매개변수(hyperparameter) 관련 문제를 해결했습니다. 제안된 방법은 In-Shop Clothes Retrieval 데이터셋에 대해 현재 최고 수준의(SOTA) 성능을 얻을 수 있었습니다.
+카카오엔터프라이즈는 패션 이미지를 효율적으로 검색하는 거리 학습(metric learning) 방법론을 제안했습니다. 기존의 페어(pair)/트리플렛(triplet) 기반 손실 함수와 프록시(proxy) 기반 손실 함수를 동시에 훈련하면서도, 이 과정에서 발생하는 샘플링(sampling)과 초매개변수(hyperparameter) 문제를 해결했습니다. 제안된 방법은 In-Shop Clothes Retrieval 데이터셋에서 현재 최고 수준의(SOTA) 추론 성능을 냈습니다.
 
 카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 카카오 i의 시각 엔진과 딥러닝 기반 유사 스타일 추천 기술을 고도화할 계획입니다.
 

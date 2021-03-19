@@ -42,7 +42,7 @@ HiFi-GAN consists of one generator and two discriminators: multi-scale and multi
 {% endraw %}</em>
 
 {% include image.html name="002.png" align="center" %}
-<em>[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.
+<em>[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.</em>
 
 <br/>
 

@@ -19,9 +19,13 @@ code:
 tag:
   - TTS
 ---
-카카오(임단)와 카카오엔터프라이즈 AI Lab(장원, 오경환, 박혜영, 김봉완, 윤재삼)이 함께 쓴 논문 ‘JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment(이하 JDI-T)’가 Interspeech에 게재 승인됐습니다. Interspeech는 음성 처리 과학기술 분야의 논문을 발표하는 세계 최대 규모의 학술 대회입니다.
+카카오(임단)와 카카오엔터프라이즈가 함께 쓴 논문이 음성 처리 과학기술 분야의 논문을 발표하는 세계 최대 규모의 학술 대회인 Interspeech에 게재 승인됐습니다.
 
-FastSpeech와 DurIAN과 같은 최신의 음성 합성 모델은 오류가 없는 고품질의 멜-스펙트로그램(Mel-spectrogram)<sup id="a1">[1](#f1)</sup> 생성에 탁월합니다. 하지만 훈련에 필요한 음소(phoneme)의 길이 정보를 확보하기 위해서는 합성 모델과는 별도로, 음소와 오디오를 명시적으로 정렬(explicit alignment)하는 모델을 따로 준비해야 하는 번거로움이 따릅니다. 이에 AI Lab은 음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련(joint training)하는 아키텍처인 JDI-T를 제안했습니다. AI Lab이 제안한 모델은 자사 내부 데이터와 공개 한국어 데이터셋인 KSS(Korean Single Speaker Speech)에서 다른 최신 음성 합성 모델과 비교해 우수한 성능을 보였습니다. AI Lab은 향후 다양한 시나리오를 대비해 자사 음성 합성 기술을 고도화할 계획입니다.
+FastSpeech와 DurIAN과 같은 최신의 음성 합성 모델은 오류가 없는 고품질의 멜-스펙트로그램(Mel-spectrogram)[^1] 생성에 탁월합니다. 하지만 훈련에 필요한 음소(phoneme)의 길이 정보를 확보하기 위해서는 합성 모델과는 별도로, 음소와 오디오를 명시적으로 정렬(explicit alignment)하는 모델을 따로 준비해야 하는 번거로움이 따릅니다.
+
+이에 카카오엔터프라이즈는 음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련(joint training)하는 아키텍처인 JDI-T를 제안했습니다. 제안 모델은 자사 내부 데이터와 공개 한국어 데이터셋인 KSS(Korean Single Speaker Speech)에서 다른 최신 음성 합성 모델과 비교해 우수한 성능을 보였습니다.
+
+카카오엔터프라이즈는 향후 다양한 시나리오를 대비해 자사 음성 합성 기술을 고도화할 계획입니다.
 
 <br/>
 
@@ -54,4 +58,4 @@ In addition to its high-quality speech synthesis, the proposed model has benefit
 -----
 ### footnote
 
-<b id="f1"><sup>1</sup></b> 음성 신호를 멜 스케일(mel-scale)에 따라 주파수를 분석하여 얻은 특징 벡터로, 기계학습 모델에서 음성을 나타내는 데 주로 쓰인다. [본문으로](#a1)
+[^1] 음성 신호를 멜 스케일(mel-scale)에 따라 주파수를 분석하여 얻은 특징 벡터로, 기계학습 모델에서 음성을 나타내는 데 주로 쓰인다.
