@@ -9,11 +9,11 @@ layout: default
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
 
-        <p>
+        <p style="font-weight:10">
           {{ post.description }}
         </p>
 
-        <h4 class="catalogue-publisher">{{ post.publisher }} {{ post.published-date | date: "%Y. %m" }}</h4>
+        <h4 class="catalogue-publisher">{{ post.publisher }} {{ post.published-date | date: "%Y.%m.%d" }}</h4>
       </div>
     </a>
   {% endfor %}
