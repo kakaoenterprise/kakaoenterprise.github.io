@@ -1,12 +1,11 @@
 # Site settings
 title:          KEP R&D Site
 description:    "카카오엔터프라이즈 Research&Development Blog"
-url:            "https://pages.github.kakaocorp.com/keprnd"
+url:            "https://pages.github.kakaocorp.com/ailab-paper"
 
 # Author
 author:
   name:         카카오엔터프라이즈 R&D
-  email:        ailab-papers@kakaoenterprise.com
 
 # Build settings
 markdown:       kramdown
