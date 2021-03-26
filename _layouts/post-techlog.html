@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="post-info">
+    <h4 class="catalogue-research-area">{{ page.research-area }}</h4>
+  </div>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <h4>{{ page.published-date }}</h4>
+
+  {% if page.paper or page.code or page.techlog %}
+    <div class="link-button-group">
+      {% if page.paper %}
+        <a href="{{ page.paper }}" target="_blank">
+          <button class="link-button">
+            <i class="far fa-file-alt"></i> Paper
+          </button>
+        </a>
+      {% endif %}
+
+      {% if page.code %}
+        <a href="{{ page.code }}" target="_blank">
+          <button class="link-button">
+            <i class="fab fa-github"></i> Code
+          </button>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {{ content }}
+
+  <div class="post-line"></div>
+  <div class="post-tag-box-container">
+    {% for tag in page.tags %}
+      <div class="post-tag-box">{{ tag }}</div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
