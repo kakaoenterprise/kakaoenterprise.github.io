@@ -14,7 +14,7 @@
   &-title {
     color: $default-shade;
     font-family: $sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
   }
 
@@ -38,9 +38,17 @@
   }
 
   p {
+    font-size: 1.1rem;
     font-weight: 300;
     margin: 0 0 1rem;
     text-align: justify;
+    &.line {
+      text-align: center;
+      border-top: 0.4rem solid $default-shade;
+      display: block;
+      margin: 0 auto 3rem;
+      width: 4rem;
+    }
   }
 
   a:hover {
@@ -51,12 +59,36 @@
     margin: 0 auto 0.5rem;
   }
 
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0.1rem;
+    width: 100%;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+
+  tr,td {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    &.key {
+      font-weight: bold;
+    }
+    &.left {
+      text-align: left;
+      padding-left: 0.4rem;
+    }
+  }
+
   em {
-    color: $default-tint;
+    color: #808080;
     display: block;
     font-family: $sans-serif;
-    font-size: 0.9rem;
     font-style: normal;
+    font-size: 1rem;
     text-align: left;
     &.center {
         text-align: center;
