@@ -1,11 +1,11 @@
 # Site settings
-title:          Kakao Enterprise AI Lab
-description:    "Kakao Enterprise AI Lab"
-url:            "https://pages.github.kakaocorp.com/ailab-papers"
+title:          KEP R&D Site
+description:    "카카오엔터프라이즈 Research&Development Blog"
+url:            "https://pages.github.kakaocorp.com/keprnd"
 
 # Author
 author:
-  name:         Kakao Enterprise AI Lab
+  name:         카카오엔터프라이즈 R&D
   email:        ailab-papers@kakaoenterprise.com
 
 # Build settings
