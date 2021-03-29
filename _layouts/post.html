@@ -2,75 +2,87 @@
 layout: default
 ---
 
-<div class="post">
-  <div class="post-info">
+<article class="post">
+  <header class="post-header">
     <h4 class="catalogue-research-area">{{ page.research-area }}</h4>
-  </div>
-  <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title">{{ page.title }}</h1>
 
-  {% assign formatted_authors = "" | split: "," %}
+    {% assign formatted_authors = "" | split: "," %}
 
-  {% for author in page.authors %}
-    {% assign author_data = author | split: ":" %}
-    {% assign id =  author_data[0] %}
-    {% assign company =  author_data[1] %}
+    {% for author in page.authors %}
+      {% assign author_data = author | split: ":" %}
+      {% assign id =  author_data[0] %}
+      {% assign company =  author_data[1] %}
 
-    {% assign krew_data = site.data.krews[id] %}
+      {% assign krew_data = site.data.krews[id] %}
 
-    {% if krew_data %}
-        {% assign korean_name = krew_data.korean_name %}
-    {% else %}
-        {% assign korean_name = id %}
-    {% endif %}
-
-    {% capture formatted_author %}{{ korean_name }}({{company}}){% endcapture %}
-
-    {% assign formatted_authors = formatted_authors | push: formatted_author %}
-  {% endfor %}
-
-  {{ formatted_authors | join: ", " }}
-
-  <h4>
-      {% if page.publisher-fullname %}
-        {{ page.publisher-fullname }}
+      {% if krew_data %}
+          {% assign korean_name = krew_data.korean_name %}
       {% else %}
-        {{ page.publisher }}
-      {% endif %}
-  </h4>
-  <h4>{{ page.published-date }}</h4>
-
-  {% if page.paper or page.code %}
-    <div class="link-button-group">
-      {% if page.paper %}
-        <a href="{{ page.paper }}" target="_blank">
-          <button class="link-button">
-            <i class="far fa-file-alt"></i> Paper
-          </button>
-        </a>
+          {% assign korean_name = id %}
       {% endif %}
 
-      {% if page.code %}
-        <a href="{{ page.code }}" target="_blank">
-          <button class="link-button">
-            <i class="fab fa-github"></i> Code
-          </button>
-        </a>
-      {% endif %}
-    </div>
-  {% endif %}
+      {% capture formatted_author %}{{ korean_name }}({{company}}){% endcapture %}
+
+      {% assign formatted_authors = formatted_authors | push: formatted_author %}
+    {% endfor %}
+
+    {{ formatted_authors | join: ", " }}
+
+    <h4>
+        {% if page.publisher-fullname %}
+          {{ page.publisher-fullname }}
+        {% else %}
+          {{ page.publisher }}
+        {% endif %}
+    </h4>
+
+    <h4>{{ page.published-date }}</h4>
+
+    {% if page.paper or page.code or page.techlog %}
+      <div class="link-button-group">
+        {% if page.paper %}
+          <a href="{{ page.paper }}" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        {% endif %}
+
+        {% if page.code %}
+          <a href="{{ page.code }}" target="_blank">
+            <button class="link-button">
+              <i class="fab fa-github"></i> Code
+            </button>
+          </a>
+        {% endif %}
+
+        {% if page.techlog %}
+          <a href="{{ site.url }}/techlog/{{ page.techlog }}" target="_self">
+            <button class="link-button">
+              <i></i> Techlog
+            </button>
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </header>
 
   <div class="post-line"></div>
 
-  {{ content }}
+  <div class="post-body">
+    {{ content }}
+  </div>
 
   <div class="post-line"></div>
+
   <div class="post-tag-box-container">
     {% for tag in page.tags %}
-      <div class="post-tag-box">{{ tag }}</div>
+      <div class="post-tag-box">#{{ tag }}</div>
     {% endfor %}
   </div>
-</div>
 
+</article>
 <div class="pagination">
     <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
 </div>

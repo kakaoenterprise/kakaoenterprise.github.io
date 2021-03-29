@@ -1,10 +1,11 @@
 .post {
   padding: 3rem 0;
 
-  &-info {
+  &-header {
     color: $default-tint;
     font-family: $sans-serif;
     letter-spacing: 0.5px;
+    max-width: 1200px;
 
     span {
       font-style: italic;
@@ -18,23 +19,25 @@
     margin: 1rem 0;
   }
 
+  &-body {
+    margin:0 auto;
+    max-width: 900px;
+  }
+
   &-line {
     border-top: 0.4rem solid $default-shade;
     display: block;
     margin: 0 auto 3rem;
     width: 4rem;
   }
-
   &-tag-box-container {
       display: flex;
   }
-
   &-tag-box {
     display: block;
-    border: solid 0.1em;
     width: auto;
     margin: 0.5em;
-    padding: 0.5em;
+    padding: 0.2em;
   }
 
   p {
@@ -42,12 +45,26 @@
     font-weight: 300;
     margin: 0 0 1rem;
     text-align: justify;
+
     &.line {
       text-align: center;
       border-top: 0.4rem solid $default-shade;
       display: block;
       margin: 0 auto 3rem;
       width: 4rem;
+    }
+
+    &.dot-line {
+      text-align: center;
+      font-weight: 1000;
+      display: block;
+      margin: 0 auto 3rem;
+      width: 4rem;
+    }
+
+    &.notice {
+      color: #FF6347;
+      margin-bottom: 0.35rem;
     }
   }
 
@@ -74,9 +91,11 @@
     border-collapse: collapse;
     border: 1px solid #ccc;
     vertical-align: middle;
+
     &.key {
       font-weight: bold;
     }
+
     &.left {
       text-align: left;
       padding-left: 0.4rem;
@@ -90,11 +109,15 @@
     font-style: normal;
     font-size: 1rem;
     text-align: left;
+
     &.center {
         text-align: center;
     }
   }
-
+  sup {
+    font-size: 0.7em;
+    padding-left: 0.1em;
+  }
   // CSS for making emoji inline
   img.emoji {
     display: inline-block;
@@ -106,4 +129,5 @@
     padding: 0;
     margin: 0;
   }
+
 }

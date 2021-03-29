@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
   width: 80%;
 }
 
@@ -9,7 +9,7 @@ footer,
 .nav-container {
   display: block;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1200px;
   width: 80%;
 }
 
@@ -82,7 +82,7 @@ footer,
 
 footer {
   text-align: center;
-  
+
   .footer-link {
     display: inline-flex;
     align-items: center;
@@ -91,7 +91,7 @@ footer {
     font-family: $sans-serif;
     font-size: .8rem;
     color: $default-color;
-  
+
     img {
       margin: 0 0.3rem 0 0;
       position: relative;
