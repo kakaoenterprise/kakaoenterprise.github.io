@@ -20,9 +20,7 @@ tag:
  - Face Recognition
 ---
 
-카카오엔터프라이즈와 카카오의 공동 연구 논문이 CVPR(컴퓨터 비전 및 패턴 인식 컨퍼런스)에 실렸습니다.
-
-공동 연구팀은 얼굴 인식에 전문화된 새로운 아키텍처인 GroupFace를 제안했습니다. GroupFace는 얼굴의 유사성을 그룹화해 표현하는 여러 개의 특징 벡터(group-aware representation)를 적용해 모델의 표현력을 높였습니다. 사람의 개입 없이도 각 그룹에 속하는 샘플 수의 균형을 맞추는 Self-distributed Label 기법도 적용했습니다.
+공동 연구팀은 얼굴 인식에 전문화된 새로운 아키텍처인 GroupFace를 제안했습니다. GroupFace는 얼굴의 유사성을 그룹화해 표현하는 여러 개의 특징 벡터<sup>group-aware representation</sup>를 적용해 모델의 표현력을 높였습니다. 사람의 개입 없이도 각 그룹에 속하는 샘플 수의 균형을 맞추는 기법<sup>Self-distributed Label</sup>도 적용했습니다.
 
 공동 연구팀이 1:1 얼굴 검증과 1:N 얼굴 인식 작업에서 최소한의 추가 연산만으로 여러 데이터셋에 대해 현재 최고 수준의(SOTA) 성능을 얻을 수 있었습니다.
 

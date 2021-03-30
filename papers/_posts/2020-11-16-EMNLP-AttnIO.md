@@ -16,9 +16,9 @@ code:
 tag:
 - knowledge graph
 ---
-카카오엔터프라이즈 논문이 EMNLP 2020에 게재됐습니다. 자연어처리 분야에서의 실험적 방법론을 다루는 이 학회는  ACL(Association for Computational Linguistics), NAACL(NORTH American Chapter of the ACL)과 함께 전산언어학 분야에서는 인지도가 높은 EMNLP에는 올해 총 3,677개 중 754개의 논문이 통과됐습니다.
+산업 현장에서 많이 쓰이는 Seq2Seq 기반 대화 모델은 지식<sup>knowledge</sup>을 갖춘 문장 생성에 취약합니다. 이에 따라 지난 2019년부터는 외부에 구축해 둔 지식 그래프<sup>knowledge graph</sup>를 적극 활용해 지식을 갖춘 문장을 생성하는 연구가 활발히 이뤄져 왔습니다.
 
-산업 현장에서 많이 쓰이는 Seq2Seq 기반 대화 모델은 지식(knowledge)을 갖춘 문장 생성에 취약합니다. 이에 따라 지난 2019년부터는 외부에 구축해 둔 지식 그래프(knowledge graph)를 적극 활용해 지식을 갖춘 문장을 생성하는 연구가 활발히 이뤄져 왔습니다. AI Lab이 제안한 AttnIO는 바로 이 지식 그래프 상에서 대화 맥락에 따라 경로를 탐색하는 모델(path retrieval model)입니다. 그래프 신경망(graph neural networks)에서 각 노드가 맥락 정보를 반영할 수 있게 하는 인코더(in-flow)와 대화 맥락에 따라 경로 탐색 범위를 조절하는 디코더(out-flow)로 구성돼 있습니다. AttnIO는 벤치마크 데이터셋인 OpenDialKG에서 현재 최고 수준의(SOTA) 추론 성능을 보였습니다.
+카카오엔터프라이즈가 제안한 AttnIO는 바로 이 지식 그래프 상에서 대화 맥락에 따라 경로를 탐색하는 모델<sup>path retrieval model</sup>입니다. 그래프 신경망<sup>graph neural networks</sup>에서 각 노드가 맥락 정보를 반영할 수 있게 하는 인코더(in-flow)와 대화 맥락에 따라 경로 탐색 범위를 조절하는 디코더(out-flow)로 구성돼 있습니다. AttnIO는 벤치마크 데이터셋인 OpenDialKG에서 현재 최고 수준의(SOTA) 추론 성능을 보였습니다.
 
 카카오엔터프라이즈는 텍스트로부터 그래프와 같은 형태의 구조화된 지식을 추출하는 방향의 연구를 통해 자사 자연어처리 기술 개선에 기여할 계획입니다.
 

@@ -22,9 +22,7 @@ tag:
   - summrization
 ---
 
-카카오와 카카오엔터프라이즈, 고려대학교, 한신대학교의 공동 연구 논문이 COLING(국제전산언어학술대회)에 게재 승인됐습니다. COLING은 자연어처리 및 언어학을 대표하는 국제 학회로, 올해에는 2,319편 중 644개 논문이 통과됐습니다.
-
-공동 연구팀이 제안한 Reference and Document Aware Semantic Evaluation Methods for Korean Language Summarization(이하 RDASS)는 텍스트 요약 모델의 성능을 측정하기 위한 새로운 평가 척도입니다. 기존의 평가 척도인 ROUGE와 비교 실험을 진행한 결과, RDASS는 실제 사람과 유사한 평가 결과를 냈습니다. 또한 공동 연구팀은 정성적 평가를 통해 RDASS가 <모델이 생성한 요약문, 실제 정답 요약문>의 의미적 유사도를 더 잘 반영할 수 있다는 점을 확인했습니다.
+공동 연구팀이 제안한 RDASS<sup>Reference and Document Aware Semantic Evaluation Methods for Korean Language Summarization</sup>는 텍스트 요약 모델의 성능을 측정하기 위한 새로운 평가 척도입니다. 기존의 평가 척도인 ROUGE와 비교 실험을 진행한 결과, RDASS는 실제 사람과 유사한 평가 결과를 냈습니다. 또한 공동 연구팀은 정성적 평가를 통해 RDASS가 <모델이 생성한 요약문, 실제 정답 요약문>의 의미적 유사도를 더 잘 반영할 수 있다는 점을 확인했습니다.
 
 공동 연구팀은 영어 텍스트 요약 태스크에서의 추가 검증과 같은 RDASS의 상대적 효용성을 입증하는 실험을 진행하는 한편, 기계가 생성한 요약문의 참 또는 거짓을 판단하는 요소도 반영하는 연구를 진행할 계획입니다.
 

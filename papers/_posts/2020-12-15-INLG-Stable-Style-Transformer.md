@@ -15,13 +15,11 @@ tag:
   - Style Transfer
 ---
 
-카카오엔터프라이즈 논문이 INLG(자연어생성국제학술대회)[^1]에 게재 승인됐습니다.
-
-카카오엔터프라이즈는 비병렬 데이터셋을 이용해 자연스러운 문장을 생성하는 새로운 텍스트 스타일 변환(text style transfer) 모델인 SST(Stable Style Transformer)를 제안했습니다. 텍스트 스타일 변환은 입력 문장의 내용(content)은 보전하면서, 문장의 속성(attribute)에 해당하는 값을 바꾸는 태스크를 가리킵니다.
+카카오엔터프라이즈는 비병렬 데이터셋을 이용해 자연스러운 문장을 생성하는 새로운 텍스트 스타일 변환<sup>text style transfer</sup> 모델인 SST<sup>Stable Style Transformer</sup>를 제안했습니다. 텍스트 스타일 변환은 입력 문장의 내용<sup>content</sup>은 보전하면서, 문장의 속성<sup>attribute</sup>에 해당하는 값을 바꾸는 태스크를 가리킵니다.
 
 SST의 스타일 변환은 두 단계를 걸쳐 진행됩니다. 첫 번째, 분류기를 통해 문장에서 속성을 표현하는 부분을 가리키는 토큰을 삭제합니다. 두 번째, 인코더와 디코더로 속성을 제외한 나머지 문장 토큰에 변환하려는 스타일을 합쳐서 문장을 생성합니다. 그 결과, 자동화된 평가 척도에서 문장이 안정적으로 합성됨을 확인할 수 있었습니다.
 
-카카오엔터프라이즈는 텍스트 스타일 변환뿐만 아니라 사람의 감정이나 대화 상황을 이해하는 공감적 대화(empathetic conversation), 데이터를 문장으로 표현하기(data-to-text), 페르소나 채팅(persona chat)[^2]과 같이 원하는 조건에 따라 문장을 생성하는 자연어 생성에 관한 다양한 연구를 진행할 계획입니다.
+카카오엔터프라이즈는 텍스트 스타일 변환뿐만 아니라 사람의 감정이나 대화 상황을 이해하는 공감적 대화<sup>empathetic conversation</sup>, 데이터를 문장으로 표현하기<sup>data-to-text</sup>, 페르소나 채팅<sup>persona chat</sup>[^1]과 같이 원하는 조건에 따라 문장을 생성하는 자연어 생성에 관한 다양한 연구를 진행할 계획입니다.
 
 <br/>
 
@@ -54,6 +52,5 @@ We show that filtering out unstable systems through human evaluation is expensiv
 -----
 ### footnote
 
-[^1]: 전산 언어학 협회(ACL, Association for Computational Linguistics)에 속한 그룹인 SIGGEN(SIG on natural language generation)에서 운영한다.
 
-[^2]: 시스템 설계자가 미리 정의한 고유 페르소나(인격)를 가진 가상의 상대와 대화를 나누는 태스크
+[^1]: 시스템 설계자가 미리 정의한 고유 페르소나(인격)를 가진 가상의 상대와 대화를 나누는 태스크

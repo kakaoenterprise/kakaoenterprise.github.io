@@ -5,8 +5,8 @@ title: "Sparse and Decorrelated Representations for Stable Zero-shot NMT"
 slug: emnlp2020-stable-zero-shot-nmt
 description: 강건한 제로샷 번역 모델을 위해 정규화 기법 'SLNI' 도입 제안
 published-date: 2020-11-16
-publisher: EMNLP Findings
-publisher-fullname: Empirical Methods in Natural Language Processing (EMNLP) Findings
+publisher: EMNLP Findings of ACL
+publisher-fullname: Empirical Methods in Natural Language Processing (EMNLP) Findings of ACL
 authors:
   - meta:카카오엔터프라이즈
   - james:카카오엔터프라이즈
@@ -15,12 +15,9 @@ code:
 tag:
   - NMT
 ---
+카카오엔터프라이즈는 훈련 조건의 변화에도 강건한 제로샷 모델을 만들고자 SLNI<sup>Sparse coding through Local Neural Inhibition</sup>를 이용해 정규화<sup>regularization</sup>[^1]를 시도했습니다. 그 결과, transformer 인코더를 구성하는 하위층에서 서로 무관하면서도 희소한 특징 벡터<sup>sparse and decorrelated representation</sup>가 생성됩니다. 카카오엔터프라이즈는 이 기법을 적용한 모델이 다양한 실험 조건 상에서 훈련된 방향의 번역 성능을 거의 그대로 유지하면서도, 제로샷에서 목표 언어의 문장을 안정적으로 생성해냄을 확인했습니다.
 
-카카오엔터프라이즈 논문이 EMNLP 2020 Findings of ACL에 게재됐습니다. 자연어처리 분야에서의 실험적 방법론을 다루는 이 학회는  ACL(Association for Computational Linguistics), NAACL(NORTH American Chapter of the ACL)과 함께 전산언어학 분야에서는 인지도가 높은 EMNLP에는 올해 총 3,677개 중 754개의 논문이 통과됐습니다.
-
-카카오엔터프라이즈는 훈련 조건의 변화에도 강건한 제로샷 모델을 만들고자 SLNI(Sparse coding through Local Neural Inhibition)를 이용해 정규화(regularization)[^1]를 시도했습니다. 그 결과, transformer 인코더를 구성하는 하위층에서 서로 무관하면서도 희소한 특징 벡터(sparse and decorrelated representation)가 생성됩니다. 카카오엔터프라이즈는 이 기법을 적용한 모델이 다양한 실험 조건 상에서 훈련된 방향의 번역 성능을 거의 그대로 유지하면서도, 제로샷에서 목표 언어의 문장을 안정적으로 생성해냄을 확인했습니다.
-
-카카오엔터프라이즈는 후속 연구를 통해 제로샷 태스크가 훈련 조건 변화에 취약한 원인과 새로 제안한 기법의 문제 해결 원리를 파악하고, 번역 분야의 지속 학습(continual learning)[^2]에 관한 새로운 탐색을 진행할 계획입니다.
+카카오엔터프라이즈는 후속 연구를 통해 제로샷 태스크가 훈련 조건 변화에 취약한 원인과 새로 제안한 기법의 문제 해결 원리를 파악하고, 번역 분야의 지속 학습<sup>continual learning</sup>[^2]에 관한 새로운 탐색을 진행할 계획입니다.
 
 <br/>
 
