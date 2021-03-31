@@ -21,7 +21,7 @@ tag:
 
 카카오엔터프라이즈는 더 많은 종류의 임베딩을 하나로 통합하는 방법과 새로운 데이터 노이즈 추가 방법에 관한 지속적인 연구를 진행할 계획입니다.
 
-<div style="text-align: right">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/mrc">지문분석</a></b> 데모 | <b><a href="https://labs.kakaoi.ai/mrc">통합분석</a></b> 데모</div>
+<p class="tech-ground">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/mrc">지문분석</a></b> 데모 | <b><a href="https://labs.kakaoi.ai/mrc">통합분석</a></b> 데모</p>
 
 <br/>
 

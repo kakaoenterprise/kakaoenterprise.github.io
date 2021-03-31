@@ -25,7 +25,7 @@ tag:
 
 카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
 
-<div style="text-align: right">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</div>
+<p class="tech-ground">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</p>
 
 <br/>
 
