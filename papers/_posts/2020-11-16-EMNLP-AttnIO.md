@@ -13,6 +13,7 @@ authors:
   - james:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.emnlp-main.280.pdf
 code:
+techlog : 201214
 tag:
 - knowledge graph
 ---
@@ -35,7 +36,7 @@ Retrieving the proper knowledge relevant to conversational context is an importa
 AttnIO models the KG traversal mechanism into two sub-processes: incoming attention flow, and outgoing attention flow . At each decoding step, Incoming Attention Flow updates the representation of each node by aggregating messages coming from incoming edges. Outgoing Attention Flow then models path traversal on the knowledge graph by propagating attention from each node through outgoing edges, using the node representation from Incoming Attention Flow.
 
 {% include image.html name="001.png" width="65%" align="center" %}
-<em class="center">[ Figure 1 ] AttnIO Model Overview</em>
+<em>[ Figure 1 ] AttnIO Model Overview</em>
 
 <br/>
 

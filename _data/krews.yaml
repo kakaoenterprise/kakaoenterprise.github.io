@@ -66,7 +66,7 @@ hoony:
   profile: hoony.png
   github:
   web:
-  description: 학업과 일을 병행하며, 전문 분야에서의 기계 번역(Domain-specific Neural Machine Translation)처럼 외부 지식을 요긴하게 사용할 수 있는 자연어처리 기술을 연구하고 있습니다. ”지식을 갖춘 인공지능을 만들 수 있나”는 질문에 대한 답을 찾고 싶습니다.
+  description: 학업과 일을 병행하며, 전문 분야에서의 기계 번역(domain-specific neural machine translation) 등 외 부 지식을 요긴하게 사용할 수 있는 자연어처리 기술을 연구하고 있습니다. "지식을 갖춘 인공지능을 만들 수 있을까"는 질문의 답을 찾고 싶습니다.
 
 hubert:
   korean_name: 이동훈
