@@ -6,10 +6,6 @@
     font-family: $sans-serif;
     letter-spacing: 0.5px;
     max-width: 1200px;
-
-    span {
-      font-style: italic;
-    }
   }
 
   &-title {
@@ -19,9 +15,80 @@
     margin: 1rem 0;
   }
 
+  &-info {
+  }
+
   &-body {
-    margin:0 auto;
     max-width: 900px;
+    margin:0 auto;
+
+    p {
+      font-weight: 300;
+      margin: 0 0 1rem;
+      text-align: justify;
+      
+      &.dot-line {
+      text-align: center;
+      font-weight: 1000;
+      display: block;
+      margin: 0 auto 3rem;
+      width: 4rem;
+      }
+
+      &.notice {
+        color: #FF6347;
+        margin-bottom: 0.35rem;
+      }
+
+      &.tech-ground {
+        text-align: right;
+      }
+    }
+
+    table {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      border-spacing: 0.1rem;
+      width: 100%;
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+
+      tr,td {
+        border-collapse: collapse;
+        border: 1px solid #ccc;
+        vertical-align: middle;
+
+        &.key {
+          font-weight: bold;
+        }
+
+        &.left {
+          text-align: left;
+          padding-left: 0.4rem;
+        }
+      }
+    }
+
+    em {
+      color: #808080;
+      display: block;
+      font-family: $sans-serif;
+      font-style: normal;
+      font-size: 0.9rem;
+      text-align: left;
+
+      &.center {
+          text-align: center;
+      }
+
+    }
+
+    sup {
+      font-size: 0.8em;
+      padding-left: 0.1em;
+    }
   }
 
   &-line {
@@ -42,27 +109,38 @@
     padding: 0.2em;
   }
 
+  &-author-container  {
+    margin:0 auto;
+  }
+
+  &-author-box  {
+    display:grid;
+    grid-template-columns: 8rem auto;
+    margin-bottom: 1rem;
+
+    img.author-image {
+      width: 5rem;
+      margin-top: 1rem;
+      border-radius: 70%;
+      overflow: hidden;
+    }
+
+    span  {
+      &.author-name {
+        font-size: 1.1rem;
+        font-weight: 900;
+      }
+      &.author-role {
+        font-size: 0.8rem;
+      }
+    }
+    p.author-desc {
+        font-size:0.9rem;
+    }
+  }
+
   p {
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin: 0 0 1rem;
-    text-align: justify;
 
-    &.dot-line {
-      text-align: center;
-      font-weight: 1000;
-      display: block;
-      margin: 0 auto 3rem;
-      width: 4rem;
-    }
-
-    &.notice {
-      color: #FF6347;
-      margin-bottom: 0.35rem;
-    }
-    &.tech-ground {
-      text-align: right;
-    }
   }
 
   a:hover {
@@ -73,48 +151,6 @@
     margin: 0 auto 0.5rem;
   }
 
-  table {
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    border-spacing: 0.1rem;
-    width: 100%;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-  }
-
-  tr,td {
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    vertical-align: middle;
-
-    &.key {
-      font-weight: bold;
-    }
-
-    &.left {
-      text-align: left;
-      padding-left: 0.4rem;
-    }
-  }
-
-  em {
-    color: #808080;
-    display: block;
-    font-family: $sans-serif;
-    font-style: normal;
-    font-size: 1rem;
-    text-align: left;
-
-    &.center {
-        text-align: center;
-    }
-  }
-  sup {
-    font-size: 0.7em;
-    padding-left: 0.1em;
-  }
   // CSS for making emoji inline
   img.emoji {
     display: inline-block;

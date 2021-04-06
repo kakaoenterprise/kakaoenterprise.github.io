@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post">
+<div class="post">
   <header class="post-header">
     <h4 class="catalogue-research-area">{{ page.research-area }}</h4>
     <h1 class="post-title">{{ page.title }}</h1>
@@ -10,41 +10,72 @@ layout: default
     {% if page.image %}
       {% include image.html name=page.image width="" align="center" %}
     {% endif %}
-
-    <h4>{{ page.published-date }}</h4>
-
-    {% if page.paper or page.code %}
-      <div class="link-button-group">
-        {% if page.paper %}
-          <a href="{{ page.paper }}" target="_blank">
-            <button class="link-button">
-              <i class="far fa-file-alt"></i> Paper
-            </button>
-          </a>
-        {% endif %}
-
-        {% if page.code %}
-          <a href="{{ page.code }}" target="_blank">
-            <button class="link-button">
-              <i class="fab fa-github"></i> Code
-            </button>
-          </a>
-        {% endif %}
-      </div>
-    {% endif %}
-
   </header>
 
-  <div class="post-line"></div>
-
   <div class="post-body">
-    {{ content }}
-  </div>
+    <div class="post-info">
+      <h4>{{ page.published-date }}</h4>
 
-  <div class="post-line"></div>
-  <div class="post-tag-box-container">
-    {% for tag in page.tags %}
-      <div class="post-tag-box">#{{ tag }}</div>
-    {% endfor %}
+      {% if page.paper or page.code %}
+        <div class="link-button-group">
+          {% if page.paper %}
+            <a href="{{ page.paper }}" target="_blank">
+              <button class="link-button">
+                <i class="far fa-file-alt"></i> Paper
+              </button>
+            </a>
+          {% endif %}
+
+          {% if page.code %}
+            <a href="{{ page.code }}" target="_blank">
+              <button class="link-button">
+                <i class="fab fa-github"></i> Code
+              </button>
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="post-line"></div>
+
+    {{ content }}
+
+    <div class="post-line"></div>
+
+    <div class="post-tag-box-container">
+      {% for tag in page.tags %}
+        <div class="post-tag-box">#{{ tag }}</div>
+      {% endfor %}
+    </div>
+
+    <div class="post-author-container">
+      <h1>만든이</h1>
+      {% for author in page.authors %}
+        {% assign author_data = author | split: ":" %}
+        {% assign id =  author_data[0] %}
+        {% assign role =  author_data[1] %}
+
+        {% assign krew_data = site.data.krews[id] %}
+
+        {% if krew_data %}
+            {% assign korean_name = krew_data.korean_name %}
+            {% assign image = krew_data.profile %}
+            {% assign description = krew_data.description %}
+        {% else %}
+            {% assign korean_name = id %}
+        {% endif %}
+        <div class="post-author-box">
+          <span>
+            <img class="author-image" src="{{ site.url }}/assets/profile/{{ image }}">
+          </span>
+          <span>
+            <p><span class="author-name">{{ korean_name }}</span> | <span class="author-role">{{ role }}</span></p>
+            <p class="author-desc">{{ description }}</p>
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+
   </div>
-</article>
+</div>
