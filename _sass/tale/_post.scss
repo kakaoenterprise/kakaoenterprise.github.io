@@ -26,7 +26,7 @@
       font-weight: 300;
       margin: 0 0 1rem;
       text-align: justify;
-      
+
       &.dot-line {
       text-align: center;
       font-weight: 1000;
@@ -82,7 +82,6 @@
       &.center {
           text-align: center;
       }
-
     }
 
     sup {
@@ -120,6 +119,7 @@
 
     img.author-image {
       width: 5rem;
+      margin-left: 1rem;
       margin-top: 1rem;
       border-radius: 70%;
       overflow: hidden;

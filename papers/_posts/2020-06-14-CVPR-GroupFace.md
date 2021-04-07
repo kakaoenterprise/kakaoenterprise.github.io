@@ -4,7 +4,7 @@ use-katex: true
 research-area: COMPUTER VISION
 title: "GroupFace: Learning Latent Groups and Constructing Group-based Representations for Face Recognition"
 slug: cvpr2020-groupface
-description: 얼굴 인식에 전문화된 새로운 아키텍처 'GroupFace' 제안
+description: "얼굴 인식에 전문화된 새로운 아키텍처 'GroupFace' 제안"
 published-date: 2020-06-14
 publisher: CVPR
 publisher-fullname : Computer Vision and Pattern Recognition (CVPR)
@@ -14,7 +14,7 @@ authors:
   - joshua:카카오엔터프라이즈
   - isaac:카카오엔터프라이즈
 paper: https://openaccess.thecvf.com/content_CVPR_2020/papers/Kim_GroupFace_Learning_Latent_Groups_and_Constructing_Group-Based_Representations_for_Face_CVPR_2020_paper.pdf
-code:
+techlog: 200723
 tag:
  - Computer Vision
  - Face Recognition
@@ -26,7 +26,7 @@ tag:
 
 카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 자사 얼굴 인식 기술을 고도화할 계획입니다.
 
-<p class="tech-ground">>☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</p>
+<p class="tech-ground">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/facedetection">얼굴 검출</a></b> 데모</p>
 
 <br/>
 
