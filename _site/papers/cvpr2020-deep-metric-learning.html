@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Deep Metric Learning with Multi-Objective Functions | KEP R&amp;D Site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Deep Metric Learning with Multi-Objective Functions" />
+<meta name="author" content="michael:카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="패션 이미지를 효율적으로 검색하는 새로운 거리학습 기법 제안" />
+<meta property="og:description" content="패션 이미지를 효율적으로 검색하는 새로운 거리학습 기법 제안" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/cvpr2020-deep-metric-learning" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/cvpr2020-deep-metric-learning" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-14T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Deep Metric Learning with Multi-Objective Functions" />
+<script type="application/ld+json">
+{"datePublished":"2020-06-14T00:00:00+09:00","description":"패션 이미지를 효율적으로 검색하는 새로운 거리학습 기법 제안","dateModified":"2020-06-14T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/cvpr2020-deep-metric-learning"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/cvpr2020-deep-metric-learning","author":{"@type":"Person","name":"michael:카카오엔터프라이즈"},"@type":"BlogPosting","headline":"Deep Metric Learning with Multi-Objective Functions","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+
+  <!-- Google Analytics-->
+  
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">KEP R&D Site</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="/techlog">Techlog</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">Deep Metric Learning with Multi-Objective Functions</h1>
+
+    
+
+    
+
+    이주영(카카오엔터프라이즈), 노명철(카카오엔터프라이즈)
+
+    <h4>
+        
+          CVPR workshop on Computer Vision for Fashion, Art and Design (CVFAD)
+        
+    </h4>
+
+    <h4>2020-06-14</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://drive.google.com/file/d/1co4JkFhxob75MyV8yws-8mgGqGw2PrC8" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <p>올해로 3번째 열린 CVPR 워크숍 CVFAD에서는 패션, 예술, 디자인 등의 창의성이 요구되는 분야에 필요한 생성 모델<sup>generative models</sup>, 검색<sup>retrieval</sup>, 제품 추천<sup>product recommendation</sup>, 이미지 분할<sup>image segmentation</sup>, 속성 인식<sup>attribute discovery</sup>, 트렌드 예측<sup>trend forecast</sup> 등에 관한 최신의 컴퓨터 비전과 머신러닝 방법론을 다룹니다.</p>
+
+<p>카카오엔터프라이즈는 패션 이미지를 효율적으로 검색하는 거리 학습<sup>metric learning</sup> 방법론을 제안했습니다. 기존의 페어<sup>pair</sup>/트리플렛<sup>triplet</sup> 기반 손실 함수와 프록시<sup>proxy</sup> 기반 손실 함수를 동시에 훈련하면서도, 이 과정에서 발생하는 샘플링<sup>sampling</sup>과 초매개변수<sup>hyperparameter</sup> 문제를 해결했습니다. 제안된 방법은 In-Shop Clothes Retrieval 데이터셋에서 현재 최고 수준의(SOTA) 추론 성능을 냈습니다.</p>
+
+<p>카카오엔터프라이즈는 이번 연구로 얻은 기술력과 경험을 바탕으로 카카오 i의 시각 엔진과 딥러닝 기반 유사 스타일 추천 기술을 고도화할 계획입니다.</p>
+
+<p><br /></p>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>Metric learning is a very important process for the efficient fashion image retrieval and, in the metric learning, one of the most important issues is the selection of which objective functions. Efficient object functions in the previous work are pair/triplet based loss and proxy based one. Two types of objective functions have disadvantages that are opposed to each advantage. The loss functions have their own strengths, but their strengths oppose each other. To overcome the disadvantages, we propose a method that can simultaneously train the multi-objective functions. We achieve the new state-of-the art performance on In-Shop Clothes Retrieval dataset.</p>
+
+<p><br /></p>
+
+<h1 id="overall-architecture">Overall Architecture</h1>
+
+<p>The proposed method explicitly considered the three types of distances (or similarities), each of which corresponds to three types of objective functions are defined as: 1) pairwise loss function optimized using embeddings of given samples, 2) proxy-based loss function used the similarity between proxies and embeddings of given samples, and 3) loss function minimized the similarity between proxies, respectively. Since each loss function has a different amount of contribution to optimize the method, we analyze the contribution and propose a combination method considering this. Finally, because the existing sampling strategies are mainly based on a single anchor, the sampling strategies are impossible to consider each relation of an anchor and a proxy together. We also propose a sampling strategy to consider two types of relations, at the same time.</p>
+
+<p><img src="https://pages.github.kakaocorp.com/ailab-papers/assets/img/2020-06-14-CVPR-deep-metric-learing/001.png" width="80%" align="" /></p>
+
+<p><em class="center">[ Figure 1 ] Comparison with the previous and our method</em></p>
+
+<p><br /></p>
+
+<h1 id="experiments">Experiments</h1>
+
+<p>We now compare the proposed method to other state-of-the art methods on In-shop Clothes Retrieval dataset. As shown in Table 1, the proposed method improves Recall@1 by 0.4%p, it is achieved to the new state-of-the art performance.</p>
+
+<p><img src="https://pages.github.kakaocorp.com/ailab-papers/assets/img/2020-06-14-CVPR-deep-metric-learing/002.png" width="70%" align="" /></p>
+
+<p><em class="center">[ Table 1 ] Retrieval performance (Recall@K, %). Superscripts denote embedding size.</em></p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#Fasion Retrival</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+  </a>
+</footer>
+
+  </body>
+</html>

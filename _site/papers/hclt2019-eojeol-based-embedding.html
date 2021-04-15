@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩 | KEP R&amp;D Site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩" />
+<meta name="author" content="heuristic:카카오" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="카카오엔터프라이즈는 철자가 잘못 입력된 한국어 문장의 분류 성능을 높이고자 새로운 통합 어절 임베딩 방식을 제안했습니다. 형태소와 자모음 정보에 각각 부여한 임베딩 벡터를 이용해 다시 원래 어절을 조압하고 데이터에 노이즈를 자동으로 추가하는 방식으로 오류를 포함한 문장 분류 성능을 높입니다. 자체 실험 결과, 기존 시스템과 비교해 오류를 포함한 문장의 분류 정확도를 23%p 높였습니다." />
+<meta property="og:description" content="카카오엔터프라이즈는 철자가 잘못 입력된 한국어 문장의 분류 성능을 높이고자 새로운 통합 어절 임베딩 방식을 제안했습니다. 형태소와 자모음 정보에 각각 부여한 임베딩 벡터를 이용해 다시 원래 어절을 조압하고 데이터에 노이즈를 자동으로 추가하는 방식으로 오류를 포함한 문장 분류 성능을 높입니다. 자체 실험 결과, 기존 시스템과 비교해 오류를 포함한 문장의 분류 정확도를 23%p 높였습니다." />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/hclt2019-eojeol-based-embedding" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/hclt2019-eojeol-based-embedding" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-11T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩" />
+<script type="application/ld+json">
+{"datePublished":"2019-10-11T00:00:00+09:00","description":"카카오엔터프라이즈는 철자가 잘못 입력된 한국어 문장의 분류 성능을 높이고자 새로운 통합 어절 임베딩 방식을 제안했습니다. 형태소와 자모음 정보에 각각 부여한 임베딩 벡터를 이용해 다시 원래 어절을 조압하고 데이터에 노이즈를 자동으로 추가하는 방식으로 오류를 포함한 문장 분류 성능을 높입니다. 자체 실험 결과, 기존 시스템과 비교해 오류를 포함한 문장의 분류 정확도를 23%p 높였습니다.","dateModified":"2019-10-11T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/hclt2019-eojeol-based-embedding"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/hclt2019-eojeol-based-embedding","author":{"@type":"Person","name":"heuristic:카카오"},"@type":"BlogPosting","headline":"한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+
+  <!-- Google Analytics-->
+  
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">KEP R&D Site</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="/techlog">Techlog</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">NLP</h4>
+    <h1 class="post-title">한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩</h1>
+
+    
+
+    
+
+    최동현(카카오), 박일남(카카오), 신명철(카카오), 김응균(카카오), 신동렬(성균관대학교)
+
+    <h4>
+        
+          한글 및 한국어정보처리 학술대회
+        
+    </h4>
+
+    <h4>2019-10-11</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="http://hclt.kr/symp/?lnb=conference" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+          <a href="https://pages.github.kakaocorp.com/ailab-papers/techlog/200724" target="_self">
+            <button class="link-button">
+              <i></i> Techlog
+            </button>
+          </a>
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <p>카카오엔터프라이즈는 철자가 잘못 입력된 한국어 문장의 분류 성능을 높이고자 새로운 통합 어절 임베딩 방식을 제안했습니다. 형태소와 자모음 정보에 각각 부여한 임베딩 벡터를 이용해 다시 원래 어절을 조압하고 데이터에 노이즈를 자동으로 추가하는 방식으로 오류를 포함한 문장 분류 성능을 높입니다. 자체 실험 결과, 기존 시스템과 비교해 오류를 포함한 문장의 분류 정확도를 23%p 높였습니다.</p>
+
+<p>카카오엔터프라이즈는 더 많은 종류의 임베딩을 하나로 통합하는 방법과 새로운 데이터 노이즈 추가 방법에 관한 지속적인 연구를 진행할 계획입니다.</p>
+
+<p class="tech-ground">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/mrc">지문분석</a></b> 데모 | <b><a href="https://labs.kakaoi.ai/mrc">통합분석</a></b> 데모</p>
+
+<p><br /></p>
+
+<h1 id="전체-구조">전체 구조</h1>
+
+<p>텍스트를 입력으로 받는 한국어 챗봇의 경우, 때때로 입력 문장에 오타나 띄어쓰기 오류 등이 포함될 수 있고, 이러한 오류는 잘못된 형태소 분석 결과로 이어지게 된다. 본 논문은 띄어쓰기 오류에 국한된 것이 아닌, 일반적인 오류를 포함한 문장에 대한 문장 분류 문제를 해결하고자 하였고, 이를 위해 기존의 형태소 임베딩 기반 방식 대신 어절 임베딩 기반 방식이 새로이 제안되었다. 어절 임베딩 벡터 방식의 오류를 포함한 한국어 문장 분류 성능을 추가적으로 향상시키기 위하여, 자모 드롭아웃과 띄어쓰기없는 문장 생성의 두가지 데이터 노이즈(noise) 추가 방법도 제안되었다.</p>
+
+<p><br /></p>
+
+<h1 id="실험">실험</h1>
+
+<p>실험 결과에 따르면, 제안된 시스템은 기존 관련 연구에서 제안된 형태소 기반 문장 분류 시스템과 비교하여 오류를 포함한 문장 분류 문제(KT 말뭉치)에서 24.3%p, 문법적으로 옳은 문장을 분류하는 문제(WF 말뭉치)에서 0.63%p의 성능 향상을 보였다. 통합 어절 임베딩을 사용할 경우 SM 말뭉치에 대한 성능은 크게 저하되나, 제시된 실험 결과에서 보여지듯이 띄어쓰기 없는 문장 생성 방법을 사용함으로써 이러한 통합 어절 임베딩의 단점을 극복할 수 있었다. 띄어쓰기 없는 문장 생성 방법을 사용한 시스템 어절+SG의 SM 말뭉치에 대한 성능은 88.31%인데, 이는 Baseline 시스템의 83.46% 보다 오히려 4.85%p 더 향상된 것이다.</p>
+
+<p><img src="https://pages.github.kakaocorp.com/ailab-papers/assets/img/2019-10-11-eojeol-based-embedding/001.png" width="50%" align="" /></p>
+
+<p><em class="center">[ 표 1 ] 통합 어절 임베딩 적용 실험 결과</em></p>
+
+<p>[표 2]는 동일한 데이터 노이즈 추가 방법이 적용되었을 때, 통합 형태소 임베딩과 통합 어절 임베딩간의 분류 성능 비교를 보여주고 있다.</p>
+
+<p><img src="https://pages.github.kakaocorp.com/ailab-papers/assets/img/2019-10-11-eojeol-based-embedding/002.png" width="50%" align="" /></p>
+
+<p><em class="center">[ 표 2 ] 통합 어절 임베딩과 통합 형태소 임베딩의 비교</em></p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#sentence classfication</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+  </a>
+</footer>
+
+  </body>
+</html>

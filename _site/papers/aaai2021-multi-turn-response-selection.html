@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection | KEP R&amp;D Site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection" />
+<meta name="author" content="황태선:고려대학교" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-02T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection" />
+<script type="application/ld+json">
+{"datePublished":"2021-02-02T00:00:00+09:00","description":"Abstract","dateModified":"2021-02-02T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection","author":{"@type":"Person","name":"황태선:고려대학교"},"@type":"BlogPosting","headline":"Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+
+  <!-- Google Analytics-->
+  
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">KEP R&D Site</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="/techlog">Techlog</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">NLP</h4>
+    <h1 class="post-title">Do Response Selection Models Really Know What's Next? Utterance Manipulation Strategies for Multi-turn Response Selection</h1>
+
+    
+
+    
+
+    황태선(고려대학교), 이동엽(카카오), 오동석(고려대학교), 이찬희(고려대학교), 한기종(카카오엔터프라이즈), 이동훈(카카오엔터프라이즈), 이새벽(Wisenut Inc/고려대학교)
+
+    <h4>
+        
+          Association for Advancement of AI (AAAI)
+        
+    </h4>
+
+    <h4>2021-02-02</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/2009.04703.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>In this paper, we study the task of selecting the optimal response given a user and system utterance history in retrieval based multi-turn dialog systems. Recently, pre-trained language models (e.g., BERT, RoBERTa, and ELECTRA) showed significant improvements in various natural language processing tasks. This and similar response selection tasks can also be solved using such language models by formulating the tasks as dialog–response binary classification tasks. Although existing works using this approach successfully obtained state-of-the-art results, we observe that language models trained in this manner tend to make predictions based on the relatedness of history and candidates, ignoring the sequential nature of multi-turn dialog systems. This suggests that the response selection task alone is insufficient for learning temporal dependencies between utterances. To this end, we propose utterance manipulation strategies (UMS) to address this problem. Specifically, UMS consist of several strategies (i.e., insertion, deletion, and search), which aid the response selection model towards maintaining dialog coherence. Further, UMS are self-supervised methods that do not require additional annotation and thus can be easily incorporated into existing approaches. Extensive evaluation across multiple languages and models shows that UMS are highly effective in teaching dialog consistency, which leads to models pushing the state-of-the-art with significant margins on multiple public benchmark datasets.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+  </a>
+</footer>
+
+  </body>
+</html>

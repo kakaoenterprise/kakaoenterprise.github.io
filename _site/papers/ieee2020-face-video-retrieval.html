@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Face Video Retrieval Based on the Deep CNN With RBF Loss | KEP R&amp;D Site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Face Video Retrieval Based on the Deep CNN With RBF Loss" />
+<meta name="author" content="stephen:성균관대학교/카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/ieee2020-face-video-retrieval" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/ieee2020-face-video-retrieval" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-04T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Face Video Retrieval Based on the Deep CNN With RBF Loss" />
+<script type="application/ld+json">
+{"datePublished":"2020-12-04T00:00:00+09:00","description":"Abstract","dateModified":"2020-12-04T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/ieee2020-face-video-retrieval"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/ieee2020-face-video-retrieval","author":{"@type":"Person","name":"stephen:성균관대학교/카카오엔터프라이즈"},"@type":"BlogPosting","headline":"Face Video Retrieval Based on the Deep CNN With RBF Loss","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+
+  <!-- Google Analytics-->
+  
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">KEP R&D Site</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="/techlog">Techlog</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">Face Video Retrieval Based on the Deep CNN With RBF Loss</h1>
+
+    
+
+    
+
+    최영록(성균관대학교/카카오엔터프라이즈), 길이만(성균관대학교)
+
+    <h4>
+        
+          IEEE Transactions on Image Processing
+        
+    </h4>
+
+    <h4>2020-12-04</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://ieeexplore.ieee.org/document/9282191" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>This paper presents a novel framework to extract highly compact and discriminative features for face video retrieval tasks using the deep convolutional neural network (CNN). The face video retrieval task is to find the videos containing the face of a specific person from a database with a face image or a face video of the same person as a query. A key challenge is to extract discriminative features with small storage space from face videos with large intra-class variations caused by different angle, illumination, and facial expression. In recent years, the CNN-based binary hashing and metric learning methods showed notable progress in image/video retrieval tasks. However, the existing CNN-based binary hashing and metric learning have limitations in terms of inevitable information loss and storage inefficiency, respectively. To cope with these problems, the proposed framework consists of two parts: first, a novel loss function using a radial basis function kernel (RBF Loss) is introduced to train a neural network to generate compact and discriminative high-level features, and secondly, an optimized quantization using a logistic function (Logistic Quantization) is suggested to convert a real-valued feature to a 1-byte integer with the minimum information loss. Through the face video retrieval experiments on a challenging TV series data set (ICT-TV), it is demonstrated that the proposed framework outperforms the existing state-of-the-art feature extraction methods. Furthermore, the effectiveness of RBF loss was also demonstrated through the image classification and retrieval experiments on the CIFAR-10 and Fashion-MNIST data sets with LeNet-5.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#Face Video Retrieval</div>
+    
+      <div class="post-tag-box">#Metric Learning</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+  </a>
+</footer>
+
+  </body>
+</html>

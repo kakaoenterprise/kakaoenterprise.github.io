@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Sparse and Decorrelated Representations for Stable Zero-shot NMT | KEP R&amp;D Site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Sparse and Decorrelated Representations for Stable Zero-shot NMT" />
+<meta name="author" content="meta:카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="강건한 제로샷 번역 모델을 위해 정규화 기법 ‘SLNI’ 도입 제안" />
+<meta property="og:description" content="강건한 제로샷 번역 모델을 위해 정규화 기법 ‘SLNI’ 도입 제안" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/emnlp2020-stable-zero-shot-nmt" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/emnlp2020-stable-zero-shot-nmt" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-16T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sparse and Decorrelated Representations for Stable Zero-shot NMT" />
+<script type="application/ld+json">
+{"datePublished":"2020-11-16T00:00:00+09:00","description":"강건한 제로샷 번역 모델을 위해 정규화 기법 ‘SLNI’ 도입 제안","dateModified":"2020-11-16T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/emnlp2020-stable-zero-shot-nmt"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/emnlp2020-stable-zero-shot-nmt","author":{"@type":"Person","name":"meta:카카오엔터프라이즈"},"@type":"BlogPosting","headline":"Sparse and Decorrelated Representations for Stable Zero-shot NMT","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+
+  <!-- Google Analytics-->
+  
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">KEP R&D Site</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="/techlog">Techlog</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">NLP</h4>
+    <h1 class="post-title">Sparse and Decorrelated Representations for Stable Zero-shot NMT</h1>
+
+    
+
+    
+
+    손보경(카카오엔터프라이즈), 류성원(카카오엔터프라이즈)
+
+    <h4>
+        
+          Empirical Methods in Natural Language Processing (EMNLP) Findings of ACL
+        
+    </h4>
+
+    <h4>2020-11-16</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.205.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+          <a href="https://pages.github.kakaocorp.com/ailab-papers/techlog/201217" target="_self">
+            <button class="link-button">
+              <i></i> Techlog
+            </button>
+          </a>
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <p>카카오엔터프라이즈는 훈련 조건의 변화에도 강건한 제로샷 모델을 만들고자 SLNI<sup>Sparse coding through Local Neural Inhibition</sup>를 이용해 정규화<sup>regularization</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>를 시도했습니다. 그 결과, transformer 인코더를 구성하는 하위층에서 서로 무관하면서도 희소한 특징 벡터<sup>sparse and decorrelated representation</sup>가 생성됩니다. 카카오엔터프라이즈는 이 기법을 적용한 모델이 다양한 실험 조건 상에서 훈련된 방향의 번역 성능을 거의 그대로 유지하면서도, 제로샷에서 목표 언어의 문장을 안정적으로 생성해냄을 확인했습니다.</p>
+
+<p>카카오엔터프라이즈는 후속 연구를 통해 제로샷 태스크가 훈련 조건 변화에 취약한 원인과 새로 제안한 기법의 문제 해결 원리를 파악하고, 번역 분야의 지속 학습<sup>continual learning</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>에 관한 새로운 탐색을 진행할 계획입니다.</p>
+
+<p><br /></p>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>Using a single encoder and decoder for all directions and training with English-centric data is a popular scheme for multilingual NMT. However, zero-shot translation under this scheme is vulnerable to changes in training conditions, as the model degenerates by decoding non-English texts into English regardless of the target specifier token. We present that enforcing both sparsity and decorrelation on encoder intermediate representations with the SLNI regularizer efficiently mitigates this problem, without performance loss in supervised directions. Notably, effects of SLNI turns out to be irrelevant to promoting language-invariance in encoder representations.</p>
+
+<p><br /></p>
+
+<h1 id="methods">Methods</h1>
+
+<p>SLNI is a regularizer that promotes sparse and decorrelated representations by penalizing correlation between neurons. We apply SLNI on the encoder-side. Outputs of every layer normalization(after both self-attention and position-wise feed-forward sublayers) are subject to regularization.</p>
+
+<p><br /></p>
+
+<h1 id="experiments">Experiments</h1>
+
+<p>Unlike the naive model, our model trained with SLNI shows stable performance across all training conditions, including the Compound setting where the naive model completely degenerates. Furthermore, there is no evident performance decrease in supervised directions.</p>
+
+<p><img src="https://pages.github.kakaocorp.com/ailab-papers/assets/img/2020-11-16-EMNLP-Stable-Zero-shot-NMT/001.png" width="" align="" /></p>
+
+<p><em>[ Table 1 ] Averaged BLEU scores for zero-shot(ZS) and supervised(SV) tasks, and ratio(%) of zero-shot outputs wrongly decoded into English.</em></p>
+
+<p><br /></p>
+
+<hr />
+<h3 id="footnote">footnote</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>설명력이 높으면서도 그 구조가 간단한 모델의 상태를 일컫는다. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>주어진 데이터셋으로 학습을 마친 모델에 새로운 데이터셋을 훈련시켜 추가 지식을 습득하게 하는 학습 방식을 일컫는다. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#NMT</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+  </a>
+</footer>
+
+  </body>
+</html>

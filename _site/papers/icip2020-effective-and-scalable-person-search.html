@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search | KEP R&amp;D Site</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search" />
+<meta name="author" content="박지철:POSTECH" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="한 번의 딥러닝 추론으로 사람 검출과 검색을 한꺼번에 구현하는 기법 제안" />
+<meta property="og:description" content="한 번의 딥러닝 추론으로 사람 검출과 검색을 한꺼번에 구현하는 기법 제안" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/icip2020-effective-and-scalable-person-search" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/icip2020-effective-and-scalable-person-search" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-28T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search" />
+<script type="application/ld+json">
+{"datePublished":"2020-10-28T00:00:00+09:00","description":"한 번의 딥러닝 추론으로 사람 검출과 검색을 한꺼번에 구현하는 기법 제안","dateModified":"2020-10-28T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/icip2020-effective-and-scalable-person-search"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/icip2020-effective-and-scalable-person-search","author":{"@type":"Person","name":"박지철:POSTECH"},"@type":"BlogPosting","headline":"Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+
+  <!-- Google Analytics-->
+  
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">KEP R&D Site</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="/techlog">Techlog</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPTER VISION</h4>
+    <h1 class="post-title">Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search</h1>
+
+    
+
+    
+
+    박지철(POSTECH), 정보승(POSTECH), 신종주(카카오엔터프라이즈), 이주영(카카오엔터프라이즈), 곽수하(POSTECH)
+
+    <h4>
+        
+          International Conference on Image Processing (ICIP)
+        
+    </h4>
+
+    <h4>2020-10-28</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://ieeexplore.ieee.org/abstract/document/9190688" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>This paper proposes a new method for person search, the task of detecting a specific person exemplified by a query image from a gallery of scene images. Current state-of-the-art techniques in person search demonstrate impressive performance, but are limited in terms of efficiency and scalability since they require multiple models and/or have to re-process gallery images per query. We argue that a concise framework with a single neural network can achieve both of scalability and performance at once. In our framework, the network detects people and extracts their appearance features so that person search is done by finding the person closest to the query in the feature space. For performance, we focus on the quality of the person appearance features: Our network is designed and trained to produce person features that are discriminative, fine-grained, adaptive to appearance variations, and robust against person localization errors. To this end, we design channel attention and part-wise spatial attention modules as well as a loss for learning discriminative features. Our framework outperforms current state of the art on the PRW benchmark even with the concise pipeline based on a single network.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#person detection</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+  </a>
+</footer>
+
+  </body>
+</html>
