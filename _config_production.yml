@@ -1,0 +1,34 @@
+# Site settings
+title:          KEP R&D Site
+description:    "카카오엔터프라이즈 Research&Development Blog"
+url:            "https://pages.github.kakaocorp.com"
+baseurl:        "/ailab-papers"
+
+# Author
+author:
+  name:         카카오엔터프라이즈 R&D
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+future:         true
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:categories/:slug
+paginate:       10
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor, serve.sh ]
