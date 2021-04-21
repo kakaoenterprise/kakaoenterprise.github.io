@@ -22,7 +22,7 @@
 <meta property="twitter:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
 <meta property="twitter:title" content="EMNLP 2020 - 다국어 번역 논문 2편을 소개합니다" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"samantha:작성,편집"},"description":"첫번째 논문은 1-1 MNMT가 지닌 한계를 극복한 실용적인 번역 모델을 새롭게 탐색하는 과정에서 multi-way MNMT의 가치를 재발견했습니다. LSTM 대신 Transfomer로 인코더와 디코더를 구현한 버전을 M2NMT라 명명하고 실험을 진행했습니다. 두번째 논문에서는 제로샷 번역에서 1-1 MNMT의 한계와 SLNI 기법이 무엇인지, SLNI를 이용했을 때 제로샷-감독학습 번역에서 성능이 어떻게 달라지는지 실험적으로 증명했습니다.","@type":"BlogPosting","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","headline":"EMNLP 2020 - 다국어 번역 논문 2편을 소개합니다","dateModified":"2020-12-17T00:00:00-06:00","datePublished":"2020-12-17T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201217","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201217"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"samantha:작성,편집"},"headline":"EMNLP 2020 - 다국어 번역 논문 2편을 소개합니다","dateModified":"2020-12-17T00:00:00-06:00","description":"첫번째 논문은 1-1 MNMT가 지닌 한계를 극복한 실용적인 번역 모델을 새롭게 탐색하는 과정에서 multi-way MNMT의 가치를 재발견했습니다. LSTM 대신 Transfomer로 인코더와 디코더를 구현한 버전을 M2NMT라 명명하고 실험을 진행했습니다. 두번째 논문에서는 제로샷 번역에서 1-1 MNMT의 한계와 SLNI 기법이 무엇인지, SLNI를 이용했을 때 제로샷-감독학습 번역에서 성능이 어떻게 달라지는지 실험적으로 증명했습니다.","datePublished":"2020-12-17T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201217"},"url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201217","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -73,7 +73,7 @@
 
 
 
-<img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/000.jpg" width="" align="">
+<img src="/ailab-papers/assets/img/2020-12-17-201217/000.jpg" width="" align="">
 
     
   </header>
@@ -120,7 +120,7 @@
 
 <p>기존에는 다국어 번역(N개 언어)을 위해 N×(N-1)개의 NMT를 각기 따로 두었습니다(Single NMT, [그림 1-(1)]). 영어, 한국어, 스페인어를 번역해야 한다면 [영→한, 한→영, 한→스, 스→한, 영→스, 스→한] 이렇게 총 여섯 개의 NMT를 만드는 식이죠. 다만 문제는 언어 수가 늘어나는 만큼 훈련해야 할 모델 수, 좀 더 자세히 말하면 매개변수<sup>parameter</sup> 수가 제곱으로 커진다(O(N2))는 겁니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/001.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/001.png" width="90%" align="" /></p>
 
 <p><em class="center">[ 그림 1 ] 3개국 언어 간 번역 태스크를 해결하는 3가지 방식</em></p>
 
@@ -142,7 +142,7 @@
 
 <p>이에 많은 기업에서는 비용이 상당히 저렴한 pivot NMT 방식을 좀 더 선호합니다([그림 2]). ‘회전축의 중심’이라는 본래 의미에서 착안, 다국어 번역에서 피벗<sup>pivot</sup>은 전세계적으로 가장 많이 쓰이는 언어인 영어를 매개로 하는 중간 번역을 의미합니다. 비영어→영어 NMT, 영어→비영어 NMT을 각각 N개만 훈련하면 되어서 비용을 많이 낮출 수 있습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/002.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] 한국어→중국어 번역을 위한 pivot NMT 구조</em></p>
 
@@ -162,23 +162,23 @@
 
 <p>AI Lab은 다국어 번역 태스크를 위한 세 방법론(Single NMT, 1-1 MNMT, M2MNT)의 감독학습<sup>supervised learning</sup><sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">5</a></sup> 성능을 비교하는 실험을 진행했습니다. 그 결과([그림 3]), 1-1 MNMT는 성능 병목 현상으로 인해 Single NMT보다 더 낮은 성능을 냈습니다. 반면, M2NMT는 셋 중 가장 높은 성능을 선보였습니다. 한 매개변수가 여러 방향의 번역에 공유되는 구조로 인해 다국어 학습 시너지 효과<sup>data-diversification, and regularization effect</sup>가 난 거로 분석됩니다. 한편, 앞서 설명한대로 1-1 MNMT의 크기를 키우면 성능 병목 현상이 크게 개선된다는 점도 확인할 수 있습니다([그림 4]).</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/003.png" width="80%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/003.png" width="80%" align="" /></p>
 
 <p><em class="center">[ 그림 3 ] 12방향의 번역 태스크에서 Single NMT, 1-1 MNMT, M2NMT의 성능</em></p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/004.png" width="80%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/004.png" width="80%" align="" /></p>
 
 <p><em class="center">[ 그림 4 ] 모델 크기가 상대적으로 더 클수록 성능 병목 현상이 완화됨을 확인할 수 있다.</em></p>
 
 <p>두번째 실험에서 AI Lab은 4개의 언어 간 번역(En, De, Es, Ni 기준) 태스크를 익힌 M2(4)에, 아직 학습하지 않은 새로운 언어(Fr)를 담당하는 인코더와 디코더 쌍을 점진적으로 훈련해나갈 때의 제로샷 성능을 비교했습니다<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">6</a></sup>. 그 결과[ 표 1-(2) ], M2(4)는 제로샷  태스크에서 Single(5)보다 더 좋은 성능을 보였습니다. 아울러, M2(4)가 더 많은 *↔︎Fr 방향의 태스크를 배울수록(ID 1→2→3→4), M2(4)의 En↔︎Fr 간 번역 성능이 조금씩 늘어나며, 모든 번역 태스크를 추가 학습한 M2(4)의 성능이 M2(5)에 버금간다는 점을 볼 수 있습니다. pivot(4)와 비교해서도, M2NMT가 거의 모든 제로샷 태스크에서 pivot NMT 대비 더 좋은 성능(빨간색 글씨)을 달성했음을 ([표 1-(1)])에서 확인했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/005.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/005.png" width="" align="" /></p>
 
 <p><em class="center">[ 표 1 ] (1) 제로샷에서 pivot NMT와 M2NMT 성능 비교 (2) 새로운 언어(Fr)에 대한 번역 태스크를 추가한 모델의 성능 비교</em></p>
 
 <p>AI Lab은 M2NMT가 생성한 문장 벡터가 언어에 독립적인 공간<sup>interlingual space</sup>에 사상된다고 가정했습니다. 그 구조상 각 인코더는 모든 디코더가 해석할 수 있는 정보를 제공해야 하며, 각 디코더는 모든 인코더가 제공한 정보를 해석할 수 있어야 하기 때문입니다. 학습을 마친 모델에 새로 추가된 인코더와 디코더가 약간의 훈련을 거치기만 해도 각각 언어에 독립적인 표현력과 해석력을 갖췄음을 보여준 두번째 실험은 이 가정을 실험적으로 증명했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/006.png" width="62%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/006.png" width="62%" align="" /></p>
 
 <p><em class="center">[ 그림 5 ] M2MNT에서 생성되는 언어에 독립적인 특징 공간</em></p>
 
@@ -249,13 +249,13 @@
 
 <p>AI Lab은 SLNI를 적용한 번역 모델이 감독학습에서의 성능은 거의 그대로 유지하며, 특히 다양한 훈련 조건에서 안정적인 제로샷 성능을 확보할 수 있음을 확인했습니다. 이는 데이터 후처리<sup>post-processing</sup>나 사전 훈련, 데이터 어그먼테이션 없이 간단한 조치만으로도 만들어낸 성과라 큰 의의가 있다고 평가해볼 수 있습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/007.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/007.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 6 ] 감독학습(왼쪽)과 제로샷 태스크를 수행할 때 SLNI 기법의 효과를 나타내는 그래프</em></p>
 
 <p>AI Lab은 1-1 MNMT의 인코더를 정규화하면 모든 언어의 문장 벡터가 사상된 공간의 형태가 서로 유사한지<sup>space similarity</sup>, 동일한 의미를 가진 영어 문장 벡터와 비영어 문장 문장 벡터가 비슷한 표현을 갖추는지<sup>instance similarity</sup>를 확인하는 실험도 진행했습니다. 만약 SLNI를 적용한 번역 모델이 위 두 유사성을 갖춘다면, SLNI를 적용하지 않은 버전(naive)와 비교해 더 높은 숫자를 갖춰야 합니다. 하지만 실험 결과, 두 버전 간 숫자간 격차가 크지 않음을 확인했습니다. 즉, 이 실험은 SLNI가 기존 인코더 정규화 기법을 다룬 연구에서 전제한 내용과는 다른 원리로 얽힘 문제를 해결했음을 보여줍니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/008.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-17-201217/008.png" width="90%" align="" /></p>
 
 <p><em>[ 표 3 ] 1-1MNMT에서 인코더를 정규화하는 접근 방식이 언어에 독립적인 특징 벡터를 생성한다는 걸 전제로 하지 않음을 실험적으로 증명했다.</em></p>
 
@@ -356,7 +356,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/samantha.jpg">
+            <img class="author-image" src="/ailab-papers/assets/profile/samantha.jpg">
           </span>
           <span>
             <p><span class="author-name">이수경</span> | <span class="author-role">작성,편집</span></p>
@@ -373,7 +373,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/james.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/james.png">
           </span>
           <span>
             <p><span class="author-name">류성원</span> | <span class="author-role">작성,감수</span></p>
@@ -390,7 +390,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/meta.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/meta.png">
           </span>
           <span>
             <p><span class="author-name">손보경</span> | <span class="author-role">작성,감수</span></p>
@@ -407,7 +407,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/kevin.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/kevin.png">
           </span>
           <span>
             <p><span class="author-name">양기창</span> | <span class="author-role">감수</span></p>
@@ -424,7 +424,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/storm.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/storm.png">
           </span>
           <span>
             <p><span class="author-name">배재경</span> | <span class="author-role">감수</span></p>

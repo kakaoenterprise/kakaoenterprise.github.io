@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"rung:카카오엔터프라이즈"},"description":"비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 ‘SST’ 제안","@type":"BlogPosting","headline":"Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer","dateModified":"2020-12-15T00:00:00-06:00","datePublished":"2020-12-15T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"rung:카카오엔터프라이즈"},"headline":"Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer","dateModified":"2020-12-15T00:00:00-06:00","description":"비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 ‘SST’ 제안","datePublished":"2020-12-15T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -124,20 +124,20 @@
 
 <p>Our approach consists of two stages: Delete and Generate framework in Fig. 1. The first stage is the Delete process with a pre-trained style classifier. The pre-trained style classifier finds and deletes tokens that contain a lot of style attributes. The second stage is encoding the content tokens and combining them with a target style to generate a sentence. Both the encoder and the decoder have the Transformer structure, which is better than RNN and robust to long dependency.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-INLG-Stable-Style-Transformer/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/001.png" width="" align="" /></p>
 
 <p><em class="center">[ Figure 1 ] The proposed model framework consists of the Delete and Generate process.
 Experiments</em></p>
 
 <p>We test our model on two datasets, YELP and AMAZON. The Yelp dataset is for business reviews, and the Amazon dataset is product reviews. Both datasets are labeled negative and positive and statistics are shown in Table 1.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-INLG-Stable-Style-Transformer/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/002.png" width="" align="" /></p>
 
 <p><em class="center">[ Table 1 ] (Sentiment) Dataset statistics</em></p>
 
 <p>We show that filtering out unstable systems through human evaluation is expensive, so selecting a stable system through automatic evaluation can be helpful. The proposed direct and model-agnostic deletion method allows the classifier to intuitively delete attribute markers and easily handle the trade-off of content and style.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-INLG-Stable-Style-Transformer/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/003.png" width="" align="" /></p>
 
 <p><em>[ Table 2 ] Automatic evaluation results of the Yelp dataset (s: self, h: human, G: geometric mean, f: fine-tuned, p: pre-trained). The red indicates that the evaluation score is significantly worse than other systems. Our model is referred to as SST(α, β). The bold black indicates the better performance of our systems for the four metrics that determine it is a stable system.</em></p>
 

@@ -22,7 +22,7 @@
 <meta property="twitter:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
 <meta property="twitter:title" content="카카오 i 번역 성능 향상 실험 : 대규모 말뭉치를 활용한 사전학습" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"samantha:작성,편집"},"description":"카카오가 보유한 대규모 말뭉치를 사전학습된 번역 모델은 기존 카카오 i 번역 엔진에 사용된 모델과 비교했을 때 더 나은 성능을 냈습니다. 이번 글에서는 바로 이 사전학습된 번역 모델을 만드는 과정과 실험 결과에 대한 내용을 담아냈습니다.","@type":"BlogPosting","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","headline":"카카오 i 번역 성능 향상 실험 : 대규모 말뭉치를 활용한 사전학습","dateModified":"2020-05-07T00:00:00-05:00","datePublished":"2020-05-07T00:00:00-05:00","url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/200507","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/200507"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"samantha:작성,편집"},"headline":"카카오 i 번역 성능 향상 실험 : 대규모 말뭉치를 활용한 사전학습","dateModified":"2020-05-07T00:00:00-05:00","description":"카카오가 보유한 대규모 말뭉치를 사전학습된 번역 모델은 기존 카카오 i 번역 엔진에 사용된 모델과 비교했을 때 더 나은 성능을 냈습니다. 이번 글에서는 바로 이 사전학습된 번역 모델을 만드는 과정과 실험 결과에 대한 내용을 담아냈습니다.","datePublished":"2020-05-07T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/200507"},"url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/200507","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -73,7 +73,7 @@
 
 
 
-<img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/000.jpg" width="" align="">
+<img src="/ailab-papers/assets/img/2020-05-07-200507/000.jpg" width="" align="">
 
     
   </header>
@@ -98,7 +98,7 @@
 <p class="notice">※양기창 개발자는 지난 2019년 7월 카카오의 인턴십 프로그램을 통해 이 연구를 진행했습니다.</p>
 <p class="notice">※본문에서는 AI Lab이 제안한 모델과 여타 다른 기본 언어 모델<sup>vanilla language model</sup>과의 혼동을 줄이고자, 카카오 i 번역 엔진에 사용된 transformer 구조에 기반한 모델을 '기존 모델'이라고 지칭했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/001.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 1 ] 대규모 말뭉치를 사전학습한 번역 모델과 기존 모델과 성능을 비교하는 과정을 도식화한 이미지</em></p>
 
@@ -147,7 +147,7 @@
 
 <p>첫번째, 사용하는 문자<sup>character</sup> 또는 어족<sup>language family</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>이 다른 언어간 번역 태스크에서의 성능을 비교했습니다. 학계에 보고되는 대부분의 번역 모델 태스크는 인도유럽어족<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>에 해당하는 언어 간 번역입니다. 인도유럽어족의 하나인 영어와 독일어 예문([그림 2])을 보면, 문장 구성 방식이나 사용 문자가 서로 비슷하다는 점을 볼 수 있습니다. 이처럼 한 어파에 해당되는 언어는 서로 유사한 언어적 특성을 갖추고 있어 번역 난이도가 상대적으로 더 수월하죠. 반면, 독자적인 문자인 한글을 사용하는 한국어는 일본어나 몽골어를 제외하고는 어족이 같은 언어가 거의 없습니다. 주 사용자층이 한국인인 카카오 i 번역 엔진에서는 한국어에서 다른 이질적인 언어 간 번역 성능에 높은 가중치를 둬야한다고 판단했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/002.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] 같은 어파에 속하는 영어와 독일어 예문</em></p>
 
@@ -163,7 +163,7 @@
 
 <p>논문에서 설명한 모델과 실제 공식 구현체 간의 구현방식에 두 가지 차이가 있었습니다. 논문에서는 단일언어 말뭉치로만 사전학습을 진행하는 반면, 마이크로소프트 리서치가 이를 실제 개발한 <a href="https://github.com/microsoft/MASS">공식 구현체</a>에서는 [그림 3]처럼 두 언어 간 병렬 말뭉치를 이용한 사전학습도 함께 진행했습니다. 언어 정보를 나타내는 임베딩<sup>language embedding</sup>을 둔 일체형 인코더와 디코더 구조를 제안한 논문과는 달리, MASS 공식 구현체에서는 언어별로 인코더와 디코더를 두었습니다. 이에 AI Lab은 MASS 공식 구현체에서처럼 단일언어 말뭉치와 다중언어 말뭉치를 모두 활용해 사전학습을 진행했습니다. 아울러 언어별 인코더와 디코더를 만들어 실험을 진행키로 결정했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/003.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 3 ] MASS 공식 구현체가 사전학습을 진행하는 방식</em></p>
 
@@ -208,7 +208,7 @@
 
 <h2 id="1-배치-크기">(1) 배치 크기</h2>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/004.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/004.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 4 ] 체코-&gt;영어 번역 태스크에서 배치 크기에 따른 Transformer 모델 성능 비교 (출처 : <a href="https://arxiv.org/pdf/2001.08210.pdf">논문</a>)</em></p>
 
@@ -216,7 +216,7 @@
 
 <p>이런 이유로 AI Lab은 미세조정에 적절한 배치 크기를 선택하는 실험을 진행했습니다([그림 5]). 사전학습 때 사용한 배치 크기의 1배(빨간색)에서는 그래프가 0으로 수렴하지 않고 되려 폭증했습니다. 배치 크기가 지나치게 크다고 판단한 AI Lab은 이를 줄여가면서 모델의 성능이 가장 좋은 지점을 탐색하는 데 집중했습니다. 그 결과, 사전학습 때 사용한 배치 크기의 2/3 배(파란색)<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>에서 가장 좋은 성능을 확인할 수 있었습니다. 양기창 개발자는 “배치 크기를 1/2배(분홍색)로도 실험을 진행했으나, 2/3배에서보다는 성능이 미세하게 낮았다”고 부연했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/005.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/005.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 5 ] 배치 크기에 따른 번역 모델 성능 비교</em></p>
 
@@ -226,7 +226,7 @@
 
 <p>앞 사례처럼 학습 초반에 손실이 올라가는 현상을 방지하고자 AI Lab은 배치 크기에 따른 적절한 학습률을 찾는 실험도 진행했습니다. 그 결과, 사전학습에서의 학습률 대비 1/2배(하늘색)와 1배(파란색) 간 뚜렷한 성능 차이가 없었습니다([그림 6]). 이에 AI Lab은 학습률을 0.2 그대로 유지했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/006.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/006.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 6 ] 학습률에 따른 번역 모델 성능 비교</em></p>
 
@@ -236,7 +236,7 @@
 
 <p>AI Lab 또한 이와 비슷하게 사전학습 설정값대로 학습률을 0에서 0.2까지 8,000회에 나눠서 천천히 키웠습니다. 하지만 미세조정 초반에 손실이 올라가는 현상이 발생했습니다. 워밍업 횟수가 작아서 생긴 현상이라고 본 AI Lab은 워밍업 횟수를 2배로 늘려 학습률을 천천히 예열하면 성능 개선이 이뤄질 거라 가정했습니다. 그러나 학습률 워밍업 횟수가 8,000회(하늘색)일 때와 16,000회(초록색)에서의 오차는 큰 차이가 없었습니다([그림 7]). AI Lab은 사전학습 때처럼 학습률 워밍업 횟수를 8,000회로 설정했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/007.png" width="51%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/007.png" width="51%" align="" /></p>
 
 <p><em class="center">[ 그림 7 ] 학습률 워밍업 횟수에 따른 번역 모델 성능 비교</em></p>
 
@@ -250,7 +250,7 @@
 
 <p>차선책으로 고려한 성능 평가 척도는 아마존웹서비스(AWS)가 지난 <a href="https://arxiv.org/abs/1804.08771">2018년 ACL 학회에 제출한 논문</a>에서 처음 제안한 sacre BLEU([그림 8])입니다. 논문에서는 통계적으로 추출한 서브워드<sup>subword</sup><sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote" rel="footnote">13</a></sup> 기반으로 문장을 분절하는 최신 알고리즘인 BPE<sup>Byte-Pair Encoding</sup>를 사용합니다. 이렇게 하면 번역 모델과 모델 학습에 사용한 말뭉치 종류에 관계없이 기계가 번역한 문장을 동일한 단위로 분절할 수 있습니다. 보다 객관적인 척도라는 점을 인정 받은 sacre BLEU는 최근 여러 논문에서 BLEU에 함께 번역 모델의 성능을 평가하는 기준으로 널리 사용되고 있습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-05-07-200507/008.png" width="47%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-05-07-200507/008.png" width="47%" align="" /></p>
 
 <p><em class="center">[ 그림 8 ] sacre BLEU가 점수를 내는 과정 (출처 : <a href="https://arxiv.org/abs/1804.08771">논문</a>)</em></p>
 
@@ -362,7 +362,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/samantha.jpg">
+            <img class="author-image" src="/ailab-papers/assets/profile/samantha.jpg">
           </span>
           <span>
             <p><span class="author-name">이수경</span> | <span class="author-role">작성,편집</span></p>
@@ -379,7 +379,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/kevin.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/kevin.png">
           </span>
           <span>
             <p><span class="author-name">양기창</span> | <span class="author-role">작성,감수</span></p>

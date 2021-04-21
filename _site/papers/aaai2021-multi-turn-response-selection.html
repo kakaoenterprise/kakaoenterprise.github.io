@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"황태선:고려대학교"},"description":"응답 선택에서 대화 맥락에 호응하면서도 의미적 유사도가 높은 문장을 선택하는 기법 ‘UMS’ 제안","@type":"BlogPosting","headline":"Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection","dateModified":"2021-02-02T00:00:00-06:00","datePublished":"2021-02-02T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"황태선:고려대학교"},"headline":"Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection","dateModified":"2021-02-02T00:00:00-06:00","description":"응답 선택에서 대화 맥락에 호응하면서도 의미적 유사도가 높은 문장을 선택하는 기법 ‘UMS’ 제안","datePublished":"2021-02-02T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/aaai2021-multi-turn-response-selection","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -104,7 +104,7 @@
 
 <p>최신 언어 모델 기반한 응답 선택 모델은 대화와 응답 후보군을 입력받으면, 후보 문장의 적정성 여부를 이진 분류<sup>binary classification</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>한 결과를 내놓습니다. 공동 연구팀은 의미적 유사도를 기반으로 점수를 내는 언어 모델의 특성상, 응답으로 적절하지 않은 문장에 정답보다 더 높은 점수를 부여하는 경향성을 보이는 기존 방식의 한계를 지적했습니다. 이는 기존의 손실 함수<sup>loss function</sup>가 발화<sup>utterance</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> 간 연관성<sup>coherence</sup>을 충분히 표현하지 못해서 생기는 거로 분석됩니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/001.png" width="" align="" /></p>
 
 <p><em>[ 그림 1 ] LM에 기반한 최신의 응답 선택 모델은 대화의 맥락에 호응하지 않음에도 불구, 의미적 유사도가 높은 문장 b에 더 높은 점수를 부여하고 있다.</em></p>
 
@@ -120,7 +120,7 @@
 
 <p>Figure 1 describes the overview of our proposed method, utterance manipulation strategies. We propose a multi-task learning framework, which consists of three highly effective auxiliary tasks for multi-turn response selection, utterance 1) insertion, 2) deletion, and 3) search. These tasks are jointly trained with the response selection model during the fine-tuning period. To train the auxiliary tasks, we add new special tokens, [INS], [DEL], and [SRCH] for the utterance insertion, deletion, and search tasks, respectively.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/002.png" width="" align="" /></p>
 
 <p><em>[ Figure 1 ] An overview of Utterance Manipulation Strategies. Input sequence for each manipulation strategy is dynamically constructed by extracting k consecutive utterances from the original dialog context during the training period. Also, target utterance is randomly chosen from either the dialog context (Insertion, Search) or the random dialog (Deletion).</em></p>
 
@@ -130,7 +130,7 @@
 
 <p>We obtained new state-of-the-art results on multiple public benchmark datasets (i.e., Ubuntu, Douban, and E-Commerce) and significantly improved results on Korean open-domain dialog corpus.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/003.png" width="" align="" /></p>
 
 <p><em>[ Table 2 ] Results on Ubuntu, Douban, and E-Commerce datasets. All the evaluation results except ours are cited from published literature (Tao et al. 2019b; Yuan et al. 2019; Gu et al. 2020). The underlined numbers mean the best performance for each block and the bold numbers mean state-of-the-art performance for each metric. † denotes statistical significance (p-value &lt; 0.05).</em></p>
 

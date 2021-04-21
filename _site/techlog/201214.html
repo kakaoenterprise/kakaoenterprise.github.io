@@ -22,7 +22,7 @@
 <meta property="twitter:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
 <meta property="twitter:title" content="지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"samantha:작성,편집"},"description":"카카오엔터프라이즈 Research&amp;Development Blog","@type":"BlogPosting","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","headline":"지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다","dateModified":"2020-12-14T00:00:00-06:00","datePublished":"2020-12-14T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201214","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201214"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"samantha:작성,편집"},"headline":"지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다","dateModified":"2020-12-14T00:00:00-06:00","description":"카카오엔터프라이즈 Research&amp;Development Blog","datePublished":"2020-12-14T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201214"},"url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201214","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -73,7 +73,7 @@
 
 
 
-<img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/000.jpg" width="" align="">
+<img src="/ailab-papers/assets/img/2020-12-14-201214/000.jpg" width="" align="">
 
     
   </header>
@@ -105,7 +105,7 @@
 
 <p>오늘날의 많은 대화 시스템은 언어 모델<sup>language model</sup>을 이용해 문장을 생성합니다. 특정 대상에 대한 지식을 보다 원활하게 획득하고자 최근에는 외부 지식 베이스<sup>knowledge base</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>를 활용하는 방식도 고려되고 있습니다. 올해 EMNLP<sup>Empirical Methods in Natural Language Processing</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>에 게재된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 논문에서는 바로 이 지식 베이스 상에서 대화 맥락에 어울리는 (답변) 경로를 효과적으로 탐색하는 모델<sup>path retrieval model</sup>인 AttnIO<a id="01" href="#rf01"><a href="#rf01">[1]</a></a>를 제안했습니다. 자연어처리에서 경험적 방법론을 다루는 올해 이 학회에서는 총 3,677개 중 754개의 논문이 통과됐습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-14-201214/001.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 1 ] AttnIO가 지식 그래프에서 경로를 탐색하는 과정</em></p>
 
@@ -143,7 +143,7 @@
 
 <p>AI Lab은 1)인코딩 과정에서 지식 그래프의 구조 정보를 반영하고, 2)대화 맥락에 따라 경로를 생성하며, 3)정답 경로의 첫 번째 노드와 마지막 노드만을 이용한 약감독학습<sup>weakly-supervised learning</sup>으로도 감독학습에 버금가는 성능을 달성한 새로운 지식 경로 탐색 모델인 AttnIO를 제안했습니다. in-flow<sup>incoming attention flow</sup>에서 각 노드는 자신과 연결된 이웃 노드와 그 관계를 표현하는 벡터를 생성하며, out-flow<sup>outgoing attention flow</sup>에서는 대화 맥락에 따른 최적의 경로를 탐색합니다. 자세한 설명은 각 단락에서 이어서 하겠습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-14-201214/002.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] AttnIO의 아키텍처</em></p>
 
@@ -199,7 +199,7 @@
 
 <p>지식 경로를 라벨링한 데이터를 감독학습한 여러 모델의 성능을 비교한 결과, AttnIO-AS는 OpenDialKG에서 현재 최고 수준의(SOTA) 추론 성능을 달성했습니다. 특히 k가 작을수록 그 성능 격차가 더 크다는 부분은 눈여겨서 볼만 합니다. AttnIO가 생성한 1위 후보 경로와 경로상 마지막 노드가 정답과 일치할 확률이 다른 모델보다 높다는 점을 시사하기 때문입니다. 이는 탐색 각 단계에서 노드를 미리 선택하는 RNN 디코더를 갖춘 모델과는 달리, 대화 맥락에 따라 가장 많은 어텐션 값을 전파받은 경로를 선택하는 구조에 기인한 효과로 분석됩니다. 주변 노드와의 관계를 잘 표현하는 노드 인코딩 기법도 유효한 영향을 미쳤습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-14-201214/003.png" width="" align="" /></p>
 
 <p><em class="center">[ 표 2 ] 대화 말뭉치에 지식 경로를 라벨링한 데이터를 학습한 모델의 성능 비교</em></p>
 
@@ -209,17 +209,17 @@
 
 <p>이를 보완하고자 [감독하다]와 같은 관계 정보만을 제대로 포함하는지를 평가<sup>relation path accuracy</sup>하는 실험([표 3])을 진행했습니다. 그 결과, 정답 경로를 배우지 않은 AttnIO-TS가 노드 간의 관계 정보를 배운 AttnIO-AS에 상응하는 수준의 성능을 선보였습니다. 모델이 생성한 경로의 적합성을 사람이 직접 평가하는 실험([표 4])에서는 AttnIO-TS가 좀 더 나은 점수를 받기도 했습니다. 이는 대화 맥락에 따라 어텐션을 전달하는 과정에서 경로를 스스로 탐색한 거로 보입니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/004.png" width="40%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-14-201214/004.png" width="40%" align="" /></p>
 
 <p><em class="center">[ 표 3 ] AttnIO-AS와 AttnIO-TS의 관계 경로 일치성 여부를 (자동) 평가한 결과</em></p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/005.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-14-201214/005.png" width="90%" align="" /></p>
 
 <p><em class="center">[ 표 4 ] AttnIO-AS와 AttnIO-TS가 생성한 경로의 적합성에 대한 인간 평가 결과</em></p>
 
 <p>아울러 AI Lab은 AttnIO가 해석력(interpretability)도 갖추고 있음을 확인했습니다([그림 3]). 각 추론 단계에서 특정 노드가 어떤 간선을 통해 얼마나 많은 어텐션을 받았는지를 볼 수 있다는 의미입니다. “AttnIO가 열린 질문과 닫힌 질문 사이의 차이를 경로 탐색 과정에서 반영하는가?”를 분석한 결과, “스티븐 스필버그가 누구야?” 식의 열린 질문에는 여러 후보 노드에 어텐션 값을 골고루 전파했습니다. 반면, “누가 영화 A.I.를 감독했어?” 식의 닫힌 질문에는 정답이 될 수 있는 한, 두 가지의 개체에만 어텐션이 전파됐음을 확인할 수 있었습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/006.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-14-201214/006.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 3 ] AttnIO가 추론한 어텐션 값 분포를 분석하면 AttnIO가 대화 맥락에 따라 탐색한 지식 경로를 살펴볼 수 있다.</em></p>
 
@@ -315,7 +315,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/samantha.jpg">
+            <img class="author-image" src="/ailab-papers/assets/profile/samantha.jpg">
           </span>
           <span>
             <p><span class="author-name">이수경</span> | <span class="author-role">작성,편집</span></p>
@@ -332,7 +332,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/hoony.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/hoony.png">
           </span>
           <span>
             <p><span class="author-name">정재훈</span> | <span class="author-role">작성,감수</span></p>
@@ -349,7 +349,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/james.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/james.png">
           </span>
           <span>
             <p><span class="author-name">류성원</span> | <span class="author-role">감수</span></p>
@@ -366,7 +366,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="https://pages.github.kakaocorp.com/assets/profile/meta.png">
+            <img class="author-image" src="/ailab-papers/assets/profile/meta.png">
           </span>
           <span>
             <p><span class="author-name">손보경</span> | <span class="author-role">감수</span></p>

@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"jay:카카오엔터프라이즈"},"description":"플로우 기반 생성 모델과 동적 프로그래밍을 활용한 TTS 모델 ‘Glow-TTS’ 제안","@type":"BlogPosting","headline":"Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search","dateModified":"2020-12-15T00:00:00-06:00","datePublished":"2020-12-15T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"jay:카카오엔터프라이즈"},"headline":"Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search","dateModified":"2020-12-15T00:00:00-06:00","description":"플로우 기반 생성 모델과 동적 프로그래밍을 활용한 TTS 모델 ‘Glow-TTS’ 제안","datePublished":"2020-12-15T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -128,7 +128,7 @@
 
 <p>By combining the properties of flows and dynamic programming, Glow-TTS efficiently searches for the most probable monotonic alignment between text and the latent representation of speech. The proposed model is directly trained to maximize the log-likelihood of speech with the alignment.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-Glow-TTS/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-NeurIPS-Glow-TTS/001.png" width="" align="" /></p>
 
 <p><em class="center">[ Figure 1 ] Training and inference procedures of Glow-TTS</em></p>
 
@@ -138,12 +138,12 @@
 
 <p>We vary the standard deviation (i.e., temperature T ) of the prior distribution at inference; Glow-TTS shows the best performance at the temperature of 0.333. For any temperature, it shows comparable performance to Tacotron 2.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-Glow-TTS/002.png" width="60%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-NeurIPS-Glow-TTS/002.png" width="60%" align="" /></p>
 
 <p><em>[ Table 1 ] The Mean Opinion Score (MOS) of single speaker TTS models with 95% confidence intervals.
 On average, Glow-TTS shows a 15.7 times faster synthesis speed than Tacotron 2. The CER(character error rate) of Tacotron 2 starts to grow when the length of input characters exceeds about 260. On the other hand, even though our model has not seen such long texts during training, it shows robustness to long texts.</em></p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-Glow-TTS/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-NeurIPS-Glow-TTS/003.png" width="" align="" /></p>
 
 <p><em class="center">[ Figure 2 ] Comparison of inference time and length robustness</em></p>
 

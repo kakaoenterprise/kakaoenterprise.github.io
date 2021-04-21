@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"henry:카카오엔터프라이즈"},"description":"고품질의 음성 오디오를 빠르게 합성하는 TTS 모델 ‘Hi-Fi GAN’ 제안","@type":"BlogPosting","headline":"HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis","dateModified":"2020-12-15T00:00:00-06:00","datePublished":"2020-12-15T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-hifi-gan","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-hifi-gan"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"henry:카카오엔터프라이즈"},"headline":"HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis","dateModified":"2020-12-15T00:00:00-06:00","description":"고품질의 음성 오디오를 빠르게 합성하는 TTS 모델 ‘Hi-Fi GAN’ 제안","datePublished":"2020-12-15T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-hifi-gan"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-hifi-gan","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -139,12 +139,12 @@
 
 <p>HiFi-GAN consists of one generator and two discriminators: multi-scale and multi-period discrimina- tors. The generator and discriminators are trained adversarially, along with two additional losses for improving training stability and model performance.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-HiFi-GAN/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-NeurIPS-HiFi-GAN/001.png" width="" align="" /></p>
 
 <p><em>[ Figure 1 ] The generator upsamples mel-spectrograms up to \(\vert k_{u} \vert\) times to match the temporal resolution of raw waveforms. A MRF module adds features from \(\vert k_{r} \vert\) residual blocks of different kernel sizes and dilation rates. Lastly, the \(n\)-th residual block with kernel size \(k_{r}[n]\) and dilation rates \(D_{r}[n]\) in a MRF module is depicted.
 </em></p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-HiFi-GAN/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-NeurIPS-HiFi-GAN/002.png" width="" align="" /></p>
 
 <p><em>[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.</em></p>
 
@@ -154,7 +154,7 @@
 
 <p>To evaluate the performance of our models in terms of both quality and speed, we performed the MOS test and the speed measurement. For easy comparison of audio quality, synthesis speed and model size, the results are compiled and presented in Table1. Remarkably, all variations of HiFi-GAN scored higher than the other model. Moreover, it shows a significant improvement in terms of synthesis speed.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-HiFi-GAN/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-NeurIPS-HiFi-GAN/003.png" width="" align="" /></p>
 
 <p><em>[ Table 1 ] Comparison of the MOS and the synthesis speed. Speed of n kHz means that the model can generate n × 1000 raw audio samples per second. The numbers in () mean the speed compared to real time.</em></p>
 

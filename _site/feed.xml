@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pages.github.kakaocorp.com/ailab-papers/" rel="alternate" type="text/html" /><updated>2021-04-21T09:52:30-05:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/feed.xml</id><title type="html">KEP R&amp;amp;D Site</title><subtitle>카카오엔터프라이즈 Research&amp;Development Blog</subtitle><author><name>카카오엔터프라이즈 R&amp;D</name></author><entry><title type="html">U-Convolution Based Residual Echo Suppression With Multiple Encoders</title><link href="https://pages.github.kakaocorp.com/ailab-papers/papers/icassp2021-u-convolution-based-residual-eco-suppression" rel="alternate" type="text/html" title="U-Convolution Based Residual Echo Suppression With Multiple Encoders" /><published>2021-06-05T00:00:00-05:00</published><updated>2021-06-05T00:00:00-05:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/papers/icassp2021-u-convolution-based-residual-eco-suppression</id><content type="html" xml:base="https://pages.github.kakaocorp.com/ailab-papers/papers/icassp2021-u-convolution-based-residual-eco-suppression"></content><author><name>chris:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html"></summary></entry><entry><title type="html">RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases</title><link href="https://pages.github.kakaocorp.com/ailab-papers/papers/cljournal2021-ryansql" rel="alternate" type="text/html" title="RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases" /><published>2021-03-26T00:00:00-05:00</published><updated>2021-03-26T00:00:00-05:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/papers/cljournal2021-ryansql</id><content type="html" xml:base="https://pages.github.kakaocorp.com/ailab-papers/papers/cljournal2021-ryansql">&lt;p&gt;스파이더 챌린지&lt;sup&gt;SPIDER Text-to-SQL Challenge&lt;/sup&gt; 성과를 정리한 공동 연구 논문이 Computational Linguistics에 실렸습니다. 미국 예일대학교에서 주최한 스파이더 챌린지는 각종 데이터를 정리∙보관할 때 사용하는 데이터베이스와 자연어 형태의 사용자 질의가 주어졌을때, 이 질의문을 SQL&lt;sup&gt;Structured Query Language&lt;/sup&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;문으로 변환해주는 Text-to-SQL&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 알고리즘의 정확도를 평가합니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pages.github.kakaocorp.com/ailab-papers/" rel="alternate" type="text/html" /><updated>2021-04-21T10:01:17-05:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/feed.xml</id><title type="html">KEP R&amp;amp;D Site</title><subtitle>카카오엔터프라이즈 Research&amp;Development Blog</subtitle><author><name>카카오엔터프라이즈 R&amp;D</name></author><entry><title type="html">U-Convolution Based Residual Echo Suppression With Multiple Encoders</title><link href="https://pages.github.kakaocorp.com/ailab-papers/papers/icassp2021-u-convolution-based-residual-eco-suppression" rel="alternate" type="text/html" title="U-Convolution Based Residual Echo Suppression With Multiple Encoders" /><published>2021-06-05T00:00:00-05:00</published><updated>2021-06-05T00:00:00-05:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/papers/icassp2021-u-convolution-based-residual-eco-suppression</id><content type="html" xml:base="https://pages.github.kakaocorp.com/ailab-papers/papers/icassp2021-u-convolution-based-residual-eco-suppression"></content><author><name>chris:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html"></summary></entry><entry><title type="html">RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases</title><link href="https://pages.github.kakaocorp.com/ailab-papers/papers/cljournal2021-ryansql" rel="alternate" type="text/html" title="RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases" /><published>2021-03-26T00:00:00-05:00</published><updated>2021-03-26T00:00:00-05:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/papers/cljournal2021-ryansql</id><content type="html" xml:base="https://pages.github.kakaocorp.com/ailab-papers/papers/cljournal2021-ryansql">&lt;p&gt;스파이더 챌린지&lt;sup&gt;SPIDER Text-to-SQL Challenge&lt;/sup&gt; 성과를 정리한 공동 연구 논문이 Computational Linguistics에 실렸습니다. 미국 예일대학교에서 주최한 스파이더 챌린지는 각종 데이터를 정리∙보관할 때 사용하는 데이터베이스와 자연어 형태의 사용자 질의가 주어졌을때, 이 질의문을 SQL&lt;sup&gt;Structured Query Language&lt;/sup&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;문으로 변환해주는 Text-to-SQL&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 알고리즘의 정확도를 평가합니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-03-26-ryansql/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-03-26-ryansql/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 표 1 ] 주어진 자연어 문장과 데이터베이스를 이용해 SQL 문을 생성하는 예시&lt;/em&gt;&lt;/p&gt;
 
@@ -16,11 +16,11 @@
 
 &lt;p&gt;Figure 1 shows the overall network architecture of the input encoder. The input encoder consists of five layers: Embedding layer, Embedding Encoder layer, Question-Column Alignment layer, Table Encoder layer, and Question-Table Alignment layer. Table 1 shows the proposed sketch for a SELECT statement. The sketch-based slot-filling decoder predicts values for slots of the proposed sketch, as well as the number of slots.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-03-26-ryansql/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-03-26-ryansql/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Figure 1 ] Network architecture of the proposed input encoder. S represents self-attention.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-03-26-ryansql/003.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-03-26-ryansql/003.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ table 1 ] Proposed sketch for a SELECT statement. $TBL and $COL represent a table and a column, respectively. $AGG is one of {none, max, min, count, sum, avg}, $ARI is one of the arithmetic operators {none, -, +, *, / }, and $COND is one of the conditional operators {between, =, &amp;gt;, &amp;lt;, &amp;gt;=, &amp;lt;=, !=, in, like, is, exists}. $DIST and $NOT are boolean variables representing the existence of keywords DISTINCT and NOT, respectively. $ORD is a binary value for keywords ASC/DESC, and $CONJ is one of conjunctions {AND, OR}. $VAL is the value for WHERE/HAVING condition; $SEL represents the slot for another SELECT statement.&lt;/em&gt;&lt;/p&gt;
 
@@ -30,7 +30,7 @@
 
 &lt;p&gt;Table 2 shows that the proposed system RYANSQL improves the previous sketch-based slot filling system RCSQL by a large margin of 15% on the dev set. Note that the RCSQL fine-tuned another well known pretrained language model ELMo. With the use of BERT, among the systems without database content, the proposed systems (RYANSQL + BERT and RYANSQL v2 + BERT) outperforms the previous state-of-the-art by 2.5% and 4.9% respectively on the hidden test dataset. The proposed system still shows competitive results compared to the systems using database content; RATSQL v3 + BERT outperforms the proposed system by better aligning user questions and database schemas using database content.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-03-26-ryansql/005.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-03-26-ryansql/005.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Table 2 ] Evaluation results of the proposed systems and other state-of-the-art systems.&lt;/em&gt;&lt;/p&gt;
 
@@ -38,7 +38,7 @@
 
 &lt;p&gt;The results are shown in Table 3. Compared to the exact matching accuracy 51.4% of RYANSQL + BERT-base on Spider dataset, the multilingual version shows 10% lower accuracy on dev set, but still shows comparable results to other state-of-the-art systems which are designed for CSpider dataset. Our proposed system showed 34.7% test accuracy on the test set, and ranked at 2nd place on the leaderboard.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-03-26-ryansql/005.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-03-26-ryansql/005.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Table 3 ] Evaluation results on CSpider dataset with other state-of-the-art systems.&lt;/em&gt;&lt;/p&gt;
 
@@ -69,7 +69,7 @@
 
 &lt;p&gt;최신 언어 모델 기반한 응답 선택 모델은 대화와 응답 후보군을 입력받으면, 후보 문장의 적정성 여부를 이진 분류&lt;sup&gt;binary classification&lt;/sup&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;한 결과를 내놓습니다. 공동 연구팀은 의미적 유사도를 기반으로 점수를 내는 언어 모델의 특성상, 응답으로 적절하지 않은 문장에 정답보다 더 높은 점수를 부여하는 경향성을 보이는 기존 방식의 한계를 지적했습니다. 이는 기존의 손실 함수&lt;sup&gt;loss function&lt;/sup&gt;가 발화&lt;sup&gt;utterance&lt;/sup&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 간 연관성&lt;sup&gt;coherence&lt;/sup&gt;을 충분히 표현하지 못해서 생기는 거로 분석됩니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ 그림 1 ] LM에 기반한 최신의 응답 선택 모델은 대화의 맥락에 호응하지 않음에도 불구, 의미적 유사도가 높은 문장 b에 더 높은 점수를 부여하고 있다.&lt;/em&gt;&lt;/p&gt;
 
@@ -85,7 +85,7 @@
 
 &lt;p&gt;Figure 1 describes the overview of our proposed method, utterance manipulation strategies. We propose a multi-task learning framework, which consists of three highly effective auxiliary tasks for multi-turn response selection, utterance 1) insertion, 2) deletion, and 3) search. These tasks are jointly trained with the response selection model during the fine-tuning period. To train the auxiliary tasks, we add new special tokens, [INS], [DEL], and [SRCH] for the utterance insertion, deletion, and search tasks, respectively.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 1 ] An overview of Utterance Manipulation Strategies. Input sequence for each manipulation strategy is dynamically constructed by extracting k consecutive utterances from the original dialog context during the training period. Also, target utterance is randomly chosen from either the dialog context (Insertion, Search) or the random dialog (Deletion).&lt;/em&gt;&lt;/p&gt;
 
@@ -95,7 +95,7 @@
 
 &lt;p&gt;We obtained new state-of-the-art results on multiple public benchmark datasets (i.e., Ubuntu, Douban, and E-Commerce) and significantly improved results on Korean open-domain dialog corpus.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-Utterance-Manipulation-Strategies/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Table 2 ] Results on Ubuntu, Douban, and E-Commerce datasets. All the evaluation results except ours are cited from published literature (Tao et al. 2019b; Yuan et al. 2019; Gu et al. 2020). The underlined numbers mean the best performance for each block and the bold numbers mean state-of-the-art performance for each metric. † denotes statistical significance (p-value &amp;lt; 0.05).&lt;/em&gt;&lt;/p&gt;
 
@@ -135,11 +135,11 @@
 
 &lt;p&gt;At first, MDR normalizes pairwise distances among the embedding vectors of a mini-batch, with their mean and standard deviation to obtain the objective degree of similarity between a pair by considering overall distribution. MDR defines the multiple levels that represent various degrees of similarity for pairwise distances, and the levels and the be- longing distances are trained to approach each other (Figure 1b). A conventional loss function of DML struggles to optimize a model by overcoming the disturbance from the proposed regularization. Therefore, the learning process succeeds in learning a model with a better generalization ability.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 1 ] Conceptual comparison between the conventional learning scheme and our learning scheme. (a) illustrates the triplet learning, which is one of the representative conventional learning. It increases the relative difference between distances of a positive pair and that of a negative pair more than margin m. (b) illustrates our learning combined with the triplet learning. It has multiple levels with disjoint intervals to reflect various degrees of similarity between pairs. It disturbs the learning procedure to construct an efficient embedding space by preventing the pairwise distances from deviating from its belonging level.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 2 ] Learning procedure of the proposed MDR. The embedding network generates embedding vectors from given images. Our MDR computes a matrix of pairwise distances for the embedding vectors, and then, the distances are normalized after vectorization. In our learning scheme, a model is trained by simultaneously optimizing the conventional metric learning loss such as Triplet loss (Schroff, Kalenichenko, and Philbin 2015) and the proposed loss, which regularizes the normalized pairwise distances with multiple levels.&lt;/em&gt;&lt;/p&gt;
 
@@ -153,23 +153,23 @@
 
 &lt;p&gt;Moreover, our extensive ablation studies show that MDR can be adopted to any backbone networks and any distance-based loss functions to improve the performance of a model.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/004.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/004.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Table 1 ] Recall@K comparison with state-of-the-art methods. The baseline methods and MDR are grouped in the gray-colored rows. † indicates that the model is trained and tested with large images of 256 × 256 following the setting of (Jacob et al. 2019). We round reported values to the first decimal place.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/005.png&quot; width=&quot;85%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/005.png&quot; width=&quot;85%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 3 ] Class centers in the embedding space of two models trained without MDR (Triplet &amp;amp; Triplet+L2 Norm) and one model trained with MDR (Triplet+MDR). We visualize using t-SNE on CUB-200.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/006.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/006.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Table 2 ] Recall@1 comparison with various backbone net- works, loss functions, and level configurations. The models of (a) are trained with Triplet loss. The models of (b) use IBN as the backbone network. In (a) and (b), a column with ✓ indicates that the models are trained with MDR.&lt;/em&gt; &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/007.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/007.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2021-02-02-AAAI-mdr/008.png&quot; width=&quot;55%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2021-02-02-AAAI-mdr/008.png&quot; width=&quot;55%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 4 ] (a) compares the three methods on various dimensionalities of the embedding vector on CUB-200 and Cars- 196. (b) shows the learning curves of the three methods for the training and test set on CUB-200.&lt;/em&gt;&lt;/p&gt;
 
@@ -213,7 +213,7 @@
 
 &lt;p&gt;기존에는 다국어 번역(N개 언어)을 위해 N×(N-1)개의 NMT를 각기 따로 두었습니다(Single NMT, [그림 1-(1)]). 영어, 한국어, 스페인어를 번역해야 한다면 [영→한, 한→영, 한→스, 스→한, 영→스, 스→한] 이렇게 총 여섯 개의 NMT를 만드는 식이죠. 다만 문제는 언어 수가 늘어나는 만큼 훈련해야 할 모델 수, 좀 더 자세히 말하면 매개변수&lt;sup&gt;parameter&lt;/sup&gt; 수가 제곱으로 커진다(O(N2))는 겁니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/001.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/001.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 1 ] 3개국 언어 간 번역 태스크를 해결하는 3가지 방식&lt;/em&gt;&lt;/p&gt;
 
@@ -235,7 +235,7 @@
 
 &lt;p&gt;이에 많은 기업에서는 비용이 상당히 저렴한 pivot NMT 방식을 좀 더 선호합니다([그림 2]). ‘회전축의 중심’이라는 본래 의미에서 착안, 다국어 번역에서 피벗&lt;sup&gt;pivot&lt;/sup&gt;은 전세계적으로 가장 많이 쓰이는 언어인 영어를 매개로 하는 중간 번역을 의미합니다. 비영어→영어 NMT, 영어→비영어 NMT을 각각 N개만 훈련하면 되어서 비용을 많이 낮출 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 2 ] 한국어→중국어 번역을 위한 pivot NMT 구조&lt;/em&gt;&lt;/p&gt;
 
@@ -255,23 +255,23 @@
 
 &lt;p&gt;AI Lab은 다국어 번역 태스크를 위한 세 방법론(Single NMT, 1-1 MNMT, M2MNT)의 감독학습&lt;sup&gt;supervised learning&lt;/sup&gt;&lt;sup id=&quot;fnref:6&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; 성능을 비교하는 실험을 진행했습니다. 그 결과([그림 3]), 1-1 MNMT는 성능 병목 현상으로 인해 Single NMT보다 더 낮은 성능을 냈습니다. 반면, M2NMT는 셋 중 가장 높은 성능을 선보였습니다. 한 매개변수가 여러 방향의 번역에 공유되는 구조로 인해 다국어 학습 시너지 효과&lt;sup&gt;data-diversification, and regularization effect&lt;/sup&gt;가 난 거로 분석됩니다. 한편, 앞서 설명한대로 1-1 MNMT의 크기를 키우면 성능 병목 현상이 크게 개선된다는 점도 확인할 수 있습니다([그림 4]).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/003.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/003.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 3 ] 12방향의 번역 태스크에서 Single NMT, 1-1 MNMT, M2NMT의 성능&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/004.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/004.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 4 ] 모델 크기가 상대적으로 더 클수록 성능 병목 현상이 완화됨을 확인할 수 있다.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;두번째 실험에서 AI Lab은 4개의 언어 간 번역(En, De, Es, Ni 기준) 태스크를 익힌 M2(4)에, 아직 학습하지 않은 새로운 언어(Fr)를 담당하는 인코더와 디코더 쌍을 점진적으로 훈련해나갈 때의 제로샷 성능을 비교했습니다&lt;sup id=&quot;fnref:7&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;. 그 결과[ 표 1-(2) ], M2(4)는 제로샷  태스크에서 Single(5)보다 더 좋은 성능을 보였습니다. 아울러, M2(4)가 더 많은 *↔︎Fr 방향의 태스크를 배울수록(ID 1→2→3→4), M2(4)의 En↔︎Fr 간 번역 성능이 조금씩 늘어나며, 모든 번역 태스크를 추가 학습한 M2(4)의 성능이 M2(5)에 버금간다는 점을 볼 수 있습니다. pivot(4)와 비교해서도, M2NMT가 거의 모든 제로샷 태스크에서 pivot NMT 대비 더 좋은 성능(빨간색 글씨)을 달성했음을 ([표 1-(1)])에서 확인했습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/005.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/005.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 표 1 ] (1) 제로샷에서 pivot NMT와 M2NMT 성능 비교 (2) 새로운 언어(Fr)에 대한 번역 태스크를 추가한 모델의 성능 비교&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;AI Lab은 M2NMT가 생성한 문장 벡터가 언어에 독립적인 공간&lt;sup&gt;interlingual space&lt;/sup&gt;에 사상된다고 가정했습니다. 그 구조상 각 인코더는 모든 디코더가 해석할 수 있는 정보를 제공해야 하며, 각 디코더는 모든 인코더가 제공한 정보를 해석할 수 있어야 하기 때문입니다. 학습을 마친 모델에 새로 추가된 인코더와 디코더가 약간의 훈련을 거치기만 해도 각각 언어에 독립적인 표현력과 해석력을 갖췄음을 보여준 두번째 실험은 이 가정을 실험적으로 증명했습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/006.png&quot; width=&quot;62%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/006.png&quot; width=&quot;62%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 5 ] M2MNT에서 생성되는 언어에 독립적인 특징 공간&lt;/em&gt;&lt;/p&gt;
 
@@ -342,13 +342,13 @@
 
 &lt;p&gt;AI Lab은 SLNI를 적용한 번역 모델이 감독학습에서의 성능은 거의 그대로 유지하며, 특히 다양한 훈련 조건에서 안정적인 제로샷 성능을 확보할 수 있음을 확인했습니다. 이는 데이터 후처리&lt;sup&gt;post-processing&lt;/sup&gt;나 사전 훈련, 데이터 어그먼테이션 없이 간단한 조치만으로도 만들어낸 성과라 큰 의의가 있다고 평가해볼 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/007.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/007.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 6 ] 감독학습(왼쪽)과 제로샷 태스크를 수행할 때 SLNI 기법의 효과를 나타내는 그래프&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;AI Lab은 1-1 MNMT의 인코더를 정규화하면 모든 언어의 문장 벡터가 사상된 공간의 형태가 서로 유사한지&lt;sup&gt;space similarity&lt;/sup&gt;, 동일한 의미를 가진 영어 문장 벡터와 비영어 문장 문장 벡터가 비슷한 표현을 갖추는지&lt;sup&gt;instance similarity&lt;/sup&gt;를 확인하는 실험도 진행했습니다. 만약 SLNI를 적용한 번역 모델이 위 두 유사성을 갖춘다면, SLNI를 적용하지 않은 버전(naive)와 비교해 더 높은 숫자를 갖춰야 합니다. 하지만 실험 결과, 두 버전 간 숫자간 격차가 크지 않음을 확인했습니다. 즉, 이 실험은 SLNI가 기존 인코더 정규화 기법을 다룬 연구에서 전제한 내용과는 다른 원리로 얽힘 문제를 해결했음을 보여줍니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-17-201217/008.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-17-201217/008.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ 표 3 ] 1-1MNMT에서 인코더를 정규화하는 접근 방식이 언어에 독립적인 특징 벡터를 생성한다는 걸 전제로 하지 않음을 실험적으로 증명했다.&lt;/em&gt;&lt;/p&gt;
 
@@ -442,12 +442,12 @@
 
 &lt;p&gt;HiFi-GAN consists of one generator and two discriminators: multi-scale and multi-period discrimina- tors. The generator and discriminators are trained adversarially, along with two additional losses for improving training stability and model performance.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-HiFi-GAN/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-NeurIPS-HiFi-GAN/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 1 ] The generator upsamples mel-spectrograms up to \(\vert k_{u} \vert\) times to match the temporal resolution of raw waveforms. A MRF module adds features from \(\vert k_{r} \vert\) residual blocks of different kernel sizes and dilation rates. Lastly, the \(n\)-th residual block with kernel size \(k_{r}[n]\) and dilation rates \(D_{r}[n]\) in a MRF module is depicted.
 &lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-HiFi-GAN/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-NeurIPS-HiFi-GAN/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Figure 2 ] (a) The second sub-discriminator of the MSD. (b) The second sub-discriminator of the MPD with period 3.&lt;/em&gt;&lt;/p&gt;
 
@@ -457,7 +457,7 @@
 
 &lt;p&gt;To evaluate the performance of our models in terms of both quality and speed, we performed the MOS test and the speed measurement. For easy comparison of audio quality, synthesis speed and model size, the results are compiled and presented in Table1. Remarkably, all variations of HiFi-GAN scored higher than the other model. Moreover, it shows a significant improvement in terms of synthesis speed.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-HiFi-GAN/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-NeurIPS-HiFi-GAN/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Table 1 ] Comparison of the MOS and the synthesis speed. Speed of n kHz means that the model can generate n × 1000 raw audio samples per second. The numbers in () mean the speed compared to real time.&lt;/em&gt;&lt;/p&gt;</content><author><name>henry:카카오엔터프라이즈</name></author><category term="papers" /><category term="speech synthesis" /><summary type="html">최근 음성합성 연구에서는 GANgenerative adversarial networks 구조를 활용해 보코더vocoder의 음성 합성 속도와 메모리 효율을 높이는 시도가 있었습니다. 하지만 이런 방식의 보코더가 합성한 음성의 품질은 Autoregressive 모델이나 플로우 기반의 생성 모델flow-based generative model에 미치지 못했습니다.</summary></entry><entry><title type="html">Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search</title><link href="https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts" rel="alternate" type="text/html" title="Glow-TTS: A Generative Flow for Text-to-Speech via Monotonic Alignment Search" /><published>2020-12-15T00:00:00-06:00</published><updated>2020-12-15T00:00:00-06:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts</id><content type="html" xml:base="https://pages.github.kakaocorp.com/ailab-papers/papers/neurips2020-glow-tts">&lt;p&gt;FastSpeech와 ParaNet 같은 최신 TTS(음성합성) 모델은 발화를 병렬적으로 합성&lt;sup&gt;non-Autoregressive&lt;/sup&gt;해 그 속도를 높인  새로운 보코더&lt;sup&gt;vocoder&lt;/sup&gt;를 제안했습니다. 하지만 이런 병렬 모델이 텍스트를 구성하는 음소 순서대로 오디오를 정렬하기 위해서는 따로 훈련된 Autoregressive 모델의 지원이 반드시 필요합니다.&lt;/p&gt;
 
@@ -481,7 +481,7 @@
 
 &lt;p&gt;By combining the properties of flows and dynamic programming, Glow-TTS efficiently searches for the most probable monotonic alignment between text and the latent representation of speech. The proposed model is directly trained to maximize the log-likelihood of speech with the alignment.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-Glow-TTS/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-NeurIPS-Glow-TTS/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Figure 1 ] Training and inference procedures of Glow-TTS&lt;/em&gt;&lt;/p&gt;
 
@@ -491,12 +491,12 @@
 
 &lt;p&gt;We vary the standard deviation (i.e., temperature T ) of the prior distribution at inference; Glow-TTS shows the best performance at the temperature of 0.333. For any temperature, it shows comparable performance to Tacotron 2.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-Glow-TTS/002.png&quot; width=&quot;60%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-NeurIPS-Glow-TTS/002.png&quot; width=&quot;60%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Table 1 ] The Mean Opinion Score (MOS) of single speaker TTS models with 95% confidence intervals.
 On average, Glow-TTS shows a 15.7 times faster synthesis speed than Tacotron 2. The CER(character error rate) of Tacotron 2 starts to grow when the length of input characters exceeds about 260. On the other hand, even though our model has not seen such long texts during training, it shows robustness to long texts.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-NeurIPS-Glow-TTS/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-NeurIPS-Glow-TTS/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Figure 2 ] Comparison of inference time and length robustness&lt;/em&gt;&lt;/p&gt;</content><author><name>jay:카카오엔터프라이즈</name></author><category term="papers" /><category term="TTS" /><summary type="html">FastSpeech와 ParaNet 같은 최신 TTS(음성합성) 모델은 발화를 병렬적으로 합성non-Autoregressive해 그 속도를 높인 새로운 보코더vocoder를 제안했습니다. 하지만 이런 병렬 모델이 텍스트를 구성하는 음소 순서대로 오디오를 정렬하기 위해서는 따로 훈련된 Autoregressive 모델의 지원이 반드시 필요합니다.</summary></entry><entry><title type="html">Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer</title><link href="https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer" rel="alternate" type="text/html" title="Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer" /><published>2020-12-15T00:00:00-06:00</published><updated>2020-12-15T00:00:00-06:00</updated><id>https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer</id><content type="html" xml:base="https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer">&lt;p&gt;카카오엔터프라이즈는 비병렬 데이터셋을 이용해 자연스러운 문장을 생성하는 새로운 텍스트 스타일 변환&lt;sup&gt;text style transfer&lt;/sup&gt; 모델인 SST&lt;sup&gt;Stable Style Transformer&lt;/sup&gt;를 제안했습니다. 텍스트 스타일 변환은 입력 문장의 내용&lt;sup&gt;content&lt;/sup&gt;은 보전하면서, 문장의 속성&lt;sup&gt;attribute&lt;/sup&gt;에 해당하는 값을 바꾸는 태스크를 가리킵니다.&lt;/p&gt;
 
@@ -516,20 +516,20 @@ On average, Glow-TTS shows a 15.7 times faster synthesis speed than Tacotron 2. 
 
 &lt;p&gt;Our approach consists of two stages: Delete and Generate framework in Fig. 1. The first stage is the Delete process with a pre-trained style classifier. The pre-trained style classifier finds and deletes tokens that contain a lot of style attributes. The second stage is encoding the content tokens and combining them with a target style to generate a sentence. Both the encoder and the decoder have the Transformer structure, which is better than RNN and robust to long dependency.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-INLG-Stable-Style-Transformer/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Figure 1 ] The proposed model framework consists of the Delete and Generate process.
 Experiments&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;We test our model on two datasets, YELP and AMAZON. The Yelp dataset is for business reviews, and the Amazon dataset is product reviews. Both datasets are labeled negative and positive and statistics are shown in Table 1.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-INLG-Stable-Style-Transformer/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ Table 1 ] (Sentiment) Dataset statistics&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;We show that filtering out unstable systems through human evaluation is expensive, so selecting a stable system through automatic evaluation can be helpful. The proposed direct and model-agnostic deletion method allows the classifier to intuitively delete attribute markers and easily handle the trade-off of content and style.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-15-INLG-Stable-Style-Transformer/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;[ Table 2 ] Automatic evaluation results of the Yelp dataset (s: self, h: human, G: geometric mean, f: fine-tuned, p: pre-trained). The red indicates that the evaluation score is significantly worse than other systems. Our model is referred to as SST(α, β). The bold black indicates the better performance of our systems for the four metrics that determine it is a stable system.&lt;/em&gt;&lt;/p&gt;
 
@@ -551,7 +551,7 @@ Experiments&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;오늘날의 많은 대화 시스템은 언어 모델&lt;sup&gt;language model&lt;/sup&gt;을 이용해 문장을 생성합니다. 특정 대상에 대한 지식을 보다 원활하게 획득하고자 최근에는 외부 지식 베이스&lt;sup&gt;knowledge base&lt;/sup&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;를 활용하는 방식도 고려되고 있습니다. 올해 EMNLP&lt;sup&gt;Empirical Methods in Natural Language Processing&lt;/sup&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;에 게재된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 논문에서는 바로 이 지식 베이스 상에서 대화 맥락에 어울리는 (답변) 경로를 효과적으로 탐색하는 모델&lt;sup&gt;path retrieval model&lt;/sup&gt;인 AttnIO&lt;a id=&quot;01&quot; href=&quot;#rf01&quot;&gt;&lt;a href=&quot;#rf01&quot;&gt;[1]&lt;/a&gt;&lt;/a&gt;를 제안했습니다. 자연어처리에서 경험적 방법론을 다루는 올해 이 학회에서는 총 3,677개 중 754개의 논문이 통과됐습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-14-201214/001.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 1 ] AttnIO가 지식 그래프에서 경로를 탐색하는 과정&lt;/em&gt;&lt;/p&gt;
 
@@ -589,7 +589,7 @@ Experiments&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;AI Lab은 1)인코딩 과정에서 지식 그래프의 구조 정보를 반영하고, 2)대화 맥락에 따라 경로를 생성하며, 3)정답 경로의 첫 번째 노드와 마지막 노드만을 이용한 약감독학습&lt;sup&gt;weakly-supervised learning&lt;/sup&gt;으로도 감독학습에 버금가는 성능을 달성한 새로운 지식 경로 탐색 모델인 AttnIO를 제안했습니다. in-flow&lt;sup&gt;incoming attention flow&lt;/sup&gt;에서 각 노드는 자신과 연결된 이웃 노드와 그 관계를 표현하는 벡터를 생성하며, out-flow&lt;sup&gt;outgoing attention flow&lt;/sup&gt;에서는 대화 맥락에 따른 최적의 경로를 탐색합니다. 자세한 설명은 각 단락에서 이어서 하겠습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-14-201214/002.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 2 ] AttnIO의 아키텍처&lt;/em&gt;&lt;/p&gt;
 
@@ -645,7 +645,7 @@ Experiments&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;지식 경로를 라벨링한 데이터를 감독학습한 여러 모델의 성능을 비교한 결과, AttnIO-AS는 OpenDialKG에서 현재 최고 수준의(SOTA) 추론 성능을 달성했습니다. 특히 k가 작을수록 그 성능 격차가 더 크다는 부분은 눈여겨서 볼만 합니다. AttnIO가 생성한 1위 후보 경로와 경로상 마지막 노드가 정답과 일치할 확률이 다른 모델보다 높다는 점을 시사하기 때문입니다. 이는 탐색 각 단계에서 노드를 미리 선택하는 RNN 디코더를 갖춘 모델과는 달리, 대화 맥락에 따라 가장 많은 어텐션 값을 전파받은 경로를 선택하는 구조에 기인한 효과로 분석됩니다. 주변 노드와의 관계를 잘 표현하는 노드 인코딩 기법도 유효한 영향을 미쳤습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-14-201214/003.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 표 2 ] 대화 말뭉치에 지식 경로를 라벨링한 데이터를 학습한 모델의 성능 비교&lt;/em&gt;&lt;/p&gt;
 
@@ -655,17 +655,17 @@ Experiments&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;이를 보완하고자 [감독하다]와 같은 관계 정보만을 제대로 포함하는지를 평가&lt;sup&gt;relation path accuracy&lt;/sup&gt;하는 실험([표 3])을 진행했습니다. 그 결과, 정답 경로를 배우지 않은 AttnIO-TS가 노드 간의 관계 정보를 배운 AttnIO-AS에 상응하는 수준의 성능을 선보였습니다. 모델이 생성한 경로의 적합성을 사람이 직접 평가하는 실험([표 4])에서는 AttnIO-TS가 좀 더 나은 점수를 받기도 했습니다. 이는 대화 맥락에 따라 어텐션을 전달하는 과정에서 경로를 스스로 탐색한 거로 보입니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/004.png&quot; width=&quot;40%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-14-201214/004.png&quot; width=&quot;40%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 표 3 ] AttnIO-AS와 AttnIO-TS의 관계 경로 일치성 여부를 (자동) 평가한 결과&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/005.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-14-201214/005.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 표 4 ] AttnIO-AS와 AttnIO-TS가 생성한 경로의 적합성에 대한 인간 평가 결과&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;아울러 AI Lab은 AttnIO가 해석력(interpretability)도 갖추고 있음을 확인했습니다([그림 3]). 각 추론 단계에서 특정 노드가 어떤 간선을 통해 얼마나 많은 어텐션을 받았는지를 볼 수 있다는 의미입니다. “AttnIO가 열린 질문과 닫힌 질문 사이의 차이를 경로 탐색 과정에서 반영하는가?”를 분석한 결과, “스티븐 스필버그가 누구야?” 식의 열린 질문에는 여러 후보 노드에 어텐션 값을 골고루 전파했습니다. 반면, “누가 영화 A.I.를 감독했어?” 식의 닫힌 질문에는 정답이 될 수 있는 한, 두 가지의 개체에만 어텐션이 전파됐음을 확인할 수 있었습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://pages.github.kakaocorp.com/assets/img/2020-12-14-201214/006.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/ailab-papers/assets/img/2020-12-14-201214/006.png&quot; width=&quot;&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;[ 그림 3 ] AttnIO가 추론한 어텐션 값 분포를 분석하면 AttnIO가 대화 맥락에 따라 탐색한 지식 경로를 살펴볼 수 있다.&lt;/em&gt;&lt;/p&gt;
 

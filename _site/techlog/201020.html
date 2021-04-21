@@ -22,7 +22,7 @@
 <meta property="twitter:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
 <meta property="twitter:title" content="스마트하게 식단을 관리하는 딥러닝 기술" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"카카오엔터프라이즈 R&D"},"description":"음식 인식과 관련된 전반적인 기술 추세는 1)사진 속 음식을 인식해, 2) 섭취 칼로리와 영양학적 정보를 제공하는 솔루션 개발 및 제공하는 쪽으로 이뤄지고 있습니다. 카카오엔터프라이즈는 사진 속의 음식을 더 정확하게 인식하는 기술 개발에 집중했습니다. 이렇게 만들어진 음식 인식 API는 현재 카카오VX의 식단카메라에 적용 완료돼 있습니다. 이미지에서 음식 영역을 추출하는 검출기와 검출된 음식 이미지의 이름을 인식하는 분류기의 훈련 과정과 ‘음식 이미지’라는 특정 도메인에서 인식 정확도를 높이고자 적용한 다양한 기법을 알아보겠습니다","@type":"BlogPosting","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","headline":"스마트하게 식단을 관리하는 딥러닝 기술","dateModified":"2020-10-20T00:00:00-05:00","datePublished":"2020-10-20T00:00:00-05:00","url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201020","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201020"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"카카오엔터프라이즈 R&D"},"headline":"스마트하게 식단을 관리하는 딥러닝 기술","dateModified":"2020-10-20T00:00:00-05:00","description":"음식 인식과 관련된 전반적인 기술 추세는 1)사진 속 음식을 인식해, 2) 섭취 칼로리와 영양학적 정보를 제공하는 솔루션 개발 및 제공하는 쪽으로 이뤄지고 있습니다. 카카오엔터프라이즈는 사진 속의 음식을 더 정확하게 인식하는 기술 개발에 집중했습니다. 이렇게 만들어진 음식 인식 API는 현재 카카오VX의 식단카메라에 적용 완료돼 있습니다. 이미지에서 음식 영역을 추출하는 검출기와 검출된 음식 이미지의 이름을 인식하는 분류기의 훈련 과정과 ‘음식 이미지’라는 특정 도메인에서 인식 정확도를 높이고자 적용한 다양한 기법을 알아보겠습니다","datePublished":"2020-10-20T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201020"},"url":"https://pages.github.kakaocorp.com/ailab-papers/techlog/201020","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -73,7 +73,7 @@
 
 
 
-<img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/000.jpg" width="" align="">
+<img src="/ailab-papers/assets/img/2020-10-20-201020/000.jpg" width="" align="">
 
     
   </header>
@@ -91,13 +91,13 @@
 
 <p>이런 이유로 요즘 다이어트 앱은 사진 속 음식을 자동으로 인식해 섭취 칼로리와 영양학적 정보를 좀 더 쉽게 기록할 수 있게 합니다. 카카오 VX가 만든 ‘<a href="https://play.google.com/store/apps/details?id=com.kakaovx.homet.user">스마트홈트</a>’ 또한 사진 속 음식의 이름과 칼로리를 자동으로 입력해주는 식단카메라 기능을 제공하고 있습니다. 스마트홈트의 AI코치는 이 식사 기록을 토대로 적절한 운동과 식단을 제안해줍니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-10-20-201020/001.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 1 ] 카카오 VX ‘스마트홈트’ 앱의 식단카메라 작동 화면</em></p>
 
 <p>이번 글에서는 식단카메라에 적용된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 음식 인식 기술을 소개해드리고자 합니다. 1,000 여 종을 구분할 수 있는 AI Lab의 음식 인식 모델은 입력 이미지에서 음식 영역을 추출하는 ‘검출기’와 검출된 영역 내 존재하는 음식의 이름을 인식하는 ‘분류기’로 나눠볼 수 있습니다. 이 개발 프로젝트를 이끈 AI Lab AI기술팀 멀티미디어처리파트 소속의 홍은빈 개발자와 이주영 개발자를 만나 검출기와 분류기에 해당하는 딥러닝 모델의 개발 과정에 대해 자세히 들어봤습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-10-20-201020/002.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] 음식 인식기가 동작하는 과정을 도식화한 이미지</em></p>
 
@@ -189,13 +189,13 @@
 
 <p>음식 분류기는 100% 완벽하게 동작하지 않습니다. ‘치와와 얼굴’, ‘갈색 털 푸들’, ‘웰시코기 엉덩이’처럼 음식이 아닌 이미지를 각각 ‘블루베리 머핀’, ‘프라이드 치킨’, ‘식빵’으로 잘못 분류할 수도 있기 때문이죠. AI Lab은 음식인 이미지와 음식이 아닌 이미지를 먼저 분류하고 나서(이진 분류기), 음식인 이미지만을 대상으로 음식 분류 결과를 내놓는다면(음식 분류기) 음식 인식 카메라를 향한 사용자 만족도를 한층 더 끌어올릴 수 있을 거라 판단했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/003.png" width="50%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-10-20-201020/003.png" width="50%" align="" /></p>
 
 <p><em class="center">[ 그림 3 ] ‘puffy muffin meme’의 대표  이미지 중 하나</em></p>
 
 <p>하지만 같은 음식 데이터셋을 학습하는 두 분류기가 배우는 음식 표현<sup>representation</sup>이 서로 비슷할 가능성이 높습니다. 이에 AI Lab은 분류 학습을 완료한 앞쪽 인셉션(Inception) 블록의 가중치를 고정<sup>freezing</sup>하고, 뒤쪽 인셉션 블록의 가중치는 이진 분류 데이터셋(음식이다, 음식이 아니다)으로 미세 조정<sup>fine-tuning</sup><sup id="fnref:11" role="doc-noteref"><a href="#fn:11" class="footnote" rel="footnote">11</a></sup>했습니다. 그 결과, AI Lab은 우수한 성능을 내는 이진 분류기를 만들 수 있었습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/004.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-10-20-201020/004.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 4 ] InceptionV4를 활용한 특징 추출기와 이진 분류기, 음식 분류기의 구성도</em></p>
 
@@ -209,7 +209,7 @@
 
 <p>음식 안에 또 다른 음식이 있는 영역은 한 가지 음식만 포함될 수 있도록 박스 영역을 나눠서 표시했습니다. 공산품 포장지에 인쇄된 음식 영역에도 박스를 표시했습니다. 모둠 음식(모둠 초밥, 모둠전, 모둠회)이 서로 다른 하위 음식으로 구성되면 이를 하나의 박스로 표시했습니다. 단, 동일한 하위 음식이 2개 이상 모여 있으면 음식마다 박스를 따로 표시했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/005.png" width="50%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-10-20-201020/005.png" width="50%" align="" /></p>
 
 <p><em class="center">[ 그림 5 ] 이미지에서 음식에 해당하는 영역을 표시하는 예시</em></p>
 
@@ -223,7 +223,7 @@
 
 <p>두번째 문제는 음식 분류기가 특징을 추출하는 과정에서 박스의 중심부(내용물)에 더 집중하도록 어텐션<sup>attention</sup><sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">14</a></sup> 모듈을 추가하는 방식으로 해결했습니다. AI Lab은 어텐션 모듈의 효과를 알아보고자 3번째, 7번째, 9번째, 11번째 모듈이 처리한 결과를 히트맵<sup>heat map</sup><sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote" rel="footnote">15</a></sup>으로 나타냈습니다. 초중반 블록에 삽입한 모듈과는 달리, 10번째와 11번째 어텐션 모듈에서는 의미가 있는 특징을 뽑아냄을 확인할 수 있었습니다. AI Lab은 10번째와 11번째 어텐션 모듈만 남기고 나머지는 제거했습니다.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-10-20-201020/006.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-10-20-201020/006.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 6 ] 인셉션 블록에 각각 추가한 어텐션 모듈이 처리한 결과를 히트맵으로 표시한 이미지</em></p>
 

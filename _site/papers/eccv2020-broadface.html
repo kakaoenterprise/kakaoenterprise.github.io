@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="BroadFace: Looking at Tens of Thousands of People at Once for Face Recognition" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"aiden:카카오엔터프라이즈"},"description":"수많은 사람의 얼굴을 효과적으로 학습하는 기법 ‘BroadFace’ 제안","@type":"BlogPosting","headline":"BroadFace: Looking at Tens of Thousands of People at Once for Face Recognition","dateModified":"2020-08-23T00:00:00-05:00","datePublished":"2020-08-23T00:00:00-05:00","url":"https://pages.github.kakaocorp.com/ailab-papers/papers/eccv2020-broadface","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/eccv2020-broadface"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"aiden:카카오엔터프라이즈"},"headline":"BroadFace: Looking at Tens of Thousands of People at Once for Face Recognition","dateModified":"2020-08-23T00:00:00-05:00","description":"수많은 사람의 얼굴을 효과적으로 학습하는 기법 ‘BroadFace’ 제안","datePublished":"2020-08-23T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/eccv2020-broadface"},"url":"https://pages.github.kakaocorp.com/ailab-papers/papers/eccv2020-broadface","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -134,7 +134,7 @@
 
 <p>We introduce BroadFace, which is a simple yet effective way to cover a large number of instances and identities. BroadFace learns globally well-optimized identity-representative vectors from a massive number of embedding vectors. For example, on a single Nvidia V100 GPU, the size of a mini-batch for ResNet-100 is at most 256, whereas BroadFace can utilize more than 8k instances at once. The following describes each step.</p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-08-23-ECCV-BroadFace/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-08-23-ECCV-BroadFace/001.png" width="" align="" /></p>
 
 <p><em>[ Figure 1 ] Learning process of the proposed method. BroadFace deploys large queues to store embedding vectors and their corresponding identity-representative vectors per iteration. The embedding vectors of the past instances stored in the queues are used to compute loss for identity-representative vectors. BroadFace effectively learns from tens of thousands of instances for each iteration.</em></p>
 
@@ -146,21 +146,21 @@
 
 <h2 id="1-experimental-results">1. Experimental Results</h2>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-08-23-ECCV-BroadFace/002.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-08-23-ECCV-BroadFace/002.png" width="90%" align="" /></p>
 
 <p><em class="center">[ Table 1 ] Verification accuracy (%) on LFW and YTF.</em></p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-08-23-ECCV-BroadFace/003.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-08-23-ECCV-BroadFace/003.png" width="90%" align="" /></p>
 
 <p><em>[ Table 2 ] Verification evaluation with a True Accept Rate at a certain False Accept Rate(TAR@FAR) from 1e-4 to 1e-6 on IJB-B and IJB-C. † denotes BroadFace trained by CosFace[40].</em></p>
 
 <h2 id="2-ablation-studies">2. Ablation Studies</h2>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-08-23-ECCV-BroadFace/004.png" width="85%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-08-23-ECCV-BroadFace/004.png" width="85%" align="" /></p>
 
 <p><em>[ Table 3 ] Effects of BroadFace varying the size of the queue and the type of the backbone network on IJB-B dataset in face recognition.</em></p>
 
-<p><img src="https://pages.github.kakaocorp.com/assets/img/2020-08-23-ECCV-BroadFace/005.png" width="95%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-08-23-ECCV-BroadFace/005.png" width="95%" align="" /></p>
 
 <p><em>[ Figure 2 ] (a) the recall depending on the size of the queue in BroadFace with and without our compensation function; the red line indicates the recall of ArcFace (baseline) on the test set. (b) the learning curve for the test set when the size of the queue is 32k; ArcFace reaches the highest recall at the 45th epoch, our BroadFace reaches the highest recall at the 10th epoch, and the learning process collapses without our compensation function.</em></p>
 
