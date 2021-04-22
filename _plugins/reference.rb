@@ -49,7 +49,7 @@ module Jekyll
       end
       context.stack do
         body = super
-        "<a href=\"##{backlink_id(context, @id)}\" class=\"backlink\">[#{@id}]</a> #{body}<br/>s"
+        "<a href=\"##{backlink_id(context, @id)}\" class=\"backlink\">[#{@id}]</a> #{body}<br/>"
       end
     end
   end
