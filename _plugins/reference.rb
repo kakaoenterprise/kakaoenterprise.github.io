@@ -49,7 +49,7 @@ module Jekyll
       end
       context.stack do
         body = super
-        "<a href=\"##{backlink_id(context, @id)}\" class=\"backlink\">[#{@id}]</a>#{body}<br/>"
+        "<a href=\"##{backlink_id(context, @id)}\" class=\"backlink\">[#{@id}]</a> #{body}<br/>"
       end
     end
   end
@@ -64,7 +64,7 @@ module Jekyll
                     else
                       site.getConverterImpl(Jekyll::Converters::Markdown)
                     end
-        "<ol class=\"referencelist\">#{converter.convert(body)}</ol>"
+        "#{converter.convert(body)}"
       end
     end
   end
