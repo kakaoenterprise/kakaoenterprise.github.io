@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: COMPTER VISION
+research-area: COMPUTER VISION
 title: "Diversified Mutual Learning for Deep Metric Learning"
 slug: eccv2020-deep-metric-learning
 description: 여러 모델간 상호학습 방식으로 이미지 검색 성능을 높이는 기법 제안
