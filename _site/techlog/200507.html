@@ -214,7 +214,7 @@
 
 <p><a href="https://arxiv.org/pdf/1804.00247.pdf">프라하 카렐 대학교(Charles University in Prague)의 연구</a>에 따르면, 배치 크기<sup>batch size</sup>가 클수록 언어 모델의 번역 성능이 좋습니다([[그림 4]]. 하지만 실제 실험에서는 사전학습에 적용된 큰 배치 크기를 그대로 사용하면 미세조정 초반에 손실<sup>loss</sup>이 폭발합니다. 배치 크기가 지나치게 큰 상황에서는 모델 최적화<sup>optimization</sup><sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">8</a></sup>와 일반화<sup>generalization</sup><sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup>가 어렵기 때문입니다.</p>
 
-<p>이런 이유로 AI Lab은 미세조정에 적절한 배치 크기를 선택하는 실험을 진행했습니다([그림 5]). 사전학습 때 사용한 배치 크기의 1배(빨간색)에서는 그래프가 0으로 수렴하지 않고 되려 폭증했습니다. 배치 크기가 지나치게 크다고 판단한 AI Lab은 이를 줄여가면서 모델의 성능이 가장 좋은 지점을 탐색하는 데 집중했습니다. 그 결과, 사전학습 때 사용한 배치 크기의 2/3 배(파란색)<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>에서 가장 좋은 성능을 확인할 수 있었습니다. 양기창 개발자는 “배치 크기를 1/2배(분홍색)로도 실험을 진행했으나, 2/3배에서보다는 성능이 미세하게 낮았다”고 부연했습니다.</p>
+<p>이런 이유로 AI Lab은 미세조정에 적절한 배치 크기를 선택하는 실험을 진행했습니다([그림 5]). 사전학습 때 사용한 배치 크기의 1배(빨간색)에서는 그래프가 0으로 수렴하지 않고 되려 폭증했습니다. 배치 크기가 지나치게 크다고 판단한 AI Lab은 이를 줄여가면서 모델의 성능이 가장 좋은 지점을 탐색하는 데 집중했습니다. 그 결과, 사전학습 때 사용한 배치 크기의 2/3배(파란색)<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>에서 가장 좋은 성능을 확인할 수 있었습니다. 양기창 개발자는 “배치 크기를 1/2배(분홍색)로도 실험을 진행했으나, 2/3배에서보다는 성능이 미세하게 낮았다”고 부연했습니다.</p>
 
 <p><img src="/ailab-papers/assets/img/2020-05-07-200507/005.png" width="" align="" /></p>
 
