@@ -47,6 +47,19 @@
 
   <!-- katex -->
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- To automatically display code inside script tags with type=math/tex using KaTeX. -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
+
+  
 </head>
 
   <body>
@@ -103,7 +116,7 @@
 
 <p>사람과 대화를 나누는 기계를 만들 때도 위에서 언급한 ‘대화가 잘 통한다’는 느낌을 제공하는 게 중요합니다. 물론 지금 당장은 감정적 교감을 나누는 기계의 구현은 먼 미래의 일입니다. 이에 현재 산학계에서는 대화 맥락에 어울리는 유일한 정보를 제공하는 과제부터 순차 해결하는 데 집중하고 있습니다.</p>
 
-<p>오늘날의 많은 대화 시스템은 언어 모델<sup>language model</sup>을 이용해 문장을 생성합니다. 특정 대상에 대한 지식을 보다 원활하게 획득하고자 최근에는 외부 지식 베이스<sup>knowledge base</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>를 활용하는 방식도 고려되고 있습니다. 올해 EMNLP<sup>Empirical Methods in Natural Language Processing</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>에 게재된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 논문에서는 바로 이 지식 베이스 상에서 대화 맥락에 어울리는 (답변) 경로를 효과적으로 탐색하는 모델<sup>path retrieval model</sup>인 AttnIO<a id="01" href="#rf01"><a href="#rf01">[1]</a></a>를 제안했습니다. 자연어처리에서 경험적 방법론을 다루는 올해 이 학회에서는 총 3,677개 중 754개의 논문이 통과됐습니다.</p>
+<p>오늘날의 많은 대화 시스템은 언어 모델<sup>language model</sup>을 이용해 문장을 생성합니다. 특정 대상에 대한 지식을 보다 원활하게 획득하고자 최근에는 외부 지식 베이스<sup>knowledge base</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>를 활용하는 방식도 고려되고 있습니다. 올해 EMNLP<sup>Empirical Methods in Natural Language Processing</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>에 게재된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 논문에서는 바로 이 지식 베이스 상에서 대화 맥락에 어울리는 (답변) 경로를 효과적으로 탐색하는 모델<sup>path retrieval model</sup>인 AttnIO<a href="#3081:rf:1" class="reference" id="3081:rf-back:1">[1]</a>를 제안했습니다. 자연어처리에서 경험적 방법론을 다루는 올해 이 학회에서는 총 3,677개 중 754개의 논문이 통과됐습니다.</p>
 
 <p><img src="/ailab-papers/assets/img/2020-12-14-201214/001.png" width="" align="" /></p>
 
@@ -115,15 +128,15 @@
 
 <h1 id="지식-그래프를-활용하는-대화-시스템">지식 그래프를 활용하는 대화 시스템</h1>
 
-<p>산업 현장에서는 Seq2Seq<sup>sequence to sequence</sup><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> 기반 언어 모델을 활용합니다. 이 언어 모델은 대량의 말뭉치를 사전학습하기만 해도 외부 지식<sup>external knowledge</sup> 일부를 습득할 수 있습니다. 영화에 대한 문서도 학습한 모델이라면, 스필버그 감독에 관한 지식을 내뱉을 수 있다는 의미입니다. 언어 모델 그 자체를 지식 베이스의 일종이라고 볼 수 있다고 한 ‘Language Models as Knowledge Bases?<a id="02" href="#rf02"><a href="#rf02">[2]</a></a>‘라는 논문이 이를 뒷받침합니다.</p>
+<p>산업 현장에서는 Seq2Seq<sup>sequence to sequence</sup><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> 기반 언어 모델을 활용합니다. 이 언어 모델은 대량의 말뭉치를 사전학습하기만 해도 외부 지식<sup>external knowledge</sup> 일부를 습득할 수 있습니다. 영화에 대한 문서도 학습한 모델이라면, 스필버그 감독에 관한 지식을 내뱉을 수 있다는 의미입니다. 언어 모델 그 자체를 지식 베이스의 일종이라고 볼 수 있다고 한 ‘Language Models as Knowledge Bases?<a href="#3081:rf:2" class="reference" id="3081:rf-back:2">[2]</a>‘라는 논문이 이를 뒷받침합니다.</p>
 
 <p>하지만 언어 모델은 ‘스티븐 스필버그가 판타지 영화 해리포터를 연출했다’처럼 겉으로 보기엔 그럴싸해 보이나, 사실이 아닌 문장을 생성할 수 있다는 취약점을 지니고 있습니다. 언어 모델은 단어 시퀀스의 우도<sup>likelihood</sup><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>를 최대화하는 방식으로 주어진 단어 다음에 올 단어를 예측합니다. 이 과정에서 모델은 스스로 문장에 포함된 의미가 사실에 근거하는지 아닌지를 구분하지 못합니다. 그래서 ‘스티븐 스필버그는 SF영화 A.I를 감독했다”라는 옳은 문장만큼이나, 위의 잘못된 예시 문장이 생성될 확률이 높아집니다.</p>
 
-<p>앞서 설명한 학습 방식으로 인해 언어 모델은 입력된 문장과 관계없는 상투적인 표현을 내뱉기도 합니다<a id="03" href="#rf03"><a href="#rf03">[3]</a></a>. 이는 훈련 데이터셋에 “안녕하세요”, “잘 몰라요”, “감사합니다”, “미안합니다”와 같은 표현의 높은 등장 빈도에 기인한 현상으로 분석됩니다. 또는 자주 함께 등장하는 주어와 동사, 또는 목적어를 포함한, 구체성이 떨어지는 문장이 생성될 수도 있습니다. 스티븐 스필버그가 누군지 묻는 말에 “아니 몰라” 또는, “스티븐 스필버그는 연출했다”, “스티븐 스필버그는 태어났다”로 대답하는 식이죠.</p>
+<p>앞서 설명한 학습 방식으로 인해 언어 모델은 입력된 문장과 관계없는 상투적인 표현을 내뱉기도 합니다<a href="#3081:rf:3" class="reference" id="3081:rf-back:3">[3]</a>. 이는 훈련 데이터셋에 “안녕하세요”, “잘 몰라요”, “감사합니다”, “미안합니다”와 같은 표현의 높은 등장 빈도에 기인한 현상으로 분석됩니다. 또는 자주 함께 등장하는 주어와 동사, 또는 목적어를 포함한, 구체성이 떨어지는 문장이 생성될 수도 있습니다. 스티븐 스필버그가 누군지 묻는 말에 “아니 몰라” 또는, “스티븐 스필버그는 연출했다”, “스티븐 스필버그는 태어났다”로 대답하는 식이죠.</p>
 
 <p>이에 외부 지식을 언어 모델에 내재화하거나, 따로 저장한 외부 지식을 학습에 활용하는 메커니즘에 대한 필요성이 커지게 됐습니다. 2019년부터는 외부에 구축해 둔 지식 베이스를 활용한 연구가 본격적으로 제안됐습니다. 특히 지식 그래프<sup>Knowledge graph</sup><sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>에서 대화 맥락에 어울리는 개체<sup>entity</sup>와 관계<sup>relation</sup>를 찾는 경로 탐색에 관한 연구가 활발하게 이뤄지고 있습니다. ‘(스티븐 스필버그)→감독하다→(A.I)→장르→(SF)’와 같은 경로를 만들어낼 수 있다면, 글 도입부 예시와 같은 적절한 응답 문장을 수월하게 생성하리라는 판단에 근거한 접근입니다.</p>
 
-<p>페이스북(Facebook)은 ‘OpenDialKG<a id="04" href="#rf04"><a href="#rf04">[4]</a></a><sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>’ 논문에서 RNN 디코더<sup>decoder</sup>를 제안했습니다. n 단계에서의 출력값을 이용해 n+1단계에서의 상태를 예측하는 재귀적 구조를 이용해, 탐색 각 단계에서 가장 최고의 답을 만드는 하나의 노드를 선택하는 탐욕적 탐색<sup>Greedy Search</sup>을 진행합니다. 바이두(Baidu)는 강화학습<sup>reinforcement learning</sup><sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup> 기반 에이전트로 탐욕적 경로 탐색을 구현했습니다<a id="05" href="#rf05"><a href="#rf05">[5]</a></a>.</p>
+<p>페이스북(Facebook)은 ‘OpenDialKG{%rf%}<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>’ 논문에서 RNN 디코더<sup>decoder</sup>를 제안했습니다. \(n\)단계에서의 출력값을 이용해 \(n+1\)단계에서의 상태를 예측하는 재귀적 구조를 이용해, 탐색 각 단계에서 가장 최고의 답을 만드는 하나의 노드를 선택하는 탐욕적 탐색<sup>Greedy Search</sup>을 진행합니다. 바이두(Baidu)는 강화학습<sup>reinforcement learning</sup><sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup> 기반 에이전트로 탐욕적 경로 탐색을 구현했습니다{%rf%}.</p>
 
 <p><br /></p>
 
@@ -141,7 +154,7 @@
 
 <h1 id="ai-lab이-제안한-attnio의-동작-방식">AI Lab이 제안한 AttnIO의 동작 방식</h1>
 
-<p>AI Lab은 1)인코딩 과정에서 지식 그래프의 구조 정보를 반영하고, 2)대화 맥락에 따라 경로를 생성하며, 3)정답 경로의 첫 번째 노드와 마지막 노드만을 이용한 약감독학습<sup>weakly-supervised learning</sup>으로도 감독학습에 버금가는 성능을 달성한 새로운 지식 경로 탐색 모델인 AttnIO를 제안했습니다. in-flow<sup>incoming attention flow</sup>에서 각 노드는 자신과 연결된 이웃 노드와 그 관계를 표현하는 벡터를 생성하며, out-flow<sup>outgoing attention flow</sup>에서는 대화 맥락에 따른 최적의 경로를 탐색합니다. 자세한 설명은 각 단락에서 이어서 하겠습니다.</p>
+<p>AI Lab은 <b>1)</b>인코딩 과정에서 지식 그래프의 구조 정보를 반영하고, <b>2)</b>대화 맥락에 따라 경로를 생성하며, <b>3)</b>정답 경로의 첫 번째 노드와 마지막 노드만을 이용한 약감독학습<sup>weakly-supervised learning</sup>으로도 감독학습에 버금가는 성능을 달성한 새로운 지식 경로 탐색 모델인 AttnIO를 제안했습니다. in-flow<sup>incoming attention flow</sup>에서 각 노드는 자신과 연결된 이웃 노드와 그 관계를 표현하는 벡터를 생성하며, out-flow<sup>outgoing attention flow</sup>에서는 대화 맥락에 따른 최적의 경로를 탐색합니다. 자세한 설명은 각 단락에서 이어서 하겠습니다.</p>
 
 <p><img src="/ailab-papers/assets/img/2020-12-14-201214/002.png" width="" align="" /></p>
 
@@ -149,13 +162,13 @@
 
 <h2 id="dialog-encoder">dialog encoder</h2>
 
-<p>대화의 맥락과 질문의 의도를 효과적으로 반영한 컨텍스트 벡터(context vector)를 생성하는 모듈로, 사전학습을 마친 ALBERT<sup>A Lite BERT</sup><a id="06" href="#rf06"><a href="#rf06">[6]</a></a><sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup>의 인코더로 구현됐습니다. AI Lab은 문장을 구성하는 모든 토큰의 응축된 의미를 가진 CLS<sup>Special Classification token</sup>에 해당하는 벡터를 컨텍스트 벡터로 활용했습니다.</p>
+<p>대화의 맥락과 질문의 의도를 효과적으로 반영한 컨텍스트 벡터(context vector)를 생성하는 모듈로, 사전학습을 마친 ALBERT<sup>A Lite BERT</sup><a href="#3081:rf:4" class="reference" id="3081:rf-back:4">[4]</a><sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup>의 인코더로 구현됐습니다. AI Lab은 문장을 구성하는 모든 토큰의 응축된 의미를 가진 CLS<sup>Special Classification token</sup>에 해당하는 벡터를 컨텍스트 벡터로 활용했습니다.</p>
 
 <h2 id="in-flow">in-flow</h2>
 
-<p>in-flow는 그래프 신경망(GNN<sup>graph neural networks</sup>)<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>을 이용합니다. 우선, 각 노드와 간선에 해당하는 데이터를 벡터로 변환합니다. 그런 뒤, 특정 노드는 진입 간선<sup>incoming edge</sup>으로 연결된 이웃 노드와 이 간선을 합쳐 새로운 값으로 업데이트됩니다<sup id="fnref:11" role="doc-noteref"><a href="#fn:11" class="footnote" rel="footnote">11</a></sup>. 이 업데이트 과정을 반복하면 특정 노드는 그래프 구조상의 주변 정보도 표현할 수 있게 됩니다.</p>
+<p>in-flow는 그래프 신경망<sup>Graph Neural Networks</sup><sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>을 이용합니다. 우선, 각 노드와 간선에 해당하는 데이터를 벡터로 변환합니다. 그런 뒤, 특정 노드는 진입 간선<sup>incoming edge</sup>으로 연결된 이웃 노드와 이 간선을 합쳐 새로운 값으로 업데이트됩니다<sup id="fnref:11" role="doc-noteref"><a href="#fn:11" class="footnote" rel="footnote">11</a></sup>. 이 업데이트 과정을 반복하면 특정 노드는 그래프 구조상의 주변 정보도 표현할 수 있게 됩니다.</p>
 
-<p>A에서 나가는 간선이 2개인 ‘C(학생)←이다←A(해리포터)→사랑한다→B(지니 위즐리)’를 예로 들어보겠습니다. 시작 노드가 A라고 한다면, C 노드는 “해리포터는 학생이다”, B 노드는 “해리포터는 지니 위즐리를 사랑한다”라는 정보를 표현하는 벡터를 갖게 되는 겁니다.</p>
+<p>A에서 나가는 간선이 2개인 ‘\(C\)(학생)←이다←\(A\)(해리포터)→사랑한다→\(B\)(지니 위즐리)’를 예로 들어보겠습니다. 시작 노드가 \(A\)라고 한다면, \(C\) 노드는 “해리포터는 학생이다”, \(B\) 노드는 “해리포터는 지니 위즐리를 사랑한다”라는 정보를 표현하는 벡터를 갖게 되는 겁니다.</p>
 
 <p>Entity-Context Fusion이라는 모듈에서 in-flow의 출력인 각 노드 벡터와 dialog encoder의 출력인 컨텍스트 벡터를 합치면, 각 노드 벡터는 대화의 맥락과 질문의 의도까지 표현할 수 있게 됩니다. 예를 들어, 스티븐 스필버그와 관련된 여러 지식 중 그가 감독한 영화 관련 지식을 노드 벡터에 더 많이 반영하게 되는 거죠.</p>
 
@@ -165,13 +178,13 @@
 
 <p>out-flow는 어텐션<sup>attention</sup>을 전파하는 방식으로 경로를 탐색합니다. 어텐션은 특정 시퀀스를 디코딩할 때 관련된 인코딩 결과를 참조하게 만드는 기법을 일컫습니다. 여기서는 특정 노드에 연결된 진출 간선<sup>outgoing edge</sup> 중 대화 맥락에 더 어울리는 쪽에 더 높은 어텐션 값을 전파하는 걸 의미합니다. 우선, 대화의 첫 발화 문장과 관련된 노드의 어텐션을 초기화<sup>initial attention computation</sup>하고 나서, 연속해서 어텐션을 전파합니다. 어텐션 전파를 완료한 이후에는 각 탐색 단계에서 어텐션이 가장 많이 전파된 노드와 간선을 선택해 최종 경로를 생성합니다.</p>
 
-<p>위의 예시를 다시 예로 들어보겠습니다. 대화 맥락에 따라 ‘A→사랑한다→B’라는 지식이 필요하면, out-flow는 A의 어텐션 값 대부분을 ‘사랑한다’는 간선을 통해 B로 보냅니다. 반대로 ‘A→이다→학생’이 필요한 대화에서는 ‘이다’라는 간선을 통해 C쪽 방향 쪽 위주로 어텐션 값을 보냅니다.</p>
+<p>위의 예시를 다시 예로 들어보겠습니다. 대화 맥락에 따라 ‘\(A\)→사랑한다→\(B\)‘라는 지식이 필요하면, out-flow는 \(A\)의 어텐션 값 대부분을 ‘사랑한다’는 간선을 통해 B로 보냅니다. 반대로 ‘\(A\)→이다→학생’이 필요한 대화에서는 ‘이다’라는 간선을 통해 \(C\)쪽 방향 쪽 위주로 어텐션 값을 보냅니다.</p>
 
 <p><br /></p>
 
 <h1 id="모델-성능-평가-기준">모델 성능 평가 기준</h1>
 
-<p>AI Lab은 지난 2019년 페이스북이 ‘유익한 응답 생성을 위한 지식 그래프 탐색’ 평가를 목적으로 만들어서 배포한 OpenDialKG[4]라는 벤치마크를 활용했습니다. 여기에는 약 10만 개의 대화<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote" rel="footnote">12</a></sup>와 지식 경로로 구성된 병렬 코퍼스, 100만 개 이상의 간선으로 구성된 지식 그래프가 포함돼 있습니다.</p>
+<p>AI Lab은 지난 2019년 페이스북이 ‘유익한 응답 생성을 위한 지식 그래프 탐색’ 평가를 목적으로 만들어서 배포한 OpenDialKG<a href="#3081:rf:4" class="reference" id="3081:rf-back:4">[4]</a>라는 벤치마크를 활용했습니다. 여기에는 약 10만 개의 대화<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote" rel="footnote">12</a></sup>와 지식 경로로 구성된 병렬 코퍼스, 100만 개 이상의 간선으로 구성된 지식 그래프가 포함돼 있습니다.</p>
 
 <table>
 <tr>
@@ -191,7 +204,7 @@
 </table>
 <p><em class="center">[ 표 1 ] path@k와 tgt@k 설명을 위한 예시</em></p>
 
-<p>[ 표 1 ]의 질문이 포함된 대화 말뭉치를 AttnIO에 입력하면, 전파된 어텐션 값에 따라 여러 지식 경로 후보군이 생성됩니다. path@k는 정답과 일치하는 경로를 기준으로, tgt@k는 정답 경로의 마지막 노드만을 기준으로 K등수 안에 포함되는지 여부를 기준으로 점수를 산정합니다. 등수 안에 들면 100점을, 포함되지 않으면 0점을 부과해 모든 데이터셋에 대한 평균 점수를 산술합니다. AttnIO가 생성한 1위 후보군이 정답 경로와 일치하는 상황이 가장 이상적입니다. 그래서 path@1 또는 tgt@는 다른 태스크 평가에서 쓰이는 정확도와 동일한 지표라고 보면 됩니다.</p>
+<p>[ 표 1 ]의 질문이 포함된 대화 말뭉치를 AttnIO에 입력하면, 전파된 어텐션 값에 따라 여러 지식 경로 후보군이 생성됩니다. \(path@k\)는 정답과 일치하는 경로를 기준으로, \(tgt@k\)는 정답 경로의 마지막 노드만을 기준으로 K등수 안에 포함되는지 여부를 기준으로 점수를 산정합니다. 등수 안에 들면 100점을, 포함되지 않으면 0점을 부과해 모든 데이터셋에 대한 평균 점수를 산술합니다. AttnIO가 생성한 1위 후보군이 정답 경로와 일치하는 상황이 가장 이상적입니다. 그래서 \(path@1\) 또는 \(tgt@1\)는 다른 태스크 평가에서 쓰이는 정확도와 동일한 지표라고 보면 됩니다.</p>
 
 <p><br /></p>
 
@@ -205,7 +218,7 @@
 
 <p>정답 경로의 첫 번째 노드와 마지막 노드만을 이용한 약감독학습 버전인 AttnIO-TS도 기존 모델과 비견할 만한 수준의 성능을 보였습니다.</p>
 
-<p>다만 path@k에서는 감독학습한 모델과 약감독학습한 모델 간 점수 차가 더 크게 벌어졌습니다. 이는 경로에 포함된 모든 노드와 관계를 다 맞춰야만 정답으로 처리하는 평가 방식의 한계입니다. 예를 들어, 사용자가 “스티븐 스필버그가 어떤 영화를 감독했어?”라고 물으면, [스티븐 스필버그, 감독하다, (모든 스필버그 영화)]가 정답이어야 합니다. 하지만 path@k는 정답 경로에서 언급되지 않은 다른 영화 제목은 모두 오답으로 처리하죠.</p>
+<p>다만 \(path@k\)에서는 감독학습한 모델과 약감독학습한 모델 간 점수 차가 더 크게 벌어졌습니다. 이는 경로에 포함된 모든 노드와 관계를 다 맞춰야만 정답으로 처리하는 평가 방식의 한계입니다. 예를 들어, 사용자가 “스티븐 스필버그가 어떤 영화를 감독했어?”라고 물으면, [스티븐 스필버그, 감독하다, (모든 스필버그 영화)]가 정답이어야 합니다. 하지만 \(path@k\)는 정답 경로에서 언급되지 않은 다른 영화 제목은 모두 오답으로 처리하죠.</p>
 
 <p>이를 보완하고자 [감독하다]와 같은 관계 정보만을 제대로 포함하는지를 평가<sup>relation path accuracy</sup>하는 실험([표 3])을 진행했습니다. 그 결과, 정답 경로를 배우지 않은 AttnIO-TS가 노드 간의 관계 정보를 배운 AttnIO-AS에 상응하는 수준의 성능을 선보였습니다. 모델이 생성한 경로의 적합성을 사람이 직접 평가하는 실험([표 4])에서는 AttnIO-TS가 좀 더 나은 점수를 받기도 했습니다. 이는 대화 맥락에 따라 어텐션을 전달하는 과정에서 경로를 스스로 탐색한 거로 보입니다.</p>
 
@@ -217,7 +230,7 @@
 
 <p><em class="center">[ 표 4 ] AttnIO-AS와 AttnIO-TS가 생성한 경로의 적합성에 대한 인간 평가 결과</em></p>
 
-<p>아울러 AI Lab은 AttnIO가 해석력(interpretability)도 갖추고 있음을 확인했습니다([그림 3]). 각 추론 단계에서 특정 노드가 어떤 간선을 통해 얼마나 많은 어텐션을 받았는지를 볼 수 있다는 의미입니다. “AttnIO가 열린 질문과 닫힌 질문 사이의 차이를 경로 탐색 과정에서 반영하는가?”를 분석한 결과, “스티븐 스필버그가 누구야?” 식의 열린 질문에는 여러 후보 노드에 어텐션 값을 골고루 전파했습니다. 반면, “누가 영화 A.I.를 감독했어?” 식의 닫힌 질문에는 정답이 될 수 있는 한, 두 가지의 개체에만 어텐션이 전파됐음을 확인할 수 있었습니다.</p>
+<p>아울러 AI Lab은 AttnIO가 해석력<sup>interpretability</sup>도 갖추고 있음을 확인했습니다([그림 3]). 각 추론 단계에서 특정 노드가 어떤 간선을 통해 얼마나 많은 어텐션을 받았는지를 볼 수 있다는 의미입니다. “AttnIO가 열린 질문과 닫힌 질문 사이의 차이를 경로 탐색 과정에서 반영하는가?”를 분석한 결과, “스티븐 스필버그가 누구야?” 식의 열린 질문에는 여러 후보 노드에 어텐션 값을 골고루 전파했습니다. 반면, “누가 영화 A.I.를 감독했어?” 식의 닫힌 질문에는 정답이 될 수 있는 한, 두 가지의 개체에만 어텐션이 전파됐음을 확인할 수 있었습니다.</p>
 
 <p><img src="/ailab-papers/assets/img/2020-12-14-201214/006.png" width="" align="" /></p>
 
@@ -234,17 +247,18 @@
 <p><br /></p>
 
 <h1 id="참고-문헌">참고 문헌</h1>
-<p>[<a id="rf01" href="#01">1</a>] <a href="https://www.aclweb.org/anthology/2020.emnlp-main.280/">AttnIO : Knowledge Graph Exploration with In-and-Out Attention Flow for Knowledge-Grounded Dialogue</a> (2020) by Jaehun Jung, Bokyung Son, Sungwon Lyu in EMNLP</p>
 
-<p>[<a id="rf02" href="#02">2</a>] <a href="https://www.aclweb.org/anthology/D19-1250/">Language Models as Knowledge Bases?</a> (2019) by Fabio Petroni, Tim Rocktäschel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel in EMNLP</p>
+<p><a id="3081:rf:1" class="referencebody"><a href="#3081:rf-back:1" class="backlink">[1]</a>  <a href="https://www.aclweb.org/anthology/2020.emnlp-main.280/">AttnIO : Knowledge Graph Exploration with In-and-Out Attention Flow for Knowledge-Grounded Dialogue</a> (2020) by Jaehun Jung, Bokyung Son, Sungwon Lyu in EMNLP </a><br /></p>
 
-<p>[<a id="rf03" href="#03">3</a>] <a href="https://arxiv.org/abs/1510.03055">A Diversity-Promoting Objective Function for Neural Conversation Models</a> (2016) by Jiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan in NAACL</p>
+<p><a id="3081:rf:2" class="referencebody"><a href="#3081:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D19-1250/">Language Models as Knowledge Bases?</a> (2019) by Fabio Petroni, Tim Rocktäschel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel in EMNLP </a><br /></p>
 
-<p>[<a id="rf04" href="#04">4</a>] <a href="https://www.aclweb.org/anthology/P19-1081">OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs</a> (2019) by Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba in ACL</p>
+<p><a id="3081:rf:3" class="referencebody"><a href="#3081:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1510.03055">A Diversity-Promoting Objective Function for Neural Conversation Models</a> (2016) by Jiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan in NAACL </a><br /></p>
 
-<p>[<a id="rf05" href="#05">5</a>] <a href="https://www.aclweb.org/anthology/D19-1187">Knowledge Aware Conversation Generation with Explainable Reasoning over Augmented Graphs</a> (2019) by Zhibin Liu, Zheng-Yu Niu, Hua Wu, Haifeng Wang in EMNLP</p>
+<p><a id="3081:rf:4" class="referencebody"><a href="#3081:rf-back:4" class="backlink">[4]</a>  <a href="https://www.aclweb.org/anthology/P19-1081">OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs</a> (2019) by Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba in ACL </a><br /></p>
 
-<p>[<a id="rf06" href="#06">6</a>] <a href="https://arxiv.org/abs/1909.11942">ALBERT: A Lite BERT for Self-supervised Learning of Language Representations</a> (2019) by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut in arXiv</p>
+<p><a id="3081:rf:5" class="referencebody"><a href="#3081:rf-back:5" class="backlink">[5]</a>  <a href="https://www.aclweb.org/anthology/D19-1187">Knowledge Aware Conversation Generation with Explainable Reasoning over Augmented Graphs</a> (2019) by Zhibin Liu, Zheng-Yu Niu, Hua Wu, Haifeng Wang in EMNLP </a><br /></p>
+
+<p><a id="3081:rf:6" class="referencebody"><a href="#3081:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1909.11942">ALBERT: A Lite BERT for Self-supervised Learning of Language Representations</a> (2019) by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut in arXiv </a><br /></p>
 
 <p><br /></p>
 
