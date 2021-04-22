@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: COMPTER VISION
+research-area: COMPUTER VISION
 title: Uncorrelated Feature Encoding for Faster Image Style Transfer
 slug: uncorrelated-feature-encoding-for-faster-image-style-transfer
 description:

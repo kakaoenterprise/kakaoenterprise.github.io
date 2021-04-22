@@ -22,5 +22,5 @@ In this paper, we propose a novel emotion recognition method based on the underl
 
 <br/>
 
-{% include image.html name="001.jpg" width="" align="center" %}
+<img src="{{ site.url }}/assets/img/2020-05-04-emotion-recognition/001.jpg" align="center">
 <em>[ figure 1 ] Overview of the proposed multimodal emotion recognition framework integrating the acoustic and lexical features.</em>

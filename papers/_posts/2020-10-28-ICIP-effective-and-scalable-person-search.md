@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: COMPTER VISION
+research-area: COMPUTER VISION
 title: "Learning Discriminative Part Features Through Attentions For Effective And Scalable Person Search"
 slug: ICIP2020-effective-and-scalable-person-search
 description: 한 번의 딥러닝 추론으로 사람 검출과 검색을 한꺼번에 구현하는 기법 제안
