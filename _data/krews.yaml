@@ -264,6 +264,13 @@ tony:
   web:
   description: 데이터 사이언스에 관심이 생겨 덜컥 인공지능 관련 석사 과정에 진학했습니다. 카카오에서는 인공지능을 이용한 이미지처리된 연구와 개발을 맡고 있습니다. 이번 생에는 사람만큼 똑똑한 인공지능의 탄생을 꼭 보고 싶습니다.
 
+tony.l:
+  korean_name: 이윤한
+  profile:
+  github:
+  web:
+  description:
+
 woody:
   korean_name: 박진우
   profile:

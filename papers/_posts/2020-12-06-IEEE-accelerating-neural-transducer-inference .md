@@ -8,7 +8,7 @@ published-date: 2020-11-06
 publisher: IEEE Signal Processing Letters
 authors:
   - jaytee:카카오엔터프라이즈
-  - tony:카카오
+  - tony.l:카카오엔터프라이즈
   - chris:카카오엔터프라이즈
 paper: https://ieeexplore.ieee.org/document/9250505
 code:
