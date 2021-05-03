@@ -5,43 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다 | KEP R&amp;D Site</title>
+<title>지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다 | Kakao Enterprise AI Research</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다" />
 <meta name="author" content="samantha:작성,편집" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="카카오엔터프라이즈 Research&amp;Development Blog" />
-<meta property="og:description" content="카카오엔터프라이즈 Research&amp;Development Blog" />
-<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/deepdive/201214" />
-<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/deepdive/201214" />
-<meta property="og:site_name" content="KEP R&amp;D Site" />
-<meta property="og:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
+<link rel="canonical" href="http://0.0.0.0:4000/deepdive/201214" />
+<meta property="og:url" content="http://0.0.0.0:4000/deepdive/201214" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:image" content="http://0.0.0.0:4000/000.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-14T00:00:00-06:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
+<meta property="twitter:image" content="http://0.0.0.0:4000/000.jpg" />
 <meta property="twitter:title" content="지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"samantha:작성,편집"},"description":"카카오엔터프라이즈 Research&amp;Development Blog","@type":"BlogPosting","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","headline":"지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다","dateModified":"2020-12-14T00:00:00-06:00","datePublished":"2020-12-14T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/deepdive/201214","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/deepdive/201214"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"samantha:작성,편집"},"@type":"BlogPosting","image":"http://0.0.0.0:4000/000.jpg","headline":"지식그래프에서 경로를 탐색하는 모델 AttnIO를 소개합니다","dateModified":"2020-12-14T00:00:00-06:00","datePublished":"2020-12-14T00:00:00-06:00","url":"http://0.0.0.0:4000/deepdive/201214","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/deepdive/201214"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/ailab-papers/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/ailab-papers/assets/fonts/Kakao.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="/assets/fonts/Kakao.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
   <!-- <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/> -->
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/ailab-papers/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/ailab-papers/assets/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/ailab-papers/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
   <!-- Icon -->
   <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
 
   <!-- RSS -->
-  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+  <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Kakao Enterprise AI Research" />
 
   <!-- Google Analytics-->
   
@@ -66,11 +64,11 @@
   <body>
     <nav class="nav">
   <div class="nav-container">
-    <a href="/ailab-papers/">
-      <h2 class="nav-title">KEP R&D Site</h2>
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
     </a>
     <ul>
-      <li><a href="/ailab-papers/papers">Papers</a></li>
+      <li><a href="/papers">Papers</a></li>
     </ul>
   </div>
 </nav>
@@ -86,7 +84,7 @@
 
 
 
-<img src="/ailab-papers/assets/img/2020-12-14-201214/000.jpg" width="" align="">
+<img src="/assets/img/2020-12-14-201214/000.jpg" width="" align="">
 
     
   </header>
@@ -116,9 +114,9 @@
 
 <p>사람과 대화를 나누는 기계를 만들 때도 위에서 언급한 ‘대화가 잘 통한다’는 느낌을 제공하는 게 중요합니다. 물론 지금 당장은 감정적 교감을 나누는 기계의 구현은 먼 미래의 일입니다. 이에 현재 산학계에서는 대화 맥락에 어울리는 유일한 정보를 제공하는 과제부터 순차 해결하는 데 집중하고 있습니다.</p>
 
-<p>오늘날의 많은 대화 시스템은 언어 모델<sup>language model</sup>을 이용해 문장을 생성합니다. 특정 대상에 대한 지식을 보다 원활하게 획득하고자 최근에는 외부 지식 베이스<sup>knowledge base</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>를 활용하는 방식도 고려되고 있습니다. 올해 EMNLP<sup>Empirical Methods in Natural Language Processing</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>에 게재된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 논문에서는 바로 이 지식 베이스 상에서 대화 맥락에 어울리는 (답변) 경로를 효과적으로 탐색하는 모델<sup>path retrieval model</sup>인 AttnIO<a href="#1e56:rf:1" class="reference" id="1e56:rf-back:1">[1]</a>를 제안했습니다. 자연어처리에서 경험적 방법론을 다루는 올해 이 학회에서는 총 3,677개 중 754개의 논문이 통과됐습니다.</p>
+<p>오늘날의 많은 대화 시스템은 언어 모델<sup>language model</sup>을 이용해 문장을 생성합니다. 특정 대상에 대한 지식을 보다 원활하게 획득하고자 최근에는 외부 지식 베이스<sup>knowledge base</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>를 활용하는 방식도 고려되고 있습니다. 올해 EMNLP<sup>Empirical Methods in Natural Language Processing</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>에 게재된 카카오엔터프라이즈 AI Lab(이하 AI Lab)의 논문에서는 바로 이 지식 베이스 상에서 대화 맥락에 어울리는 (답변) 경로를 효과적으로 탐색하는 모델<sup>path retrieval model</sup>인 AttnIO<a href="#5480:rf:1" class="reference" id="5480:rf-back:1">[1]</a>를 제안했습니다. 자연어처리에서 경험적 방법론을 다루는 올해 이 학회에서는 총 3,677개 중 754개의 논문이 통과됐습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-12-14-201214/001.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-12-14-201214/001.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 1 ] AttnIO가 지식 그래프에서 경로를 탐색하는 과정</em></p>
 
@@ -128,11 +126,11 @@
 
 <h1 id="지식-그래프를-활용하는-대화-시스템">지식 그래프를 활용하는 대화 시스템</h1>
 
-<p>산업 현장에서는 Seq2Seq<sup>sequence to sequence</sup><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> 기반 언어 모델을 활용합니다. 이 언어 모델은 대량의 말뭉치를 사전학습하기만 해도 외부 지식<sup>external knowledge</sup> 일부를 습득할 수 있습니다. 영화에 대한 문서도 학습한 모델이라면, 스필버그 감독에 관한 지식을 내뱉을 수 있다는 의미입니다. 언어 모델 그 자체를 지식 베이스의 일종이라고 볼 수 있다고 한 ‘Language Models as Knowledge Bases?<a href="#1e56:rf:2" class="reference" id="1e56:rf-back:2">[2]</a>‘라는 논문이 이를 뒷받침합니다.</p>
+<p>산업 현장에서는 Seq2Seq<sup>sequence to sequence</sup><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> 기반 언어 모델을 활용합니다. 이 언어 모델은 대량의 말뭉치를 사전학습하기만 해도 외부 지식<sup>external knowledge</sup> 일부를 습득할 수 있습니다. 영화에 대한 문서도 학습한 모델이라면, 스필버그 감독에 관한 지식을 내뱉을 수 있다는 의미입니다. 언어 모델 그 자체를 지식 베이스의 일종이라고 볼 수 있다고 한 ‘Language Models as Knowledge Bases?<a href="#5480:rf:2" class="reference" id="5480:rf-back:2">[2]</a>‘라는 논문이 이를 뒷받침합니다.</p>
 
 <p>하지만 언어 모델은 ‘스티븐 스필버그가 판타지 영화 해리포터를 연출했다’처럼 겉으로 보기엔 그럴싸해 보이나, 사실이 아닌 문장을 생성할 수 있다는 취약점을 지니고 있습니다. 언어 모델은 단어 시퀀스의 우도<sup>likelihood</sup><sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>를 최대화하는 방식으로 주어진 단어 다음에 올 단어를 예측합니다. 이 과정에서 모델은 스스로 문장에 포함된 의미가 사실에 근거하는지 아닌지를 구분하지 못합니다. 그래서 ‘스티븐 스필버그는 SF영화 A.I를 감독했다”라는 옳은 문장만큼이나, 위의 잘못된 예시 문장이 생성될 확률이 높아집니다.</p>
 
-<p>앞서 설명한 학습 방식으로 인해 언어 모델은 입력된 문장과 관계없는 상투적인 표현을 내뱉기도 합니다<a href="#1e56:rf:3" class="reference" id="1e56:rf-back:3">[3]</a>. 이는 훈련 데이터셋에 “안녕하세요”, “잘 몰라요”, “감사합니다”, “미안합니다”와 같은 표현의 높은 등장 빈도에 기인한 현상으로 분석됩니다. 또는 자주 함께 등장하는 주어와 동사, 또는 목적어를 포함한, 구체성이 떨어지는 문장이 생성될 수도 있습니다. 스티븐 스필버그가 누군지 묻는 말에 “아니 몰라” 또는, “스티븐 스필버그는 연출했다”, “스티븐 스필버그는 태어났다”로 대답하는 식이죠.</p>
+<p>앞서 설명한 학습 방식으로 인해 언어 모델은 입력된 문장과 관계없는 상투적인 표현을 내뱉기도 합니다<a href="#5480:rf:3" class="reference" id="5480:rf-back:3">[3]</a>. 이는 훈련 데이터셋에 “안녕하세요”, “잘 몰라요”, “감사합니다”, “미안합니다”와 같은 표현의 높은 등장 빈도에 기인한 현상으로 분석됩니다. 또는 자주 함께 등장하는 주어와 동사, 또는 목적어를 포함한, 구체성이 떨어지는 문장이 생성될 수도 있습니다. 스티븐 스필버그가 누군지 묻는 말에 “아니 몰라” 또는, “스티븐 스필버그는 연출했다”, “스티븐 스필버그는 태어났다”로 대답하는 식이죠.</p>
 
 <p>이에 외부 지식을 언어 모델에 내재화하거나, 따로 저장한 외부 지식을 학습에 활용하는 메커니즘에 대한 필요성이 커지게 됐습니다. 2019년부터는 외부에 구축해 둔 지식 베이스를 활용한 연구가 본격적으로 제안됐습니다. 특히 지식 그래프<sup>Knowledge graph</sup><sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>에서 대화 맥락에 어울리는 개체<sup>entity</sup>와 관계<sup>relation</sup>를 찾는 경로 탐색에 관한 연구가 활발하게 이뤄지고 있습니다. ‘(스티븐 스필버그)→감독하다→(A.I)→장르→(SF)’와 같은 경로를 만들어낼 수 있다면, 글 도입부 예시와 같은 적절한 응답 문장을 수월하게 생성하리라는 판단에 근거한 접근입니다.</p>
 
@@ -156,13 +154,13 @@
 
 <p>AI Lab은 <b>1)</b>인코딩 과정에서 지식 그래프의 구조 정보를 반영하고, <b>2)</b>대화 맥락에 따라 경로를 생성하며, <b>3)</b>정답 경로의 첫 번째 노드와 마지막 노드만을 이용한 약감독학습<sup>weakly-supervised learning</sup>으로도 감독학습에 버금가는 성능을 달성한 새로운 지식 경로 탐색 모델인 AttnIO를 제안했습니다. in-flow<sup>incoming attention flow</sup>에서 각 노드는 자신과 연결된 이웃 노드와 그 관계를 표현하는 벡터를 생성하며, out-flow<sup>outgoing attention flow</sup>에서는 대화 맥락에 따른 최적의 경로를 탐색합니다. 자세한 설명은 각 단락에서 이어서 하겠습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-12-14-201214/002.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-12-14-201214/002.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] AttnIO의 아키텍처</em></p>
 
 <h2 id="dialog-encoder">dialog encoder</h2>
 
-<p>대화의 맥락과 질문의 의도를 효과적으로 반영한 컨텍스트 벡터(context vector)를 생성하는 모듈로, 사전학습을 마친 ALBERT<sup>A Lite BERT</sup><a href="#1e56:rf:4" class="reference" id="1e56:rf-back:4">[4]</a><sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup>의 인코더로 구현됐습니다. AI Lab은 문장을 구성하는 모든 토큰의 응축된 의미를 가진 CLS<sup>Special Classification token</sup>에 해당하는 벡터를 컨텍스트 벡터로 활용했습니다.</p>
+<p>대화의 맥락과 질문의 의도를 효과적으로 반영한 컨텍스트 벡터(context vector)를 생성하는 모듈로, 사전학습을 마친 ALBERT<sup>A Lite BERT</sup><a href="#5480:rf:4" class="reference" id="5480:rf-back:4">[4]</a><sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">9</a></sup>의 인코더로 구현됐습니다. AI Lab은 문장을 구성하는 모든 토큰의 응축된 의미를 가진 CLS<sup>Special Classification token</sup>에 해당하는 벡터를 컨텍스트 벡터로 활용했습니다.</p>
 
 <h2 id="in-flow">in-flow</h2>
 
@@ -184,7 +182,7 @@
 
 <h1 id="모델-성능-평가-기준">모델 성능 평가 기준</h1>
 
-<p>AI Lab은 지난 2019년 페이스북이 ‘유익한 응답 생성을 위한 지식 그래프 탐색’ 평가를 목적으로 만들어서 배포한 OpenDialKG<a href="#1e56:rf:4" class="reference" id="1e56:rf-back:4">[4]</a>라는 벤치마크를 활용했습니다. 여기에는 약 10만 개의 대화<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote" rel="footnote">12</a></sup>와 지식 경로로 구성된 병렬 코퍼스, 100만 개 이상의 간선으로 구성된 지식 그래프가 포함돼 있습니다.</p>
+<p>AI Lab은 지난 2019년 페이스북이 ‘유익한 응답 생성을 위한 지식 그래프 탐색’ 평가를 목적으로 만들어서 배포한 OpenDialKG<a href="#5480:rf:4" class="reference" id="5480:rf-back:4">[4]</a>라는 벤치마크를 활용했습니다. 여기에는 약 10만 개의 대화<sup id="fnref:12" role="doc-noteref"><a href="#fn:12" class="footnote" rel="footnote">12</a></sup>와 지식 경로로 구성된 병렬 코퍼스, 100만 개 이상의 간선으로 구성된 지식 그래프가 포함돼 있습니다.</p>
 
 <table>
 <tr>
@@ -212,7 +210,7 @@
 
 <p>지식 경로를 라벨링한 데이터를 감독학습한 여러 모델의 성능을 비교한 결과, AttnIO-AS는 OpenDialKG에서 현재 최고 수준의(SOTA) 추론 성능을 달성했습니다. 특히 k가 작을수록 그 성능 격차가 더 크다는 부분은 눈여겨서 볼만 합니다. AttnIO가 생성한 1위 후보 경로와 경로상 마지막 노드가 정답과 일치할 확률이 다른 모델보다 높다는 점을 시사하기 때문입니다. 이는 탐색 각 단계에서 노드를 미리 선택하는 RNN 디코더를 갖춘 모델과는 달리, 대화 맥락에 따라 가장 많은 어텐션 값을 전파받은 경로를 선택하는 구조에 기인한 효과로 분석됩니다. 주변 노드와의 관계를 잘 표현하는 노드 인코딩 기법도 유효한 영향을 미쳤습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-12-14-201214/003.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-12-14-201214/003.png" width="" align="" /></p>
 
 <p><em class="center">[ 표 2 ] 대화 말뭉치에 지식 경로를 라벨링한 데이터를 학습한 모델의 성능 비교</em></p>
 
@@ -222,17 +220,17 @@
 
 <p>이를 보완하고자 [감독하다]와 같은 관계 정보만을 제대로 포함하는지를 평가<sup>relation path accuracy</sup>하는 실험([표 3])을 진행했습니다. 그 결과, 정답 경로를 배우지 않은 AttnIO-TS가 노드 간의 관계 정보를 배운 AttnIO-AS에 상응하는 수준의 성능을 선보였습니다. 모델이 생성한 경로의 적합성을 사람이 직접 평가하는 실험([표 4])에서는 AttnIO-TS가 좀 더 나은 점수를 받기도 했습니다. 이는 대화 맥락에 따라 어텐션을 전달하는 과정에서 경로를 스스로 탐색한 거로 보입니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-12-14-201214/004.png" width="40%" align="" /></p>
+<p><img src="/assets/img/2020-12-14-201214/004.png" width="40%" align="" /></p>
 
 <p><em class="center">[ 표 3 ] AttnIO-AS와 AttnIO-TS의 관계 경로 일치성 여부를 (자동) 평가한 결과</em></p>
 
-<p><img src="/ailab-papers/assets/img/2020-12-14-201214/005.png" width="90%" align="" /></p>
+<p><img src="/assets/img/2020-12-14-201214/005.png" width="90%" align="" /></p>
 
 <p><em class="center">[ 표 4 ] AttnIO-AS와 AttnIO-TS가 생성한 경로의 적합성에 대한 인간 평가 결과</em></p>
 
 <p>아울러 AI Lab은 AttnIO가 해석력<sup>interpretability</sup>도 갖추고 있음을 확인했습니다([그림 3]). 각 추론 단계에서 특정 노드가 어떤 간선을 통해 얼마나 많은 어텐션을 받았는지를 볼 수 있다는 의미입니다. “AttnIO가 열린 질문과 닫힌 질문 사이의 차이를 경로 탐색 과정에서 반영하는가?”를 분석한 결과, “스티븐 스필버그가 누구야?” 식의 열린 질문에는 여러 후보 노드에 어텐션 값을 골고루 전파했습니다. 반면, “누가 영화 A.I.를 감독했어?” 식의 닫힌 질문에는 정답이 될 수 있는 한, 두 가지의 개체에만 어텐션이 전파됐음을 확인할 수 있었습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-12-14-201214/006.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-12-14-201214/006.png" width="" align="" /></p>
 
 <p><em class="center">[ 그림 3 ] AttnIO가 추론한 어텐션 값 분포를 분석하면 AttnIO가 대화 맥락에 따라 탐색한 지식 경로를 살펴볼 수 있다.</em></p>
 
@@ -248,17 +246,17 @@
 
 <h1 id="참고-문헌">참고 문헌</h1>
 
-<p><a id="1e56:rf:1" class="referencebody"><a href="#1e56:rf-back:1" class="backlink">[1]</a>  <a href="https://www.aclweb.org/anthology/2020.emnlp-main.280/">AttnIO : Knowledge Graph Exploration with In-and-Out Attention Flow for Knowledge-Grounded Dialogue</a> (2020) by Jaehun Jung, Bokyung Son, Sungwon Lyu in EMNLP </a><br /></p>
+<p><a id="5480:rf:1" class="referencebody"><a href="#5480:rf-back:1" class="backlink">[1]</a>  <a href="https://www.aclweb.org/anthology/2020.emnlp-main.280/">AttnIO : Knowledge Graph Exploration with In-and-Out Attention Flow for Knowledge-Grounded Dialogue</a> (2020) by Jaehun Jung, Bokyung Son, Sungwon Lyu in EMNLP </a><br /></p>
 
-<p><a id="1e56:rf:2" class="referencebody"><a href="#1e56:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D19-1250/">Language Models as Knowledge Bases?</a> (2019) by Fabio Petroni, Tim Rocktäschel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel in EMNLP </a><br /></p>
+<p><a id="5480:rf:2" class="referencebody"><a href="#5480:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D19-1250/">Language Models as Knowledge Bases?</a> (2019) by Fabio Petroni, Tim Rocktäschel, Patrick Lewis, Anton Bakhtin, Yuxiang Wu, Alexander H. Miller, Sebastian Riedel in EMNLP </a><br /></p>
 
-<p><a id="1e56:rf:3" class="referencebody"><a href="#1e56:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1510.03055">A Diversity-Promoting Objective Function for Neural Conversation Models</a> (2016) by Jiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan in NAACL </a><br /></p>
+<p><a id="5480:rf:3" class="referencebody"><a href="#5480:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1510.03055">A Diversity-Promoting Objective Function for Neural Conversation Models</a> (2016) by Jiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan in NAACL </a><br /></p>
 
-<p><a id="1e56:rf:4" class="referencebody"><a href="#1e56:rf-back:4" class="backlink">[4]</a>  <a href="https://www.aclweb.org/anthology/P19-1081">OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs</a> (2019) by Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba in ACL </a><br /></p>
+<p><a id="5480:rf:4" class="referencebody"><a href="#5480:rf-back:4" class="backlink">[4]</a>  <a href="https://www.aclweb.org/anthology/P19-1081">OpenDialKG: Explainable Conversational Reasoning with Attention-based Walks over Knowledge Graphs</a> (2019) by Seungwhan Moon, Pararth Shah, Anuj Kumar, Rajen Subba in ACL </a><br /></p>
 
-<p><a id="1e56:rf:5" class="referencebody"><a href="#1e56:rf-back:5" class="backlink">[5]</a>  <a href="https://www.aclweb.org/anthology/D19-1187">Knowledge Aware Conversation Generation with Explainable Reasoning over Augmented Graphs</a> (2019) by Zhibin Liu, Zheng-Yu Niu, Hua Wu, Haifeng Wang in EMNLP </a><br /></p>
+<p><a id="5480:rf:5" class="referencebody"><a href="#5480:rf-back:5" class="backlink">[5]</a>  <a href="https://www.aclweb.org/anthology/D19-1187">Knowledge Aware Conversation Generation with Explainable Reasoning over Augmented Graphs</a> (2019) by Zhibin Liu, Zheng-Yu Niu, Hua Wu, Haifeng Wang in EMNLP </a><br /></p>
 
-<p><a id="1e56:rf:6" class="referencebody"><a href="#1e56:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1909.11942">ALBERT: A Lite BERT for Self-supervised Learning of Language Representations</a> (2019) by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut in arXiv </a><br /></p>
+<p><a id="5480:rf:6" class="referencebody"><a href="#5480:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1909.11942">ALBERT: A Lite BERT for Self-supervised Learning of Language Representations</a> (2019) by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut in arXiv </a><br /></p>
 
 <p><br /></p>
 
@@ -329,7 +327,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/samantha.jpg">
+            <img class="author-image" src="/assets/profile/samantha.jpg">
           </span>
           <span>
             <p><span class="author-name">이수경</span> | <span class="author-role">작성,편집</span></p>
@@ -346,7 +344,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/hoony.png">
+            <img class="author-image" src="/assets/profile/hoony.png">
           </span>
           <span>
             <p><span class="author-name">정재훈</span> | <span class="author-role">작성,감수</span></p>
@@ -363,7 +361,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/james.png">
+            <img class="author-image" src="/assets/profile/james.png">
           </span>
           <span>
             <p><span class="author-name">류성원</span> | <span class="author-role">감수</span></p>
@@ -380,7 +378,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/meta.png">
+            <img class="author-image" src="/assets/profile/meta.png">
           </span>
           <span>
             <p><span class="author-name">손보경</span> | <span class="author-role">감수</span></p>
@@ -396,7 +394,7 @@
     </main>
     <footer>
   <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
-    <img src="/ailab-papers/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
   </a>
 </footer>
 

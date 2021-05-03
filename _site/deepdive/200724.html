@@ -5,43 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>정답 유형을 분류하는 딥러닝 기술 | KEP R&amp;D Site</title>
+<title>정답 유형을 분류하는 딥러닝 기술 | Kakao Enterprise AI Research</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="정답 유형을 분류하는 딥러닝 기술" />
 <meta name="author" content="samantha:작성,편집" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="카카오엔터프라이즈 Research&amp;Development Blog" />
-<meta property="og:description" content="카카오엔터프라이즈 Research&amp;Development Blog" />
-<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/deepdive/200724" />
-<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/deepdive/200724" />
-<meta property="og:site_name" content="KEP R&amp;D Site" />
-<meta property="og:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
+<link rel="canonical" href="http://0.0.0.0:4000/deepdive/200724" />
+<meta property="og:url" content="http://0.0.0.0:4000/deepdive/200724" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:image" content="http://0.0.0.0:4000/000.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-24T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://pages.github.kakaocorp.com/ailab-papers/000.jpg" />
+<meta property="twitter:image" content="http://0.0.0.0:4000/000.jpg" />
 <meta property="twitter:title" content="정답 유형을 분류하는 딥러닝 기술" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"samantha:작성,편집"},"description":"카카오엔터프라이즈 Research&amp;Development Blog","@type":"BlogPosting","image":"https://pages.github.kakaocorp.com/ailab-papers/000.jpg","headline":"정답 유형을 분류하는 딥러닝 기술","dateModified":"2020-07-24T00:00:00-05:00","datePublished":"2020-07-24T00:00:00-05:00","url":"https://pages.github.kakaocorp.com/ailab-papers/deepdive/200724","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/deepdive/200724"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"samantha:작성,편집"},"@type":"BlogPosting","image":"http://0.0.0.0:4000/000.jpg","headline":"정답 유형을 분류하는 딥러닝 기술","dateModified":"2020-07-24T00:00:00-05:00","datePublished":"2020-07-24T00:00:00-05:00","url":"http://0.0.0.0:4000/deepdive/200724","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/deepdive/200724"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/ailab-papers/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/ailab-papers/assets/fonts/Kakao.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="/assets/fonts/Kakao.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
   <!-- <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/> -->
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/ailab-papers/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/ailab-papers/assets/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/ailab-papers/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 
   <!-- Icon -->
   <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
 
   <!-- RSS -->
-  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
+  <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Kakao Enterprise AI Research" />
 
   <!-- Google Analytics-->
   
@@ -66,11 +64,11 @@
   <body>
     <nav class="nav">
   <div class="nav-container">
-    <a href="/ailab-papers/">
-      <h2 class="nav-title">KEP R&D Site</h2>
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
     </a>
     <ul>
-      <li><a href="/ailab-papers/papers">Papers</a></li>
+      <li><a href="/papers">Papers</a></li>
     </ul>
   </div>
 </nav>
@@ -86,7 +84,7 @@
 
 
 
-<img src="/ailab-papers/assets/img/2020-07-24-200724/000.jpg" width="" align="">
+<img src="/assets/img/2020-07-24-200724/000.jpg" width="" align="">
 
     
   </header>
@@ -104,11 +102,11 @@
 
 <p>카카오엔터프라이즈 AI Lab(이하 AI Lab)은 사용자에게 도움이 되는 정보를 효율적으로 찾아주는 검색 시스템이 필요하다고 판단, 자사 인공지능 기술을 집약한 플랫폼인 카카오 i 대화 엔진<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>을 점진적으로 개선해나가고 있습니다. 그 중에서도 AI Lab은 음성, 키보드와 같은 다양한 인터페이스를 통해 입력된 사용자 질의<sup>query</sup>에 대한 답을 포함하는 후보 문서에서 정답 부분을 추출하는 질의 응답 기술([그림 1])의 연구개발에 특히 힘쓰고 있습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-07-24-200724/001.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-07-24-200724/001.png" width="" align="" /></p>
 
 <p><em class="center">[그림 1] 질의 응답 시스템의 동작 과정</em></p>
 
-<p>이번 글에서는 자사 질의 응답 기술 요소 중 하나인 딥러닝 기반 정답 유형(서술형, 단답형) 분류 모델<a href="#0e88:rf:1" class="reference" id="0e88:rf-back:1">[1]</a>을 소개해보고자 합니다. AI Lab AI기술팀 자연어처리파트의 조승우 연구원을 만나 자세한 이야기를 들어봤습니다.</p>
+<p>이번 글에서는 자사 질의 응답 기술 요소 중 하나인 딥러닝 기반 정답 유형(서술형, 단답형) 분류 모델<a href="#6603:rf:1" class="reference" id="6603:rf-back:1">[1]</a>을 소개해보고자 합니다. AI Lab AI기술팀 자연어처리파트의 조승우 연구원을 만나 자세한 이야기를 들어봤습니다.</p>
 
 <p><br /></p>
 
@@ -258,7 +256,7 @@
 
 <p>보통은 Eigen<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>을 이용해 디코더<sup>decoder</sup>를 구현하면 속도를 최적화할 수 있습니다. 다만 모델의 층수가 많아질수록 그 이점은 줄어듭니다. 그래서 BERT처럼 층이 많고 그 구조가 복잡한 모델에서는 서비스가 가능한 수준의 속도 최적화는 매우 어려운 편에 속합니다. 실제로 BERT 기반 모델은 서버 GPU를 사용하고도 한 문장을 분류하는 데에만 9.3280ms나 걸립니다. 반면, CNN 기반 모델에서는 CPU 싱글코어만으로도 한 문장 분류에 2ms밖에 걸리지 않았죠.</p>
 
-<p>AI Lab은 비슷한 정확도를 가진 모델인데, 훨씬 값싸고 빠르게 사용할 수 있다면 공학적인 측면에서 마다할 이유가 없다고 판단, BERT 기반 언어 모델 대신 GloVe<a href="#0e88:rf:2" class="reference" id="0e88:rf-back:2">[2]</a> 의미 벡터와 어절 임베딩 벡터를 CNN에 입력해 그 문맥을 학습할 수 있도록 했습니다<a href="#0e88:rf:1" class="reference" id="0e88:rf-back:1">[1]</a>. CNN 기반 모델을 채택한 이유는 뒤에서 자세히 설명해드리겠습니다.</p>
+<p>AI Lab은 비슷한 정확도를 가진 모델인데, 훨씬 값싸고 빠르게 사용할 수 있다면 공학적인 측면에서 마다할 이유가 없다고 판단, BERT 기반 언어 모델 대신 GloVe<a href="#6603:rf:2" class="reference" id="6603:rf-back:2">[2]</a> 의미 벡터와 어절 임베딩 벡터를 CNN에 입력해 그 문맥을 학습할 수 있도록 했습니다<a href="#6603:rf:1" class="reference" id="6603:rf-back:1">[1]</a>. CNN 기반 모델을 채택한 이유는 뒤에서 자세히 설명해드리겠습니다.</p>
 
 <p><br /></p>
 
@@ -270,7 +268,7 @@
 
 <p>하지만 AI Lab은 형태소를 분석하는 것만으로는 오탈자 여부를 알기가 쉽지 않다고 판단했습니다. 사용자는 비슷하게 발음되는 두 단어를 혼동하거나, 키보드상에서 가까이 위치하는 키를 잘못 타이핑하거나, 단순히 띄어쓰기를 생략할 수도 있습니다. 대부분은 정상적인 표현에서 자음, 모음 한두 개만 달랐습니다. 이에 AI Lab은 자음과 모음 추출기를 이용해 어절의 자모음 정보도 획득했습니다. 이 자모음 정보는 뒤에서 설명할 통합 어절 임베딩(행렬) 생성에 활용됩니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-07-24-200724/002.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-07-24-200724/002.png" width="" align="" /></p>
 
 <p><em class="center">[그림 2] 전처리 및 통합 어절 임베딩 생성 과정</em></p>
 
@@ -278,11 +276,11 @@
 
 <h2 id="2-통합-어절-임베딩-생성">2. 통합 어절 임베딩 생성</h2>
 
-<p>자연어 어절을 벡터로 바꾸는 데에는 워드 임베딩<sup>word embedding</sup>을 사용합니다. 워드 임베딩은 대규모 말뭉치에 등장하는 단어의 일반적인 의미를 벡터로 표현합니다. 예를 들어, 의미가 비슷한 ‘인간’과 ‘사람’을 비슷한 방식으로 표현할 수 있습니다. 또 ‘왕-남자=왕비’와 같은 관계에서 보듯이 단어의 실제적 의미적 차이를 거리로 표현하는 것도 합니다. 대표적인 워드 임베딩 모델로 Word2Vec<a href="#0e88:rf:3" class="reference" id="0e88:rf-back:3">[3]</a>, GloVe<a href="#0e88:rf:2" class="reference" id="0e88:rf-back:2">[2]</a>, FastText<a href="#0e88:rf:4" class="reference" id="0e88:rf-back:4">[4]</a>가 있습니다.</p>
+<p>자연어 어절을 벡터로 바꾸는 데에는 워드 임베딩<sup>word embedding</sup>을 사용합니다. 워드 임베딩은 대규모 말뭉치에 등장하는 단어의 일반적인 의미를 벡터로 표현합니다. 예를 들어, 의미가 비슷한 ‘인간’과 ‘사람’을 비슷한 방식으로 표현할 수 있습니다. 또 ‘왕-남자=왕비’와 같은 관계에서 보듯이 단어의 실제적 의미적 차이를 거리로 표현하는 것도 합니다. 대표적인 워드 임베딩 모델로 Word2Vec<a href="#6603:rf:3" class="reference" id="6603:rf-back:3">[3]</a>, GloVe<a href="#6603:rf:2" class="reference" id="6603:rf-back:2">[2]</a>, FastText<a href="#6603:rf:4" class="reference" id="6603:rf-back:4">[4]</a>가 있습니다.</p>
 
 <p>AI Lab은 여타 다른 임베딩 기법보다 단어의 의미를 더 잘 담아내는 GloVe 포함한, 입력 오류에 강건한 (자모) 통합 어절 임베딩 생성기를 구축했습니다. 형태소 어휘 사전에 존재하지 않은 오탈자로 인해<sup>out of vocabulary</sup> 형태소 분석 오차<sup>loss</sup>를 최소화하기 위함입니다. 통합 어절 임베딩 생성기는 형태소와 자모음 정보에 각각 부여한 임베딩 벡터를 이용해 다시 원래 어절을 조합하는 과정을 학습합니다. 그 결과, 입력 오류가 발생하더라도 원래 어절을 유사하게 추정할 수 있습니다.</p>
 
-<p>AI Lab은 통합 어절 임베딩 생성기 훈련 과정에서 자모 드롭아웃<sup>dropout</sup><sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote" rel="footnote">13</a></sup>과 띄어쓰기 없는 문장 생성이라는 두가지 데이터 노이즈<sup>noise</sup> 생성 기법을 추가했습니다. 기존 시스템 대비 오류가 포함된 문장을 분류하는 성능이 약 23%P 향상되는 등<a href="#0e88:rf:1" class="reference" id="0e88:rf-back:1">[1]</a> 이 기법의 유효성은 AI Lab 자체 실험을 통해서도 증명이 됐습니다.</p>
+<p>AI Lab은 통합 어절 임베딩 생성기 훈련 과정에서 자모 드롭아웃<sup>dropout</sup><sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote" rel="footnote">13</a></sup>과 띄어쓰기 없는 문장 생성이라는 두가지 데이터 노이즈<sup>noise</sup> 생성 기법을 추가했습니다. 기존 시스템 대비 오류가 포함된 문장을 분류하는 성능이 약 23%P 향상되는 등<a href="#6603:rf:1" class="reference" id="6603:rf-back:1">[1]</a> 이 기법의 유효성은 AI Lab 자체 실험을 통해서도 증명이 됐습니다.</p>
 
 <p><br /></p>
 
@@ -290,7 +288,7 @@
 
 <p>문장에 존재하는 각 어절을 표현하는 임베딩을 추출했다면, 이를 바탕으로 문맥까지 표현하는 임베딩 벡터를 생성할 차례입니다. 여기에는 CNN 기반 모델이 활용됩니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-07-24-200724/003.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-07-24-200724/003.png" width="" align="" /></p>
 
 <p><em class="center">[그림 3] 문장 임베딩 생성 및 분류</em></p>
 
@@ -298,33 +296,33 @@
 
 <p>이미지 분류<sup>classification</sup>와 분할<sup>segmentation</sup>, 객체 감지<sup>detection</sup>과 같은 비전 문제에서 탁월한 성능을 내는 CNN은 자연어처리 문제에도 효과적입니다. 컨볼루션 연산층<sup>convolution layer</sup>의 필터<sup>filter</sup>가 문맥 파악에 중요한 부분만 도출하는 데 유리한 덕분입니다. 그 결과, CNN을 통과한 최종 벡터는 문장의 지역 정보를 보존하는 추상화 과정을 거쳐 단어나 표현의 등장 순서를 반영한 문장의 의미 정보<sup>semantic information</sup>를 표현할 수 있게 됩니다.</p>
 
-<p>AI Lab이 문장 분류를 위해 기본으로 사용한 DenseNet<a href="#0e88:rf:5" class="reference" id="0e88:rf-back:5">[5]</a>은 CNN을 응용한 대표 알고리즘으로, 이전 층에서 생성된 특징 맵<sup>feature map</sup><sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">14</a></sup>을 모두 이어붙여서<sup>concatenation</sup> 다음층에 입력합니다. 컨볼루션 층이 많아질수록 출력 층에서부터 계산된 기울기<sup>gradient</sup>가 전체 네트워크에 올바르게 전달되지 않는 기울기 소실<sup>gradient vanishing</sup><sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote" rel="footnote">15</a></sup> 문제를 완화하는 이 로직이 자연어처리에서도 효과적인 방법이라고 AI Lab은 판단했습니다.</p>
+<p>AI Lab이 문장 분류를 위해 기본으로 사용한 DenseNet<a href="#6603:rf:5" class="reference" id="6603:rf-back:5">[5]</a>은 CNN을 응용한 대표 알고리즘으로, 이전 층에서 생성된 특징 맵<sup>feature map</sup><sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">14</a></sup>을 모두 이어붙여서<sup>concatenation</sup> 다음층에 입력합니다. 컨볼루션 층이 많아질수록 출력 층에서부터 계산된 기울기<sup>gradient</sup>가 전체 네트워크에 올바르게 전달되지 않는 기울기 소실<sup>gradient vanishing</sup><sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote" rel="footnote">15</a></sup> 문제를 완화하는 이 로직이 자연어처리에서도 효과적인 방법이라고 AI Lab은 판단했습니다.</p>
 
 <h3 id="2-깊이별-분리-컨볼루션-연산depthwise-separable-convolution">(2) 깊이별 분리 컨볼루션 연산<sup>depthwise separable convolution</sup></h3>
 
 <p>형태소와 자모 정보를 반영한 통합 어절 임베딩을 모델에 바로 입력하면 전체 학습 시간이 지나치게 길어지는 문제가 발생할 수 있습니다. 각 임베딩별로 컨볼루션 연산이 이뤄지다 보니 매개변수<sup>parameter</sup> 수가 늘어나는 만큼 처리 시간이 비례해서 늘어나기 때문입니다. 따라서 매개변수가 늘어나는 상황에 대비해 학습 속도나 추론 속도를 높일 필요가 있습니다.</p>
 
-<p>이를 해결하고자 AI Lab은 깊이별 분리 컨볼루션 연산<a href="#0e88:rf:6" class="reference" id="0e88:rf-back:6">[6]</a>을 이용합니다. 2D 이미지 데이터에 대한 깊이별 분리 컨볼루션은 매개변수 수 최적화를 통해 메모리 사용량은 줄이고 학습 속도를 높입니다. 채널을 기준으로 각각 [필터 높이, 필터 너비, 1]와 [1, 1, 채널 수]로 분리한 두 종류의 새로운 필터로 각각 깊이별 컨볼루션<sup>Depthwise convolution</sup>과 포인트별 컨볼루션<sup>Pointwise convolution</sup> 연산을 순차적으로 진행합니다.</p>
+<p>이를 해결하고자 AI Lab은 깊이별 분리 컨볼루션 연산<a href="#6603:rf:6" class="reference" id="6603:rf-back:6">[6]</a>을 이용합니다. 2D 이미지 데이터에 대한 깊이별 분리 컨볼루션은 매개변수 수 최적화를 통해 메모리 사용량은 줄이고 학습 속도를 높입니다. 채널을 기준으로 각각 [필터 높이, 필터 너비, 1]와 [1, 1, 채널 수]로 분리한 두 종류의 새로운 필터로 각각 깊이별 컨볼루션<sup>Depthwise convolution</sup>과 포인트별 컨볼루션<sup>Pointwise convolution</sup> 연산을 순차적으로 진행합니다.</p>
 
 <p>이 연구에서 깊이별 컨볼루션은 어절 간 관계를 고려합니다. 주위 어절을 함께 고려한다는 측면에서 n-gram<sup id="fnref:16" role="doc-noteref"><a href="#fn:16" class="footnote" rel="footnote">16</a></sup> 확률을 분류에 사용하는 것과 비슷하다고 보면 됩니다. 포인트별 컨볼루션은 유효 데이터만 추려내고자 전체 채널을 하나로 압축해 컨볼루션 연산을 진행합니다. 이렇게 하면 연산 속도를 높이는 데 도움이 됩니다.</p>
 
 <p>\(300\)차원의 통합 어절 임베딩 벡터와 \(300×3\) 크기의 필터 256개를 이용한 컨볼루션 연산<sup id="fnref:17" role="doc-noteref"><a href="#fn:17" class="footnote" rel="footnote">17</a></sup>이 있다고 가정하겠습니다. 일반적인 필터를 이용한 \(1\)회의 컨볼루션 연산에는 <b>입력 채널 수×필터 높이×필터 너비×출력 채널 수</b>만큼의 매개변수가 필요합니다. 여기서는 \(300×1×3×256=230,400\)개의 매개변수를 연산해야 하죠. 반면, 깊이별 분리 컨볼루션에서는 각각 \(300×1×3×1=900\)개와  \(300×1×1*×256=76,800\)개의 매개변수가 필요합니다. 이를 합치면 총 \(77,700\)개로, 연산 효율이 \(33.7\)% 더 좋다는 사실을 확인해볼 수 있습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-07-24-200724/004.png" width="80%" align="" /></p>
+<p><img src="/assets/img/2020-07-24-200724/004.png" width="80%" align="" /></p>
 
 <p><em class="center">[그림 4] 기존 컨볼루션 연산과 깊이별 분리 컨볼루션에 사용하는 필터 예시</em></p>
 
 <h3 id="3-동적-셀프-어텐션dynamic-self-attention">(3) 동적 셀프 어텐션<sup>dynamic self-attention</sup></h3>
 
-<p>서로 연관성이 높으나 거리상 멀리 떨어진 어절이 서로 참조할 수 있게 하는 기법으로 어텐션이 있습니다. 다만 행렬의 형태가 어절 수에 제약을 받는 기존 방식은 입력 발화 길이에 제약이 없는 실제 서비스에는 적합하지 않을 수도 있습니다. 이에 AI Lab은 입력 어절 수에 관계없이 어텐션 벡터를 자유롭게 계산하고 관리하는 기법인 동적 셀프 어텐션<a href="#0e88:rf:7" class="reference" id="0e88:rf-back:7">[7]</a>을 적용했습니다.</p>
+<p>서로 연관성이 높으나 거리상 멀리 떨어진 어절이 서로 참조할 수 있게 하는 기법으로 어텐션이 있습니다. 다만 행렬의 형태가 어절 수에 제약을 받는 기존 방식은 입력 발화 길이에 제약이 없는 실제 서비스에는 적합하지 않을 수도 있습니다. 이에 AI Lab은 입력 어절 수에 관계없이 어텐션 벡터를 자유롭게 계산하고 관리하는 기법인 동적 셀프 어텐션<a href="#6603:rf:7" class="reference" id="6603:rf-back:7">[7]</a>을 적용했습니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-07-24-200724/005.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-07-24-200724/005.png" width="" align="" /></p>
 
 <p><em class="center">[그림 5] 기존 어텐션 기법</em></p>
 
 <p>과정은 다음과 같습니다. 첫 번째, 각 어절 임베딩 벡터와 셀프 어텐션을 나타내는 동적 가중치 벡터<sup>dynamic weight vector</sup>를 곱해 각 어절의 문맥 점수를 구합니다. 두 번째, 각 문맥 점수에 대한 소프트맥스<sup>softmax</sup><sup id="fnref:18" role="doc-noteref"><a href="#fn:18" class="footnote" rel="footnote">18</a></sup> 연산을 거치면 중요도 점수(소프트맥스 확률값)를 얻게 됩니다. 세 번째, 어절 임베딩 벡터에 중요도 점수를 가중치로 두고 선형 결합<sup>linear combination</sup>합니다. 네 번째, 이 가중합의 결과는 다시 동적 가중치 벡터로 재정의됩니다. 이 과정을 거치면 어절 길이에 제약을 가진 가중치 행렬을 사용하지 않으면서도 현재 보는 어절과 관련성이 높은 다른 어절의 중요도도 반영할 수 있게 됩니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2020-07-24-200724/006.png" width="" align="" /></p>
+<p><img src="/assets/img/2020-07-24-200724/006.png" width="" align="" /></p>
 
 <p><em class="center">[그림 6] 동적 셀프 어텐션 과정</em></p>
 
@@ -342,19 +340,19 @@
 
 <h1 id="참고-문헌">참고 문헌</h1>
 
-<p><a id="0e88:rf:1" class="referencebody"><a href="#0e88:rf-back:1" class="backlink">[1]</a>  한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩 (2019) by 최동현, 박일남, 신명철, 김응균, 신동렬 in 제 31회 한글 및 한국어 정보처리 학술대회 논문집(pp. 43-48) </a><br /></p>
+<p><a id="6603:rf:1" class="referencebody"><a href="#6603:rf-back:1" class="backlink">[1]</a>  한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩 (2019) by 최동현, 박일남, 신명철, 김응균, 신동렬 in 제 31회 한글 및 한국어 정보처리 학술대회 논문집(pp. 43-48) </a><br /></p>
 
-<p><a id="0e88:rf:2" class="referencebody"><a href="#0e88:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D14-1162.pdf">GloVe: Global Vectors for Word Representation</a> by Jeffrey Pennington, Richard Socher, Christopher D. Manning, in Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP) </a><br /></p>
+<p><a id="6603:rf:2" class="referencebody"><a href="#6603:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D14-1162.pdf">GloVe: Global Vectors for Word Representation</a> by Jeffrey Pennington, Richard Socher, Christopher D. Manning, in Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP) </a><br /></p>
 
-<p><a id="0e88:rf:3" class="referencebody"><a href="#0e88:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a> (2013) by Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean in ICLR Workshop </a><br /></p>
+<p><a id="6603:rf:3" class="referencebody"><a href="#6603:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a> (2013) by Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean in ICLR Workshop </a><br /></p>
 
-<p><a id="0e88:rf:4" class="referencebody"><a href="#0e88:rf-back:4" class="backlink">[4]</a>  <a href="https://arxiv.org/abs/1607.01759">Bag of Tricks for Efficient Text Classification</a> by  Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov in arXiv </a><br /></p>
+<p><a id="6603:rf:4" class="referencebody"><a href="#6603:rf-back:4" class="backlink">[4]</a>  <a href="https://arxiv.org/abs/1607.01759">Bag of Tricks for Efficient Text Classification</a> by  Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov in arXiv </a><br /></p>
 
-<p><a id="0e88:rf:5" class="referencebody"><a href="#0e88:rf-back:5" class="backlink">[5]</a>  <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf">Densely Connected Convolutional Networks</a> (2017) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger in CVPR </a><br /></p>
+<p><a id="6603:rf:5" class="referencebody"><a href="#6603:rf-back:5" class="backlink">[5]</a>  <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf">Densely Connected Convolutional Networks</a> (2017) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger in CVPR </a><br /></p>
 
-<p><a id="0e88:rf:6" class="referencebody"><a href="#0e88:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1704.04861">MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</a> (2017) by Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam in CVPR </a><br /></p>
+<p><a id="6603:rf:6" class="referencebody"><a href="#6603:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1704.04861">MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</a> (2017) by Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam in CVPR </a><br /></p>
 
-<p><a id="0e88:rf:7" class="referencebody"><a href="#0e88:rf-back:7" class="backlink">[7]</a>  <a href="https://arxiv.org/abs/1808.07383">Dynamic Self-Attention: Computing Attention over Words Dynamically for Sentence Embedding</a> (2018) by Deunsol Yoon, Dongbok Lee, SangKeun Lee in arXiv </a><br /></p>
+<p><a id="6603:rf:7" class="referencebody"><a href="#6603:rf-back:7" class="backlink">[7]</a>  <a href="https://arxiv.org/abs/1808.07383">Dynamic Self-Attention: Computing Attention over Words Dynamically for Sentence Embedding</a> (2018) by Deunsol Yoon, Dongbok Lee, SangKeun Lee in arXiv </a><br /></p>
 
 <p><br /></p>
 
@@ -442,7 +440,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/samantha.jpg">
+            <img class="author-image" src="/assets/profile/samantha.jpg">
           </span>
           <span>
             <p><span class="author-name">이수경</span> | <span class="author-role">작성,편집</span></p>
@@ -459,7 +457,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/john.png">
+            <img class="author-image" src="/assets/profile/john.png">
           </span>
           <span>
             <p><span class="author-name">조승우</span> | <span class="author-role">작성,감수</span></p>
@@ -476,7 +474,7 @@
         
         <div class="post-author-box">
           <span>
-            <img class="author-image" src="/ailab-papers/assets/profile/heuristic.png">
+            <img class="author-image" src="/assets/profile/heuristic.png">
           </span>
           <span>
             <p><span class="author-name">최동현</span> | <span class="author-role">감수</span></p>
@@ -492,7 +490,7 @@
     </main>
     <footer>
   <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
-    <img src="/ailab-papers/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
   </a>
 </footer>
 
