@@ -5,41 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer | Kakao Enterprise AI Research</title>
+<title>Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer | KEP R&amp;D Site</title>
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer" />
 <meta name="author" content="rung:카카오엔터프라이즈" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 ‘SST’ 제안" />
 <meta property="og:description" content="비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 ‘SST’ 제안" />
-<link rel="canonical" href="http://0.0.0.0:4000/papers/inlg2020-stable-style-transformer" />
-<meta property="og:url" content="http://0.0.0.0:4000/papers/inlg2020-stable-style-transformer" />
-<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer" />
+<meta property="og:site_name" content="KEP R&amp;D Site" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-12-15T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"rung:카카오엔터프라이즈"},"description":"비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 ‘SST’ 제안","@type":"BlogPosting","headline":"Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer","dateModified":"2020-12-15T00:00:00-06:00","datePublished":"2020-12-15T00:00:00-06:00","url":"http://0.0.0.0:4000/papers/inlg2020-stable-style-transformer","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/papers/inlg2020-stable-style-transformer"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"rung:카카오엔터프라이즈"},"description":"비병렬 데이터셋을 활용한 새로운 텍스트 스타일 변환 모델 ‘SST’ 제안","@type":"BlogPosting","headline":"Stable Style Transformer: Delete and Generate Approach with Encoder-Decoder for Text Style Transfer","dateModified":"2020-12-15T00:00:00-06:00","datePublished":"2020-12-15T00:00:00-06:00","url":"https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/papers/inlg2020-stable-style-transformer"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/fonts/Kakao.css">
+  <link rel="stylesheet" href="/ailab-papers/assets/main.css">
+  <link rel="stylesheet" type="text/css" href="/ailab-papers/assets/fonts/Kakao.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
   <!-- <link rel="stylesheet" type="text/css" crossorigin="anonymous" href="https://meta-kage.kakaocdn.net/dn/osa/blog/assets/fonts/Kakao.css"/> -->
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ailab-papers/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ailab-papers/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/ailab-papers/assets/apple-touch-icon.png">
 
   <!-- Icon -->
   <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
 
   <!-- RSS -->
-  <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Kakao Enterprise AI Research" />
+  <link type="application/atom+xml" rel="alternate" href="https://pages.github.kakaocorp.com/ailab-papers/feed.xml" title="KEP R&amp;D Site" />
 
   <!-- Google Analytics-->
   
@@ -51,11 +51,11 @@
   <body>
     <nav class="nav">
   <div class="nav-container">
-    <a href="/">
-      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    <a href="/ailab-papers/">
+      <h2 class="nav-title">KEP R&D Site</h2>
     </a>
     <ul>
-      <li><a href="/papers">Papers</a></li>
+      <li><a href="/ailab-papers/papers">Papers</a></li>
     </ul>
   </div>
 </nav>
@@ -124,20 +124,20 @@
 
 <p>Our approach consists of two stages: Delete and Generate framework in Fig. 1. The first stage is the Delete process with a pre-trained style classifier. The pre-trained style classifier finds and deletes tokens that contain a lot of style attributes. The second stage is encoding the content tokens and combining them with a target style to generate a sentence. Both the encoder and the decoder have the Transformer structure, which is better than RNN and robust to long dependency.</p>
 
-<p><img src="/assets/img/2020-12-15-INLG-Stable-Style-Transformer/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/001.png" width="" align="" /></p>
 
 <p><em class="center">[ Figure 1 ] The proposed model framework consists of the Delete and Generate process.
 Experiments</em></p>
 
 <p>We test our model on two datasets, YELP and AMAZON. The Yelp dataset is for business reviews, and the Amazon dataset is product reviews. Both datasets are labeled negative and positive and statistics are shown in Table 1.</p>
 
-<p><img src="/assets/img/2020-12-15-INLG-Stable-Style-Transformer/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/002.png" width="" align="" /></p>
 
 <p><em class="center">[ Table 1 ] (Sentiment) Dataset statistics</em></p>
 
 <p>We show that filtering out unstable systems through human evaluation is expensive, so selecting a stable system through automatic evaluation can be helpful. The proposed direct and model-agnostic deletion method allows the classifier to intuitively delete attribute markers and easily handle the trade-off of content and style.</p>
 
-<p><img src="/assets/img/2020-12-15-INLG-Stable-Style-Transformer/003.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2020-12-15-INLG-Stable-Style-Transformer/003.png" width="" align="" /></p>
 
 <p><em>[ Table 2 ] Automatic evaluation results of the Yelp dataset (s: self, h: human, G: geometric mean, f: fine-tuned, p: pre-trained). The red indicates that the evaluation score is significantly worse than other systems. Our model is referred to as SST(α, β). The bold black indicates the better performance of our systems for the four metrics that determine it is a stable system.</em></p>
 
@@ -172,7 +172,7 @@ Experiments</em></p>
     </main>
     <footer>
   <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
-    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
+    <img src="/ailab-papers/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" /> GitHub
   </a>
 </footer>
 
