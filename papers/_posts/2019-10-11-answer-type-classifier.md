@@ -12,7 +12,7 @@ authors:
   - jason:카카오
 paper: http://hclt.kr/symp/?lnb=conference
 code:
-techlog: 200724
+deepdive: 200724
 tag:
   - classification
 ---

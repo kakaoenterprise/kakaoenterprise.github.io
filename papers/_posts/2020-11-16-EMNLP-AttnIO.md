@@ -13,7 +13,7 @@ authors:
   - james:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.emnlp-main.280.pdf
 code:
-techlog : 201214
+deepdive: 201214
 tag:
 - knowledge graph
 ---

@@ -14,7 +14,7 @@ authors:
   - joshua:카카오엔터프라이즈
   - isaac:카카오엔터프라이즈
 paper: https://openaccess.thecvf.com/content_CVPR_2020/papers/Kim_GroupFace_Learning_Latent_Groups_and_Constructing_Group-Based_Representations_for_Face_CVPR_2020_paper.pdf
-techlog: 200723
+deepdive: 200723
 tag:
  - Computer Vision
  - Face Recognition

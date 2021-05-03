@@ -12,7 +12,7 @@ authors:
   - james:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.findings-emnlp.205.pdf
 code:
-techlog: 201217
+deepdive: 201217
 tag:
   - NMT
 ---

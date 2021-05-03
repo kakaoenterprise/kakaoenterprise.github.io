@@ -39,7 +39,7 @@ layout: default
 
     <h4>{{ page.published-date }}</h4>
 
-    {% if page.paper or page.code or page.techlog %}
+    {% if page.paper or page.code or page.deepdive %}
       <div class="link-button-group">
         {% if page.paper %}
           <a href="{{ page.paper }}" target="_blank">
@@ -57,10 +57,10 @@ layout: default
           </a>
         {% endif %}
 
-        {% if page.techlog %}
-          <a href="{{ site.baseurl }}/techlog/{{ page.techlog }}" target="_self">
+        {% if page.deepdive %}
+          <a href="{{ site.baseurl }}/deepdive/{{ page.deepdive }}" target="_self">
             <button class="link-button">
-              <i></i> Techlog
+              <i></i> DeepDive
             </button>
           </a>
         {% endif %}

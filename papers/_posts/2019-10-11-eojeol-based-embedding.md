@@ -14,7 +14,7 @@ authors:
   - 신동렬:성균관대학교
 paper: http://hclt.kr/symp/?lnb=conference
 code:
-techlog: 200724
+deepdive: 200724
 tag:
   - sentence classfication
 ---
