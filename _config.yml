@@ -30,4 +30,4 @@ permalink:      /:categories/:slug
 paginate:       10
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor, serve.sh ]
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec, vendor, serve.sh build.sh publish.sh]
