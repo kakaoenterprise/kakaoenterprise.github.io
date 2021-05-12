@@ -87,7 +87,7 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
     font-family: $sans-serif;
     font-size: .8rem;
     color: $default-color;
@@ -97,5 +97,15 @@ footer {
       position: relative;
       width: 1.6rem;
     }
+  }
+
+  .footer-copyright {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    font-family: $sans-serif;
+    font-size: .8rem;
+    color: $default-color;
   }
 }
