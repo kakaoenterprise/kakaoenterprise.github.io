@@ -5,7 +5,7 @@ url:            "https://pages.github.kakaocorp.com/ailab-papers"
 
 # Author
 author:
-  name:         Kakaoenterprise
+  name:         카카오엔터프라이즈
 
 # Build settings
 markdown:       kramdown
