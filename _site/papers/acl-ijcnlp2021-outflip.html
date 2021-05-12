@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Refining faster-RCNN for accurate object detection | Kakao Enterprise AI Research</title>
+<title>OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack | Kakao Enterprise AI Research</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Refining faster-RCNN for accurate object detection" />
-<meta name="author" content="joshua:카카오" />
+<meta property="og:title" content="OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack" />
+<meta name="author" content="heuristic:카카오엔터프라이즈" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="http://0.0.0.0:4000/papers/iapr-mva2017-faster-rnnn-for-object-detection" />
-<meta property="og:url" content="http://0.0.0.0:4000/papers/iapr-mva2017-faster-rnnn-for-object-detection" />
+<link rel="canonical" href="http://0.0.0.0:4000/papers/acl-ijcnlp2021-outflip" />
+<meta property="og:url" content="http://0.0.0.0:4000/papers/acl-ijcnlp2021-outflip" />
 <meta property="og:site_name" content="Kakao Enterprise AI Research" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-05-08T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-07-01T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Refining faster-RCNN for accurate object detection" />
+<meta property="twitter:title" content="OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"joshua:카카오"},"headline":"Refining faster-RCNN for accurate object detection","dateModified":"2017-05-08T00:00:00-05:00","description":"Abstract","datePublished":"2017-05-08T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/papers/iapr-mva2017-faster-rnnn-for-object-detection"},"url":"http://0.0.0.0:4000/papers/iapr-mva2017-faster-rnnn-for-object-detection","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"heuristic:카카오엔터프라이즈"},"headline":"OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack","dateModified":"2021-07-01T00:00:00-05:00","description":"Abstract","datePublished":"2021-07-01T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/papers/acl-ijcnlp2021-outflip"},"url":"http://0.0.0.0:4000/papers/acl-ijcnlp2021-outflip","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -62,37 +62,23 @@
     <main>
       <article class="post">
   <header class="post-header">
-    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
-    <h1 class="post-title">Refining faster-RCNN for accurate object detection</h1>
+    <h4 class="catalogue-research-area">NLP</h4>
+    <h1 class="post-title">OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack</h1>
 
     
 
     
 
-    노명철(카카오), 이주영(카카오)
+    최동현(카카오엔터프라이즈), 신명철(카카오엔터프라이즈), 김응균(카카오엔터프라이즈), 신동렬(성균관대학교)
 
     <h4>
         
-          IAPR MVA
+          ACL-IJCNLP Findings of ACL
         
     </h4>
 
-    <h4>2017-05-08</h4>
+    <h4>2021-08-01</h4>
 
-    
-      <div class="link-button-group">
-        
-          <a href="http://www.mva-org.jp/Proceedings/2017USB/papers/15-26.pdf" target="_blank">
-            <button class="link-button">
-              <i class="far fa-file-alt"></i> Paper
-            </button>
-          </a>
-        
-
-        
-
-        
-      </div>
     
   </header>
 
@@ -101,15 +87,13 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>Object detector with region proposal networks such as Fast/Faster R-CNN have shown the state-ofthe art performance on several benchmarks. However, they have limited success for detecting small objects. We argue the limitation is related to insufficient performance of Fast R-CNN block in Faster R-CNN. In this paper, we propose a refining block for Fast R-CNN. We further merge the block and Faster R-CNN into a single network (RF-RCNN). The RF-RCNN was applied on plate and human detection in RoadView image that consists of high resolution street images (over 30M pixels). As a result, the RF-RCNN showed great improvement over the Faster-RCNN.</p>
+<p>Out-of-domain (OOD) input detection is vital in a task-oriented dialogue system since the acceptance of unsupported inputs could lead to an incorrect response of the system. This paper proposes OutFlip, a method to generate out-of-domain samples using only in-domain training dataset automatically. A white-box natural language attack method HotFlip is revised to generate out-of-domain samples instead of adversarial examples. Our evaluation results showed that integrating OutFlip-generated out-of-domain samples into the training dataset could significantly improve an intent classification model’s out-of-domain detection performance.</p>
 
   </div>
 
   <div class="post-line"></div>
 
   <div class="post-tag-box-container">
-    
-      <div class="post-tag-box">#object detection</div>
     
   </div>
 </article>

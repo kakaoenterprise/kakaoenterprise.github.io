@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>U-Convolution Based Residual Echo Suppression With Multiple Encoders | Kakao Enterprise AI Research</title>
+<title>Multitask Learning and Joint Optimization For Transformer-Rnn-Tranducer Speech Recognition | Kakao Enterprise AI Research</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="U-Convolution Based Residual Echo Suppression With Multiple Encoders" />
-<meta name="author" content="chris:카카오엔터프라이즈" />
+<meta property="og:title" content="Multitask Learning and Joint Optimization For Transformer-Rnn-Tranducer Speech Recognition" />
+<meta name="author" content="jeffrey:카카오엔터프라이즈" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="http://0.0.0.0:4000/papers/icassp2021-u-convolution-based-residual-eco-suppression" />
-<meta property="og:url" content="http://0.0.0.0:4000/papers/icassp2021-u-convolution-based-residual-eco-suppression" />
+<link rel="canonical" href="http://0.0.0.0:4000/papers/icassp2021-transformer-rnn-tranducer-speech-recognition" />
+<meta property="og:url" content="http://0.0.0.0:4000/papers/icassp2021-transformer-rnn-tranducer-speech-recognition" />
 <meta property="og:site_name" content="Kakao Enterprise AI Research" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-13T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="U-Convolution Based Residual Echo Suppression With Multiple Encoders" />
+<meta property="twitter:title" content="Multitask Learning and Joint Optimization For Transformer-Rnn-Tranducer Speech Recognition" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"chris:카카오엔터프라이즈"},"headline":"U-Convolution Based Residual Echo Suppression With Multiple Encoders","dateModified":"2021-06-13T00:00:00-05:00","description":"Abstract","datePublished":"2021-06-13T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/papers/icassp2021-u-convolution-based-residual-eco-suppression"},"url":"http://0.0.0.0:4000/papers/icassp2021-u-convolution-based-residual-eco-suppression","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"jeffrey:카카오엔터프라이즈"},"headline":"Multitask Learning and Joint Optimization For Transformer-Rnn-Tranducer Speech Recognition","dateModified":"2021-06-13T00:00:00-05:00","description":"Abstract","datePublished":"2021-06-13T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/papers/icassp2021-transformer-rnn-tranducer-speech-recognition"},"url":"http://0.0.0.0:4000/papers/icassp2021-transformer-rnn-tranducer-speech-recognition","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -63,13 +63,13 @@
       <article class="post">
   <header class="post-header">
     <h4 class="catalogue-research-area">SPEECH/AUDIO</h4>
-    <h1 class="post-title">U-Convolution Based Residual Echo Suppression With Multiple Encoders</h1>
+    <h1 class="post-title">Multitask Learning and Joint Optimization For Transformer-Rnn-Tranducer Speech Recognition</h1>
 
     
 
     
 
-    김의성(카카오엔터프라이즈), 전재진(카카오엔터프라이즈), 서혜지(카카오엔터프라이즈)
+    전재진(카카오엔터프라이즈), 김의성(카카오엔터프라이즈)
 
     <h4>
         
@@ -87,7 +87,7 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>In this paper, we propose an efficient end-to-end neural network that can estimate near-end speech using a U- convolution block by exploiting various signals to achieve residual echo suppression (RES). Specifically, the proposed model employs multiple encoders and an integration block to utilize complete signal information in an acoustic echo can- cellation system and also applies the U-convolution blocks to separate near-end speech efficiently. The proposed network affords an improvement in the perceptual evaluation of speech quality (PESQ) and the short-time objective intelligi- bility (STOI), as compared to baselines, in scenarios involving smart audio devices. The experimental results show that the proposed method outperforms the baselines for various types of mismatched background noise and environmental reverberation, while requiring low computational resources.</p>
+<p>Recently, several types of end-to-end speech recognition methods named transformer-transducer were introduced. According to those kinds of methods, transcription networks are generally modeled by transformer-based neural networks, while prediction networks could be modeled by either transformers or recurrent neural networks (RNN). This paper explores multitask learning, joint optimization, and joint decoding methods for transformer-RNN-transducer systems. Our proposed methods have the main advantage in that the model can maintain information on the large text corpus. We prove their effectiveness by performing experiments utilizing the well-known ESPNET toolkit for the widely used Librispeech datasets. We also show that the proposed meth- ods can reduce word error rate (WER) by 16.6 % and 13.3 % for test-clean and test-other datasets, respectively, with- out changing the overall model structure nor exploiting an external LM.</p>
 
   </div>
 
