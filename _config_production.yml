@@ -1,7 +1,8 @@
 # Site settings
 title:          Kakao Enterprise AI Research
 description:    "카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼"
-url:            "https://pages.github.kakaocorp.com"
+url:            "https://pages.github.kakaocorp.com/ailab-papers"
+baseurl:        "/ailab-papers"
 
 # Author
 author:
