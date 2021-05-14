@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack | Kakao Enterprise AI Research</title>
+<title>ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision | Kakao Enterprise AI Research</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack" />
-<meta name="author" content="heuristic:카카오엔터프라이즈" />
+<meta property="og:title" content="ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision" />
+<meta name="author" content="dandelin:카카오" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/acl-ijcnlp2021-outflip" />
-<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/acl-ijcnlp2021-outflip" />
+<link rel="canonical" href="https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/icml-vilt" />
+<meta property="og:url" content="https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/icml-vilt" />
 <meta property="og:site_name" content="Kakao Enterprise AI Research" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-07-01T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-07-18T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack" />
+<meta property="twitter:title" content="ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"heuristic:카카오엔터프라이즈"},"description":"Abstract","@type":"BlogPosting","headline":"OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack","dateModified":"2021-07-01T00:00:00-05:00","datePublished":"2021-07-01T00:00:00-05:00","url":"https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/acl-ijcnlp2021-outflip","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/acl-ijcnlp2021-outflip"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"dandelin:카카오"},"description":"Abstract","@type":"BlogPosting","headline":"ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision","dateModified":"2021-07-18T00:00:00-05:00","datePublished":"2021-07-18T00:00:00-05:00","url":"https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/icml-vilt","mainEntityOfPage":{"@type":"WebPage","@id":"https://pages.github.kakaocorp.com/ailab-papers/ailab-papers/papers/icml-vilt"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -62,27 +62,27 @@
     <main>
       <article class="post">
   <header class="post-header">
-    <h4 class="catalogue-research-area">NLP</h4>
-    <h1 class="post-title">OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack</h1>
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision</h1>
 
     
 
     
 
-    최동현(카카오엔터프라이즈), 신명철(카카오엔터프라이즈), 김응균(카카오엔터프라이즈), 신동렬(성균관대학교)
+    dandelin(카카오), 손보경(카카오엔터프라이즈), 김일두(카카오브레인)
 
     <h4>
         
-          ACL-IJCNLP Findings of ACL
+          IEEE Access
         
     </h4>
 
-    <h4>2021-08-01</h4>
+    <h4>2021-07-18</h4>
 
     
       <div class="link-button-group">
         
-          <a href="https://arxiv.org/pdf/2105.05601.pdf" target="_blank">
+          <a href="https://arxiv.org/pdf/2102.03334.pdf" target="_blank">
             <button class="link-button">
               <i class="far fa-file-alt"></i> Paper
             </button>
@@ -101,7 +101,7 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>Out-of-domain (OOD) input detection is vital in a task-oriented dialogue system since the acceptance of unsupported inputs could lead to an incorrect response of the system. This paper proposes OutFlip, a method to generate out-of-domain samples using only in-domain training dataset automatically. A white-box natural language attack method HotFlip is revised to generate out-of-domain samples instead of adversarial examples. Our evaluation results showed that integrating OutFlip-generated out-of-domain samples into the training dataset could significantly improve an intent classification model’s out-of-domain detection performance.</p>
+<p>Vision-and-Language Pretraining (VLP) has improved performance on various joint vision-andlanguage downstream tasks. Current approaches to VLP heavily rely on image feature extraction processes, most of which involve region supervision (e.g., object detection) and the convolutional architecture (e.g., ResNet). Although disregarded in the literature, we find it problematic in terms of both (1) efficiency/speed, that simply extracting input features requires much more computation than the multimodal interaction steps; and (2) expressive power, as it is upper bounded to the expressive power of the visual encoder and its predefined visual vocabulary. In this paper, we present a minimal VLP model, Vision-andLanguage Transformer (ViLT), monolithic in the sense that processing of visual inputs is drastically simplified to just the same convolution-free manner that we process textual inputs. We show that ViLT is up to 60 times faster than previous VLP models, yet with competitive or better downstream task performance.</p>
 
   </div>
 

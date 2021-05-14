@@ -12,7 +12,7 @@ authors:
   - index:카카오엔터프라이즈
   - jason:카카오엔터프라이즈
   - 신동렬:성균관대학교
-paper:
+paper: https://arxiv.org/pdf/2105.05601.pdf
 code:
 tag:
 ---

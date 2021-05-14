@@ -1,10 +1,10 @@
-## 일러두기
-> 아래의 내용은 이 프로젝트에 대한 **현재까지**의 개발 방법에 대한 설명입니다.
+# kakaoenterprise.github.io
 
 ## 프로젝트 스택
 이 프로젝트는 다음 스택을 기반으로 운영됩니다.
+
 ### [GitHub Pages](https://pages.github.com/)
-GitHub Repo의 특정브랜치를 자동으로 빌드하고 호스팅하는 시스템입니다.
+GitHub Repo의 특정 브랜치를 자동으로 빌드하고 호스팅하는 시스템입니다.
 * [여기](https://github.kakaocorp.com/ailab-papers/ailab-papers.github.kakaocorp.com/settings)에서 관련 설정을 볼 수 있습니다.
 * 이 프로젝트는 `ailab-papers` Organization의 User page입니다. 그래서 `ailab-papers.github.kakaocorp.com` 라는 Repo 이름을 가집니다. User page로 Repo를 개설하면 다음과 같은 위치에 게시되어 깔끔합니다. `https://pages.github.kakaocorp.com/{User(Organization)}/`
 * Gihub Pages는 자동 빌드 기능은 간편하지만, Jekyll plugin 추가에 제한이 있습니다. [링크](https://jekyllrb.com/docs/plugins/installation/) 😢 꼭 필요한 plugin이 있다면, 별도의 빌드 파이프라인을 구축한 후 (로컬 빌드 또는 [Travis CI](https://docs.travis-ci.com/user/deployment/pages/) 활용) 해당 내용을 Github Pages로 Push해 서빙하거나, 아예 별도의 서빙 환경을 구축하는 방법을 사용해야 합니다.
@@ -13,7 +13,7 @@ GitHub Repo의 특정브랜치를 자동으로 빌드하고 호스팅하는 시�
 [Markdown](https://daringfireball.net/projects/markdown/)과 [Liquid template](https://github.com/Shopify/liquid/wiki)으로 작성한 파일들로 정적 웹사이트나 블로그를 구축하는 도구입니다.
 
 ### [Tale theme](https://github.com/chesterhow/tale)
-이 프로젝트가 사용하는 Jekyll theme입니다. 일부 설정과 스타일을 커스텀하여 사용하고 있습니다.
+이 프로젝트가 사용하는 Jekyll theme입니다. 일부 설정과 스타일을 커스텀해 사용하고 있습니다.
 
 ## 프로젝트 구조
 ```sh
@@ -30,11 +30,11 @@ GitHub Repo의 특정브랜치를 자동으로 빌드하고 호스팅하는 시�
 │   ├── img // 포스트 별 이미지
 │   └── profile // 크루 별 프로필 이미지
 ├── index.html
-├── papers // 논문자료 포스트
+├── papers // 논문소개 포스트
 │   ├── _posts
 │   └── index.html
 ├── serve.sh // 로컬 렌더링 스크립트
-└── techlog // 테크로그 포스트
+└── deepdive // 딥다이브 포스트
     ├── _posts
     └── index.html
 ```
@@ -145,7 +145,7 @@ Configuration file: /srv/jekyll/_config.yml
 ## Remote push 후 결과 확인하기
 작업내용을 commit하고 origin/master에 push하면 https://pages.github.kakaocorp.com/ailab-papers/ 에서 결과를 확인할 수 있습니다.
 
-내용이 약 1분 후에도 반영되지 않는다면, 빌드 실패를 의심해볼 수 있습니다. 빌드가 실패하는 경우, GitHub Enterpirse 계정과 연결된 이메일 주소로 다음과 같은 이메일을 수신합니다. (경험담 😭 )
+내용이 약 1분 후에도 반영되지 않는다면, 빌드 실패를 의심해볼 수 있습니다. 빌드가 실패하는 경우, GitHub Enterpirse 계정과 연결된 이메일 주소로 다음과 같은 이메일을 수신합니다.
 ```
 The page build failed for the `master` branch with the following error:
 
@@ -155,4 +155,17 @@ The tag `katexmm` on line 26 in `/data/user/tmp/pages/page-build-18957/_posts/20
 로컬에서 빌드가 되더라도, GitHub Enterprise 빌드환경과 차이가 나는 부분에서는 빌드에 실패하기도 합니다.
 
 ## 기타 사항
-(현행 프로젝트 스택을 유지해 개발하시는 경우) Jekyll 빌드구조와 Liquid 템플릿이 어느정도 익숙해지면 기본적인 html/css/js 문제로 귀결되어 어렵지 않게 개발하실 수 있을 거라 생각합니다. 커스텀 include 컴포넌트(이미지, 유튜브) 나 KaTeX 문법 렌더링을 도입한 히스토리는 [이슈](https://github.kakaocorp.com/ailab-papers/ailab-papers.github.kakaocorp.com/wiki)에서 찾아보실 수 있습니다. 🙂
+(현행 프로젝트 스택을 유지해 개발하시는 경우) Jekyll 빌드구조와 Liquid 템플릿이 어느정도 익숙해지면 기본적인 html/css/js 문제로 귀결되어 어렵지 않게 개발할 수 있습니다.
+
+# License
+This software is licensed under the Apache 2 license, quoted below.
+
+Copyright 2021 Kakao Enterprise Corp. http://www.kakaoenterprise.com
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+# Contact
+
+samantha.her@kakaoenterprise.com

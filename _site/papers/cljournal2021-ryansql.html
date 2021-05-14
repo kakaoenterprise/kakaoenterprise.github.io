@@ -107,7 +107,7 @@
   <div class="post-body">
     <p>스파이더 챌린지<sup>SPIDER Text-to-SQL Challenge</sup> 성과를 정리한 공동 연구 논문이 Computational Linguistics에 실렸습니다. 미국 예일대학교에서 주최한 스파이더 챌린지는 각종 데이터를 정리∙보관할 때 사용하는 데이터베이스와 자연어 형태의 사용자 질의가 주어졌을때, 이 질의문을 SQL<sup>Structured Query Language</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>문으로 변환해주는 Text-to-SQL<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> 알고리즘의 정확도를 평가합니다.</p>
 
-<p><img src="/ailab-papers/assets/img/2021-03-26-ryansql/001.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-03-26-cljournal-ryansql/001.png" width="" align="" /></p>
 
 <p><em class="center">[ 표 1 ] 주어진 자연어 문장과 데이터베이스를 이용해 SQL 문을 생성하는 예시</em></p>
 
@@ -123,11 +123,11 @@
 
 <p>Figure 1 shows the overall network architecture of the input encoder. The input encoder consists of five layers: Embedding layer, Embedding Encoder layer, Question-Column Alignment layer, Table Encoder layer, and Question-Table Alignment layer. Table 1 shows the proposed sketch for a SELECT statement. The sketch-based slot-filling decoder predicts values for slots of the proposed sketch, as well as the number of slots.</p>
 
-<p><img src="/ailab-papers/assets/img/2021-03-26-ryansql/002.png" width="" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-03-26-cljournal-ryansql/002.png" width="" align="" /></p>
 
 <p><em class="center">[ Figure 1 ] Network architecture of the proposed input encoder. S represents self-attention.</em></p>
 
-<p><img src="/ailab-papers/assets/img/2021-03-26-ryansql/003.png" width="80%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-03-26-cljournal-ryansql/003.png" width="80%" align="" /></p>
 
 <p><em>[ table 1 ] Proposed sketch for a SELECT statement. $TBL and $COL represent a table and a column, respectively. $AGG is one of {none, max, min, count, sum, avg}, $ARI is one of the arithmetic operators {none, -, +, *, / }, and $COND is one of the conditional operators {between, =, &gt;, &lt;, &gt;=, &lt;=, !=, in, like, is, exists}. $DIST and $NOT are boolean variables representing the existence of keywords DISTINCT and NOT, respectively. $ORD is a binary value for keywords ASC/DESC, and $CONJ is one of conjunctions {AND, OR}. $VAL is the value for WHERE/HAVING condition; $SEL represents the slot for another SELECT statement.</em></p>
 
@@ -137,7 +137,7 @@
 
 <p>Table 2 shows that the proposed system RYANSQL improves the previous sketch-based slot filling system RCSQL by a large margin of 15% on the dev set. Note that the RCSQL fine-tuned another well known pretrained language model ELMo. With the use of BERT, among the systems without database content, the proposed systems (RYANSQL + BERT and RYANSQL v2 + BERT) outperforms the previous state-of-the-art by 2.5% and 4.9% respectively on the hidden test dataset. The proposed system still shows competitive results compared to the systems using database content; RATSQL v3 + BERT outperforms the proposed system by better aligning user questions and database schemas using database content.</p>
 
-<p><img src="/ailab-papers/assets/img/2021-03-26-ryansql/005.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-03-26-cljournal-ryansql/005.png" width="90%" align="" /></p>
 
 <p><em class="center">[ Table 2 ] Evaluation results of the proposed systems and other state-of-the-art systems.</em></p>
 
@@ -145,7 +145,7 @@
 
 <p>The results are shown in Table 3. Compared to the exact matching accuracy 51.4% of RYANSQL + BERT-base on Spider dataset, the multilingual version shows 10% lower accuracy on dev set, but still shows comparable results to other state-of-the-art systems which are designed for CSpider dataset. Our proposed system showed 34.7% test accuracy on the test set, and ranked at 2nd place on the leaderboard.</p>
 
-<p><img src="/ailab-papers/assets/img/2021-03-26-ryansql/005.png" width="90%" align="" /></p>
+<p><img src="/ailab-papers/assets/img/2021-03-26-cljournal-ryansql/005.png" width="90%" align="" /></p>
 
 <p><em class="center">[ Table 3 ] Evaluation results on CSpider dataset with other state-of-the-art systems.</em></p>
 
