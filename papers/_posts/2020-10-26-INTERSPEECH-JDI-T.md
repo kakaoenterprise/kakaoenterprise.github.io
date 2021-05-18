@@ -55,6 +55,6 @@ In addition to its high-quality speech synthesis, the proposed model has benefit
 <br/>
 
 -----
-### footnote
+### Footnotes
 
 [^1]: 음성 신호를 멜 스케일(mel-scale)에 따라 주파수를 분석하여 얻은 특징 벡터로, 기계학습 모델에서 음성을 나타내는 데 주로 쓰인다.

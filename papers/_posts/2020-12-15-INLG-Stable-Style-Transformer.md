@@ -11,6 +11,7 @@ authors:
   - rung:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.inlg-1.25.pdf
 code: https://github.com/rungjoo/Stable-Style-Transformer
+deepdive: 210521
 tag:
   - Style Transfer
 ---
@@ -50,7 +51,7 @@ We show that filtering out unstable systems through human evaluation is expensiv
 <br/>
 
 -----
-### footnote
+### Footnotes
 
 
 [^1]: 시스템 설계자가 미리 정의한 고유 페르소나(인격)를 가진 가상의 상대와 대화를 나누는 태스크

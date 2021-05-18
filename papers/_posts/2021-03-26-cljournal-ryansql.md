@@ -67,4 +67,6 @@ The results are shown in Table 3. Compared to the exact matching accuracy 51.4% 
 
 <br/>
 
-### footnote
+-----
+
+### Footnotes

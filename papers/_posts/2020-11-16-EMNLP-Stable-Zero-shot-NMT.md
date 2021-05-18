@@ -44,7 +44,8 @@ Unlike the naive model, our model trained with SLNI shows stable performance acr
 <br/>
 
 -----
-### footnote
+
+### Footnotes
 
 [^1]: 설명력이 높으면서도 그 구조가 간단한 모델의 상태를 일컫는다.
 

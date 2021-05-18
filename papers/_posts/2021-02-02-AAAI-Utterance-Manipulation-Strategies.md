@@ -62,4 +62,8 @@ We obtained new state-of-the-art results on multiple public benchmark datasets (
 {% include image.html name="003.png" align="center" %}
 <em>[ Table 2 ] Results on Ubuntu, Douban, and E-Commerce datasets. All the evaluation results except ours are cited from published literature (Tao et al. 2019b; Yuan et al. 2019; Gu et al. 2020). The underlined numbers mean the best performance for each block and the bold numbers mean state-of-the-art performance for each metric. † denotes statistical significance (p-value < 0.05).</em>
 
-# footnote
+<br/>
+
+-----
+
+### Footnotes
