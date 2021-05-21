@@ -11,7 +11,7 @@ authors:
   - rung:카카오엔터프라이즈
 paper: https://www.aclweb.org/anthology/2020.inlg-1.25.pdf
 code: https://github.com/rungjoo/Stable-Style-Transformer
-deepdive: 210521
+deepdive: 210525
 tag:
   - Style Transfer
 ---
