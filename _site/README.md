@@ -168,4 +168,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Contact
 
-samantha.her@kakaoenterprise.com
+tsp@kakaoenterprise.com

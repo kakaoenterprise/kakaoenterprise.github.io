@@ -33,6 +33,13 @@ daniel:
     web:
     description: 데이터 관찰을 좋아하는 자연어처리 개발자로, kakao i가 자연어를 이해하는 데 필요한 기술을 만들고 있습니다.
 
+daniel2:
+  korean_name: 정단우
+  profile:
+  github:
+  web:
+  description:
+
 eileen:
   korean_name: 안애림
   profile: eileen.png
