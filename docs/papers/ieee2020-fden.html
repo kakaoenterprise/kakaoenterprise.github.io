@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>A Plug-in Method for Representation Factorization in Connectionist Models | Kakao Enterprise AI Research</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="A Plug-in Method for Representation Factorization in Connectionist Models" />
+<meta name="author" content="윤재석:고려대학교" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="딥러닝 모델에서 추출한 임베딩 벡터를 독립 요인으로 분해하는 기법 ‘FDEN’ 제안" />
+<meta property="og:description" content="딥러닝 모델에서 추출한 임베딩 벡터를 독립 요인으로 분해하는 기법 ‘FDEN’ 제안" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/ieee2020-fden" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/ieee2020-fden" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-10T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="A Plug-in Method for Representation Factorization in Connectionist Models" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"윤재석:고려대학교"},"headline":"A Plug-in Method for Representation Factorization in Connectionist Models","dateModified":"2021-02-10T00:00:00-06:00","description":"딥러닝 모델에서 추출한 임베딩 벡터를 독립 요인으로 분해하는 기법 ‘FDEN’ 제안","datePublished":"2021-02-10T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/ieee2020-fden"},"url":"https://kakaoenterprise.github.io/papers/ieee2020-fden","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="Kakao Enterprise AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+  
+  <!-- katex -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- To automatically display code inside script tags with type=math/tex using KaTeX. -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
+
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">A Plug-in Method for Representation Factorization in Connectionist Models</h1>
+
+    
+
+    
+
+    윤재석(고려대학교), 노명철(카카오엔터프라이즈), 석흥일(고려대학교)
+
+    <h4>
+        
+          IEEE Transactions on Neural Networks and Learning Systems
+        
+    </h4>
+
+    <h4>2021-02-10</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/1905.11088.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+          <a href="https://github.com/wltjr1007/Factors-Decomposer-Entangler-Network" target="_blank">
+            <button class="link-button">
+              <i class="fab fa-github"></i> Code
+            </button>
+          </a>
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <p>일반적으로 딥러닝 모델의 성능은 과제를 수행하는 데 필요한 필수 정보를 추출하고 이를 최대한 압축한 임베딩 벡터<sup>embedding vector</sup>를 제대로 표현하는 능력에 있다고 해도 과언이 아닙니다. 다만 각 차원이 여러 요인을 함축적으로 포함하는 그 특성상, 사람이 벡터를 해석하는 데에는 한계가 있습니다. 머리 색, 머리 길이, 얼굴형, 눈썹 모양, 얼굴색 등이 얼굴을 구성하는 요소라고 본다면, 딥러닝 모델이 생성한 벡터는 차원1-머리색/머리길이, 차원2-머리길이/얼굴색 등으로 여러 차원에 여러 요인이 복잡하게 얽혀 있죠.</p>
+
+<p>이에 데이터를 독립 요인<sup>independent factor</sup>에 상응하는 해석 가능한 표현<sup>disentangled representation</sup>으로 만드는 방법에 관한 연구가 활발하게 이뤄지고 있습니다. 공동 연구팀 또한 이 대열에 합류, 총 상관계수<sup>total correlation</sup><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup>를 최소화하는 방식으로 의미상 제어할 수 있는 요인으로 임베딩 벡터를 분해하는 기법인 FDEN<sup>Factors Decomposer-Entangler Network</sup>을 제안했습니다.</p>
+
+<p>FDEN은 학습된 모델<sup>pre-trained model</sup>의 가중치<sup>weight</sup> 값을 변경하지 않고도 사용할 수 있는 플러그인<sup>plug-in</sup> 방식으로 동작합니다. 모델이 추출한 임베딩 벡터에서 요인에 영향을 미치는 부분을 찾아내는(해석하는) 별도의 단계를 뒀다는 의미입니다. 이 덕분에 우수한 성능을 내는 여러 학습 모델에 바로 적용해볼 수 있습니다.</p>
+
+<p><img src="/assets/img/2021-02-10-IEEE-FDEN/001.png" width="70%" align="" /></p>
+
+<p><em>[ 그림 1 ] 가중치를 고정한 사전학습한 모델에 플러그인 방식으로 동작하는 FDEN은 출력된 임베딩 벡터 z를 해석가능한 표현 \(\tilde{z}\)로 바꾼다.</em></p>
+
+<p>연구팀은 스타일 변환<sup>style transfer</sup>, 이미지 간 번역<sup>image-to-image translation</sup>, 퓨샷 러닝<sup>few-shot learning</sup> 등 다양한 태스크에서 우수한 성능을 내는 모델에 FDEN을 적용했습니다. 그 결과, FDEN은 사람이 라벨링한 요인을 효과적으로 분해할 수 있었습니다. 독립 요인(\(f_0\)+\(f_1\)+\(f_2\)…+\(f_n\))을 합쳐 기존 데이터(\(z\))와 유사한 데이터(\(\tilde{z}\))도 생성할 수 있음을 확인했습니다. 이는 사람이 해석 가능한 독립 요인을 조절해 새로운 데이터 혹은 사람이 원하는 데이터를 만들어낼 수 있음을 시사합니다.</p>
+
+<p>연구팀은 비지도학습<sup>unsupervised learning</sup><sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">2</a></sup>을 이용해 사람이 찾지 못한 요인을 섬세하게 분해할 방법론에 관한 연구를 진행할 계획입니다.</p>
+
+<p><br /></p>
+
+<h1 id="overall-architecture">Overall Architecture</h1>
+
+<p>The objective of FDEN is to decompose input representation \(z\) into independent and semantically interpretable factors without losing the original information in the latent or feature representation \(z\). To achieve this aim, we compose an FDEN with three modules (Figure. 1): Decomposer \(D\), Factorizer \(F\), and Entangler \(E\). Note that because FDEN uses a fixed pretrained network and deals with the latent or feature representation from the network, it allows factorizing the input representation for other new tasks while maintaining the network capacity or power for its original tasks intact.</p>
+
+<p><img src="/assets/img/2021-02-10-IEEE-FDEN/002.png" width="" align="" /></p>
+
+<p><em>[ Figure 1 ] FDEN is divided into three modules: Decomposer \(D\), Factorizer \(F\), and Entangler \(E\). The model is an autoencoder-like architecture that takes representation \(z\) as the input and reconstructs its original representation (\(\tilde{z}\)). (a) First, Decomposer \(D\) takes a representation \(z\) from a fixed pretrained network as the input and decomposes it into a set of factors \(f_i\) (\(∀_i\) ∈ \(N\)). (b) Next, Factorizer \(F\) uses an information theoretic way to maximize the independence of each factor. (c) Finally, Entangler \(E\) takes the factors and reconstructs their original representation (\(\tilde{z}\)).</em></p>
+
+<p><br /></p>
+
+<h1 id="experiments">Experiments</h1>
+
+<p>Our objective here is to demonstrate that each module of FDEN is effective at decomposing a latent representation into independent factors. First, we evaluate the effectiveness of factors by performing various downstream tasks. Next, we analyze individual units of factors to verify if a representation is indeed reasonably factorized.  We perform style transfer with human labeled attributes (Fig. 2). The results of style transfer with FDEN confirms a clear transfer of attributes.</p>
+
+<p><img src="/assets/img/2021-02-10-IEEE-FDEN/003.png" width="" align="" /></p>
+
+<p><em>[ Figure 2 ] Results of style transfer for the CelebA-128 dataset with N=7 factors (where \(f_0\) is the style factor). Images in the first and second columns are reconstructed images from Pioneer Network and FDEN, respectively. The following images are reconstructed images with one attribute opposite to the input image (e.g., \(1{^{st}}\) row \(f_3\): “not bald” transferred to “bald”; \(2{^{nd}}\) row \(f_3\): “young” transferred to “not young”). The original attributes of both input images are: “not bald”, “male”, “young”, “without smile”, “without beard”, “without eyeglasses” (note that the 1st row image is annotated as “with goatee, but without beard”).</em></p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:2" role="doc-endnote">
+      <p>주어진 요인의 독립성<sup>independence</sup>를 직접 계산할 수 있는 수치 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>사람이 라벨링하지 않은 데이터를 이용한 학습 방법 <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#disentangled representation</div>
+    
+      <div class="post-tag-box">#factorial representation</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+  </body>
+</html>

@@ -4,6 +4,8 @@ description:    "카카오엔터프라이즈 연구 성과를 공개하는 리�
 url:            "https://kakaoenterprise.github.io"
 destination:    docs
 
+google_analytics: True
+
 # Author
 author:
   name:         카카오엔터프라이즈

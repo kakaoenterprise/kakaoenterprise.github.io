@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Many-to-Many Voice Conversion using Conditional Cycle-Consistent Adversarial Networks | Kakao Enterprise AI Research</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Many-to-Many Voice Conversion using Conditional Cycle-Consistent Adversarial Networks" />
+<meta name="author" content="이신동:고려대학교/카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="CycleGAN을 활용해 다자 간의 음성 스타일을 변환하는 기법 제안" />
+<meta property="og:description" content="CycleGAN을 활용해 다자 간의 음성 스타일을 변환하는 기법 제안" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/icassp2020-many-to-many-voice-conversion" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/icassp2020-many-to-many-voice-conversion" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-01T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Many-to-Many Voice Conversion using Conditional Cycle-Consistent Adversarial Networks" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"이신동:고려대학교/카카오엔터프라이즈"},"headline":"Many-to-Many Voice Conversion using Conditional Cycle-Consistent Adversarial Networks","dateModified":"2020-05-01T00:00:00-05:00","description":"CycleGAN을 활용해 다자 간의 음성 스타일을 변환하는 기법 제안","datePublished":"2020-05-01T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/icassp2020-many-to-many-voice-conversion"},"url":"https://kakaoenterprise.github.io/papers/icassp2020-many-to-many-voice-conversion","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="Kakao Enterprise AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+  
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">SPEECH/AUDIO</h4>
+    <h1 class="post-title">Many-to-Many Voice Conversion using Conditional Cycle-Consistent Adversarial Networks</h1>
+
+    
+
+    
+
+    이신동(고려대학교/카카오엔터프라이즈), 고봉구(고려대학교), 이건녕(고려대학교), 유인철(고려대학교), 육동석(고려대학교)
+
+    <h4>
+        
+          International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
+        
+    </h4>
+
+    <h4>2020-02-15</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/2002.06328.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>Voice conversion (VC) refers to transforming the speaker characteristics of an utterance without altering its linguistic contents. Many works on voice conversion require to have parallel training data that is highly expensive to acquire. Recently, the cycle-consistent adversarial network(CycleGAN), which does not require parallel training data, has been applied to voice conversion, showing the state-of-the-art performance. The CycleGAN based voice conversion, however, can be used only for a pair of speakers, i.e., one-to-one voice conversion between two speakers. In this paper, we extend the CycleGAN by conditioning the network on speakers. As a result, the proposed method can perform many-to-many voice conversion among multiple speakers using a single generative adversarial network (GAN). Compared to building multiple CycleGANs for each pair of speakers, the proposed method reduces the computational and spatial cost significantly without compromising the sound quality of the converted voice. Experimental results using the VCC2018 corpus confirm the efficiency of the proposed method.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#Voice Conversion</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+  </body>
+</html>

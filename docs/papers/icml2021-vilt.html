@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision | Kakao Enterprise AI Research</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision" />
+<meta name="author" content="김원재:카카오" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/icml2021-vilt" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/icml2021-vilt" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"김원재:카카오"},"headline":"ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision","dateModified":"2021-07-18T00:00:00-05:00","description":"Abstract","datePublished":"2021-07-18T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/icml2021-vilt"},"url":"https://kakaoenterprise.github.io/papers/icml2021-vilt","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="Kakao Enterprise AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+  
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision</h1>
+
+    
+
+    
+
+    김원재(카카오), 손보경(카카오엔터프라이즈), 김일두(카카오브레인)
+
+    <h4>
+        
+          International Conference on Machine Learning (ICML) Long Talk
+        
+    </h4>
+
+    <h4>2021-07-18</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/2102.03334.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>Vision-and-Language Pretraining (VLP) has improved performance on various joint vision-andlanguage downstream tasks. Current approaches to VLP heavily rely on image feature extraction processes, most of which involve region supervision (e.g., object detection) and the convolutional architecture (e.g., ResNet). Although disregarded in the literature, we find it problematic in terms of both (1) efficiency/speed, that simply extracting input features requires much more computation than the multimodal interaction steps; and (2) expressive power, as it is upper bounded to the expressive power of the visual encoder and its predefined visual vocabulary. In this paper, we present a minimal VLP model, Vision-andLanguage Transformer (ViLT), monolithic in the sense that processing of visual inputs is drastically simplified to just the same convolution-free manner that we process textual inputs. We show that ViLT is up to 60 times faster than previous VLP models, yet with competitive or better downstream task performance.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+  </body>
+</html>

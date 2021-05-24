@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment | Kakao Enterprise AI Research</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment" />
+<meta name="author" content="satoshi:카카오" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련하는 아키텍처 ‘JDI-T’ 제안" />
+<meta property="og:description" content="음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련하는 아키텍처 ‘JDI-T’ 제안" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/interspeech2020-jdi-t" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/interspeech2020-jdi-t" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-26T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"satoshi:카카오"},"headline":"JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment","dateModified":"2020-10-26T00:00:00-05:00","description":"음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련하는 아키텍처 ‘JDI-T’ 제안","datePublished":"2020-10-26T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/interspeech2020-jdi-t"},"url":"https://kakaoenterprise.github.io/papers/interspeech2020-jdi-t","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="Kakao Enterprise AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+  
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">SPEECH/AUDIO</h4>
+    <h1 class="post-title">JDI-T: Jointly trained Duration Informed Transformer for Text-To-Speech without Explicit Alignment</h1>
+
+    
+
+    
+
+    임단(카카오), taylor(카카오엔터프라이즈), 오경환(카카오엔터프라이즈), 박혜영(카카오엔터프라이즈), 김봉완(카카오엔터프라이즈), 윤재삼(카카오엔터프라이즈)
+
+    <h4>
+        
+          Conference of the International Speech Communication Association (INTERSPEECH)
+        
+    </h4>
+
+    <h4>2020-10-26</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://www.isca-speech.org/archive/Interspeech_2020/pdfs/2123.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <p>FastSpeech와 DurIAN과 같은 최신의 음성 합성 모델은 오류가 없는 고품질의 멜-스펙트로그램<sup>Mel-spectrogram</sup><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> 생성에 탁월합니다. 하지만 훈련에 필요한 음소<sup>phoneme</sup>의 길이 정보를 확보하기 위해서는 합성 모델과는 별도로, 음소와 오디오를 명시적으로 정렬<sup>explicit alignment</sup>하는 모델을 따로 준비해야 하는 번거로움이 따릅니다.</p>
+
+<p>이에 공동 연구팀은 음성합성 모델과 음소-오디오 정렬 모델을 한꺼번에 훈련<sup>joint training</sup>하는 아키텍처인 JDI-T를 제안했습니다. 제안 모델은 자사 내부 데이터와 공개 한국어 데이터셋인 KSS<sup>Korean Single Speaker Speech</sup>에서 다른 최신 음성 합성 모델과 비교해 우수한 성능을 보였습니다.</p>
+
+<p>카카오엔터프라이즈는 향후 다양한 시나리오를 대비해 자사 음성 합성 기술을 고도화할 계획입니다.</p>
+
+<p><br /></p>
+
+<h1 id="abstract">Abstract</h1>
+
+<p>We propose Jointly trained Duration Informed Transformer (JDI-T), a feed-forward Transformer with a duration predictor jointly trained without explicit alignments in order to generate an acoustic feature sequence from an input text. In this work, inspired by the recent success of the duration informed networks such as FastSpeech and DurIAN, we further simplify its sequential, two-stage training pipeline to a single-stage training. Specifically, we extract the phoneme duration from the autoregressive Transformer on the fly during the joint training instead of pre-training the autoregressive model and using it as a phoneme duration extractor. To our best knowledge, it is the first implementation to jointly train the feed-forward Transformer without relying on a pre-trained phoneme duration extractor in a single training pipeline. We evaluate the effectiveness of the proposed model on the publicly available Korean Single speaker Speech (KSS) dataset compared to the baseline text-to-speech (TTS) models trained by ESPnet-TTS.</p>
+
+<p><br /></p>
+
+<h1 id="overall-architecture">Overall Architecture</h1>
+
+<p>The proposed model, consisting of the feed-forward Transformer, the duration predictor, and the autoregressive Transformer, is trained jointly without explicit alignments. After joint training, only the feed-forward Transformer with the duration predictor is used for fast and robust conversion from phoneme sequences to mel-spectrogram.</p>
+
+<p><img src="/assets/img/2020-10-26-INTERSPEECH-JDI-T/001.png" width="" align="" /></p>
+
+<p><em class="center">[ Figure 1 ] An illustration of our proposed joint training framework (Auxiliary loss for attention is omitted for brevity.)</em></p>
+
+<h1 id="experiments">Experiments</h1>
+
+<p>To evaluate the effectiveness of the proposed model, we conduct the Mean Opinion Score(MOS) test . The proposed model, JDI-T, is compared with three different models, including Tacotron2, Transformer, and FastSpeech. Table 1 shows the results on two different datasets; the Internal and the KSS.</p>
+
+<p><img src="/assets/img/2020-10-26-INTERSPEECH-JDI-T/002.png" width="40%" align="" /></p>
+
+<p><em class="center">[ Table 1 ] Mean opinion scores(5-point scale)</em></p>
+
+<p>The score of our proposed model, which is also non-autoregressive and duration informed model like FastSpeech, is better than FastSpeech and even achieves the highest score among the TTS models in the Internal dataset. These results show that the joint training of the proposed model is beneficial for improving the audio quality as well as for simplifying the training pipeline.</p>
+
+<p>In addition to its high-quality speech synthesis, the proposed model has benefits of the robustness and fast speed at synthesis over the autoregressive, attention-based TTS models since it has the feed-forward structure and does not rely on an attention mechanism as in FastSpeech. Moreover, our internal test shows that Tacotron2 and Transformer have a high rate of synthesis error, especially when they are trained with the KSS dataset and synthesize the out-of-domain scripts. Note that the synthesized audio samples from the test scripts have no synthesis error.</p>
+
+<p><br /></p>
+
+<hr />
+
+<h3 id="footnotes">Footnotes</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>음성 신호를 멜 스케일(mel-scale)에 따라 주파수를 분석하여 얻은 특징 벡터로, 기계학습 모델에서 음성을 나타내는 데 주로 쓰인다. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#TTS</div>
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+  </body>
+</html>
