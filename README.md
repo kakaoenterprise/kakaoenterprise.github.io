@@ -5,9 +5,10 @@
 
 ### [GitHub Pages](https://pages.github.com/)
 GitHub Repo의 특정 브랜치를 자동으로 빌드하고 호스팅하는 시스템입니다.
-* [여기](https://github.kakaocorp.com/ailab-papers/ailab-papers.github.kakaocorp.com/settings)에서 관련 설정을 볼 수 있습니다.
-* 이 프로젝트는 `ailab-papers` Organization의 User page입니다. 그래서 `ailab-papers.github.kakaocorp.com` 라는 Repo 이름을 가집니다. User page로 Repo를 개설하면 다음과 같은 위치에 게시되어 깔끔합니다. `https://pages.github.kakaocorp.com/{User(Organization)}/`
+* [여기](https://github.com/kakaoenterprise/kakaoenterprise.github.io/settings)에서 관련 설정을 볼 수 있습니다.
+* 이 프로젝트는 `kakaoenterprise` Organization의 User page입니다. 그래서 `kakaoenterprise.github.io` 라는 Repo 이름을 가집니다. 
 * Gihub Pages는 자동 빌드 기능은 간편하지만, Jekyll plugin 추가에 제한이 있습니다. [링크](https://jekyllrb.com/docs/plugins/installation/) 😢 꼭 필요한 plugin이 있다면, 별도의 빌드 파이프라인을 구축한 후 (로컬 빌드 또는 [Travis CI](https://docs.travis-ci.com/user/deployment/pages/) 활용) 해당 내용을 Github Pages로 Push해 서빙하거나, 아예 별도의 서빙 환경을 구축하는 방법을 사용해야 합니다.
+* 이 프로젝트는 Jekyll Custom Plugin을 사용하기 위해 로컬 빌드를 하고 /docs 디렉토리에 배포하는 방식을 사용합니다.
 
 ### [Jekyll](https://jekyllrb.com/)
 [Markdown](https://daringfireball.net/projects/markdown/)과 [Liquid template](https://github.com/Shopify/liquid/wiki)으로 작성한 파일들로 정적 웹사이트나 블로그를 구축하는 도구입니다.
@@ -34,6 +35,8 @@ GitHub Repo의 특정 브랜치를 자동으로 빌드하고 호스팅하는 시
 │   ├── _posts
 │   └── index.html
 ├── serve.sh // 로컬 렌더링 스크립트
+├── build.sh // 프로덕션 빌드 스크립트
+├── docs // 프로덕션 빌드 output directory
 └── deepdive // 딥다이브 포스트
     ├── _posts
     └── index.html
@@ -45,7 +48,7 @@ GitHub Repo의 특정 브랜치를 자동으로 빌드하고 호스팅하는 시
 1. Docker 설치 ([Mac](https://docs.docker.com/docker-for-mac/install/))
 2. Repo 클론
 ```sh
-git clone https://github.kakaocorp.com/ailab-papers/ailab-papers.github.kakaocorp.com.git papers
+git clone https://github.com/kakaoenterprise/kakaoenterprise.github.io.git papers
 cd papers
 ```
 3. 빌드 & 서빙
@@ -141,18 +144,14 @@ Configuration file: /srv/jekyll/_config.yml
 4. 브라우저에서 http://localhost:4000 접속해 렌더 결과를 확인합니다.
 5. 포스트를 수정합니다.
 6. 브라우저에서 새로고침하면 수정 반영된 내용을 볼 수 있습니다. 4~5을 반복합니다.
+7. 더이상 수정할 내용이 없으면 ./build.sh 스크립트를 실행해서 docs에 production build 결과를 저장합니다.
 
 ## Remote push 후 결과 확인하기
-작업내용을 commit하고 origin/master에 push하면 https://pages.github.kakaocorp.com/ailab-papers/ 에서 결과를 확인할 수 있습니다.
+작업내용을 commit하고 origin/master에 push하면 https://kakaoenterprise.github.io 에서 결과를 확인할 수 있습니다.
+이 때 Settings에서 Pages의 Source 위치는 master branch의 /docs folder로 설정되어 있어야 합니다.
 
-내용이 약 1분 후에도 반영되지 않는다면, 빌드 실패를 의심해볼 수 있습니다. 빌드가 실패하는 경우, GitHub Enterpirse 계정과 연결된 이메일 주소로 다음과 같은 이메일을 수신합니다.
-```
-The page build failed for the `master` branch with the following error:
-
-The tag `katexmm` on line 26 in `/data/user/tmp/pages/page-build-18957/_posts/2020-06-14-200614-1.md` is not a recognized Liquid tag. For more information, see https://help.github.com/enterprise/2.21/user/en/github/working-with-github-pages/troubleshooting-jekyll-build-errors-for-github-pages-sites#unknown-tag-error.
-```
-
-로컬에서 빌드가 되더라도, GitHub Enterprise 빌드환경과 차이가 나는 부분에서는 빌드에 실패하기도 합니다.
+내용이 반영되기까지 몇분이 걸릴 수도 있습니다. 새로고침을 해도 반영이 되지 않는다면, 강제 새로고침을 통해서 저장된 페이지를 삭제해 봅니다.
+크롬 브라우저의 경우 단축키(Winodws: ctrl+shift+r, Mac: cmd+shift+r)를 통해서 강제 새로고침을 할 수 있습니다.
 
 ## 기타 사항
 (현행 프로젝트 스택을 유지해 개발하시는 경우) Jekyll 빌드구조와 Liquid 템플릿이 어느정도 익숙해지면 기본적인 html/css/js 문제로 귀결되어 어렵지 않게 개발할 수 있습니다.
