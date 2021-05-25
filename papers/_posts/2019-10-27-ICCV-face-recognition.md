@@ -13,7 +13,6 @@ authors:
   - 전봉진:StradVision
   - 김대진:POSTECH
 paper: http://openaccess.thecvf.com/content_ICCV_2019/papers/Kang_Attentional_Feature-Pair_Relation_Networks_for_Accurate_Face_Recognition_ICCV_2019_paper.pdf
-code:
 tag:
   - face recognition
 ---
