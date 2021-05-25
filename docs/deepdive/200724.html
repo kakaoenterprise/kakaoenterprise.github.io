@@ -118,7 +118,7 @@
 
 <p><em class="center">[그림 1] 질의 응답 시스템의 동작 과정</em></p>
 
-<p>이번 글에서는 자사 질의 응답 기술 요소 중 하나인 딥러닝 기반 정답 유형(서술형, 단답형) 분류 모델<a href="#2ee9:rf:1" class="reference" id="2ee9:rf-back:1">[1]</a>을 소개해보고자 합니다. AI Lab AI기술팀 자연어처리파트의 조승우 연구원을 만나 자세한 이야기를 들어봤습니다.</p>
+<p>이번 글에서는 자사 질의 응답 기술 요소 중 하나인 딥러닝 기반 정답 유형(서술형, 단답형) 분류 모델<a href="#474b:rf:1" class="reference" id="474b:rf-back:1">[1]</a>을 소개해보고자 합니다. AI Lab AI기술팀 자연어처리파트의 조승우 연구원을 만나 자세한 이야기를 들어봤습니다.</p>
 
 <p><br /></p>
 
@@ -268,7 +268,7 @@
 
 <p>보통은 Eigen<sup id="fnref:10" role="doc-noteref"><a href="#fn:10" class="footnote" rel="footnote">10</a></sup>을 이용해 디코더<sup>decoder</sup>를 구현하면 속도를 최적화할 수 있습니다. 다만 모델의 층수가 많아질수록 그 이점은 줄어듭니다. 그래서 BERT처럼 층이 많고 그 구조가 복잡한 모델에서는 서비스가 가능한 수준의 속도 최적화는 매우 어려운 편에 속합니다. 실제로 BERT 기반 모델은 서버 GPU를 사용하고도 한 문장을 분류하는 데에만 9.3280ms나 걸립니다. 반면, CNN 기반 모델에서는 CPU 싱글코어만으로도 한 문장 분류에 2ms밖에 걸리지 않았죠.</p>
 
-<p>AI Lab은 비슷한 정확도를 가진 모델인데, 훨씬 값싸고 빠르게 사용할 수 있다면 공학적인 측면에서 마다할 이유가 없다고 판단, BERT 기반 언어 모델 대신 GloVe<a href="#2ee9:rf:2" class="reference" id="2ee9:rf-back:2">[2]</a> 의미 벡터와 어절 임베딩 벡터를 CNN에 입력해 그 문맥을 학습할 수 있도록 했습니다<a href="#2ee9:rf:1" class="reference" id="2ee9:rf-back:1">[1]</a>. CNN 기반 모델을 채택한 이유는 뒤에서 자세히 설명해드리겠습니다.</p>
+<p>AI Lab은 비슷한 정확도를 가진 모델인데, 훨씬 값싸고 빠르게 사용할 수 있다면 공학적인 측면에서 마다할 이유가 없다고 판단, BERT 기반 언어 모델 대신 GloVe<a href="#474b:rf:2" class="reference" id="474b:rf-back:2">[2]</a> 의미 벡터와 어절 임베딩 벡터를 CNN에 입력해 그 문맥을 학습할 수 있도록 했습니다<a href="#474b:rf:1" class="reference" id="474b:rf-back:1">[1]</a>. CNN 기반 모델을 채택한 이유는 뒤에서 자세히 설명해드리겠습니다.</p>
 
 <p><br /></p>
 
@@ -288,11 +288,11 @@
 
 <h2 id="2-통합-어절-임베딩-생성">2. 통합 어절 임베딩 생성</h2>
 
-<p>자연어 어절을 벡터로 바꾸는 데에는 워드 임베딩<sup>word embedding</sup>을 사용합니다. 워드 임베딩은 대규모 말뭉치에 등장하는 단어의 일반적인 의미를 벡터로 표현합니다. 예를 들어, 의미가 비슷한 ‘인간’과 ‘사람’을 비슷한 방식으로 표현할 수 있습니다. 또 ‘왕-남자=왕비’와 같은 관계에서 보듯이 단어의 실제적 의미적 차이를 거리로 표현하는 것도 합니다. 대표적인 워드 임베딩 모델로 Word2Vec<a href="#2ee9:rf:3" class="reference" id="2ee9:rf-back:3">[3]</a>, GloVe<a href="#2ee9:rf:2" class="reference" id="2ee9:rf-back:2">[2]</a>, FastText<a href="#2ee9:rf:4" class="reference" id="2ee9:rf-back:4">[4]</a>가 있습니다.</p>
+<p>자연어 어절을 벡터로 바꾸는 데에는 워드 임베딩<sup>word embedding</sup>을 사용합니다. 워드 임베딩은 대규모 말뭉치에 등장하는 단어의 일반적인 의미를 벡터로 표현합니다. 예를 들어, 의미가 비슷한 ‘인간’과 ‘사람’을 비슷한 방식으로 표현할 수 있습니다. 또 ‘왕-남자=왕비’와 같은 관계에서 보듯이 단어의 실제적 의미적 차이를 거리로 표현하는 것도 합니다. 대표적인 워드 임베딩 모델로 Word2Vec<a href="#474b:rf:3" class="reference" id="474b:rf-back:3">[3]</a>, GloVe<a href="#474b:rf:2" class="reference" id="474b:rf-back:2">[2]</a>, FastText<a href="#474b:rf:4" class="reference" id="474b:rf-back:4">[4]</a>가 있습니다.</p>
 
 <p>AI Lab은 여타 다른 임베딩 기법보다 단어의 의미를 더 잘 담아내는 GloVe 포함한, 입력 오류에 강건한 (자모) 통합 어절 임베딩 생성기를 구축했습니다. 형태소 어휘 사전에 존재하지 않은 오탈자로 인해<sup>out of vocabulary</sup> 형태소 분석 오차<sup>loss</sup>를 최소화하기 위함입니다. 통합 어절 임베딩 생성기는 형태소와 자모음 정보에 각각 부여한 임베딩 벡터를 이용해 다시 원래 어절을 조합하는 과정을 학습합니다. 그 결과, 입력 오류가 발생하더라도 원래 어절을 유사하게 추정할 수 있습니다.</p>
 
-<p>AI Lab은 통합 어절 임베딩 생성기 훈련 과정에서 자모 드롭아웃<sup>dropout</sup><sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote" rel="footnote">13</a></sup>과 띄어쓰기 없는 문장 생성이라는 두가지 데이터 노이즈<sup>noise</sup> 생성 기법을 추가했습니다. 기존 시스템 대비 오류가 포함된 문장을 분류하는 성능이 약 23%P 향상되는 등<a href="#2ee9:rf:1" class="reference" id="2ee9:rf-back:1">[1]</a> 이 기법의 유효성은 AI Lab 자체 실험을 통해서도 증명이 됐습니다.</p>
+<p>AI Lab은 통합 어절 임베딩 생성기 훈련 과정에서 자모 드롭아웃<sup>dropout</sup><sup id="fnref:13" role="doc-noteref"><a href="#fn:13" class="footnote" rel="footnote">13</a></sup>과 띄어쓰기 없는 문장 생성이라는 두가지 데이터 노이즈<sup>noise</sup> 생성 기법을 추가했습니다. 기존 시스템 대비 오류가 포함된 문장을 분류하는 성능이 약 23%P 향상되는 등<a href="#474b:rf:1" class="reference" id="474b:rf-back:1">[1]</a> 이 기법의 유효성은 AI Lab 자체 실험을 통해서도 증명이 됐습니다.</p>
 
 <p><br /></p>
 
@@ -308,13 +308,13 @@
 
 <p>이미지 분류<sup>classification</sup>와 분할<sup>segmentation</sup>, 객체 감지<sup>detection</sup>과 같은 비전 문제에서 탁월한 성능을 내는 CNN은 자연어처리 문제에도 효과적입니다. 컨볼루션 연산층<sup>convolution layer</sup>의 필터<sup>filter</sup>가 문맥 파악에 중요한 부분만 도출하는 데 유리한 덕분입니다. 그 결과, CNN을 통과한 최종 벡터는 문장의 지역 정보를 보존하는 추상화 과정을 거쳐 단어나 표현의 등장 순서를 반영한 문장의 의미 정보<sup>semantic information</sup>를 표현할 수 있게 됩니다.</p>
 
-<p>AI Lab이 문장 분류를 위해 기본으로 사용한 DenseNet<a href="#2ee9:rf:5" class="reference" id="2ee9:rf-back:5">[5]</a>은 CNN을 응용한 대표 알고리즘으로, 이전 층에서 생성된 특징 맵<sup>feature map</sup><sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">14</a></sup>을 모두 이어붙여서<sup>concatenation</sup> 다음층에 입력합니다. 컨볼루션 층이 많아질수록 출력 층에서부터 계산된 기울기<sup>gradient</sup>가 전체 네트워크에 올바르게 전달되지 않는 기울기 소실<sup>gradient vanishing</sup><sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote" rel="footnote">15</a></sup> 문제를 완화하는 이 로직이 자연어처리에서도 효과적인 방법이라고 AI Lab은 판단했습니다.</p>
+<p>AI Lab이 문장 분류를 위해 기본으로 사용한 DenseNet<a href="#474b:rf:5" class="reference" id="474b:rf-back:5">[5]</a>은 CNN을 응용한 대표 알고리즘으로, 이전 층에서 생성된 특징 맵<sup>feature map</sup><sup id="fnref:14" role="doc-noteref"><a href="#fn:14" class="footnote" rel="footnote">14</a></sup>을 모두 이어붙여서<sup>concatenation</sup> 다음층에 입력합니다. 컨볼루션 층이 많아질수록 출력 층에서부터 계산된 기울기<sup>gradient</sup>가 전체 네트워크에 올바르게 전달되지 않는 기울기 소실<sup>gradient vanishing</sup><sup id="fnref:15" role="doc-noteref"><a href="#fn:15" class="footnote" rel="footnote">15</a></sup> 문제를 완화하는 이 로직이 자연어처리에서도 효과적인 방법이라고 AI Lab은 판단했습니다.</p>
 
 <h3 id="2-깊이별-분리-컨볼루션-연산depthwise-separable-convolution">(2) 깊이별 분리 컨볼루션 연산<sup>depthwise separable convolution</sup></h3>
 
 <p>형태소와 자모 정보를 반영한 통합 어절 임베딩을 모델에 바로 입력하면 전체 학습 시간이 지나치게 길어지는 문제가 발생할 수 있습니다. 각 임베딩별로 컨볼루션 연산이 이뤄지다 보니 매개변수<sup>parameter</sup> 수가 늘어나는 만큼 처리 시간이 비례해서 늘어나기 때문입니다. 따라서 매개변수가 늘어나는 상황에 대비해 학습 속도나 추론 속도를 높일 필요가 있습니다.</p>
 
-<p>이를 해결하고자 AI Lab은 깊이별 분리 컨볼루션 연산<a href="#2ee9:rf:6" class="reference" id="2ee9:rf-back:6">[6]</a>을 이용합니다. 2D 이미지 데이터에 대한 깊이별 분리 컨볼루션은 매개변수 수 최적화를 통해 메모리 사용량은 줄이고 학습 속도를 높입니다. 채널을 기준으로 각각 [필터 높이, 필터 너비, 1]와 [1, 1, 채널 수]로 분리한 두 종류의 새로운 필터로 각각 깊이별 컨볼루션<sup>Depthwise convolution</sup>과 포인트별 컨볼루션<sup>Pointwise convolution</sup> 연산을 순차적으로 진행합니다.</p>
+<p>이를 해결하고자 AI Lab은 깊이별 분리 컨볼루션 연산<a href="#474b:rf:6" class="reference" id="474b:rf-back:6">[6]</a>을 이용합니다. 2D 이미지 데이터에 대한 깊이별 분리 컨볼루션은 매개변수 수 최적화를 통해 메모리 사용량은 줄이고 학습 속도를 높입니다. 채널을 기준으로 각각 [필터 높이, 필터 너비, 1]와 [1, 1, 채널 수]로 분리한 두 종류의 새로운 필터로 각각 깊이별 컨볼루션<sup>Depthwise convolution</sup>과 포인트별 컨볼루션<sup>Pointwise convolution</sup> 연산을 순차적으로 진행합니다.</p>
 
 <p>이 연구에서 깊이별 컨볼루션은 어절 간 관계를 고려합니다. 주위 어절을 함께 고려한다는 측면에서 n-gram<sup id="fnref:16" role="doc-noteref"><a href="#fn:16" class="footnote" rel="footnote">16</a></sup> 확률을 분류에 사용하는 것과 비슷하다고 보면 됩니다. 포인트별 컨볼루션은 유효 데이터만 추려내고자 전체 채널을 하나로 압축해 컨볼루션 연산을 진행합니다. 이렇게 하면 연산 속도를 높이는 데 도움이 됩니다.</p>
 
@@ -326,7 +326,7 @@
 
 <h3 id="3-동적-셀프-어텐션dynamic-self-attention">(3) 동적 셀프 어텐션<sup>dynamic self-attention</sup></h3>
 
-<p>서로 연관성이 높으나 거리상 멀리 떨어진 어절이 서로 참조할 수 있게 하는 기법으로 어텐션이 있습니다. 다만 행렬의 형태가 어절 수에 제약을 받는 기존 방식은 입력 발화 길이에 제약이 없는 실제 서비스에는 적합하지 않을 수도 있습니다. 이에 AI Lab은 입력 어절 수에 관계없이 어텐션 벡터를 자유롭게 계산하고 관리하는 기법인 동적 셀프 어텐션<a href="#2ee9:rf:7" class="reference" id="2ee9:rf-back:7">[7]</a>을 적용했습니다.</p>
+<p>서로 연관성이 높으나 거리상 멀리 떨어진 어절이 서로 참조할 수 있게 하는 기법으로 어텐션이 있습니다. 다만 행렬의 형태가 어절 수에 제약을 받는 기존 방식은 입력 발화 길이에 제약이 없는 실제 서비스에는 적합하지 않을 수도 있습니다. 이에 AI Lab은 입력 어절 수에 관계없이 어텐션 벡터를 자유롭게 계산하고 관리하는 기법인 동적 셀프 어텐션<a href="#474b:rf:7" class="reference" id="474b:rf-back:7">[7]</a>을 적용했습니다.</p>
 
 <p><img src="/assets/img/2020-07-24-200724/005.png" width="" align="" /></p>
 
@@ -352,19 +352,19 @@
 
 <h1 id="참고-문헌">참고 문헌</h1>
 
-<p><a id="2ee9:rf:1" class="referencebody"><a href="#2ee9:rf-back:1" class="backlink">[1]</a>  한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩 (2019) by 최동현, 박일남, 신명철, 김응균, 신동렬 in 제 31회 한글 및 한국어 정보처리 학술대회 논문집(pp. 43-48) </a><br /></p>
+<p><a id="474b:rf:1" class="referencebody"><a href="#474b:rf-back:1" class="backlink">[1]</a>  한국어 챗봇에서의 오류에 강건한 한국어 문장 분류를 위한 어절 단위 임베딩 (2019) by 최동현, 박일남, 신명철, 김응균, 신동렬 in 제 31회 한글 및 한국어 정보처리 학술대회 논문집(pp. 43-48) </a><br /></p>
 
-<p><a id="2ee9:rf:2" class="referencebody"><a href="#2ee9:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D14-1162.pdf">GloVe: Global Vectors for Word Representation</a> by Jeffrey Pennington, Richard Socher, Christopher D. Manning, in Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP) </a><br /></p>
+<p><a id="474b:rf:2" class="referencebody"><a href="#474b:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/D14-1162.pdf">GloVe: Global Vectors for Word Representation</a> by Jeffrey Pennington, Richard Socher, Christopher D. Manning, in Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP) </a><br /></p>
 
-<p><a id="2ee9:rf:3" class="referencebody"><a href="#2ee9:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a> (2013) by Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean in ICLR Workshop </a><br /></p>
+<p><a id="474b:rf:3" class="referencebody"><a href="#474b:rf-back:3" class="backlink">[3]</a>  <a href="https://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a> (2013) by Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean in ICLR Workshop </a><br /></p>
 
-<p><a id="2ee9:rf:4" class="referencebody"><a href="#2ee9:rf-back:4" class="backlink">[4]</a>  <a href="https://arxiv.org/abs/1607.01759">Bag of Tricks for Efficient Text Classification</a> by  Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov in arXiv </a><br /></p>
+<p><a id="474b:rf:4" class="referencebody"><a href="#474b:rf-back:4" class="backlink">[4]</a>  <a href="https://arxiv.org/abs/1607.01759">Bag of Tricks for Efficient Text Classification</a> by  Armand Joulin, Edouard Grave, Piotr Bojanowski, Tomas Mikolov in arXiv </a><br /></p>
 
-<p><a id="2ee9:rf:5" class="referencebody"><a href="#2ee9:rf-back:5" class="backlink">[5]</a>  <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf">Densely Connected Convolutional Networks</a> (2017) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger in CVPR </a><br /></p>
+<p><a id="474b:rf:5" class="referencebody"><a href="#474b:rf-back:5" class="backlink">[5]</a>  <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.pdf">Densely Connected Convolutional Networks</a> (2017) by Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger in CVPR </a><br /></p>
 
-<p><a id="2ee9:rf:6" class="referencebody"><a href="#2ee9:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1704.04861">MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</a> (2017) by Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam in CVPR </a><br /></p>
+<p><a id="474b:rf:6" class="referencebody"><a href="#474b:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/abs/1704.04861">MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications</a> (2017) by Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam in CVPR </a><br /></p>
 
-<p><a id="2ee9:rf:7" class="referencebody"><a href="#2ee9:rf-back:7" class="backlink">[7]</a>  <a href="https://arxiv.org/abs/1808.07383">Dynamic Self-Attention: Computing Attention over Words Dynamically for Sentence Embedding</a> (2018) by Deunsol Yoon, Dongbok Lee, SangKeun Lee in arXiv </a><br /></p>
+<p><a id="474b:rf:7" class="referencebody"><a href="#474b:rf-back:7" class="backlink">[7]</a>  <a href="https://arxiv.org/abs/1808.07383">Dynamic Self-Attention: Computing Attention over Words Dynamically for Sentence Embedding</a> (2018) by Deunsol Yoon, Dongbok Lee, SangKeun Lee in arXiv </a><br /></p>
 
 <p><br /></p>
 

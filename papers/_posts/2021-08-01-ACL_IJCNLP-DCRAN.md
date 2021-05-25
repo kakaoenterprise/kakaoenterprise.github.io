@@ -8,7 +8,7 @@ published-date: 2021-08-01
 publisher: ACL-IJCNLP Findings of ACL Main Conference
 publisher-fullname:
 authors:
-  - 오신혁:카카오
+  - 오신혁:넷마블
   - 이동엽:카카오
   - 황태선:고려대학교
   - 박일남:카카오엔터프라이즈
