@@ -264,7 +264,7 @@ storm:
   web:
   description: 도전 과제를 찾고 이를 해결해 나가는 것이 재밌고 신나는 개발자입니다. 아이디어를 아낌없이 공유해 주시는 많은 훌륭한 분들이 있어서 세상이 더 빨리 나아지는 것 같습니다. 저도 그 길에 작은 보탬이 되고 싶습니다.
 
-talyor:
+taylor:
   korean_name: 장원
   profile: taylor.png
   github:
