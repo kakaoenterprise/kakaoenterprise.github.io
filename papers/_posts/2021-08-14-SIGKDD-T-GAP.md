@@ -1,7 +1,7 @@
 ---
 layout: post
 research-area: NLP
-title: "Learning to Walk across Time for Temporal Knowledge Graph Completion"
+title: "Learning to Walk across Time for Interpretable Temporal Knowledge Graph Completion"
 slug: sigkdd-t-gap
 description:
 published-date: 2021-08-14
