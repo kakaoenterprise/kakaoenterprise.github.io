@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/sigkdd-t-gap.html</loc>
+		
+		<lastmod>2021-08-14T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran.html</loc>
+		
+		<lastmod>2021-08-01T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip.html</loc>
+		
+		<lastmod>2021-08-01T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icml2021-vilt.html</loc>
+		
+		<lastmod>2021-07-18T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icml2021-e2e-tts.html</loc>
+		
+		<lastmod>2021-07-18T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icassp2021-u-convolution-based-residual-eco-suppression.html</loc>
+		
+		<lastmod>2021-06-13T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icassp2021-transformer-rnn-tranducer-speech-recognition.html</loc>
+		
+		<lastmod>2021-06-13T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/210525.html</loc>
+		
+		<lastmod>2021-05-25T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/ieeeaccess-face-anti-spoofing.html</loc>
+		
+		<lastmod>2021-04-30T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/cljournal2021-ryansql.html</loc>
+		
+		<lastmod>2021-03-26T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/ieee2020-fden.html</loc>
+		
+		<lastmod>2021-02-10T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/aaai2021-mdr.html</loc>
+		
+		<lastmod>2021-02-02T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/aaai2021-multi-turn-response-selection.html</loc>
+		
+		<lastmod>2021-02-02T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/201217.html</loc>
+		
+		<lastmod>2020-12-17T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/neurips2020-hifi-gan.html</loc>
+		
+		<lastmod>2020-12-15T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/neurips2020-glow-tts.html</loc>
+		
+		<lastmod>2020-12-15T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/inlg2020-stable-style-transformer.html</loc>
+		
+		<lastmod>2020-12-15T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/201214.html</loc>
+		
+		<lastmod>2020-12-14T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/coling2020-rdass.html</loc>
+		
+		<lastmod>2020-12-08T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/ieee2020-accelerating-neural-transducer-inference.html</loc>
+		
+		<lastmod>2020-12-06T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/ieee2020-face-video-retrieval.html</loc>
+		
+		<lastmod>2020-12-04T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/emnlp2020-stable-zero-shot-nmt.html</loc>
+		
+		<lastmod>2020-11-16T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/emnlp2020-m2nmt.html</loc>
+		
+		<lastmod>2020-11-16T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/emnlp2020-attnio.html</loc>
+		
+		<lastmod>2020-11-16T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icip2020-effective-and-scalable-person-search.html</loc>
+		
+		<lastmod>2020-10-28T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/interspeech2020-jdi-t.html</loc>
+		
+		<lastmod>2020-10-26T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/eccv2020-deep-metric-learning.html</loc>
+		
+		<lastmod>2020-09-09T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/eccv2020-broadface.html</loc>
+		
+		<lastmod>2020-08-23T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/200724.html</loc>
+		
+		<lastmod>2020-07-24T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/200723.html</loc>
+		
+		<lastmod>2020-07-23T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/cvpr2020-deep-metric-learning.html</loc>
+		
+		<lastmod>2020-06-14T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/cvpr2020-groupface.html</loc>
+		
+		<lastmod>2020-06-14T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/sensors2020-emotion-recognition.html</loc>
+		
+		<lastmod>2020-05-04T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icassp2020-many-to-many-voice-conversion.html</loc>
+		
+		<lastmod>2020-05-01T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/iccv2019-face-recognition.html</loc>
+		
+		<lastmod>2019-10-27T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/iccv2019-basn.html</loc>
+		
+		<lastmod>2019-10-27T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/hclt2019-web-scale-open-domain-korean-question-answering.html</loc>
+		
+		<lastmod>2019-10-11T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/hclt2019-eojeol-based-embedding.html</loc>
+		
+		<lastmod>2019-10-11T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/hclt2019-construction-of-annotated-corpora.html</loc>
+		
+		<lastmod>2019-10-11T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/hclt2019-answer-type-classifier.html</loc>
+		
+		<lastmod>2019-10-11T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icassp2019-speech-enhancement.html</loc>
+		
+		<lastmod>2019-05-12T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icassp2019-emotion-recognition.html</loc>
+		
+		<lastmod>2019-05-12T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/uncorrelated-feature-encoding-for-faster-image-style-transfer.html</loc>
+		
+		<lastmod>2018-07-04T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/iapr-mva2017-faster-rnnn-for-object-detection.html</loc>
+		
+		<lastmod>2017-05-08T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+</urlset>
