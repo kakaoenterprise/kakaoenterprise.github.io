@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kakao Enterprise AI Research</title>
+    <description>카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼</description>
+    <link>https://kakaoenterprise.github.io/</link>
+    <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 26 May 2021 04:08:05 -0500</pubDate>
+    <lastBuildDate>Wed, 26 May 2021 04:08:05 -0500</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Learning to Walk across Time for Interpretable Temporal Knowledge Graph Completion</title>
+        <description></description>
+        <pubDate>Sat, 14 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/sigkdd-t-gap</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-t-gap</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Deep Context- and Relation-Aware Learning for Aspect-based Sentiment Analysis</title>
+        <description></description>
+        <pubDate>Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack</title>
+        <description></description>
+        <pubDate>Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision</title>
+        <description></description>
+        <pubDate>Sun, 18 Jul 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icml2021-vilt</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml2021-vilt</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech</title>
+        <description></description>
+        <pubDate>Sun, 18 Jul 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icml2021-e2e-tts</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml2021-e2e-tts</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>U-Convolution Based Residual Echo Suppression With Multiple Encoders</title>
+        <description></description>
+        <pubDate>Sun, 13 Jun 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icassp2021-u-convolution-based-residual-eco-suppression</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icassp2021-u-convolution-based-residual-eco-suppression</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Multitask Learning and Joint Optimization For Transformer-Rnn-Tranducer Speech Recognition</title>
+        <description></description>
+        <pubDate>Sun, 13 Jun 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icassp2021-transformer-rnn-tranducer-speech-recognition</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icassp2021-transformer-rnn-tranducer-speech-recognition</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>텍스트 스타일을 바꾸는 딥러닝 기술</title>
+        <description>카카오엔터프라이즈는 입력 문장에서 '스타일' 토큰을 명시적으로 삭제하고, '내용 토큰과 타깃 스타일 속성값만을 가지고 문장 벡터를 생성하는 접근 방식에서 영감을 얻었습니다. 카카오엔터프라이즈가 고안한 SST 모델 또한 1)문장에서 ‘스타일' 토큰을 삭제한 뒤, 2)’콘텐츠’ 토큰만을 가지고 입력 문장과는 반대되는 스타일 속성값을 가진 문장을 생성합니다. 다만 기존과는 다른 방식으로 각 모듈을 구현했는데, 이는 포스트에 자세히 소개돼 있습니다.</description>
+        <pubDate>Tue, 25 May 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/deepdive/210525</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/deepdive/210525</guid>
+        
+        <category>Text Style Transfer</category>
+        
+        
+        <category>deepdive</category>
+        
+      </item>
+    
+      <item>
+        <title>Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing</title>
+        <description></description>
+        <pubDate>Fri, 30 Apr 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/ieeeaccess-face-anti-spoofing</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess-face-anti-spoofing</guid>
+        
+        <category>face anti-spoofing</category>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases</title>
+        <description>중첩된 SELECT문을 좀 더 정확하게 생성하는 SPC 기법을 적용한 Text-to-SQL 알고리즘 'RYANSQL' 제안</description>
+        <pubDate>Fri, 26 Mar 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/cljournal2021-ryansql</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/cljournal2021-ryansql</guid>
+        
+        <category>NLI2DB</category>
+        
+        <category>Text-to-SQL</category>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+  </channel>
+</rss>
