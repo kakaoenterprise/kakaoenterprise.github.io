@@ -8,7 +8,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
 
     {% if page.image %}
-      {% include image.html name=page.image width="" align="center" %}
+       <img src="{{ site.baseurl }}/{{ page.image }}" width="{{ page.width }}" align="center">
     {% endif %}
   </header>
 
