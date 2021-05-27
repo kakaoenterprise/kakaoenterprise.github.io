@@ -5,13 +5,13 @@ title: "Deep Context- and Relation-Aware Learning for Aspect-based Sentiment Ana
 slug: acl-ijcnlp2021-dcran
 description:
 published-date: 2021-08-01
-publisher: ACL-IJCNLP Findings of ACL Main Conference
+publisher: ACL-IJCNLP Main Conference
 publisher-fullname:
 authors:
   - 오신혁:넷마블
   - 이동엽:카카오
   - 황태선:고려대학교
-  - 박일남:카카오엔터프라이즈
+  - pin:카카오엔터프라이즈
   - annie:카카오엔터프라이즈
   - jason:카카오엔터프라이즈
   - 김학수:건국대학교
