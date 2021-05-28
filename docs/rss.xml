@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 May 2021 05:48:05 -0500</pubDate>
-    <lastBuildDate>Fri, 28 May 2021 05:48:05 -0500</lastBuildDate>
+    <pubDate>Fri, 28 May 2021 06:32:38 -0500</pubDate>
+    <lastBuildDate>Fri, 28 May 2021 06:32:38 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -111,8 +111,8 @@
         <title>Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing</title>
         <description></description>
         <pubDate>Fri, 30 Apr 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/ieeeaccess-face-anti-spoofing</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess-face-anti-spoofing</guid>
+        <link>https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn</guid>
         
         <category>face anti-spoofing</category>
         
