@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 May 2021 06:32:38 -0500</pubDate>
-    <lastBuildDate>Fri, 28 May 2021 06:32:38 -0500</lastBuildDate>
+    <pubDate>Tue, 08 Jun 2021 05:56:34 -0500</pubDate>
+    <lastBuildDate>Tue, 08 Jun 2021 05:56:34 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>UnivNet: A Neural Vocoder with Multi-Resolution Spectrogram Discriminators for High-Fidelity Waveform Generation</title>
+        <description></description>
+        <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech2021-univnet</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-univnet</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Learning to Walk across Time for Interpretable Temporal Knowledge Graph Completion</title>
@@ -115,22 +127,6 @@
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn</guid>
         
         <category>face anti-spoofing</category>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>RYANSQL: Recursively Applying Sketch-based Slot Fillings for Complex Text-to-SQL in Cross-Domain Databases</title>
-        <description>중첩된 SELECT문을 좀 더 정확하게 생성하는 SPC 기법을 적용한 Text-to-SQL 알고리즘 'RYANSQL' 제안</description>
-        <pubDate>Fri, 26 Mar 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/cljournal2021-ryansql</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/cljournal2021-ryansql</guid>
-        
-        <category>NLI2DB</category>
-        
-        <category>Text-to-SQL</category>
         
         
         <category>papers</category>
