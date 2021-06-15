@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Auxiliary Sequence Labeling Tasks for Disfluency Detection | Kakao Enterprise AI Research</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Auxiliary Sequence Labeling Tasks for Disfluency Detection" />
+<meta name="author" content="이동엽:카카오" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection" />
+<meta property="og:site_name" content="Kakao Enterprise AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-08-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Auxiliary Sequence Labeling Tasks for Disfluency Detection" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"이동엽:카카오"},"description":"Abstract","@type":"BlogPosting","headline":"Auxiliary Sequence Labeling Tasks for Disfluency Detection","dateModified":"2021-08-30T00:00:00-05:00","datePublished":"2021-08-30T00:00:00-05:00","url":"https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="Kakao Enterprise AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+
+  <!-- Google Search -->
+  <meta name="google-site-verification" content="wjM0-ayVnmSnH6JrvoDSaK75Yy8x0y8RBJpuF3JaO9E" />
+
+  <!-- Naver Search-->
+  <meta name="naver-site-verification" content="1960bd91e47ca89bc4201d4e49f5de5062229786"/>
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">NLP</h4>
+    <h1 class="post-title">Auxiliary Sequence Labeling Tasks for Disfluency Detection</h1>
+
+    
+
+    
+
+    이동엽(카카오), 고병일(카카오엔터프라이즈), 신명철(카카오엔터프라이즈), 황태선(와이즈넛), 조재춘(한신대학교)
+
+    <h4>
+        
+          Conference of the International Speech Communication Association (INTERSPEECH)
+        
+    </h4>
+
+    <h4>2021-08-30</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/2011.04512.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>Detecting disfluencies in spontaneous speech is an important preprocessing step in natural language processing and speech recognition applications. Existing works for disfluency detection have focused on designing a single objective only for disfluency detection, while auxiliary objectives utilizing linguistic information of a word such as named entity or part-of-speech information can be effective. In this paper, we focus on detecting disfluencies on spoken transcripts and propose a method utilizing named entity recognition(NER) and part-of-speech(POS) as auxiliary sequence labeling(SL) tasks for disfluency detection. First, we investigate cases that utilizing linguistic information of a word can prevent mispredicting important words and can be helpful for the correct detection of disfluencies. Second, we show that training a disfluency detection model with auxiliary SL tasks can improve its F-score in disfluency detection. Then, we analyze which auxiliary SL tasks are influential depending on baseline models. Experimental results on the widely used English Switchboard dataset show that our method outperforms the previous state-of-the-art in disfluency detection.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+
+    <!-- Naver Analytics -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "d6495f190ca3e0";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+  </body>
+</html>

@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 08 Jun 2021 05:56:34 -0500</pubDate>
-    <lastBuildDate>Tue, 08 Jun 2021 05:56:34 -0500</lastBuildDate>
+    <pubDate>Tue, 15 Jun 2021 03:55:05 -0500</pubDate>
+    <lastBuildDate>Tue, 15 Jun 2021 03:55:05 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -15,6 +15,18 @@
         <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/interspeech2021-univnet</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-univnet</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Auxiliary Sequence Labeling Tasks for Disfluency Detection</title>
+        <description></description>
+        <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection</guid>
         
         
         <category>papers</category>
@@ -116,20 +128,6 @@
         
         
         <category>deepdive</category>
-        
-      </item>
-    
-      <item>
-        <title>Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing</title>
-        <description></description>
-        <pubDate>Fri, 30 Apr 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn</guid>
-        
-        <category>face anti-spoofing</category>
-        
-        
-        <category>papers</category>
         
       </item>
     
