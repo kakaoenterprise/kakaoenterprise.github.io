@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Jun 2021 03:55:05 -0500</pubDate>
-    <lastBuildDate>Tue, 15 Jun 2021 03:55:05 -0500</lastBuildDate>
+    <pubDate>Tue, 15 Jun 2021 06:18:00 -0500</pubDate>
+    <lastBuildDate>Tue, 15 Jun 2021 06:18:00 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -27,6 +27,18 @@
         <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>SE-Conformer: Time-Domain Speech Enhancement using Conformer</title>
+        <description></description>
+        <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech2021-se-conformer</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-se-conformer</guid>
         
         
         <category>papers</category>
@@ -114,20 +126,6 @@
         
         
         <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>텍스트 스타일을 바꾸는 딥러닝 기술</title>
-        <description>카카오엔터프라이즈는 입력 문장에서 '스타일' 토큰을 명시적으로 삭제하고, '내용 토큰과 타깃 스타일 속성값만을 가지고 문장 벡터를 생성하는 접근 방식에서 영감을 얻었습니다. 카카오엔터프라이즈가 고안한 SST 모델 또한 1)문장에서 ‘스타일' 토큰을 삭제한 뒤, 2)’콘텐츠’ 토큰만을 가지고 입력 문장과는 반대되는 스타일 속성값을 가진 문장을 생성합니다. 다만 기존과는 다른 방식으로 각 모듈을 구현했는데, 이는 포스트에 자세히 소개돼 있습니다.</description>
-        <pubDate>Tue, 25 May 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/deepdive/210525</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/deepdive/210525</guid>
-        
-        <category>Text Style Transfer</category>
-        
-        
-        <category>deepdive</category>
         
       </item>
     
