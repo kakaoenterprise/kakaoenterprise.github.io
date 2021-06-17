@@ -4,12 +4,12 @@ research-area: COMPUTER VISION
 title: "Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing"
 slug: ieeeaccess2021-dasn
 description:
-published-date: 2021-04-30
+published-date: 2021-05-05
 publisher: IEEE Access
 authors:
   - 김태욱:카카오엔터프라이즈
   - aiden:카카오엔터프라이즈
-paper: https://arxiv.org/pdf/2012.01271.pdf
+paper: https://ieeexplore.ieee.org/document/9423958
 code:
 tag:
   - face anti-spoofing

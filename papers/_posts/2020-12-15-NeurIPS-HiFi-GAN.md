@@ -11,6 +11,7 @@ publisher-fullname: Neural Information Processing Systems (NeurIPS)
 authors:
     - henry:카카오엔터프라이즈
     - jay:카카오엔터프라이즈
+    - strom:카카오엔터프라이즈
 paper: https://papers.nips.cc/paper/2020/file/c5d736809766d46260d816d8dbc9eb44-Paper.pdf
 code: https://github.com/jik876/hifi-gan
 tag:

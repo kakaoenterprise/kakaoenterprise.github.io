@@ -4,7 +4,7 @@ research-area: NLP
 title: "Korean Erroneous Sentence Classification with Integrated Eojeol Embedding"
 slug: ieeeaccess2021-iee
 description:
-published-date: 2021-06-05
+published-date: 2021-06-03
 publisher: IEEE Access
 authors:
   - heuristic:카카오엔터프라이즈
