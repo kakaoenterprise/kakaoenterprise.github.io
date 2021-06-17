@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing | Kakao Enterprise AI Research</title>
+<title>Korean Erroneous Sentence Classification with Integrated Eojeol Embedding | Kakao Enterprise AI Research</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing" />
-<meta name="author" content="김태욱:카카오엔터프라이즈" />
+<meta property="og:title" content="Korean Erroneous Sentence Classification with Integrated Eojeol Embedding" />
+<meta name="author" content="heuristic:카카오엔터프라이즈" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn" />
-<meta property="og:url" content="https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/ieeeaccess2021-iee" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/ieeeaccess2021-iee" />
 <meta property="og:site_name" content="Kakao Enterprise AI Research" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-30T00:00:00-05:00" />
+<meta property="article:published_time" content="2021-06-05T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing" />
+<meta property="twitter:title" content="Korean Erroneous Sentence Classification with Integrated Eojeol Embedding" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"김태욱:카카오엔터프라이즈"},"description":"Abstract","@type":"BlogPosting","headline":"Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing","dateModified":"2021-04-30T00:00:00-05:00","datePublished":"2021-04-30T00:00:00-05:00","url":"https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/ieeeaccess2021-dasn"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"heuristic:카카오엔터프라이즈"},"description":"Abstract","@type":"BlogPosting","headline":"Korean Erroneous Sentence Classification with Integrated Eojeol Embedding","dateModified":"2021-06-05T00:00:00-05:00","datePublished":"2021-06-05T00:00:00-05:00","url":"https://kakaoenterprise.github.io/papers/ieeeaccess2021-iee","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/ieeeaccess2021-iee"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -79,14 +79,14 @@
     <main>
       <article class="post">
   <header class="post-header">
-    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
-    <h1 class="post-title">Suppressing Spoof-irrelevant Factors for Domain-agnostic Face Anti-spoofing</h1>
+    <h4 class="catalogue-research-area">NLP</h4>
+    <h1 class="post-title">Korean Erroneous Sentence Classification with Integrated Eojeol Embedding</h1>
 
     
 
     
 
-    김태욱(카카오엔터프라이즈), 김용현(카카오엔터프라이즈)
+    최동현(카카오엔터프라이즈), 박일남(카카오엔터프라이즈), 신명철(카카오엔터프라이즈), 김응균(카카오엔터프라이즈), 신동렬(성균관대학교)
 
     <h4>
         
@@ -94,12 +94,12 @@
         
     </h4>
 
-    <h4>2021-04-30</h4>
+    <h4>2021-06-05</h4>
 
     
       <div class="link-button-group">
         
-          <a href="https://arxiv.org/pdf/2012.01271.pdf" target="_blank">
+          <a href="https://ieeexplore.ieee.org/document/9446068" target="_blank">
             <button class="link-button">
               <i class="far fa-file-alt"></i> Paper
             </button>
@@ -118,13 +118,13 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>Face anti-spoofing aims to prevent false authentications of face recognition systems by distinguishing whether an image is originated from a human face or a spoof medium. In this work, we note that images from unseen domains having different spoof-irrelevant factors (e.g., background patterns and subject) induce domain shift between source and target distributions. Also, when the same SiFs are shared by the spoof and genuine images, they show a higher level of visual similarity and this hinders accurate face anti-spoofing. Hence, we aim to minimize the discrepancies among different domains via alleviating the effects of SiFs, and achieve improvements in generalization to unseen domains. To realize our goal, we propose a novel method called a Doubly Adversarial Suppression Network (DASN) that is trained to neglect the irrelevant factors and to focus more on faithful task-relevant factors. Our DASN consists of two types of adversarial learning schemes. In the first adversarial learning scheme, multiple SiFs are suppressed by deploying multiple discrimination heads that are trained against an encoder. In the second adversarial learning scheme, each of the discrimination heads is also adversarially trained to suppress a spoof factor, and the group of the secondary spoof classifier and the encoder aims to intensify the spoof factor by overcoming the suppression. We evaluate the proposed method on four public benchmark datasets, and achieve remarkable evaluation results in generalizing to unseen domains. The results demonstrate the effectiveness of the proposed method.</p>
+<p>This paper attempts to analyze the Korean sentence classification system. Sentence classification is the task of classifying an input sentence based on predefined categories. However, spelling or space error contained in the input sentence causes problems in morphological analysis and tokenization. This paper proposes a novel approach of Integrated Eojeol(Korean syntactic word separated by space) Embedding to reduce the effect of poorly analyzed morphemes on sentence classification. The paper also proposes two noise insertion methods that further improve classification performance. Our evaluation results indicate that by applying the proposed methods on the existing sentence classifiers, the sentence classification accuracy on erroneous sentences is increased by 8% to 15%.</p>
 
 <p><br /></p>
 
-<p><img src="/assets/img/2021-04-30-IEEEAccess-DASN/001.png" width="" align="" /></p>
+<p><img src="/assets/img/2021-06-05-IEEEAccess-IEE/001.png" width="55%" align="" /></p>
 
-<p><em class="center">[ Figure 1 ] Overview of DASN</em></p>
+<p><em class="center">[ Figure 1 ] Network architecture to get the proposed integrated eojeol embedding </em></p>
 
   </div>
 
@@ -132,7 +132,7 @@
 
   <div class="post-tag-box-container">
     
-      <div class="post-tag-box">#face anti-spoofing</div>
+      <div class="post-tag-box">#sentence classfication</div>
     
   </div>
 </article>
