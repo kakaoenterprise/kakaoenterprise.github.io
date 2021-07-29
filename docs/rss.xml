@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 연구 성과를 공개하는 리서치 플랫폼</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Jul 2021 01:36:05 -0500</pubDate>
-    <lastBuildDate>Thu, 29 Jul 2021 01:36:05 -0500</lastBuildDate>
+    <pubDate>Thu, 29 Jul 2021 03:34:54 -0500</pubDate>
+    <lastBuildDate>Thu, 29 Jul 2021 03:34:54 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -83,7 +83,7 @@
     
       <item>
         <title>텍스트 요약 모델 성능 평가를 위한 새로운 척도, RDASS를 소개합니다.</title>
-        <description></description>
+        <description>더 나은 성능의 요약 모델을 만들려면 모델로부터 자동으로 생성된 요약문을 어느 정도로 신뢰할 수 있는지 판별하기 위한 적절한 평가 방법이 있어야 합니다. 문제는 가장 보편적으로 쓰이는 성능 평가 척도가 모델의 성능을 제대로 평가하지 못한다는 거죠. 이 문제를 해결하기 위해 카카오엔터프라이즈가 카카오, 고려대학교, 한신대학교와 연구팀을 꾸리고 관련 주제로 연구를 하게 됐습니다.</description>
         <pubDate>Thu, 29 Jul 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/deepdive/210729</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/deepdive/210729</guid>

@@ -420,6 +420,22 @@
 	</url>
 	
 	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/201117</loc>
+		
+		<lastmod>2020-11-17T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
 		<loc>https://kakaoenterprise.github.io/papers/emnlp2020-stable-zero-shot-nmt</loc>
 		
 		<lastmod>2020-11-16T00:00:00-06:00</lastmod>
@@ -487,6 +503,22 @@
 		<loc>https://kakaoenterprise.github.io/papers/interspeech2020-jdi-t</loc>
 		
 		<lastmod>2020-10-26T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/201020</loc>
+		
+		<lastmod>2020-10-20T00:00:00-05:00</lastmod>
 		
 
 		
@@ -583,6 +615,22 @@
 		<loc>https://kakaoenterprise.github.io/papers/cvpr2020-groupface</loc>
 		
 		<lastmod>2020-06-14T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/200507</loc>
+		
+		<lastmod>2020-05-07T00:00:00-05:00</lastmod>
 		
 
 		
