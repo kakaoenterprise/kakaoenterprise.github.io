@@ -596,6 +596,22 @@
 	</url>
 	
 	<url>
+		<loc>https://kakaoenterprise.github.io/deepdive/200616</loc>
+		
+		<lastmod>2020-06-16T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
 		<loc>https://kakaoenterprise.github.io/papers/cvpr2020-deep-metric-learning</loc>
 		
 		<lastmod>2020-06-14T00:00:00-05:00</lastmod>
