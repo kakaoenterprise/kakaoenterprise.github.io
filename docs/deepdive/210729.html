@@ -115,11 +115,11 @@
 
 <p>하지만 새롭게 생성되는 콘텐츠의 양은 사람이 통제할 수 없을 정도로 매우 방대합니다. 대단히 많은 문서를 빠르고 효과적으로 처리하기 위한 목적으로 본문의 핵심 내용을 자동으로 요약해주는 기술의 중요성이 점차 강조되는 건 바로 이 때문입니다. 관련 자연어처리 연구 과제로는 원본 문서를 참고해 짧은 분량의 텍스트를 생성하는 텍스트 요약<sup>text summarization</sup>이 있습니다.</p>
 
-<p>텍스트 요약 모델의 작동 방식은 크게 2가지로 나눠볼 수 있습니다. 1)문서에서 뽑은 단어를 조합해 문장을 생성하는 추출요약(extraction)과 2)의미가 바뀌지 않은 선에서 문서에서 쓰이지 않은 단어 또는 표현을 이용해 문장을 만들어내는 생성요약(abstraction), 이렇게 말이죠<a href="#be3e:rf:1" class="reference" id="be3e:rf-back:1">[1]</a>. 추출요약 방식으로 선별된 단어가 문서를 충분히 대표하지 못하거나, 선별된 단어 간의 호응이 떨어지는 문제를 해결하기 위해 나온 생성요약 쪽의 연구가 현재는 더 활발하게 이뤄지고 있습니다.</p>
+<p>텍스트 요약 모델의 작동 방식은 크게 2가지로 나눠볼 수 있습니다. 1)문서에서 뽑은 단어를 조합해 문장을 생성하는 추출요약(extraction)과 2)의미가 바뀌지 않은 선에서 문서에서 쓰이지 않은 단어 또는 표현을 이용해 문장을 만들어내는 생성요약(abstraction), 이렇게 말이죠<a href="#6732:rf:1" class="reference" id="6732:rf-back:1">[1]</a>. 추출요약 방식으로 선별된 단어가 문서를 충분히 대표하지 못하거나, 선별된 단어 간의 호응이 떨어지는 문제를 해결하기 위해 나온 생성요약 쪽의 연구가 현재는 더 활발하게 이뤄지고 있습니다.</p>
 
 <p>하지만 최신의 요약 모델은 과거 추출요약의 정확도조차 달성하지 못하고 있습니다. 더 나은 성능의 요약 모델을 만들려면 모델로부터 자동으로 생성된 요약문을 어느 정도로 신뢰할 수 있는지 판별하기 위한 적절한 평가 방법이 있어야 합니다. 문제는 가장 보편적으로 쓰이는 성능 평가 척도가 모델의 성능을 제대로 평가하지 못한다는 거죠. 모델의 성능을 제대로 평가할 수 있어야 모델 성능 개선을 위한 다양한 시도를 할 수 있다는 점에서 새로운 평가 척도를 만들려는 연구 또한 자연어처리 분야에서 중요하게 다뤄지고 있습니다.</p>
 
-<p>이러한 연구 흐름에 발맞춰 카카오(이동엽)와 카카오엔터프라이즈 (신명철, 조승우, 고병일, 이다니엘, 김응균), 고려대학교 (황태선), 한신대학교(조재춘)는 텍스트 요약 모델의 성능을 평가할 새로운 척도인 RDASS<sup>Reference and Document Aware Semantic Score</sup><a href="#be3e:rf:2" class="reference" id="be3e:rf-back:2">[2]</a>를 공동 제안했습니다. 이 성과를 정리한 논문이 COLING<sup>International Conference on Computational Linguistics</sup><sup><a href="#be3e:fn:1" class="footnote" id="be3e:fn-back:1">1</a></sup>에 게재 승인되기도 했습니다.</p>
+<p>이러한 연구 흐름에 발맞춰 카카오(이동엽)와 카카오엔터프라이즈 (신명철, 조승우, 고병일, 이다니엘, 김응균), 고려대학교 (황태선), 한신대학교(조재춘)는 텍스트 요약 모델의 성능을 평가할 새로운 척도인 RDASS<sup>Reference and Document Aware Semantic Score</sup><a href="#6732:rf:2" class="reference" id="6732:rf-back:2">[2]</a>를 공동 제안했습니다. 이 성과를 정리한 논문이 COLING<sup>International Conference on Computational Linguistics</sup><sup><a href="#6732:fn:1" class="footnote" id="6732:fn-back:1">1</a></sup>에 게재 승인되기도 했습니다.</p>
 
 <p>이번 글에서는 기존 성능 평가 척도인 ROUGE의 한계와 새롭게 제안한 RDASS의 계산 과정, RDASS의 타당성을 검증하는 실험 결과에 대해 상세히 다뤄보고자 합니다. 논문 제1저자인 카카오 소속의 이동엽 연구원을 만나서 자세한 이야기를 들어봤습니다.</p>
 
@@ -141,7 +141,7 @@
 
 <p>자연어처리 모델의 성능은 사람이 문장을 직접 읽고 산출한 점수(manual)나 알고리즘으로 계산한 값(automatic)으로 비교해볼 수 있습니다. 많은 연구에서는 상대적으로 저렴한 비용에 빠르게 성능을 비교할 수 있다는 이유로 자동화 방식을 선호합니다. 문서 요약 분야에서도 관련 전문가가 일일이 검토하는 대신, 자동화 방식으로 모델의 성능을 평가하는 방법이 제안됐습니다.</p>
 
-<p>자동화 방식 중 가장 널리 쓰이는 ROUGE<a href="#be3e:rf:3" class="reference" id="be3e:rf-back:3">[3]</a>는 전문가가 만들어 놓은 정답 요약문과 모델이 생성한 문장의 유사도를 비교합니다. 이를 위해 두 문장 간에 n-gram<sup><a href="#be3e:fn:2" class="footnote" id="be3e:fn-back:2">2</a></sup>이 <a href="http://www.ccs.neu.edu/home/vip/teach/DMcourse/5_topicmodel_summ/notes_slides/What-is-ROUGE.pdf">얼마나 많이 겹치는지를 계산</a>합니다. 일반적으로 0~1 사이의 숫자나, 여기에 100을 곱해준 값을 이용해 유사도를 나타내며, 이 숫자는 두 문장의 철자의 일치하는 정도를 나타냅니다. 따라서 숫자가 클수록 모델의 성능이 좋다고 보면 됩니다.</p>
+<p>자동화 방식 중 가장 널리 쓰이는 ROUGE<a href="#6732:rf:3" class="reference" id="6732:rf-back:3">[3]</a>는 전문가가 만들어 놓은 정답 요약문과 모델이 생성한 문장의 유사도를 비교합니다. 이를 위해 두 문장 간에 n-gram<sup><a href="#6732:fn:2" class="footnote" id="6732:fn-back:2">2</a></sup>이 <a href="http://www.ccs.neu.edu/home/vip/teach/DMcourse/5_topicmodel_summ/notes_slides/What-is-ROUGE.pdf">얼마나 많이 겹치는지를 계산</a>합니다. 일반적으로 0~1 사이의 숫자나, 여기에 100을 곱해준 값을 이용해 유사도를 나타내며, 이 숫자는 두 문장의 철자의 일치하는 정도를 나타냅니다. 따라서 숫자가 클수록 모델의 성능이 좋다고 보면 됩니다.</p>
 
 <p>하지만 인간이 실제로 문장을 요약하는 방식을 생각해 본다면 ROGUE의 한계는 너무나 명확합니다. 요약의 핵심은 1)문서에서 핵심 내용을 잘 선택했는가(content selection), 2)문서에 쓰이지 않은 다른 표현이지만 같은 의미를 잘 나타내는가(paraphrase)입니다. 하지만 ROGUE는 주어진 두 문장의 형태학적 유사도만 높다면 의미적 유사도가 낮더라도 더 높은 점수를, 반대의 상황에서는 더 낮은 점수를 부여하며 위 2가지 핵심을 모두 놓칩니다.</p>
 
@@ -151,13 +151,13 @@
 
 <p><em class="center">[ 그림 1 ] ROGUE는 두 대상 간의 형태학적 유사성만을 평가 기준으로 삼는다.</em></p>
 
-<p>ROGUE의 한계는 한국어 문서 요약 태스크에서 더 도드라져 보입니다. 어근<sup><a href="#be3e:fn:3" class="footnote" id="be3e:fn-back:3">3</a></sup>에 붙은 다양한 접사<sup><a href="#be3e:fn:4" class="footnote" id="be3e:fn-back:4">4</a></sup>가 단어의 역할(의미, 문법적 기능)을 결정하는 언어적 특성을 갖춘 한국어에서는 복잡한 단어 변형이 빈번하게 일어나기 때문이죠. [그림 2]는 드라마 ‘슬기로운 의사생활’ 기사를 요약한 정답 문장과 모델이 생성한 요약 문장을 비교한 예시입니다. ROGUE는 정답 문장과 비교해 철자가 겨우 3개만 다른 오답 문장에 더 높은 점수를 부여합니다.</p>
+<p>ROGUE의 한계는 한국어 문서 요약 태스크에서 더 도드라져 보입니다. 어근<sup><a href="#6732:fn:3" class="footnote" id="6732:fn-back:3">3</a></sup>에 붙은 다양한 접사<sup><a href="#6732:fn:4" class="footnote" id="6732:fn-back:4">4</a></sup>가 단어의 역할(의미, 문법적 기능)을 결정하는 언어적 특성을 갖춘 한국어에서는 복잡한 단어 변형이 빈번하게 일어나기 때문이죠. [그림 2]는 드라마 ‘슬기로운 의사생활’ 기사를 요약한 정답 문장과 모델이 생성한 요약 문장을 비교한 예시입니다. ROGUE는 정답 문장과 비교해 철자가 겨우 3개만 다른 오답 문장에 더 높은 점수를 부여합니다.</p>
 
 <p><img src="/assets/img/2021-07-29-210729/002.png" width="95%" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] ROGUE는 특히 한국어 요약 모델 성능 평가에 취약하다.</em></p>
 
-<p>이런 한계를 극복하기 위해 ParaEval<a href="#be3e:rf:4" class="reference" id="be3e:rf-back:4">[4]</a>, <a href="https://github.com/ng-j-p/rouge-we">ROUGE-WE</a><a href="#be3e:rf:5" class="reference" id="be3e:rf-back:5">[5]</a>, <a href="https://github.com/kavgan/ROUGE-2.0">ROGUE2.0</a><a href="#be3e:rf:6" class="reference" id="be3e:rf-back:6">[6]</a> 등의 척도가 새롭게 제안됐습니다. 하지만 이 방법론을 적용하려면 사람이 직접 방대한 크기의 동의어(유의어) 사전을 따로 구축해야 한다는 제약이 따릅니다.</p>
+<p>이런 한계를 극복하기 위해 ParaEval<a href="#6732:rf:4" class="reference" id="6732:rf-back:4">[4]</a>, <a href="https://github.com/ng-j-p/rouge-we">ROUGE-WE</a><a href="#6732:rf:5" class="reference" id="6732:rf-back:5">[5]</a>, <a href="https://github.com/kavgan/ROUGE-2.0">ROGUE2.0</a><a href="#6732:rf:6" class="reference" id="6732:rf-back:6">[6]</a> 등의 척도가 새롭게 제안됐습니다. 하지만 이 방법론을 적용하려면 사람이 직접 방대한 크기의 동의어(유의어) 사전을 따로 구축해야 한다는 제약이 따릅니다.</p>
 
 <p>또 한편, 공동 연구팀은 사람마다 요약 방식이 달라 하나의 정답 요약문만을 기준으로 요약 모델을 평가하는 데에는 한계가 있다고 판단했습니다. 이에 요약 모델이 문서의 내용을 얼마나 잘 반영하는지를 참고해 성능을 평가할 필요가 있다고 봤습니다.</p>
 
@@ -171,12 +171,12 @@
 
 <p>기계가 생성한 문장과 정답 문장의 유사도 계산을 위해서는, 먼저 각 문장을 고정된 크기의 벡터로 전환해야 합니다. 이 전환 기법을 문장 임베딩<sup>sentence embedding</sup>이라고 부릅니다. 문장을 구성하는 각 단어를 BERT로 출력한 결과값의 평균, 또는 모든 단어의 의미를 응축한 특별 분류 토큰[CLS<sup>special classification token</sup>]의 출력값 문장 임베딩으로 활용하는 방식이 보편적입니다.</p>
 
-<p>하지만 이렇게 생성한 문장 임베딩이 요약 모델이 안정적인 성능을 내는 데 항상 유효하지는 않습니다. 입력 질의<sup>query</sup>와 유사한 문서를 찾아주는 검색<sup>retrieval</sup>과 같은 태스크에서 GLOVE<a href="#be3e:rf:7" class="reference" id="be3e:rf-back:7">[7]</a><sup><a href="#be3e:fn:5" class="footnote" id="be3e:fn-back:5">5</a></sup>로 생성한 단어별 임베딩 벡터의 평균값보다 되려 더 낮은 성능을 낼 수 있다는 연구 결과가 이를 뒷받침하죠<sup><a href="#be3e:fn:6" class="footnote" id="be3e:fn-back:6">6</a></sup>. 이에 현재는 BERT보다 문장의 의미를 더 잘 추출하는 Sentence-BERT(이하 SBERT)<a href="#be3e:rf:8" class="reference" id="be3e:rf-back:8">[8]</a>의 출력값을 문장 임베딩으로 많이 활용합니다.</p>
+<p>하지만 이렇게 생성한 문장 임베딩이 요약 모델이 안정적인 성능을 내는 데 항상 유효하지는 않습니다. 입력 질의<sup>query</sup>와 유사한 문서를 찾아주는 검색<sup>retrieval</sup>과 같은 태스크에서 GLOVE<a href="#6732:rf:7" class="reference" id="6732:rf-back:7">[7]</a><sup><a href="#6732:fn:5" class="footnote" id="6732:fn-back:5">5</a></sup>로 생성한 단어별 임베딩 벡터의 평균값보다 되려 더 낮은 성능을 낼 수 있다는 연구 결과가 이를 뒷받침하죠<sup><a href="#6732:fn:6" class="footnote" id="6732:fn-back:6">6</a></sup>. 이에 현재는 BERT보다 문장의 의미를 더 잘 추출하는 Sentence-BERT(이하 SBERT)<a href="#6732:rf:8" class="reference" id="6732:rf-back:8">[8]</a>의 출력값을 문장 임베딩으로 많이 활용합니다.</p>
 
-<p>공동 연구팀은 병렬 말뭉치로 구성된 NLI<sup>Natural language Inference</sup><sup><a href="#be3e:fn:7" class="footnote" id="be3e:fn-back:7">7</a></sup>와 STS<sup>Semantic Textual Similarity</sup><sup><a href="#be3e:fn:8" class="footnote" id="be3e:fn-back:8">8</a></sup> 벤치마크 데이터셋을 이용해 SBERT를 사전훈련했습니다. 그러고 나서, 정답 문장과 생성 문장의 유사도와 문서와 생성 문장 간의 유사도를 모두 고려할 수 있도록 사전훈련된 SBERT(이하 P-SBERT)와 요약 모델을 동시에 미세조정<sup>fine-tuning</sup>했습니다. 학습에 이용되는 트리플렛 손실 함수<sup>triplet loss function</sup>는 범주가 같은 두 문장 벡터와 범주가 다른 두 문장 벡터 간의 상대적인 관계를 고려하는데, 이 과정을 좀 더 자세히 설명하면 다음과 같습니다.</p>
+<p>공동 연구팀은 병렬 말뭉치로 구성된 NLI<sup>Natural language Inference</sup><sup><a href="#6732:fn:7" class="footnote" id="6732:fn-back:7">7</a></sup>와 STS<sup>Semantic Textual Similarity</sup><sup><a href="#6732:fn:8" class="footnote" id="6732:fn-back:8">8</a></sup> 벤치마크 데이터셋을 이용해 SBERT를 사전훈련했습니다. 그러고 나서, 정답 문장과 생성 문장의 유사도와 문서와 생성 문장 간의 유사도를 모두 고려할 수 있도록 사전훈련된 SBERT(이하 P-SBERT)와 요약 모델을 동시에 미세조정<sup>fine-tuning</sup>했습니다. 학습에 이용되는 트리플렛 손실 함수<sup>triplet loss function</sup>는 범주가 같은 두 문장 벡터와 범주가 다른 두 문장 벡터 간의 상대적인 관계를 고려하는데, 이 과정을 좀 더 자세히 설명하면 다음과 같습니다.</p>
 
 <ol>
-  <li>요약 모델이 생성한 문장의 벡터(H<sub>p</sub>), P-SBERT로 추출한 정답 문장 벡터(V<sub>p</sub><sup>r</sup>), P-SBERT로 추출한 임의의 오답 문장<sup><a href="#be3e:fn:9" class="footnote" id="be3e:fn-back:9">9</a></sup> 벡터(V<sub>n</sub><sup>r</sup>)로 구성된 트리플렛을 구성합니다.</li>
+  <li>요약 모델이 생성한 문장의 벡터(H<sub>p</sub>), P-SBERT로 추출한 정답 문장 벡터(V<sub>p</sub><sup>r</sup>), P-SBERT로 추출한 임의의 오답 문장<sup><a href="#6732:fn:9" class="footnote" id="6732:fn-back:9">9</a></sup> 벡터(V<sub>n</sub><sup>r</sup>)로 구성된 트리플렛을 구성합니다.</li>
   <li>모델이 생성한 요약 문장과 정답 문장간의 거리인 d(H<sub>p</sub>,V<sub>p</sub><sup>r</sup>)와 모델이 요약한 문장과 오답 문장의 거리 d(H<sub>p</sub>,V<sub>n</sub><sup>r</sup>)를 계산합니다.</li>
   <li>트리플렛 손실 함수는 d(H<sub>p</sub>,V<sub>p</sub><sup>r</sup>)가 0에 수렴하도록, d(H<sub>p</sub>,V<sub>n</sub><sup>r</sup>)는 1에 수렴하도록, 동시에 그 상대적인 거리 차(d(H<sub>p</sub>,V<sub>n</sub><sup>r</sup>)-d(H<sub>p</sub>,V<sub>p</sub><sup>r</sup>))가 임의로 정한 마진값보다는 커지도록 합니다.</li>
 </ol>
@@ -187,7 +187,7 @@
 
 <p>RDASS는 &lt;본문, 정답 요약 문장, 예측 요약 문장&gt; 세 개의 관계를 동시에 고려하도록 고안됐습니다. RDASS도 0~1 사이의 숫자 값을 가지며 숫자가 높을수록 더 높은 성능을 가리킵니다. 계산 과정([그림 3])은 다음과 같습니다.</p>
 
-<p>사전훈련과 미세조정을 모두 마친 버전인 FWA-SBERT를 이용해 문서(d), 정답 요약 문장(r), 모델이 생성한 요약 문장(p) 각각의 벡터 V<sub>d</sub>, V<sub>p</sub>, V<sub>r</sub>를 추출합니다. 그런 뒤, &lt; V<sub>p</sub>, V<sub>r</sub> &gt;와 &lt; V<sub>p</sub>, V<sub>d</sub> &gt; 각각의 코사인 유사도<sup>cosine similarity</sup><sup><a href="#be3e:fn:10" class="footnote" id="be3e:fn-back:10">10</a></sup>인 s(p, r), s(p, d)를 계산합니다. 마지막으로, 두 유사도의 평균값을 냅니다.</p>
+<p>사전훈련과 미세조정을 모두 마친 버전인 FWA-SBERT를 이용해 문서(d), 정답 요약 문장(r), 모델이 생성한 요약 문장(p) 각각의 벡터 V<sub>d</sub>, V<sub>p</sub>, V<sub>r</sub>를 추출합니다. 그런 뒤, &lt; V<sub>p</sub>, V<sub>r</sub> &gt;와 &lt; V<sub>p</sub>, V<sub>d</sub> &gt; 각각의 코사인 유사도<sup>cosine similarity</sup><sup><a href="#6732:fn:10" class="footnote" id="6732:fn-back:10">10</a></sup>인 s(p, r), s(p, d)를 계산합니다. 마지막으로, 두 유사도의 평균값을 냅니다.</p>
 
 <p><img src="/assets/img/2021-07-29-210729/003.png" width="50%" align="" /></p>
 
@@ -197,13 +197,13 @@
 
 <h1 id="실험-환경">실험 환경</h1>
 
-<p>공동 연구팀은 사전학습된 BERT를 인코더로, Transformer를 디코더로 구현하고 여러 태스크<sup><a href="#be3e:fn:11" class="footnote" id="be3e:fn-back:11">11</a></sup>에서 SOTA(현재 최고 수준의) 성능을 달성한 BERTSUMABS<sup><a href="#be3e:fn:12" class="footnote" id="be3e:fn-back:12">12</a></sup>를 생성 요약 모델로 사용했습니다.</p>
+<p>공동 연구팀은 사전학습된 BERT를 인코더로, Transformer를 디코더로 구현하고 여러 태스크<sup><a href="#6732:fn:11" class="footnote" id="6732:fn-back:11">11</a></sup>에서 SOTA(현재 최고 수준의) 성능을 달성한 BERTSUMABS<sup><a href="#6732:fn:12" class="footnote" id="6732:fn-back:12">12</a></sup>를 생성 요약 모델로 사용했습니다.</p>
 
-<p>문장 임베딩 모델로 채택한 SBERT의 훈련을 위해서는 BERT의 사전학습이 필요했습니다. SBERT가 BERT의 출력값을 활용하는 구조로 이뤄져 있기 때문이죠. 다만 한글 데이터셋으로 사전학습된 BERT를 시중에서 구할 수 없었던 공동 연구팀은 160만 개의 문서에서 추출한 2,300만 개 문장의 한국어 데이터셋으로 BERT를 직접 사전학습했습니다. 그러고 나서 카카오브레인에서 최근 공개한 한국어 NLI 및 STS 데이터셋<a href="#be3e:rf:9" class="reference" id="be3e:rf-back:9">[9]</a><sup><a href="#be3e:fn:13" class="footnote" id="be3e:fn-back:13">13</a></sup>으로 SBERT를 따로 사전훈련했습니다. P-SBERT의 미세조정과 검증에는 카카오엔터프라이즈가 자체 수집한 정치, 경제, 문화 등 10개 주제와 관련된 뉴스(문서)와 각 뉴스를 요약한 문장을 한 쌍으로 구성해 만든 300만 개의 병렬 데이터셋을 이용했습니다.</p>
+<p>문장 임베딩 모델로 채택한 SBERT의 훈련을 위해서는 BERT의 사전학습이 필요했습니다. SBERT가 BERT의 출력값을 활용하는 구조로 이뤄져 있기 때문이죠. 다만 한글 데이터셋으로 사전학습된 BERT를 시중에서 구할 수 없었던 공동 연구팀은 160만 개의 문서에서 추출한 2,300만 개 문장의 한국어 데이터셋으로 BERT를 직접 사전학습했습니다. 그러고 나서 카카오브레인에서 최근 공개한 한국어 NLI 및 STS 데이터셋<a href="#6732:rf:9" class="reference" id="6732:rf-back:9">[9]</a><sup><a href="#6732:fn:13" class="footnote" id="6732:fn-back:13">13</a></sup>으로 SBERT를 따로 사전훈련했습니다. P-SBERT의 미세조정과 검증에는 카카오엔터프라이즈가 자체 수집한 정치, 경제, 문화 등 10개 주제와 관련된 뉴스(문서)와 각 뉴스를 요약한 문장을 한 쌍으로 구성해 만든 300만 개의 병렬 데이터셋을 이용했습니다.</p>
 
-<p>공동 연구팀은 &lt;문서, 정답 요약 문장, 예측 요약 문장&gt;으로 구성된 200개의 데이터를 대상으로 ROGUE와 RDASS의 평가 정확도를 비교하는 실험을 진행했습니다. 이들 평가 척도의 객관성을 확보하고자 사람 평가와 얼마나 상관성이 있는지도 측정했습니다. 사람 평가에서는 예측된 요약문이 본문과 얼마나 관련도가 높은지(relevance), 사실 정보에 입각하는지(consistency)<sup><a href="#be3e:fn:14" class="footnote" id="be3e:fn-back:14">14</a></sup>, 문장의 완성도가 높은지(fluency) 등 세 가지 항목을 두고, 모든 사람의 점수(1~5점) 평균값을 각 항목의 점수로 활용했습니다.</p>
+<p>공동 연구팀은 &lt;문서, 정답 요약 문장, 예측 요약 문장&gt;으로 구성된 200개의 데이터를 대상으로 ROGUE와 RDASS의 평가 정확도를 비교하는 실험을 진행했습니다. 이들 평가 척도의 객관성을 확보하고자 사람 평가와 얼마나 상관성이 있는지도 측정했습니다. 사람 평가에서는 예측된 요약문이 본문과 얼마나 관련도가 높은지(relevance), 사실 정보에 입각하는지(consistency)<sup><a href="#6732:fn:14" class="footnote" id="6732:fn-back:14">14</a></sup>, 문장의 완성도가 높은지(fluency) 등 세 가지 항목을 두고, 모든 사람의 점수(1~5점) 평균값을 각 항목의 점수로 활용했습니다.</p>
 
-<p>인간 평가와 자동 평가의 상관성<sup>correlatio</sup> 측정에는 보편적인 기법인 피어슨<sup>Pearson</sup> 상관계수, 켄달<sup>Kendall</sup> (순위) 상관계수를 이용했습니다. 두 변수(RDASS, 사람 평가)의 상관관계를 수치로 계량화한 두 상관계수는 1일수록 양의 상관관계<sup><a href="#be3e:fn:15" class="footnote" id="be3e:fn-back:15">15</a></sup>를, -1일수록 음의 상관관계<sup><a href="#be3e:fn:16" class="footnote" id="be3e:fn-back:16">16</a></sup>를, 0이면 상관관계가 없음을 나타냅니다.</p>
+<p>인간 평가와 자동 평가의 상관성<sup>correlatio</sup> 측정에는 보편적인 기법인 피어슨<sup>Pearson</sup> 상관계수, 켄달<sup>Kendall</sup> (순위) 상관계수를 이용했습니다. 두 변수(RDASS, 사람 평가)의 상관관계를 수치로 계량화한 두 상관계수는 1일수록 양의 상관관계<sup><a href="#6732:fn:15" class="footnote" id="6732:fn-back:15">15</a></sup>를, -1일수록 음의 상관관계<sup><a href="#6732:fn:16" class="footnote" id="6732:fn-back:16">16</a></sup>를, 0이면 상관관계가 없음을 나타냅니다.</p>
 
 <p><br /></p>
 
@@ -229,7 +229,7 @@
 
 <h1 id="향후-계획">향후 계획</h1>
 
-<p>요즘에는 기계가 생성한 요약문의 참 또는 거짓을 판단하는 요소를 반영하는 연구 분야에서 성과가 나고 있습니다<sup><a href="#be3e:fn:17" class="footnote" id="be3e:fn-back:17">17</a></sup>. 지문의 개체<sup>entity</sup>, 전치사 등의 항목에 오류를 주고 이를 복구하는 방법을 배우는 사후 교정 방식<sup>post-editing</sup>의 요약 교정 모델<a href="#be3e:rf:10" class="reference" id="be3e:rf-back:10">[10]</a>과 모델이 예측한 요약문으로 질문지를 생성한 뒤 정답을 예측 요약문에서 찾은 점수와 본문에서 찾은 점수를 비교해서 생성된 요약문의 사실성을 판단하는 평가 척도<a href="#be3e:rf:11" class="reference" id="be3e:rf-back:11">[11]</a>가 새롭게 제안되기도 했습니다. 공동 연구팀 또한 최근 연구 변화 흐름에 따라 참/거짓 오류를 줄여서 사실에 입각한 요약 문장을 생성하는 모델을 연구∙개발할 계획입니다.</p>
+<p>요즘에는 기계가 생성한 요약문의 참 또는 거짓을 판단하는 요소를 반영하는 연구 분야에서 성과가 나고 있습니다<sup><a href="#6732:fn:17" class="footnote" id="6732:fn-back:17">17</a></sup>. 지문의 개체<sup>entity</sup>, 전치사 등의 항목에 오류를 주고 이를 복구하는 방법을 배우는 사후 교정 방식<sup>post-editing</sup>의 요약 교정 모델<a href="#6732:rf:10" class="reference" id="6732:rf-back:10">[10]</a>과 모델이 예측한 요약문으로 질문지를 생성한 뒤 정답을 예측 요약문에서 찾은 점수와 본문에서 찾은 점수를 비교해서 생성된 요약문의 사실성을 판단하는 평가 척도<a href="#6732:rf:11" class="reference" id="6732:rf-back:11">[11]</a>가 새롭게 제안되기도 했습니다. 공동 연구팀 또한 최근 연구 변화 흐름에 따라 참/거짓 오류를 줄여서 사실에 입각한 요약 문장을 생성하는 모델을 연구∙개발할 계획입니다.</p>
 
 <p>이동엽 카카오 연구원은 “모델의 성능 평가 척도는 더 나은 요약 모델 개발에 매우 중요한 요소 중 하나”라며 “영어 텍스트 요약 태스크에서의 추가 검증 등 RDASS의 상대적 효용성을 입증하는 실험도 추가할 예정”이라고 말했습니다.</p>
 
@@ -237,52 +237,52 @@
 
 <h1 id="참고문헌">참고문헌</h1>
 
-<p><a id="be3e:rf:1" class="referencebody"><a href="#be3e:rf-back:1" class="backlink">[1]</a>  <a href="http://koreascience.or.kr/article/JAKO202014264110274.pdf">한국어 기술문서 분석을 위한 BERT 기반의 분류모델</a> (2020) by 황상흠, 김도현, in 한국전자거래학회지 제25권 제1호</a><br /></p>
+<p><a id="6732:rf:1" class="referencebody"><a href="#6732:rf-back:1" class="backlink">[1]</a>  <a href="http://koreascience.or.kr/article/JAKO202014264110274.pdf">한국어 기술문서 분석을 위한 BERT 기반의 분류모델</a> (2020) by 황상흠, 김도현, in 한국전자거래학회지 제25권 제1호</a><br /></p>
 
-<p><a id="be3e:rf:2" class="referencebody"><a href="#be3e:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/2020.coling-main.491.pdf">Reference and Document Aware Semantic Evaluation Methods for Korean Language Summarization</a> (2020) by Dongyub Lee, Myeong Cheol Shin, Taesun Whang, Seungwoo Cho, Byeongil Ko, Daniel Lee, EungGyun Kim, Jaechoon Jo in COLING</a><br /></p>
+<p><a id="6732:rf:2" class="referencebody"><a href="#6732:rf-back:2" class="backlink">[2]</a>  <a href="https://www.aclweb.org/anthology/2020.coling-main.491.pdf">Reference and Document Aware Semantic Evaluation Methods for Korean Language Summarization</a> (2020) by Dongyub Lee, Myeong Cheol Shin, Taesun Whang, Seungwoo Cho, Byeongil Ko, Daniel Lee, EungGyun Kim, Jaechoon Jo in COLING</a><br /></p>
 
-<p><a id="be3e:rf:3" class="referencebody"><a href="#be3e:rf-back:3" class="backlink">[3]</a>  <a href="https://www.aclweb.org/anthology/W04-1013.pdf">ROUGE: A Package for Automatic Evaluation of Summaries</a> (2004) by Chin-Yew Lin in ACL</a><br /></p>
+<p><a id="6732:rf:3" class="referencebody"><a href="#6732:rf-back:3" class="backlink">[3]</a>  <a href="https://www.aclweb.org/anthology/W04-1013.pdf">ROUGE: A Package for Automatic Evaluation of Summaries</a> (2004) by Chin-Yew Lin in ACL</a><br /></p>
 
-<p><a id="be3e:rf:4" class="referencebody"><a href="#be3e:rf-back:4" class="backlink">[4]</a>  <a href="https://www.aclweb.org/anthology/N06-1057.pdf">ParaEval: Using Paraphrases to Evaluate Summaries Automatically</a> (2006) by Liang Zhou, Chin-Yew Lin, Dragos Stefan Munteanu, Eduard Hovy in ACL</a><br /></p>
+<p><a id="6732:rf:4" class="referencebody"><a href="#6732:rf-back:4" class="backlink">[4]</a>  <a href="https://www.aclweb.org/anthology/N06-1057.pdf">ParaEval: Using Paraphrases to Evaluate Summaries Automatically</a> (2006) by Liang Zhou, Chin-Yew Lin, Dragos Stefan Munteanu, Eduard Hovy in ACL</a><br /></p>
 
-<p><a id="be3e:rf:5" class="referencebody"><a href="#be3e:rf-back:5" class="backlink">[5]</a>  <a href="https://www.aclweb.org/anthology/D15-1222.pdf">Better Summarization Evaluation with Word Embeddings for ROUGE</a> (2015) by Jun-Ping Ng, Viktoria Abrecht in ACL</a><br /></p>
+<p><a id="6732:rf:5" class="referencebody"><a href="#6732:rf-back:5" class="backlink">[5]</a>  <a href="https://www.aclweb.org/anthology/D15-1222.pdf">Better Summarization Evaluation with Word Embeddings for ROUGE</a> (2015) by Jun-Ping Ng, Viktoria Abrecht in ACL</a><br /></p>
 
-<p><a id="be3e:rf:6" class="referencebody"><a href="#be3e:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/pdf/1803.01937.pdf">ROUGE 2.0: Updated and Improved Measures for Evaluation of Summarization Tasks</a> (2018) by Kavita Ganesan in ACL</a><br /></p>
+<p><a id="6732:rf:6" class="referencebody"><a href="#6732:rf-back:6" class="backlink">[6]</a>  <a href="https://arxiv.org/pdf/1803.01937.pdf">ROUGE 2.0: Updated and Improved Measures for Evaluation of Summarization Tasks</a> (2018) by Kavita Ganesan in ACL</a><br /></p>
 
-<p><a id="be3e:rf:7" class="referencebody"><a href="#be3e:rf-back:7" class="backlink">[7]</a>  <a href="https://www.aclweb.org/anthology/D14-1162.pdf">GloVe: Global Vectors for Word Representation</a> (2014) by Jeffrey Pennington, Richard Socher, Christopher D. Manning in EMNLP</a><br /></p>
+<p><a id="6732:rf:7" class="referencebody"><a href="#6732:rf-back:7" class="backlink">[7]</a>  <a href="https://www.aclweb.org/anthology/D14-1162.pdf">GloVe: Global Vectors for Word Representation</a> (2014) by Jeffrey Pennington, Richard Socher, Christopher D. Manning in EMNLP</a><br /></p>
 
-<p><a id="be3e:rf:8" class="referencebody"><a href="#be3e:rf-back:8" class="backlink">[8]</a>  <a href="https://www.aclweb.org/anthology/D19-1410.pdf">Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks</a> (2019) by Nils Reimers,  Iryna Gurevych in EMNLP</a><br /></p>
+<p><a id="6732:rf:8" class="referencebody"><a href="#6732:rf-back:8" class="backlink">[8]</a>  <a href="https://www.aclweb.org/anthology/D19-1410.pdf">Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks</a> (2019) by Nils Reimers,  Iryna Gurevych in EMNLP</a><br /></p>
 
-<p><a id="be3e:rf:9" class="referencebody"><a href="#be3e:rf-back:9" class="backlink">[9]</a>  <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.39/">KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding</a> (2020) by Jiyeon Ham, Yo Joong Choe, Kyubyong Park, Ilji Choi, Hyungjoon Soh in EMNLP</a><br /></p>
+<p><a id="6732:rf:9" class="referencebody"><a href="#6732:rf-back:9" class="backlink">[9]</a>  <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.39/">KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding</a> (2020) by Jiyeon Ham, Yo Joong Choe, Kyubyong Park, Ilji Choi, Hyungjoon Soh in EMNLP</a><br /></p>
 
-<p><a id="be3e:rf:10" class="referencebody"><a href="#be3e:rf-back:10" class="backlink">[10]</a>  <a href="https://www.aclweb.org/anthology/2020.emnlp-main.506.pdf">Factual Error Correction for Abstractive Summarization Models</a> (2020) by Meng Cao, Yue Dong, Jiapeng Wu, Jackie Chi Kit Cheung in EMNLP</a><br /></p>
+<p><a id="6732:rf:10" class="referencebody"><a href="#6732:rf-back:10" class="backlink">[10]</a>  <a href="https://www.aclweb.org/anthology/2020.emnlp-main.506.pdf">Factual Error Correction for Abstractive Summarization Models</a> (2020) by Meng Cao, Yue Dong, Jiapeng Wu, Jackie Chi Kit Cheung in EMNLP</a><br /></p>
 
-<p><a id="be3e:rf:11" class="referencebody"><a href="#be3e:rf-back:11" class="backlink">[11]</a>  <a href="https://www.aclweb.org/anthology/2020.acl-main.450.pdf">Asking and Answering Questions to Evaluate the Factual Consistency of Summaries</a> (2020) by Alex Wang, Kyunghyun Cho, Mike Lewis in ACL</a><br /></p>
+<p><a id="6732:rf:11" class="referencebody"><a href="#6732:rf-back:11" class="backlink">[11]</a>  <a href="https://www.aclweb.org/anthology/2020.acl-main.450.pdf">Asking and Answering Questions to Evaluate the Factual Consistency of Summaries</a> (2020) by Alex Wang, Kyunghyun Cho, Mike Lewis in ACL</a><br /></p>
 
-<p><a id="be3e:rf:12" class="referencebody"><a href="#be3e:rf-back:12" class="backlink">[12]</a>  <a href="https://www.aclweb.org/anthology/D19-1387/">Text Summarization with Pretrained Encoders</a> (2019) by Yang Liu, Mirella Lapata in EMNLP</a><br /></p>
+<p><a id="6732:rf:12" class="referencebody"><a href="#6732:rf-back:12" class="backlink">[12]</a>  <a href="https://www.aclweb.org/anthology/D19-1387/">Text Summarization with Pretrained Encoders</a> (2019) by Yang Liu, Mirella Lapata in EMNLP</a><br /></p>
 
 <p><br /></p>
 
 <h1 id="각주">각주</h1>
 
 <ol class="footnotelist">
-<li id="be3e:fn:1" class="footnotebody" value="1"><p> 자연어처리 및 언어학을 대표하는 국제 학회로, 2020년에는 제출된 2,319편의 논문 중 644개의 논문이 통과됐다. <a href="#be3e:fn-back:1" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:2" class="footnotebody" value="2"><p>  문장을 특정 단위를 기준으로 N개씩 분할해서 얻은 결과물을 가리킨다. 이 단위는 형태소, 또는 어절(띄어쓰기 기준) 등이 될 수 있다. <a href="#be3e:fn-back:2" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:3" class="footnotebody" value="3"><p> 중심이 되는 의미를 갖춘 실질 형태소를 가리킨다. <a href="#be3e:fn-back:3" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:4" class="footnotebody" value="4"><p> 어근과 결합해 그 의미나 기능을 더해주는 형식 형태소를 가리킨다. 어근 앞에 붙으면 접두사, 어근 뒤에 붙으면 접미사라고 부른다. <a href="#be3e:fn-back:4" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:5" class="footnotebody" value="5"><p> 2014년 미국 스탠포드대학교 연구팀이 개발한 단어 임베딩 기법 <a href="#be3e:fn-back:5" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:6" class="footnotebody" value="6"><p> Sentence-BERT 논문에서 “this common practice yields rather bad sentence embeddings, often worse than averaging GloVe embeddings.”라고 기술한 바 있다. <a href="#be3e:fn-back:6" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:7" class="footnotebody" value="7"><p> 주어진 두 문장의 관계를 '함의한다<sup>entailment</sup>', '모순적이다<sup>contradiction</sup>', '모른다<sup>neutral</sup>'  중 하나로 분류하는 태스크 <a href="#be3e:fn-back:7" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:8" class="footnotebody" value="8"><p>  주어진 두 문장의 의미의 유사 여부를 판별하는 태스크 <a href="#be3e:fn-back:8" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:9" class="footnotebody" value="9"><p>  &lt;문서, 요약 문장&gt;으로 구성된 N개의 데이터셋이 있다고 가정해보자. n(1~N)번째 데이터셋으로 미세조정한다고 했을 때, 임의의 오답 문장은 n번째 데이터셋을 제외한 임의의 데이터셋의 문장을 선택한다. <a href="#be3e:fn-back:9" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:10" class="footnotebody" value="10"><p> 두 문장의 벡터 유사도를 구하는 방법에는 유클리디언 거리<sup>euclidean distance</sup>와 코사인 유사도가 있다. 유클리디안 거리는 N차원의 공간에서 두 점의 직선 거리를 의미하며, 코사인 유사도는 두 벡터간의 사이각 계산 방법을 의미한다. <a href="#be3e:fn-back:10" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:11" class="footnotebody" value="11"><p>  Cable News Network/DailyMail, New York Times, XSum 데이터셋 기준 <a href="#be3e:fn-back:11" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:12" class="footnotebody" value="12"><p>  파이썬<sup>python</sup>으로 구현한 코드인 <a href="https://github.com/nlpyang/PreSumm">PreSumm</a><a href="#be3e:rf:12" class="reference" id="be3e:rf-back:12">[12]</a>를 사용했다. <a href="#be3e:fn-back:12" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:13" class="footnotebody" value="13"><p>  카카오 i 번역 엔진을 이용해 SBERT 훈련에 사용된 NLI 및 STS 데이터셋을 구성하는 영어 문장을 한국어 문장으로 번역했다. <a href="#be3e:fn-back:13" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:14" class="footnotebody" value="14"><p>  여기서 말하는 사실성은 문서에 서술된 내용을 의미한다. <a href="#be3e:fn-back:14" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:15" class="footnotebody" value="15"><p>  한쪽이 증가할 때 다른 한쪽도 증가함을 의미한다. <a href="#be3e:fn-back:15" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:16" class="footnotebody" value="16"><p>  한쪽이 증가할 때 다른 쪽은 감소함을 의미한다. <a href="#be3e:fn-back:16" class="backlink"> ↩</a></p></li>
-<li id="be3e:fn:17" class="footnotebody" value="17"><p>  문서 내용 또는 외부 지식을 이용해 그래프를 구축하고 이를 학습에 활용하는 연구도 진행되고 있다. <a href="#be3e:fn-back:17" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:1" class="footnotebody" value="1"><p> 자연어처리 및 언어학을 대표하는 국제 학회로, 2020년에는 제출된 2,319편의 논문 중 644개의 논문이 통과됐다. <a href="#6732:fn-back:1" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:2" class="footnotebody" value="2"><p>  문장을 특정 단위를 기준으로 N개씩 분할해서 얻은 결과물을 가리킨다. 이 단위는 형태소, 또는 어절(띄어쓰기 기준) 등이 될 수 있다. <a href="#6732:fn-back:2" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:3" class="footnotebody" value="3"><p> 중심이 되는 의미를 갖춘 실질 형태소를 가리킨다. <a href="#6732:fn-back:3" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:4" class="footnotebody" value="4"><p> 어근과 결합해 그 의미나 기능을 더해주는 형식 형태소를 가리킨다. 어근 앞에 붙으면 접두사, 어근 뒤에 붙으면 접미사라고 부른다. <a href="#6732:fn-back:4" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:5" class="footnotebody" value="5"><p> 2014년 미국 스탠포드대학교 연구팀이 개발한 단어 임베딩 기법 <a href="#6732:fn-back:5" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:6" class="footnotebody" value="6"><p> Sentence-BERT 논문에서 “this common practice yields rather bad sentence embeddings, often worse than averaging GloVe embeddings.”라고 기술한 바 있다. <a href="#6732:fn-back:6" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:7" class="footnotebody" value="7"><p> 주어진 두 문장의 관계를 '함의한다<sup>entailment</sup>', '모순적이다<sup>contradiction</sup>', '모른다<sup>neutral</sup>'  중 하나로 분류하는 태스크 <a href="#6732:fn-back:7" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:8" class="footnotebody" value="8"><p>  주어진 두 문장의 의미의 유사 여부를 판별하는 태스크 <a href="#6732:fn-back:8" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:9" class="footnotebody" value="9"><p>  &lt;문서, 요약 문장&gt;으로 구성된 N개의 데이터셋이 있다고 가정해보자. n(1~N)번째 데이터셋으로 미세조정한다고 했을 때, 임의의 오답 문장은 n번째 데이터셋을 제외한 임의의 데이터셋의 문장을 선택한다. <a href="#6732:fn-back:9" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:10" class="footnotebody" value="10"><p> 두 문장의 벡터 유사도를 구하는 방법에는 유클리디언 거리<sup>euclidean distance</sup>와 코사인 유사도가 있다. 유클리디안 거리는 N차원의 공간에서 두 점의 직선 거리를 의미하며, 코사인 유사도는 두 벡터간의 사이각 계산 방법을 의미한다. <a href="#6732:fn-back:10" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:11" class="footnotebody" value="11"><p>  Cable News Network/DailyMail, New York Times, XSum 데이터셋 기준 <a href="#6732:fn-back:11" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:12" class="footnotebody" value="12"><p>  파이썬<sup>python</sup>으로 구현한 코드인 <a href="https://github.com/nlpyang/PreSumm">PreSumm</a><a href="#6732:rf:12" class="reference" id="6732:rf-back:12">[12]</a>를 사용했다. <a href="#6732:fn-back:12" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:13" class="footnotebody" value="13"><p>  카카오 i 번역 엔진을 이용해 SBERT 훈련에 사용된 NLI 및 STS 데이터셋을 구성하는 영어 문장을 한국어 문장으로 번역했다. <a href="#6732:fn-back:13" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:14" class="footnotebody" value="14"><p>  여기서 말하는 사실성은 문서에 서술된 내용을 의미한다. <a href="#6732:fn-back:14" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:15" class="footnotebody" value="15"><p>  한쪽이 증가할 때 다른 한쪽도 증가함을 의미한다. <a href="#6732:fn-back:15" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:16" class="footnotebody" value="16"><p>  한쪽이 증가할 때 다른 쪽은 감소함을 의미한다. <a href="#6732:fn-back:16" class="backlink"> ↩</a></p></li>
+<li id="6732:fn:17" class="footnotebody" value="17"><p>  문서 내용 또는 외부 지식을 이용해 그래프를 구축하고 이를 학습에 활용하는 연구도 진행되고 있다. <a href="#6732:fn-back:17" class="backlink"> ↩</a></p></li>
 
 </ol>
 
