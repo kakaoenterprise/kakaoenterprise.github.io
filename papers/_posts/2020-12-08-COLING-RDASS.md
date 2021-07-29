@@ -17,7 +17,7 @@ authors:
   - jason:카카오엔터프라이즈
   - 조재춘:한신대학교
 paper: https://www.aclweb.org/anthology/2020.coling-main.491.pdf
-code:
+deepdive: 210729
 tag:
   - summrization
 ---
