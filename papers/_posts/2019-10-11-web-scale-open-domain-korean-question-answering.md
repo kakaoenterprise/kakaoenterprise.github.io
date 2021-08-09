@@ -17,7 +17,7 @@ tag:
 
 카카오엔터프라이즈는 기계 독해를 이용한 웹 기반 오픈 도메인 한국어 질의응답 시스템을 제안했습니다. 이 시스템은 사용자 질의가 입력되면 키워드 기반 한국어 웹 검색 엔진으로 받아온 최대 1,500개의 문서를 기계 독해 방식으로 실시간으로 분석합니다. 그런 뒤, 각 문서에서 찾은 답을 종합해 최종 답변을 도출합니다. 실험 결과, 제안된 시스템의 평균 실행 시간은 2초 이내였으며, 인간이 기록한 점수 대비 86%에 달하는 준수한 성능을 냈습니다.
 
-<p class="tech-ground">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/mrc">지문분석</a></b> 데모 | <b><a href="https://labs.kakaoi.ai/mrc">통합분석</a></b> 데모</p>
+<p class="tech-ground">☛ Tech Ground 데모 페이지 바로 가기 : <b><a href="https://labs.kakaoi.ai/mrc">지문분석</a></b> 데모 | <b><a href="https://labs.kakaoi.ai/openqa">통합분석</a></b> 데모</p>
 
 # 전체 구조
 
