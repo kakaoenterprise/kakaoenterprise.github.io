@@ -1,160 +1,156 @@
-# kakaoenterprise.github.io
+# Kakao Enterprise AI Research
 
-## 프로젝트 스택
-이 프로젝트는 다음 스택을 기반으로 운영됩니다.
+**Kakao Enterprise AI Research**는 카카오엔터프라이즈의 AI 연구 및 개발 성과를 한데 모아서 볼 수 있는 플랫폼입니다.
 
-### [GitHub Pages](https://pages.github.com/)
-GitHub Repo의 특정 브랜치를 자동으로 빌드하고 호스팅하는 시스템입니다.
-* [여기](https://github.com/kakaoenterprise/kakaoenterprise.github.io/settings)에서 관련 설정을 볼 수 있습니다.
-* 이 프로젝트는 `kakaoenterprise` Organization의 User page입니다. 그래서 `kakaoenterprise.github.io` 라는 Repo 이름을 가집니다. 
-* Gihub Pages는 자동 빌드 기능은 간편하지만, Jekyll plugin 추가에 제한이 있습니다. [링크](https://jekyllrb.com/docs/plugins/installation/) 😢 꼭 필요한 plugin이 있다면, 별도의 빌드 파이프라인을 구축한 후 (로컬 빌드 또는 [Travis CI](https://docs.travis-ci.com/user/deployment/pages/) 활용) 해당 내용을 Github Pages로 Push해 서빙하거나, 아예 별도의 서빙 환경을 구축하는 방법을 사용해야 합니다.
-* 이 프로젝트는 Jekyll Custom Plugin을 사용하기 위해 로컬 빌드를 하고 /docs 디렉토리에 배포하는 방식을 사용합니다.
+## 콘텐츠 퍼블리싱 스택
 
-### [Jekyll](https://jekyllrb.com/)
-[Markdown](https://daringfireball.net/projects/markdown/)과 [Liquid template](https://github.com/Shopify/liquid/wiki)으로 작성한 파일들로 정적 웹사이트나 블로그를 구축하는 도구입니다.
+* [Markdown](https://en.wikipedia.org/wiki/Markdown)
+* [Liquid](https://jekyllrb.com/docs/liquid/)
+* [KaTeX](https://katex.org/)
+* [Jekyll](https://jekyllrb.com/)
+* [Tale theme](https://github.com/chesterhow/tale)
+* [GitHub Pages](https://pages.github.com/)
 
-### [Tale theme](https://github.com/chesterhow/tale)
-이 프로젝트가 사용하는 Jekyll theme입니다. 일부 설정과 스타일을 커스텀해 사용하고 있습니다.
+> Custom Jekyll Plugin 사용을 위해 `/docs` 디렉토리에 로컬 빌드 후 GitHub Pages에서 퍼블리싱하고 있습니다.
 
-## 프로젝트 구조
+## 콘텐츠 작업 환경 구성
+
+> 다양한 방법으로 환경 구성이 가능합니다. 아래는 추천 방법입니다. 
+
+### Repo 클론
 ```sh
-.
-├── _config.yml // site 설정
-├── _data // 데이터 디렉토리, {% assign krew_data = site.data.krews[id] %} 와 같이 사용.
-├── _includes // 여러 post에서 공통으로 사용할 컴포넌트 정의
-├── _layouts // post, page 레이아웃 정의
-├── _pages
-│   └── 404.html
-├── _sass // 스타일 정의
-│   └── tale // 테마 기본 스타일
-├── assets
-│   ├── img // 포스트 별 이미지
-│   └── profile // 크루 별 프로필 이미지
-├── index.html
-├── papers // 논문소개 포스트
-│   ├── _posts
-│   └── index.html
-├── serve.sh // 로컬 렌더링 스크립트
-├── build.sh // 프로덕션 빌드 스크립트
-├── docs // 프로덕션 빌드 output directory
-└── deepdive // 딥다이브 포스트
-    ├── _posts
-    └── index.html
+git clone https://github.com/kakaoenterprise/kakaoenterprise.github.io.git
 ```
 
-## 로컬 렌더링 환경 구축
-> 환경을 구축하는 여러 방법 중 하나이고, 제게 가장 간편했던 방법이라 소개합니다.
+### Docker 설치
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
 
-1. Docker 설치 ([Mac](https://docs.docker.com/docker-for-mac/install/))
-2. Repo 클론
+### 로컬 build & serve
 ```sh
-git clone https://github.com/kakaoenterprise/kakaoenterprise.github.io.git papers
-cd papers
-```
-3. 빌드 & 서빙
-
-<details>
-<summary>자세히 보기</summary>
-
-```sh
+cd kakaoenterprise.github.io
 ./serve.sh
-Fetching gem metadata from https://rubygems.org/..........
-Fetching gem metadata from https://rubygems.org/.
-Resolving dependencies...
-Fetching rake 12.3.3
-Installing rake 12.3.3
-Fetching public_suffix 4.0.6
-Installing public_suffix 4.0.6
-Fetching addressable 2.7.0
-Installing addressable 2.7.0
-Using bundler 2.0.2
-Fetching colorator 1.1.0
-Installing colorator 1.1.0
-Fetching concurrent-ruby 1.1.8
-Installing concurrent-ruby 1.1.8
-Fetching eventmachine 1.2.7
-Installing eventmachine 1.2.7 with native extensions
-Fetching http_parser.rb 0.6.0
-Installing http_parser.rb 0.6.0 with native extensions
-Fetching em-websocket 0.5.2
-Installing em-websocket 0.5.2
-Fetching ffi 1.15.0
-Installing ffi 1.15.0 with native extensions
-Fetching forwardable-extended 2.6.0
-Installing forwardable-extended 2.6.0
-Fetching i18n 1.8.10
-Installing i18n 1.8.10
-Fetching sassc 2.4.0
-Installing sassc 2.4.0 with native extensions
-^CFetching jekyll-sass-converter 2.1.0
-Installing jekyll-sass-converter 2.1.0
-Fetching rb-fsevent 0.10.4
-Installing rb-fsevent 0.10.4
-Fetching rb-inotify 0.10.1
-Installing rb-inotify 0.10.1
-Fetching listen 3.5.1
-Installing listen 3.5.1
-Fetching jekyll-watch 2.2.1
-Installing jekyll-watch 2.2.1
-Fetching rexml 3.2.5
-Installing rexml 3.2.5
-Fetching kramdown 2.3.1
-Installing kramdown 2.3.1
-Fetching kramdown-parser-gfm 1.1.0
-Installing kramdown-parser-gfm 1.1.0
-Fetching liquid 4.0.3
-Installing liquid 4.0.3
-Fetching mercenary 0.4.0
-Installing mercenary 0.4.0
-Fetching pathutil 0.16.2
-Installing pathutil 0.16.2
-Fetching rouge 3.26.0
-Installing rouge 3.26.0
-Fetching safe_yaml 1.0.5
-Installing safe_yaml 1.0.5
-Fetching unicode-display_width 1.7.0
-Installing unicode-display_width 1.7.0
-Fetching terminal-table 2.0.0
-Installing terminal-table 2.0.0
-Fetching jekyll 4.2.0
-Installing jekyll 4.2.0
-Fetching jekyll-feed 0.15.1
-Installing jekyll-feed 0.15.1
-Fetching jekyll-paginate 1.1.0
-Installing jekyll-paginate 1.1.0
-Fetching jekyll-seo-tag 2.7.1
-Installing jekyll-seo-tag 2.7.1
-Using tale 0.2.1 from source at `.`
-Bundle complete! 3 Gemfile dependencies, 33 gems now installed.
-Bundled gems are installed into `/usr/local/bundle`
-ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-linux-musl]
-Configuration file: /srv/jekyll/_config.yml
-            Source: /srv/jekyll
-       Destination: /srv/jekyll/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-       Jekyll Feed: Generating feed for posts
-                    done in 8.379 seconds.
- Auto-regeneration: enabled for '/srv/jekyll'
-    Server address: http://0.0.0.0:4000
-  Server running... press ctrl-c to stop.
 ```
-</details>
+브라우저에서 http://localhost:4000 접속해 결과를 확인합니다.
 
-4. 브라우저에서 http://localhost:4000 접속해 렌더 결과를 확인합니다.
-5. 포스트를 수정합니다.
-6. 브라우저에서 새로고침하면 수정 반영된 내용을 볼 수 있습니다. 4~5을 반복합니다.
-7. 더이상 수정할 내용이 없으면 ./build.sh 스크립트를 실행해서 docs에 production build 결과를 저장합니다.
+## 콘텐츠 작성
 
-## Remote push 후 결과 확인하기
-작업내용을 commit하고 origin/master에 push하면 https://kakaoenterprise.github.io 에서 결과를 확인할 수 있습니다.
-이 때 Settings에서 Pages의 Source 위치는 master branch의 /docs folder로 설정되어 있어야 합니다.
+### 논문(papers)
 
-내용이 반영되기까지 몇분이 걸릴 수도 있습니다. 새로고침을 해도 반영이 되지 않는다면, 강제 새로고침을 통해서 저장된 페이지를 삭제해 봅니다.
-크롬 브라우저의 경우 단축키(Winodws: ctrl+shift+r, Mac: cmd+shift+r)를 통해서 강제 새로고침을 할 수 있습니다.
+1. `papers/_posts`로 이동합니다.
+2. 새 마크다운 파일을 생성합니다. 게시 흐름을 볼 수 있도록 이름은 `yyyy-mm-dd-{식별 가능한 이름}.md`로 합니다.
+3. [본문 작성 가이드](#본문-작성-가이드)에 따라 Front Matter를 작성합니다.
+4. 본문을 작성합니다. 이미지나 주석 삽입이 필요한 경우 [본문 작성 가이드](#본문-작성-가이드)에 따릅니다.
+5. **로컬 build & serve** 상태에서 브라우저를 새로고침해 추가 또는 수정된 내용을 확인합니다.
 
-## 기타 사항
-(현행 프로젝트 스택을 유지해 개발하시는 경우) Jekyll 빌드구조와 Liquid 템플릿이 어느정도 익숙해지면 기본적인 html/css/js 문제로 귀결되어 어렵지 않게 개발할 수 있습니다.
+### 딥다이브(deepdive)
+1. `deepdive/_posts`로 이동합니다.
+2. 이후는 논문(papers)와 동일합니다.
+
+## 콘텐츠 게시
+콘텐츠를 게시할 준비가 되었다면, 다음 명령으로 `/docs` 디렉토리에 로컬 빌드합니다.
+```
+./build.sh
+```
+빌드 결과를 commit하고 `origin/master`에 push하면 https://kakaoenterprise.github.io 에서 결과를 확인할 수 있습니다.
+
+```
+git add .
+git commit -m "{커밋 메시지}"
+git push -u origin master
+```
+
+> Repo Settings에서 Pages의 Source 위치가 `master` branch의 `/docs`로 설정되어 있어야 합니다.
+
+> push 후 사이트 갱신까지 몇 분 정도 걸릴 수 있습니다.
+
+----
+
+## 본문 작성 가이드
+### Front Matter 작성
+
+<Details>
+    <Summary>자세히 보기</Summary>
+
+콘텐츠의 속성 정보를 YAML 형식에 따라 작성합니다.
+    
+| 이름 | 필수 | 설명 | 비고 |
+| - | - | - | - |
+| `layout` | O | 레이아웃 종류 | 논문(papers): `post`, 딥다이브(deepdive): `post-deepdive` |
+| `use-katex` | X | 본문에서 `KaTeX` 사용 여부 | `true`, `false`(기본값) |
+| `research-area` | O | 연구 분야 | (NLP, COMPUTER VISION, SPEECH/AUDIO) |
+| `title` | O | 콘텐츠 타이틀 | |
+| `slug` | O | 콘텐츠가 게시 될 경로 | 다른 콘텐츠의 `slug`와 중복될 수 없음. |
+| `description` | O | 콘텐츠 한 줄 요약 | |
+| `published-date` | O | 학회 시작일 또는 ArXiv 업로드 날짜 |  |
+| `publisher` | O | 학회 또는 저널 이름 |  |
+| `publisher-fullname` | O | 학회, 저널, 또는 워크샵 풀네임 |  |
+| `authors` | O | 저자 및 소속 이름 | `저자명`:`(논문에 기재된)소속`의 리스트로 기재. 카카오 공동체 소속은 크루 이름, 그 외 소속은 한글 실명 |
+| `paper` | X | 논문 링크 |  |
+| `code` | X | GitHub Repo 링크 |  |
+| `tag` | X | 관련 키워드 | 리스트로 기재. |
+
+**예시**
+
+```yaml
+---
+layout: post
+use-katex: true
+research-area: COMPUTER VISION
+title: "A Plug-in Method for Representation Factorization in Connectionist Models"
+slug: ieee2020-fden
+description: "딥러닝 모델에서 추출한 임베딩 벡터를 독립 요인으로 분해하는 기법 ‘FDEN’ 제안"
+published-date: 2021-02-10
+publisher: IEEE Transactions on Neural Networks and Learning Systems
+authors:
+  - 윤재석:고려대학교
+  - joshua:카카오엔터프라이즈
+  - 석흥일:고려대학교
+paper: https://arxiv.org/pdf/1905.11088.pdf
+code: https://github.com/wltjr1007/Factors-Decomposer-Entangler-Network
+tag:
+  - disentangled representation
+  - factorial representation
+  
+---
+```
+    
+</Details>
+
+### 이미지 삽입
+
+<Details>
+    <Summary>자세히 보기</Summary>
+
+1. `assets/img/{작성 중인 마크다운 파일 이름}` 디렉토리를 생성합니다.
+2. 생성된 디렉토리 안에 이미지를 `001.jpg`, `002.jpg`, ...의 이름으로 위치시킵니다.
+3. 콘텐츠 본문에서 이미지 삽입을 원하는 위치에 다음과 같이 기술합니다.
+  `{% include image.html name="{이미지 파일명}" width="{이미지 너비}" align="{좌우정렬 위치}" %}` 
+
+**예시**
+```liquid
+{% include image.html name="002.png" width="70%" align="center" %}
+```
+    
+</Details>
+
+### 주석 삽입
+
+<Details>
+    <Summary>자세히 보기</Summary>
+
+1. 콘텐츠 본문에서 주석 삽입을 원하는 위치에 `[^{주석번호}]` 형식으로 마킹합니다.
+2. 본문에서 원하는 위치에 (문단 바로 아래 또는 본문 최하단) 주석번호 별 설명을 작성합니다. `[^1]: 시스템 설계자가 미리...`
+3. 본문 최하단에 다음과 같이 주석 영역을 만듭니다.
+    
+```markdown
+-----
+
+### Footnotes
+```   
+    
+</Details>
+
+----
 
 # License
 This software is licensed under the Apache 2 license, quoted below.
@@ -167,4 +163,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 # Contact
 
-tsp@kakaoenterprise.com
+ai-research@kakaoenterprise.com

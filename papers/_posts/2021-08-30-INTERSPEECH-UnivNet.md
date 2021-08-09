@@ -13,7 +13,7 @@ authors:
   - jeff:카카오엔터프라이즈
   - montae:카카오엔터프라이즈
   - jaytee:카카오엔터프라이즈
-paper:
+paper: https://arxiv.org/pdf/2106.07889.pdf
 code:
 tag:
 ---

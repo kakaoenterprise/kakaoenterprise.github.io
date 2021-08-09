@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Multi-level Distance Regularization for Deep Metric Learning" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"aiden:카카오엔터프라이즈"},"description":"딥러닝 기반 거리 학습에 적합한 새로운 정규화 기법 ‘MDR’ 제안","@type":"BlogPosting","headline":"Multi-level Distance Regularization for Deep Metric Learning","dateModified":"2021-02-02T00:00:00-06:00","datePublished":"2021-02-02T00:00:00-06:00","url":"https://kakaoenterprise.github.io/papers/aaai2021-mdr","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/aaai2021-mdr"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"aiden:카카오엔터프라이즈"},"description":"딥러닝 기반 거리 학습에 적합한 새로운 정규화 기법 ‘MDR’ 제안","@type":"BlogPosting","url":"https://kakaoenterprise.github.io/papers/aaai2021-mdr","headline":"Multi-level Distance Regularization for Deep Metric Learning","dateModified":"2021-02-02T00:00:00-06:00","datePublished":"2021-02-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/aaai2021-mdr"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -143,11 +143,11 @@
 
 <p>At first, MDR normalizes pairwise distances among the embedding vectors of a mini-batch, with their mean and standard deviation to obtain the objective degree of similarity between a pair by considering overall distribution. MDR defines the multiple levels that represent various degrees of similarity for pairwise distances, and the levels and the be- longing distances are trained to approach each other (Figure 1b). A conventional loss function of DML struggles to optimize a model by overcoming the disturbance from the proposed regularization. Therefore, the learning process succeeds in learning a model with a better generalization ability.</p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/001.png" width="80%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/001.png" width="80%" align="" /></p>
 
 <p><em>[ Figure 1 ] Conceptual comparison between the conventional learning scheme and our learning scheme. (a) illustrates the triplet learning, which is one of the representative conventional learning. It increases the relative difference between distances of a positive pair and that of a negative pair more than margin m. (b) illustrates our learning combined with the triplet learning. It has multiple levels with disjoint intervals to reflect various degrees of similarity between pairs. It disturbs the learning procedure to construct an efficient embedding space by preventing the pairwise distances from deviating from its belonging level.</em></p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/002.png" width="" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/002.png" width="" align="" /></p>
 
 <p><em>[ Figure 2 ] Learning procedure of the proposed MDR. The embedding network generates embedding vectors from given images. Our MDR computes a matrix of pairwise distances for the embedding vectors, and then, the distances are normalized after vectorization. In our learning scheme, a model is trained by simultaneously optimizing the conventional metric learning loss such as Triplet loss (Schroff, Kalenichenko, and Philbin 2015) and the proposed loss, which regularizes the normalized pairwise distances with multiple levels.</em></p>
 
@@ -161,23 +161,23 @@
 
 <p>Moreover, our extensive ablation studies show that MDR can be adopted to any backbone networks and any distance-based loss functions to improve the performance of a model.</p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/003.png" width="95%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/003.png" width="95%" align="" /></p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/004.png" width="95%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/004.png" width="95%" align="" /></p>
 
 <p><em>[ Table 1 ] Recall@K comparison with state-of-the-art methods. The baseline methods and MDR are grouped in the gray-colored rows. † indicates that the model is trained and tested with large images of 256 × 256 following the setting of (Jacob et al. 2019). We round reported values to the first decimal place.</em></p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/005.png" width="80%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/005.png" width="80%" align="" /></p>
 
 <p><em>[ Figure 3 ] Class centers in the embedding space of two models trained without MDR (Triplet &amp; Triplet+L2 Norm) and one model trained with MDR (Triplet+MDR). We visualize using t-SNE on CUB-200.</em></p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/006.png" width="60%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/006.png" width="60%" align="" /></p>
 
 <p><em>[ Table 2 ] Recall@1 comparison with various backbone net- works, loss functions, and level configurations. The models of (a) are trained with Triplet loss. The models of (b) use IBN as the backbone network. In (a) and (b), a column with ✓ indicates that the models are trained with MDR.</em> </p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/007.png" width="50%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/007.png" width="50%" align="" /></p>
 
-<p><img src="/assets/img/2021-02-02-AAAI-MDR/008.png" width="55%" align="" /></p>
+<p><img src="/assets/img/2021-02-02-AAAI-mdr/008.png" width="55%" align="" /></p>
 
 <p><em>[ Figure 4 ] (a) compares the three methods on various dimensionalities of the embedding vector on CUB-200 and Cars- 196. (b) shows the learning curves of the three methods for the training and test set on CUB-200.</em></p>
 
