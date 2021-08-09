@@ -15,7 +15,7 @@ authors:
   - annie:카카오엔터프라이즈
   - jason:카카오엔터프라이즈
   - 김학수:건국대학교
-paper:
+paper: https://aclanthology.org/2021.acl-short.63.pdf
 code:
 tag:
 ---
