@@ -388,22 +388,6 @@
 	</url>
 	
 	<url>
-		<loc>https://kakaoenterprise.github.io/papers/ieee2020-accelerating-neural-transducer-inference</loc>
-		
-		<lastmod>2020-12-06T00:00:00-06:00</lastmod>
-		
-
-		
-		<changefreq>weekly</changefreq>
-		
-
-		
-		<priority>0.5</priority>
-		
-
-	</url>
-	
-	<url>
 		<loc>https://kakaoenterprise.github.io/papers/ieee2020-face-video-retrieval</loc>
 		
 		<lastmod>2020-12-04T00:00:00-06:00</lastmod>
@@ -471,6 +455,22 @@
 		<loc>https://kakaoenterprise.github.io/papers/emnlp2020-attnio</loc>
 		
 		<lastmod>2020-11-16T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/ieee2020-accelerating-neural-transducer-inference</loc>
+		
+		<lastmod>2020-11-06T00:00:00-06:00</lastmod>
 		
 
 		
