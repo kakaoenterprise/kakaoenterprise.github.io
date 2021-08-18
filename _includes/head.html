@@ -2,7 +2,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% seo %}
+  {% seo title=false %}
+  {% if page.url == '/' %}
+  <title> {{ site.title }} </title>
+  {% else %}
+  <title> {{ page.title }} | {{ site.title }} </title>
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
@@ -10,9 +15,8 @@
   <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon-32x32.png" | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon-16x16.png" | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/apple-touch-icon.png" | relative_url }}">
+  <link rel="shortcut icon" href="{{ "/assets/favicon-96x96.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/apple-icon-180x180.png" | relative_url }}">
 
   <!-- Icon -->
   <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>

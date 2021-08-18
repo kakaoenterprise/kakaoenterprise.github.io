@@ -1,6 +1,7 @@
 # Site settings
 title:          카카오엔터프라이즈 AI Research
 description:    "카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다."
+internal_title: Kakao Enterprise AI Research
 url:            "https://kakaoenterprise.github.io"
 destination:    docs
 
