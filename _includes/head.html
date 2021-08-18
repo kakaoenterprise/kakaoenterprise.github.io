@@ -2,7 +2,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% seo %}
+  {% seo title=false %}
+  {% if page.url == '/' %}
+    <title> {{ site.title }} </title>
+  {% else %}
+    <title> {{ page.title }} | {{ site.title }} </title>
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
