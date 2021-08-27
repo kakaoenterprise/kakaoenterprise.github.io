@@ -3,18 +3,18 @@
   <channel>
     <title>카카오엔터프라이즈 AI Research</title>
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
-    <link>http://0.0.0.0:4000/</link>
-    <atom:link href="http://0.0.0.0:4000/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Aug 2021 01:27:47 -0500</pubDate>
-    <lastBuildDate>Fri, 27 Aug 2021 01:27:47 -0500</lastBuildDate>
+    <link>https://kakaoenterprise.github.io/</link>
+    <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 27 Aug 2021 01:58:10 -0500</pubDate>
+    <lastBuildDate>Fri, 27 Aug 2021 01:58:10 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>UnivNet: A Neural Vocoder with Multi-Resolution Spectrogram Discriminators for High-Fidelity Waveform Generation</title>
         <description></description>
         <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/interspeech2021-univnet</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/interspeech2021-univnet</guid>
+        <link>https://kakaoenterprise.github.io/papers/interspeech2021-univnet</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-univnet</guid>
         
         <category>INTERSPEECH</category>
         
@@ -31,8 +31,8 @@
         <title>Auxiliary Sequence Labeling Tasks for Disfluency Detection</title>
         <description></description>
         <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/interspeech2021-sl-tasks-for-disfluency-detection</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/interspeech2021-sl-tasks-for-disfluency-detection</guid>
+        <link>https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-sl-tasks-for-disfluency-detection</guid>
         
         <category>INTERSPEECH</category>
         
@@ -49,8 +49,8 @@
         <title>SE-Conformer: Time-Domain Speech Enhancement using Conformer</title>
         <description></description>
         <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/interspeech2021-se-conformer</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/interspeech2021-se-conformer</guid>
+        <link>https://kakaoenterprise.github.io/papers/interspeech2021-se-conformer</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-se-conformer</guid>
         
         <category>INTERSPEECH</category>
         
@@ -65,8 +65,8 @@
         <title>Learning to Walk across Time for Interpretable Temporal Knowledge Graph Completion</title>
         <description></description>
         <pubDate>Sat, 14 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/sigkdd-t-gap</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/sigkdd-t-gap</guid>
+        <link>https://kakaoenterprise.github.io/papers/sigkdd-t-gap</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-t-gap</guid>
         
         
         <category>papers</category>
@@ -77,8 +77,8 @@
         <title>Adaptive Batch Scheduling for Open-Domain Question Answering</title>
         <description></description>
         <pubDate>Wed, 11 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/ieeeaccess-adaptive-batch-scheduling</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/ieeeaccess-adaptive-batch-scheduling</guid>
+        <link>https://kakaoenterprise.github.io/papers/ieeeaccess-adaptive-batch-scheduling</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess-adaptive-batch-scheduling</guid>
         
         
         <category>papers</category>
@@ -89,8 +89,8 @@
         <title>Deep Context- and Relation-Aware Learning for Aspect-based Sentiment Analysis</title>
         <description></description>
         <pubDate>Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/acl-ijcnlp2021-dcran</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/acl-ijcnlp2021-dcran</guid>
+        <link>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran</guid>
         
         
         <category>papers</category>
@@ -101,8 +101,8 @@
         <title>OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack</title>
         <description></description>
         <pubDate>Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/acl-ijcnlp2021-outflip</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/acl-ijcnlp2021-outflip</guid>
+        <link>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip</guid>
         
         
         <category>papers</category>
@@ -113,8 +113,8 @@
         <title>텍스트 요약 모델 성능 평가를 위한 새로운 척도, RDASS를 소개합니다.</title>
         <description>더 나은 성능의 요약 모델을 만들려면 모델로부터 자동으로 생성된 요약문을 어느 정도로 신뢰할 수 있는지 판별하기 위한 적절한 평가 방법이 있어야 합니다. 문제는 가장 보편적으로 쓰이는 성능 평가 척도가 모델의 성능을 제대로 평가하지 못한다는 거죠. 이를 해결하기 위해 카카오엔터프라이즈가 카카오, 고려대학교, 한신대학교와 연구팀을 꾸리고 관련 주제로 연구를 하게 됐습니다.</description>
         <pubDate>Thu, 29 Jul 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/deepdive/210729</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/deepdive/210729</guid>
+        <link>https://kakaoenterprise.github.io/deepdive/210729</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/deepdive/210729</guid>
         
         <category>Text Summarization</category>
         
@@ -127,8 +127,8 @@
         <title>ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision</title>
         <description></description>
         <pubDate>Sun, 18 Jul 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/icml2021-vilt</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/icml2021-vilt</guid>
+        <link>https://kakaoenterprise.github.io/papers/icml2021-vilt</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml2021-vilt</guid>
         
         
         <category>papers</category>
@@ -139,8 +139,8 @@
         <title>Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech</title>
         <description></description>
         <pubDate>Sun, 18 Jul 2021 00:00:00 -0500</pubDate>
-        <link>http://0.0.0.0:4000/papers/icml2021-e2e-tts</link>
-        <guid isPermaLink="true">http://0.0.0.0:4000/papers/icml2021-e2e-tts</guid>
+        <link>https://kakaoenterprise.github.io/papers/icml2021-e2e-tts</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml2021-e2e-tts</guid>
         
         
         <category>papers</category>
