@@ -5,9 +5,33 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Aug 2021 02:25:20 -0500</pubDate>
-    <lastBuildDate>Fri, 27 Aug 2021 02:25:20 -0500</lastBuildDate>
+    <pubDate>Mon, 30 Aug 2021 04:03:01 -0500</pubDate>
+    <lastBuildDate>Mon, 30 Aug 2021 04:03:01 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model</title>
+        <description></description>
+        <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Distilling Global and Local Logits with Densely Connected Relations</title>
+        <description></description>
+        <pubDate>Mon, 11 Oct 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/iccv-distilling-global-and-local-logits</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/iccv-distilling-global-and-local-logits</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>UnivNet: A Neural Vocoder with Multi-Resolution Spectrogram Discriminators for High-Fidelity Waveform Generation</title>
@@ -120,30 +144,6 @@
         
         
         <category>deepdive</category>
-        
-      </item>
-    
-      <item>
-        <title>ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision</title>
-        <description></description>
-        <pubDate>Sun, 18 Jul 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/icml2021-vilt</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml2021-vilt</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech</title>
-        <description></description>
-        <pubDate>Sun, 18 Jul 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/icml2021-e2e-tts</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml2021-e2e-tts</guid>
-        
-        
-        <category>papers</category>
         
       </item>
     
