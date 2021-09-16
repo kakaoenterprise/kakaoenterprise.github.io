@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Aug 2021 04:03:01 -0500</pubDate>
-    <lastBuildDate>Mon, 30 Aug 2021 04:03:01 -0500</lastBuildDate>
+    <pubDate>Thu, 16 Sep 2021 04:13:21 -0500</pubDate>
+    <lastBuildDate>Thu, 16 Sep 2021 04:13:21 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission</title>
+        <description></description>
+        <pubDate>Fri, 19 Nov 2021 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model</title>
@@ -15,6 +27,18 @@
         <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>AligNART: Non-autoregressive Neural Machine Translation by JointlyLearning to Estimate Alignment and Translate</title>
+        <description></description>
+        <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/emnlp-alignart</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-alignart</guid>
         
         
         <category>papers</category>
@@ -118,32 +142,6 @@
         
         
         <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>OutFlip: Generating Examples for Unknown Intent Detection with Natural Language Attack</title>
-        <description></description>
-        <pubDate>Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-outflip</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>텍스트 요약 모델 성능 평가를 위한 새로운 척도, RDASS를 소개합니다.</title>
-        <description>더 나은 성능의 요약 모델을 만들려면 모델로부터 자동으로 생성된 요약문을 어느 정도로 신뢰할 수 있는지 판별하기 위한 적절한 평가 방법이 있어야 합니다. 문제는 가장 보편적으로 쓰이는 성능 평가 척도가 모델의 성능을 제대로 평가하지 못한다는 거죠. 이를 해결하기 위해 카카오엔터프라이즈가 카카오, 고려대학교, 한신대학교와 연구팀을 꾸리고 관련 주제로 연구를 하게 됐습니다.</description>
-        <pubDate>Thu, 29 Jul 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/deepdive/210729</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/deepdive/210729</guid>
-        
-        <category>Text Summarization</category>
-        
-        
-        <category>deepdive</category>
         
       </item>
     

@@ -187,6 +187,13 @@ jude:
     web:
     description: 학부생 때 상품의 이미지와 텍스트를 활용한 카테고리 분류 프로젝트에 참가한 것을 계기로, 자연어처리 기술을 좀 더 체계적으로 공부해보고자 대학원에 진학했습니다. 석사 과정에서는 목적지향적 대화 시스템을 연구했습니다. 현재 카카오에서 대화 요약 및 사족 제거와 관련된 연구를 진행하고 있습니다.
 
+juliette:
+    korean_name: 박윤주
+    profile:
+    github:
+    web:
+    description:
+
 kaylee:
     korean_name: 이서진
     profile: kaylee.png
@@ -214,6 +221,13 @@ leo:
   github:
   web:
   description: 카카오 엔터프라이즈의 훌륭한 동료와 함께 음성합성 기술을 연구하고 만듭니다.
+
+louis:
+  korean_name: 이창민
+  profile:
+  github:
+  web:
+  description: 
 
 mat:
     korean_name: 한기종
