@@ -8,7 +8,7 @@ published-date: 2021-11-19
 publisher: WMT 2021 System Papers
 authors:
   - juliette:카카오엔터라이즈
-  - 선지민:카네기멜론대
+  - 선지민:카카오엔터프라이즈, 카네기멜론대
   - jay:카카오엔터라이즈
   - james:카카오엔터라이즈
   - louis:카카오엔터라이즈
