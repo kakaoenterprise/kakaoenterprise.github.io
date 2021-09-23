@@ -6,14 +6,14 @@ slug: emnlp-evaluation-dataset-and-strategy
 description:
 published-date: 2021-11-07
 publisher: EMNLP
-publisher-fullname : Empirical Methods in Natural Language Processing (EMNLP)
+publisher-fullname: Empirical Methods in Natural Language Processing (EMNLP)
 authors:
   - mat:카카오엔터프라이즈
   - 이서진:SK텔레콤
   - dan:카카오엔터프라이즈
   - rung:카카오엔터프라이즈
   - hubert:카카오엔터프라이즈
-paper:
+paper: https://arxiv.org/pdf/2109.04834.pdf
 code:
 deepdive:
 tag:
