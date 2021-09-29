@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Sep 2021 03:03:16 -0500</pubDate>
-    <lastBuildDate>Fri, 17 Sep 2021 03:03:16 -0500</lastBuildDate>
+    <pubDate>Wed, 29 Sep 2021 03:55:53 -0500</pubDate>
+    <lastBuildDate>Wed, 29 Sep 2021 03:55:53 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -15,6 +15,18 @@
         <pubDate>Fri, 19 Nov 2021 00:00:00 -0600</pubDate>
         <link>https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Capturing Speaker Incorrectness: Speaker-Focused Post-Correction for Abstractive Dialogue Summarization</title>
+        <description></description>
+        <pubDate>Wed, 10 Nov 2021 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/newsum-csi</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/newsum-csi</guid>
         
         
         <category>papers</category>
@@ -127,18 +139,6 @@
         <pubDate>Wed, 11 Aug 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/ieeeaccess-adaptive-batch-scheduling</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess-adaptive-batch-scheduling</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Deep Context- and Relation-Aware Learning for Aspect-based Sentiment Analysis</title>
-        <description></description>
-        <pubDate>Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/acl-ijcnlp2021-dcran</guid>
         
         
         <category>papers</category>
