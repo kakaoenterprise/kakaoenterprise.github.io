@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Sep 2021 03:55:53 -0500</pubDate>
-    <lastBuildDate>Wed, 29 Sep 2021 03:55:53 -0500</lastBuildDate>
+    <pubDate>Thu, 30 Sep 2021 03:52:51 -0500</pubDate>
+    <lastBuildDate>Thu, 30 Sep 2021 03:52:51 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title>
+        <description></description>
+        <pubDate>Mon, 06 Dec 2021 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/neurips-smoothmix</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/neurips-smoothmix</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission</title>
@@ -127,18 +139,6 @@
         <pubDate>Sat, 14 Aug 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/sigkdd-t-gap</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-t-gap</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Adaptive Batch Scheduling for Open-Domain Question Answering</title>
-        <description></description>
-        <pubDate>Wed, 11 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/ieeeaccess-adaptive-batch-scheduling</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieeeaccess-adaptive-batch-scheduling</guid>
         
         
         <category>papers</category>

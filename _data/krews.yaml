@@ -12,6 +12,12 @@ aiden:
   web:
   description: 대학원에서 물체 검출 및 얼굴 인식을 연구하고, 현재 카카오 엔터프라이즈에서는 얼굴 인식 연구를 담당하고 있습니다.
 
+andrew:
+  korean_name: 이흥창
+  github:
+  web:
+  description: 
+  
 annie:
   korean_name: 서가은
   profile: annie.png
