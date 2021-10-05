@@ -5,7 +5,8 @@ title: Learning Debiased Representation via Disentangled Feature Augmentation
 slug: neurips-learning-debiased-representation
 description:
 published-date: 2021-12-06
-publisher: NeurIPS
+publisher: NeurIPS Oral
+publisher-fullname: Neural Information Processing Systems (NeurIPS) Oral
 authors:
   - 이정수:카이스트
   - josh:카카오엔터프라이즈

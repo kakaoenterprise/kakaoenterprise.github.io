@@ -6,6 +6,7 @@ slug: neurips-smoothmix
 description:
 published-date: 2021-12-06
 publisher: NeurIPS
+publisher-fullname: Neural Information Processing Systems (NeurIPS)
 authors:
   - 정종현:카이스트
   - 박세준:카이스트
