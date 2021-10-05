@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Sep 2021 22:00:47 -0500</pubDate>
-    <lastBuildDate>Thu, 30 Sep 2021 22:00:47 -0500</lastBuildDate>
+    <pubDate>Tue, 05 Oct 2021 01:54:45 -0500</pubDate>
+    <lastBuildDate>Tue, 05 Oct 2021 01:54:45 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -15,6 +15,18 @@
         <pubDate>Mon, 06 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://kakaoenterprise.github.io/papers/neurips-smoothmix</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/neurips-smoothmix</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Learning Debiased Representation via Disentangled Feature Augmentation</title>
+        <description></description>
+        <pubDate>Mon, 06 Dec 2021 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</guid>
         
         
         <category>papers</category>
@@ -127,18 +139,6 @@
         <category>INTERSPEECH</category>
         
         <category>SE-Conformer</category>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Learning to Walk across Time for Interpretable Temporal Knowledge Graph Completion</title>
-        <description></description>
-        <pubDate>Sat, 14 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/sigkdd-t-gap</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-t-gap</guid>
         
         
         <category>papers</category>

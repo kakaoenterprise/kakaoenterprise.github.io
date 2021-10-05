@@ -6,24 +6,24 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" />
-<meta name="author" content="정종현:카이스트" />
+<meta property="og:title" content="Learning Debiased Representation via Disentangled Feature Augmentation" />
+<meta name="author" content="이정수:카이스트" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" />
-<meta property="og:url" content="https://kakaoenterprise.github.io/papers/neurips-smoothmix" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation" />
 <meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-12-06T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" />
+<meta property="twitter:title" content="Learning Debiased Representation via Disentangled Feature Augmentation" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"정종현:카이스트"},"description":"Abstract","@type":"BlogPosting","url":"https://kakaoenterprise.github.io/papers/neurips-smoothmix","headline":"SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness","dateModified":"2021-12-06T00:00:00-06:00","datePublished":"2021-12-06T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/neurips-smoothmix"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"이정수:카이스트"},"description":"Abstract","@type":"BlogPosting","url":"https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation","headline":"Learning Debiased Representation via Disentangled Feature Augmentation","dateModified":"2021-12-06T00:00:00-06:00","datePublished":"2021-12-06T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-  <title> SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness | 카카오엔터프라이즈 AI Research </title>
+  <title> Learning Debiased Representation via Disentangled Feature Augmentation | 카카오엔터프라이즈 AI Research </title>
   
 
   <!-- CSS -->
@@ -82,13 +82,13 @@
       <article class="post">
   <header class="post-header">
     <h4 class="catalogue-research-area">COMPUTER VISION</h4>
-    <h1 class="post-title">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</h1>
+    <h1 class="post-title">Learning Debiased Representation via Disentangled Feature Augmentation</h1>
 
     
 
     
 
-    정종현(카이스트), 박세준(카이스트), 김민규(카이스트), 이흥창(카카오엔터프라이즈), 김도국(카카오엔터프라이즈), 신진우(카이스트)
+    이정수(카이스트), 김응엽(카카오엔터프라이즈), 이주영(카카오엔터프라이즈), 이지현(카이스트), 주재걸(카이스트)
 
     <h4>
         
@@ -106,7 +106,7 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against l2-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified l2-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.</p>
+<p>Image classification models tend to make decisions based on peripheral attributes of data items that have strong correlation with a target variable (i.e., dataset bias). These biased models suffer from the poor generalization capability when evaluated on unbiased datasets. Existing approaches for debiasing often identify and emphasize those samples with no such correlation (i.e., bias-conflicting) without defining the bias type in advance. However, such bias-conflicting samples are significantly scarce in biased datasets, limiting the debiasing capability of these approaches. This paper first presents an empirical analysis revealing that training with “diverse” bias-conflicting samples beyond a given training set is crucial for debiasing as well as the generalization capability. Based on this observation, we propose a novel feature-level data augmentation technique in order to synthesize diverse bias-conflicting samples. To this end, our method learns the disentangled representation of (1) the intrinsic attributes (i.e., those inherently defining a certain class) and (2) bias attributes (i.e., peripheral attributes causing the bias), from a large number of bias-aligned samples, the bias attributes of which have strong correlation with the target variable. Using the disentangled representation, we synthesize bias-conflicting samples that contain the diverse intrinsic attributes of bias-aligned samples by swapping their latent features. By utilizing these diversified bias-conflicting features during the training, our approach achieves superior classification accuracy and debiasing results against the existing baselines on both synthetic as well as real-world datasets.</p>
 
   </div>
 
