@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Oct 2021 02:34:32 -0500</pubDate>
-    <lastBuildDate>Tue, 05 Oct 2021 02:34:32 -0500</lastBuildDate>
+    <pubDate>Thu, 07 Oct 2021 03:21:53 -0500</pubDate>
+    <lastBuildDate>Thu, 07 Oct 2021 03:21:53 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -94,6 +94,18 @@
       </item>
     
       <item>
+        <title>Improving End-to-End Contextual Speech Recognition via a Word-Matching Algorithm with Backward Search</title>
+        <description></description>
+        <pubDate>Mon, 04 Oct 2021 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/ieee-e2e-csr</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieee-e2e-csr</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
         <title>UnivNet: A Neural Vocoder with Multi-Resolution Spectrogram Discriminators for High-Fidelity Waveform Generation</title>
         <description></description>
         <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
@@ -123,22 +135,6 @@
         <category>NLP</category>
         
         <category>Disfluency-detection</category>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>SE-Conformer: Time-Domain Speech Enhancement using Conformer</title>
-        <description></description>
-        <pubDate>Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/interspeech2021-se-conformer</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech2021-se-conformer</guid>
-        
-        <category>INTERSPEECH</category>
-        
-        <category>SE-Conformer</category>
         
         
         <category>papers</category>
