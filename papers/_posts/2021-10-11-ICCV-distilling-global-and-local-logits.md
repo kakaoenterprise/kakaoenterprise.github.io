@@ -48,7 +48,7 @@ In prevalent knowledge distillation, logits in most image recognition models are
 
 지식 증류 과정에서 teacher 모델의 정보를 student 모델에 전달하기 위해, logit 값이 활용됩니다. 여기서 logit은 해당 task와 직접적인 연관을 가지는 모델의 출력값으로, feature보다 입력 이미지에 대한 모델의 representation 정보를 풍부하게 담고 있어 학습 데이터와 함께 사용될 경우 효율적인 학습이 가능해집니다.
 
-이때 logit은 과적합(overfitting)을 방지하기 위해 global average pooing(GAP)으로 계산되는데, 이로 인해 logit을 활용한 기존 연구들에서는 세부 공간에 대한 logit을 사용할 수 없다는 한계가 존재했습니다. 이에 카카오엔터프라이즈 연구팀은 global logit과 local logit이라는 개념을 새롭게 제시한 ‘Global and Local Logit with Densely Connected Relations(GLD)’ 방법론을 제안하여 이같은 문제를 해결하고자 하였습니다.
+이때 logit은 과적합(overfitting)을 방지하기 위해 global average pooling(GAP)으로 계산되는데, 이로 인해 logit을 활용한 기존 연구들에서는 세부 공간에 대한 logit을 사용할 수 없다는 한계가 존재했습니다. 이에 카카오엔터프라이즈 연구팀은 global logit과 local logit이라는 개념을 새롭게 제시한 ‘Global and Local Logit with Densely Connected Relations(GLD)’ 방법론을 제안하여 이같은 문제를 해결하고자 하였습니다.
 
 <br/>
 
