@@ -10,7 +10,7 @@ publisher-fullname: Conference of the International Speech Communication Associa
 authors:
   - chris:카카오엔터프라이즈
   - heize:카카오엔터프라이즈
-paper:
+paper: https://www.isca-speech.org/archive/pdfs/interspeech_2021/kim21h_interspeech.pdf
 code:
 tag:
   - INTERSPEECH
