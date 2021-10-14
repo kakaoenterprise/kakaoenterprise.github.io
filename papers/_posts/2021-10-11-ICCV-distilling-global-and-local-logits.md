@@ -32,7 +32,7 @@ In prevalent knowledge distillation, logits in most image recognition models are
 
 <br/>
 
-본 글에서는 카카오엔터프라이즈 AI Lab이 이번 ICCV 2021 학회에서 새롭게 발표한 지식 증류(Knowledge Distillation) 방법론을 소개드리려고 합니다.
+본 글에서는 카카오엔터프라이즈 AI Lab과 경희대, 포항공대에서 함께 연구한 새로운 지식 증류(Knowledge Distillation) 방법론이 ICCV 2021 학회를 통해 발표되어, 간략하게 소개드리고자 합니다.
 
 <br/>
 
