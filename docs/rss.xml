@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Oct 2021 21:20:38 -0500</pubDate>
-    <lastBuildDate>Wed, 13 Oct 2021 21:20:38 -0500</lastBuildDate>
+    <pubDate>Tue, 09 Nov 2021 02:16:49 -0600</pubDate>
+    <lastBuildDate>Tue, 09 Nov 2021 02:16:49 -0600</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -70,7 +70,7 @@
       </item>
     
       <item>
-        <title>AligNART: Non-autoregressive Neural Machine Translation by JointlyLearning to Estimate Alignment and Translate</title>
+        <title>AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate</title>
         <description></description>
         <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/emnlp-alignart</link>
