@@ -68,12 +68,12 @@ Multi-turn response selection models have recently shown comparable performance 
 {% include image.html name="003.png" width="50%" align="center" %}
 <em class="center">표2. 데이터셋 구성</em>
 
-<표3>과 같이 탈편향 기법(deb)과 UMS 방법론을 결합한 전략이 취약점 평가 데이터(Adversarial)에서 baseline 모델 대비 +7.8%의 상당한 높은 성능 향상을 보였습니다. 또한, 실제 환경과 유사한 데이터셋(Real Env.)에서도 본 연구팀이 제시한 전략이 +4.2%의 성능 향상을 보였습니다. 이를 통해 Adversarial한 환경에서의 강건성이 실제 환경에서도 유효함을 확인하였습니다.
+&lt;표3>과 같이 탈편향 기법(deb)과 UMS 방법론을 결합한 전략이 취약점 평가 데이터(Adversarial)에서 baseline 모델 대비 +7.8%의 상당한 높은 성능 향상을 보였습니다. 또한, 실제 환경과 유사한 데이터셋(Real Env.)에서도 본 연구팀이 제시한 전략이 +4.2%의 성능 향상을 보였습니다. 이를 통해 Adversarial한 환경에서의 강건성이 실제 환경에서도 유효함을 확인하였습니다.
 
 {% include image.html name="004.png" width="50%" align="center" %}
 <em class="center">표3. 각 데이터셋과 방법론에 따른 성능 비교</em>
 
-<표4>는 본 연구팀이 제시한 전략이 기존 모델보다 잘 작동하는 예시입니다. 기존 baseline 모델은 단순히 ‘핸드폰', ‘바꾸다' 라는 키워드만 들어가있고, 문맥상 올바르지 않은 답변에 정답보다도 더 높은 0.998 이라는 점수를 주었습니다. 반면 제시한 전략을 활용하면 이와 같은 오답에 0.094라는 낮은 점수를 주는 것을 확인할 수 있었습니다.
+&lt;표4>는 본 연구팀이 제시한 전략이 기존 모델보다 잘 작동하는 예시입니다. 기존 baseline 모델은 단순히 ‘핸드폰', ‘바꾸다' 라는 키워드만 들어가있고, 문맥상 올바르지 않은 답변에 정답보다도 더 높은 0.998 이라는 점수를 주었습니다. 반면 제시한 전략을 활용하면 이와 같은 오답에 0.094라는 낮은 점수를 주는 것을 확인할 수 있었습니다.
 
 {% include image.html name="005.png" width="50%" align="center" %}
 <em class="center">표4. 제안한 전략이 잘 작동하는 예시</em>
