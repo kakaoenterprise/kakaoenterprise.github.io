@@ -88,10 +88,9 @@ Multi-turn response selection models have recently shown comparable performance 
 
 # 참조 문헌
 
-- He et al., [Unlearn Dataset Bias in Natural Language Inference by Fitting the Residual](https://arxiv.org/abs/1908.10763), EMNLP, 2019.
-- Whang et al., Do Response Selection Models Really Know What's Next? Utterance Manipulation Strategies for Multi-turn Response Selection](https://kakaoenterprise.github.io/papers/aaai2021-multi-turn-response-selection), AAAI, 2021.
+[1] He et al., "[Unlearn Dataset Bias in Natural Language Inference by Fitting the Residual](https://arxiv.org/abs/1908.10763)", EMNLP, 2019.
 
-<br>
+[2] Whang et al., "[Do Response Selection Models Really Know What's Next? Utterance Manipulation Strategies for Multi-turn Response Selection](https://kakaoenterprise.github.io/papers/aaai2021-multi-turn-response-selection)", AAAI, 2021.
 
 ***
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2021-11-09T02:16:49-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2021-11-09T22:25:27-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against l2-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified l2-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.&lt;/p&gt;</content><author><name>정종현:카이스트</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Learning Debiased Representation via Disentangled Feature Augmentation</title><link href="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation" rel="alternate" type="text/html" title="Learning Debiased Representation via Disentangled Feature Augmentation" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;먼저 카카오엔터프라이즈 연구팀이 구축한 취약점 평가 데이터셋(adversarial dataset)은 &lt;표1&gt;과 같이 총 2220개의 테스트 케이스로 구성되어 있습니다. 이 케이스를 각각 7가지 오류 유형으로 구분하였습니다. 해당 유형으로는 이전 문장을 반복(Repetition)하거나, 부정어(Negation) 또는 시제(Tense)를 잘못 사용한 경우, 주체/대상을 혼동한 경우(Subject-Object), 모순 어휘(Lexcial Contradiction)를 사용한 경우, 토픽에 따른 화용적 오류(Topic)가 발생한 경우 등이 있습니다. 내부 서비스 로그에서 잘못 응답되거나, 빈번하게 발생하는 오류를 기준으로 유형을 분석하였습니다.&lt;/표1&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-EMNLP-evaluation-dataset-and-strategy/001.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-emnlp-evaluation-dataset-and-strategy/001.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;표1. 개별 오류 유형에 따른 평가 데이터셋 샘플&lt;/em&gt;&lt;/p&gt;
 
@@ -50,7 +50,7 @@
 
 &lt;p&gt;두 번째로는 멀티태스크 러닝과의 결합입니다. 최근 답변 선택 태스크에서는 UMS[2]와 같은 자기지도학습(Self-supervised Learning) 기반 멀티태스크 러닝을 활용한 기법이 우수한 성능을 보여주고 있습니다. 앞서 언급한 탈편향 기법과 UMS 기법을 결합하는 전략을 제시하여 더욱 향상된 성능을 얻을 수 있었습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-EMNLP-evaluation-dataset-and-strategy/002.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-emnlp-evaluation-dataset-and-strategy/002.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림1. 전체적인 모델 구조&lt;/em&gt;&lt;/p&gt;
 
@@ -60,54 +60,43 @@
 
 &lt;p&gt;실제 성능 평가는 아래 &lt;표2&gt;와 같은 데이터셋 구성으로 진행되었습니다. 각 데이터셋은 기존 학습 데이터와 동일한 방식으로 구축된 데이터(In-domain), 앞서 설명드린 연구팀이 새롭게 구축한 취약점 평가 데이터(Adv), 실제 서비스 환경과 동일한 방식의 데이터(Real)로 구성되었습니다.&lt;/표2&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-EMNLP-evaluation-dataset-and-strategy/003.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-emnlp-evaluation-dataset-and-strategy/003.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em class=&quot;center&quot;&gt;표2. 데이터셋 구성&lt;/em&gt;&lt;/p&gt;
 
-&lt;표3&gt;과 같이 탈편향 기법(deb)과 UMS 방법론을 결합한 전략이 취약점 평가 데이터(Adversarial)에서 baseline 모델 대비 +7.8%의 상당한 높은 성능 향상을 보였습니다. 또한, 실제 환경과 유사한 데이터셋(Real Env.)에서도 본 연구팀이 제시한 전략이 +4.2%의 성능 향상을 보였습니다. 이를 통해 Adversarial한 환경에서의 강건성이 실제 환경에서도 유효함을 확인하였습니다.
+&lt;p&gt;&amp;lt;표3&amp;gt;과 같이 탈편향 기법(deb)과 UMS 방법론을 결합한 전략이 취약점 평가 데이터(Adversarial)에서 baseline 모델 대비 +7.8%의 상당한 높은 성능 향상을 보였습니다. 또한, 실제 환경과 유사한 데이터셋(Real Env.)에서도 본 연구팀이 제시한 전략이 +4.2%의 성능 향상을 보였습니다. 이를 통해 Adversarial한 환경에서의 강건성이 실제 환경에서도 유효함을 확인하였습니다.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-emnlp-evaluation-dataset-and-strategy/004.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표3. 각 데이터셋과 방법론에 따른 성능 비교&lt;/em&gt;&lt;/p&gt;
 
+&lt;p&gt;&amp;lt;표4&amp;gt;는 본 연구팀이 제시한 전략이 기존 모델보다 잘 작동하는 예시입니다. 기존 baseline 모델은 단순히 ‘핸드폰’, ‘바꾸다’ 라는 키워드만 들어가있고, 문맥상 올바르지 않은 답변에 정답보다도 더 높은 0.998 이라는 점수를 주었습니다. 반면 제시한 전략을 활용하면 이와 같은 오답에 0.094라는 낮은 점수를 주는 것을 확인할 수 있었습니다.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-07-emnlp-evaluation-dataset-and-strategy/005.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;img src=&quot;/assets/img/2021-11-07-EMNLP-evaluation-dataset-and-strategy/004.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표4. 제안한 전략이 잘 작동하는 예시&lt;/em&gt;&lt;/p&gt;
 
-&lt;em class=&quot;center&quot;&gt;표3. 각 데이터셋과 방법론에 따른 성능 비교&lt;/em&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;표4&gt;는 본 연구팀이 제시한 전략이 기존 모델보다 잘 작동하는 예시입니다. 기존 baseline 모델은 단순히 ‘핸드폰', ‘바꾸다' 라는 키워드만 들어가있고, 문맥상 올바르지 않은 답변에 정답보다도 더 높은 0.998 이라는 점수를 주었습니다. 반면 제시한 전략을 활용하면 이와 같은 오답에 0.094라는 낮은 점수를 주는 것을 확인할 수 있었습니다.
+&lt;h1 id=&quot;4-향후-연구-계획&quot;&gt;4. 향후 연구 계획&lt;/h1&gt;
 
+&lt;p&gt;현재 이 연구 결과는 외개인아가 챗봇의 답변 선택 로직에 적용되어 있습니다. 외개인아가는 대화 주제가 열려있는 비목적성 대화, 즉 일상 대화에 초점을 둔 챗봇입니다. 실제 사람 간의 대화를 살펴보면 일상 대화나 감정 교류 목적의 ‘스몰톡(small talk)’이 차지하는 비중이 높은데요. 카카오엔터프라이즈에서는 이러한 스몰톡에서 이전 대화 맥락을 반영하여 적절한 발화를 선택하는 기술을 지속적으로 연구해, 서비스를 고도화시켜 나갈 계획입니다. 앞으로도 카카오엔터프라이즈의 AI 연구와 서비스에 많은 관심 부탁드립니다. 감사합니다.&lt;/p&gt;
 
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
+&lt;h1 id=&quot;참조-문헌&quot;&gt;참조 문헌&lt;/h1&gt;
 
+&lt;p&gt;[1] He et al., “&lt;a href=&quot;https://arxiv.org/abs/1908.10763&quot;&gt;Unlearn Dataset Bias in Natural Language Inference by Fitting the Residual&lt;/a&gt;”, EMNLP, 2019.&lt;/p&gt;
 
-&lt;img src=&quot;/assets/img/2021-11-07-EMNLP-evaluation-dataset-and-strategy/005.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;
+&lt;p&gt;[2] Whang et al., “&lt;a href=&quot;https://kakaoenterprise.github.io/papers/aaai2021-multi-turn-response-selection&quot;&gt;Do Response Selection Models Really Know What’s Next? Utterance Manipulation Strategies for Multi-turn Response Selection&lt;/a&gt;”, AAAI, 2021.&lt;/p&gt;
 
-&lt;em class=&quot;center&quot;&gt;표4. 제안한 전략이 잘 작동하는 예시&lt;/em&gt;
+&lt;hr /&gt;
 
-&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-# 4. 향후 연구 계획
+&lt;p&gt;현재 카카오엔터프라이즈 AI Lab에서는 다양한 AI 연구와 서비스화를 함께 고민해나갈 여러분의 지원을 기다리고 있습니다. AI를 통해 더욱 가치있는 세상을 만들고, 꿈을 현실로 만들어가는 여정에 함께하세요!&lt;/p&gt;
 
-현재 이 연구 결과는 외개인아가 챗봇의 답변 선택 로직에 적용되어 있습니다. 외개인아가는 대화 주제가 열려있는 비목적성 대화, 즉 일상 대화에 초점을 둔 챗봇입니다. 실제 사람 간의 대화를 살펴보면 일상 대화나 감정 교류 목적의 ‘스몰톡(small talk)’이 차지하는 비중이 높은데요. 카카오엔터프라이즈에서는 이러한 스몰톡에서 이전 대화 맥락을 반영하여 적절한 발화를 선택하는 기술을 지속적으로 연구해, 서비스를 고도화시켜 나갈 계획입니다. 앞으로도 카카오엔터프라이즈의 AI 연구와 서비스에 많은 관심 부탁드립니다. 감사합니다.
-
-&lt;br /&gt;
-
-# 참조 문헌
-
-- He et al., [Unlearn Dataset Bias in Natural Language Inference by Fitting the Residual](https://arxiv.org/abs/1908.10763), EMNLP, 2019.
-- Whang et al., Do Response Selection Models Really Know What's Next? Utterance Manipulation Strategies for Multi-turn Response Selection](https://kakaoenterprise.github.io/papers/aaai2021-multi-turn-response-selection), AAAI, 2021.
-
-&lt;br /&gt;
-
-***
-
-&lt;br /&gt;
-
-현재 카카오엔터프라이즈 AI Lab에서는 다양한 AI 연구와 서비스화를 함께 고민해나갈 여러분의 지원을 기다리고 있습니다. AI를 통해 더욱 가치있는 세상을 만들고, 꿈을 현실로 만들어가는 여정에 함께하세요!
-
-👨🏻‍💻 [인재채용](http://kko.to/ailab_career)
-
-&lt;/표4&gt;&lt;/표3&gt;</content><author><name>mat:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate</title><link href="https://kakaoenterprise.github.io/papers/emnlp-alignart" rel="alternate" type="text/html" title="AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate" /><published>2021-11-07T00:00:00-05:00</published><updated>2021-11-07T00:00:00-05:00</updated><id>https://kakaoenterprise.github.io/papers/emnlp-alignart</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/emnlp-alignart">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;👨🏻‍💻 &lt;a href=&quot;http://kko.to/ailab_career&quot;&gt;인재채용&lt;/a&gt;&lt;/p&gt;</content><author><name>mat:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate</title><link href="https://kakaoenterprise.github.io/papers/emnlp-alignart" rel="alternate" type="text/html" title="AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate" /><published>2021-11-07T00:00:00-05:00</published><updated>2021-11-07T00:00:00-05:00</updated><id>https://kakaoenterprise.github.io/papers/emnlp-alignart</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/emnlp-alignart">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Non-autoregressive neural machine translation (NART) models suffer from the multi-modality problem which causes translation inconsistency such as token repetition. Most recent approaches have attempted to solve this problem by implicitly modeling dependencies between outputs. In this paper, we introduce AligNART, which leverages full alignment information to explicitly reduce the modality of the target distribution. AligNART divides the machine translation task into (i) alignment estimation and (ii) translation with aligned decoder inputs, guiding the decoder to focus on simplified one-to-one translation. To alleviate the alignment estimation problem, we further propose a novel alignment decomposition method. Our experiments show that AligNART outperforms previous non-iterative NART models that focus on explicit modality reduction on WMT14 En↔De and WMT16 Ro→En. Furthermore, AligNART achieves BLEU scores comparable to those of the state-of-the-art connectionist temporal classification based models on WMT14 En↔De. We also observe that AligNART effectively addresses the token repetition problem even without sequence-level knowledge distillation.&lt;/p&gt;
 
