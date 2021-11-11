@@ -10,7 +10,7 @@ publisher-fullname: International Conference on Acoustics, Speech, and Signal Pr
 authors:
   - jeffrey:카카오엔터프라이즈
   - chris:카카오엔터프라이즈
-paper:
+paper: https://arxiv.org/pdf/2011.00771.pdf
 code:
 tag:
 ---
