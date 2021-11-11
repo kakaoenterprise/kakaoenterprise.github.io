@@ -4,7 +4,7 @@ research-area: NLP
 title: Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission
 slug: wmt21-terminology-translation
 description:
-published-date: 2021-11-19
+published-date: 2021-11-10
 publisher: WMT 2021 System Papers
 authors:
   - juliette:카카오엔터프라이즈
@@ -12,7 +12,7 @@ authors:
   - jay:카카오엔터프라이즈
   - james:카카오엔터프라이즈
   - louis:카카오엔터프라이즈
-paper: 
+paper: http://www.statmt.org/wmt21/pdf/2021.wmt-1.79.pdf
 code:
 deepdive:
 tag:
