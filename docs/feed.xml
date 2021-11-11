@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2021-11-09T22:25:27-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2021-11-10T03:06:12-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against l2-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified l2-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.&lt;/p&gt;</content><author><name>정종현:카이스트</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Learning Debiased Representation via Disentangled Feature Augmentation</title><link href="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation" rel="alternate" type="text/html" title="Learning Debiased Representation via Disentangled Feature Augmentation" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
@@ -12,7 +12,71 @@
 
 &lt;p&gt;This paper proposes self-supervised strategies for speaker-focused post-correction in abstractive dialogue summarization. Specifically, our model first discriminates which type of speaker correction is required in a draft summary and then generates a revised summary according to the required type.&lt;/p&gt;
 
-&lt;p&gt;Experimental results show that our proposed method adequately corrects the draft summaries, and the revised summaries are significantly improved in both quantitative and qualitative evaluations.&lt;/p&gt;</content><author><name>이동엽:카카오</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model</title><link href="https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy" rel="alternate" type="text/html" title="An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model" /><published>2021-11-07T00:00:00-05:00</published><updated>2021-11-07T00:00:00-05:00</updated><id>https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;Experimental results show that our proposed method adequately corrects the draft summaries, and the revised summaries are significantly improved in both quantitative and qualitative evaluations.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;카카오엔터프라이즈에서는 마치 사람처럼 대화 맥락(context)을 이해하고, 그 내용을 자연스럽게 요약할 수 있는 자연어 처리 기술을 연구하고 있습니다. 본 글에서는 카카오, 카카오엔터프라이즈와 고려대, 와이즈넛, 마이크로소프트 공동 연구팀이 발표한 새로운 대화 생성 요약 방법론에 대해 소개드리고자 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-기존-대화-요약-기술의-한계&quot;&gt;1. 기존 대화 요약 기술의 한계&lt;/h1&gt;
+
+&lt;p&gt;기존 트랜스포머 기반 사전훈련 언어모델(PLM; BERT, BART, T5)이 많은 발전을 거듭하여 뛰어난 성능을 보임에도 불구하고, 여전히 여러 화자의 대화를 요약하는 상황에서 한계점이 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;최근 많이 활용되는 생성 요약(abstractive summarization) 방식은 대화 내용에서 중요한 핵심 문장 또는 단어구 몇가지를 그대로 뽑아 요약하는 추출 요약(extractive summarization)과 달리, 대화 문맥을 고려해 새로운 문장을 만들어냅니다. 긴 시간 다수의 화자가 대화한 내용으로부터 핵심 키워드를 선별하여 가독성 좋은 요약문을 만드는게 핵심인데요. 이때 문장 구조나 언급된 표현의 수정으로, 보다 자연스럽고 깔끔한 형태의 요약문을 만들 수 있습니다. 다만 모델이 재해석한 내용을 바탕으로 만들어지기 때문에 내용이 잘못 요약될 수 있는 문제(Factual Consistency)를 안고 있는데요.&lt;/p&gt;
+
+&lt;p&gt;실제 100개의 테스트셋을 직접 사람이 분석한 결과 53%가 내용에 오류가 있었고, 이 중 절반 이상이 화자와 관련된 오류였습니다. 예를 들어 &lt;그림1&gt;과 같이 화자 정보가 바뀌는 경우인데요. 주로 화자와 관련된 엔티티(entity)나 릴레이션(relation) 서술에 오류가 있는 경우가 많았습니다. 본 연구에서는 이같은 문제를 해결하고자, 화자 중심의 대화문 사후 편집(post-correction)을 통한 생성 요약 방법론을 새롭게 제안하였습니다.&lt;/그림1&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-10-NewSum-CSI/001.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표1. 화자와 관련된 대화 요약 오류 예시&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2--capturing-speaker-incorrectness-방법론-소개&quot;&gt;2.  Capturing Speaker Incorrectness 방법론 소개&lt;/h1&gt;
+
+&lt;p&gt;해당 방법론의 가장 큰 특징은 대화 요약 태스크에서 화자 중심의 사후 편집 전략을 적용했다는 점입니다. 해당 모델은 초안 요약(draft summary) 단계에서 잘못 언급된 화자 오류 유형을 먼저 찾고, 어떤 유형으로 이를 수정해야 될지 판단합니다. 이후 빠져있는 화자명을 추가하거나, 잘못 언급된 화자를 삭제, 혹은 교체하는 방식으로 요약 내용을 수정합니다. 최종적으로 수정된 결과 예시는 &lt;표2&gt;와 같습니다.&lt;/표2&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-10-NewSum-CSI/002.png&quot; width=&quot;80%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표2. 대화 교정 후 결과 예시 (빨간색 오류 부분을 파란색으로 수정)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;일반적으로 생성 요약 학습에서는 레이블링된 요약문 데이터셋이 필요한데요. 해당 방법론에서는 자기지도학습(Self-supervised Learning) 전략을 사용하여 추가적인 어노테이션(annotation) 없이 학습 데이터를 구성하였습니다. 또한, 강건한 모델을 만들기 위해 학습 시에 대화 맥락과 초안 요약이 주어지면 화자 리스트를 구성하는 화자 생성기(speaker generator)를 보조 태스크로 진행하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-성능-평가&quot;&gt;3. 성능 평가&lt;/h1&gt;
+
+&lt;p&gt;실제 모델의 성능을 정량적, 정성적인 평가 기준으로 측정하였을 때, 초안 요약 결과와 수정된 요약 결과 모두에서 높은 성능을 보임을 확인하였습니다. 먼저 동일한 단어가 얼마나 많이 매칭되는지를 판단하는 기계 평가 메트릭 ROUGE 스코어를 활용했을 때, &lt;표3&gt;와 같은 성능 결과를 얻었습니다. 여기서 Correction Rate는 해당 모델에 의해 수정된 비율을 의미합니다.&lt;/표3&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-10-NewSum-CSI/003.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표3. 정량적인 성능 평가 결과 (ROUGE score)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;ROUGE 스코어는 단어의 시멘틱 요소는 고려되지 않기 때문에, 정성적인 측면의 평가를 위해 Amazon Mechanical Turk(AMT)를 활용하여 &lt;표3&gt;과 같이 실제 사람의 평가를 진행하였습니다. 여기서도 우수한 성능을 보임을 확인할 수 있었습니다.&lt;/표3&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-11-10-NewSum-CSI/004.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표4. 정성적인 성능 평가 결과 (Human Evaluation)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-향후-연구-계획&quot;&gt;4. 향후 연구 계획&lt;/h1&gt;
+
+&lt;p&gt;장시간의 대화를 요약하는 시스템은 회의록 작성 등 현재 다양한 분야에 활용되고 있습니다. 본 연구 결과는 카카오엔터프라이즈의 대화 요약 서비스의 적용되어 factual consistency 문제를 개선하는 데에 활용될 예정입니다. 앞으로도 카카오엔터프라이즈의 AI 연구와 서비스에 많은 관심 부탁드립니다. 감사합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;현재 카카오엔터프라이즈 AI Lab에서는 다양한 AI 연구와 서비스화를 함께 고민해나갈 여러분의 지원을 기다리고 있습니다. AI를 통해 더욱 가치있는 세상을 만들고, 꿈을 현실로 만들어가는 여정에 함께하세요!&lt;/p&gt;
+
+&lt;p&gt;👨🏻‍💻 &lt;a href=&quot;http://kko.to/ailab_career&quot;&gt;인재영입&lt;/a&gt;&lt;/p&gt;</content><author><name>이동엽:카카오</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model</title><link href="https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy" rel="alternate" type="text/html" title="An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model" /><published>2021-11-07T00:00:00-05:00</published><updated>2021-11-07T00:00:00-05:00</updated><id>https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Multi-turn response selection models have recently shown comparable performance to humans in several benchmark datasets. However, in the real environment, these models often have weaknesses, such as making incorrect predictions based heavily on superficial patterns without a comprehensive understanding of the context. For example, these models often give a high score to the wrong response candidate containing several keywords related to the context but using the inconsistent tense. In this study, we analyze the weaknesses of the open-domain Korean Multi-turn response selection models and publish an adversarial dataset to evaluate these weaknesses. We also suggest a strategy to build a robust model in this adversarial environment.&lt;/p&gt;
 
