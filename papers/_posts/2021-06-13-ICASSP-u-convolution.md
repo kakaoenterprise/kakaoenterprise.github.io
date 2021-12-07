@@ -11,7 +11,7 @@ authors:
   - chris:카카오엔터프라이즈
   - jeffrey:카카오엔터프라이즈
   - heize:카카오엔터프라이즈
-paper:
+paper: https://ieeexplore.ieee.org/document/9414753
 code:
 tag:
 ---

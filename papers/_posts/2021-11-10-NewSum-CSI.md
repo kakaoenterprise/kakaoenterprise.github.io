@@ -13,7 +13,7 @@ authors:
   - john:카카오엔터프라이즈
   - 박민건:마이크로소프트
   - 임희석:고려대
-paper: 
+paper: https://aclanthology.org/2021.newsum-1.8/  
 code:
 deepdive:
 tag:

@@ -8,12 +8,12 @@ published-date: 2021-12-06
 publisher: NeurIPS Oral
 publisher-fullname: Neural Information Processing Systems (NeurIPS) Oral
 authors:
-  - 이정수:카이스트
-  - josh:카카오엔터프라이즈
+  - 이정수:카이스트, 카카오엔터프라이즈
+  - josh:카이스트, 카카오엔터프라이즈
   - michael:카카오엔터프라이즈
   - 이지현:카이스트
   - 주재걸:카이스트
-paper: 
+paper: https://papers.nips.cc/paper/2021/file/d360a502598a4b64b936683b44a5523a-Paper.pdf
 code:
 deepdive:
 tag:
