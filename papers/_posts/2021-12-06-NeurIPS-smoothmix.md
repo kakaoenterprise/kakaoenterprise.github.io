@@ -14,7 +14,7 @@ authors:
   - andrew:카카오엔터프라이즈
   - 김도국:카카오엔터프라이즈
   - 신진우:카이스트
-paper: 
+paper: https://papers.nips.cc/paper/2021/file/fd45ebc1e1d76bc1fe0ba933e60e9957-Paper.pdf
 code:
 deepdive:
 tag:
