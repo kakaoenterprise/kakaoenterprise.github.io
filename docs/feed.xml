@@ -1,8 +1,183 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2021-12-07T20:41:34-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2021-12-08T00:32:21-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
-&lt;p&gt;Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against l2-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified l2-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.&lt;/p&gt;</content><author><name>정종현:카이스트</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Learning Debiased Representation via Disentangled Feature Augmentation</title><link href="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation" rel="alternate" type="text/html" title="Learning Debiased Representation via Disentangled Feature Augmentation" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against l&lt;sub&gt;2&lt;/sub&gt;-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified l&lt;sub&gt;2&lt;/sub&gt;-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.&lt;/p&gt;
 
-&lt;p&gt;Image classification models tend to make decisions based on peripheral attributes of data items that have strong correlation with a target variable (i.e., dataset bias). These biased models suffer from the poor generalization capability when evaluated on unbiased datasets. Existing approaches for debiasing often identify and emphasize those samples with no such correlation (i.e., bias-conflicting) without defining the bias type in advance. However, such bias-conflicting samples are significantly scarce in biased datasets, limiting the debiasing capability of these approaches. This paper first presents an empirical analysis revealing that training with “diverse” bias-conflicting samples beyond a given training set is crucial for debiasing as well as the generalization capability. Based on this observation, we propose a novel feature-level data augmentation technique in order to synthesize diverse bias-conflicting samples. To this end, our method learns the disentangled representation of (1) the intrinsic attributes (i.e., those inherently defining a certain class) and (2) bias attributes (i.e., peripheral attributes causing the bias), from a large number of bias-aligned samples, the bias attributes of which have strong correlation with the target variable. Using the disentangled representation, we synthesize bias-conflicting samples that contain the diverse intrinsic attributes of bias-aligned samples by swapping their latent features. By utilizing these diversified bias-conflicting features during the training, our approach achieves superior classification accuracy and debiasing results against the existing baselines on both synthetic as well as real-world datasets.&lt;/p&gt;</content><author><name>이정수:카이스트, 카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission</title><link href="https://kakaoenterprise.github.io/papers/wmt21-terminology-translation" rel="alternate" type="text/html" title="Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission" /><published>2021-11-19T00:00:00-06:00</published><updated>2021-11-19T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/wmt21-terminology-translation">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;본 글에서는 카카오엔터프라이즈와 카이스트, Vector Institute 공동 연구팀이 강건한 분류기 구축을 위해, 새롭게 제안하는 적대적 학습(adversarial training) 기법을 소개드리려고 합니다. 해당 연구 결과는 NeurIPS 2021 학회를 통해 공개되었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-적대적-학습-기법의-필요성&quot;&gt;1. 적대적 학습 기법의 필요성&lt;/h1&gt;
+
+&lt;p&gt;일반적으로 딥러닝 모델은 훈련 과정에서 예측값에 대해 과잉 확신(over-confidence)을 가지는 경향이 있습니다. 이로 인해 틀린 답을 정답으로 간주하는 큰 문제를 야기할 수 있는데요. 이같은 문제 해결을 위해 적대적 학습 기법이 등장하였습니다.&lt;/p&gt;
+
+&lt;p&gt;적대적 학습 기법은 원본 데이터에 최적의 노이즈를 추가한 적대적 샘플을 통해, 딥러닝 모델의 오예측을 유도하는 훈련 방법론입니다. 실제 사람이 보기에는 크게 문제가 없는 수준의 노이즈더라도, 노이즈로 인해 왜곡된 이미지는 모델 예측에 악영향을 끼칠 수 있습니다. 이처럼 예측이 어려운 적대적 샘플을 통해 학습을 진행하고, 이를 방어하기 위한 목적함수를 조정하는 적대적 학습 기법을 활용해 정확도를 한층 높인 강건한 분류기를 구축할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/001.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림1. 맨 왼쪽 그림은 57.7%의 confidence로 판다라고 인식하지만, 중간에 노이즈를 추가한 오른쪽 그림은 유관상으로는 같은 그림 같아 보이지만 모델은 99.3%의 confidence로 긴팔원숭이로 분류하는 걸 확인할 수 있습니다. [Goodfellow et al., 2014]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-기존-적대적-학습-기법-연구의-한계&quot;&gt;2. 기존 적대적 학습 기법 연구의 한계&lt;/h1&gt;
+
+&lt;p&gt;기존 연구들은 학습 과정에서 적대적 입력으로 데이터를 증강하는 학습 기법 [Madry et al., 2018]을 널리 사용해 왔습니다. 이에 비해 가우시안(Gaussian) 랜덤변수를 표방한 무작위 평활화(randomized smoothing) 기법은 충분히 연구되지 못했습니다.&lt;/p&gt;
+
+&lt;p&gt;무작위 평활화 기법은 현재 가장 강력한 perturbation으로 알려진 l&lt;sub&gt;2&lt;/sub&gt; adversarial perturbations에도 강건한 분류 성능을 보이는 SOTA(State-of-the-art) 방법론입니다. 최근 등장한 SmoothAdv 방법론 [Salman et al., 2019]은 무작위 평활화 기반 분류기에 직접적으로 적대적 학습을 적용해, 모델 성능이 향상될 수 있음을 보였습니다. 하지만, 이는 이미 지역적으로 강인성을 확보하고 있는 평활 분류기에 여전히 기존 방법론의 지역적 검색을 사용하는 등 일반 분류기와의 차이를 고려하지 못했다는 한계가 있었는데요. 이에 본 연구팀은 평활화 기반 분류기의 특성을 고려한 적대적 학습 기법을 새롭게 제안하고자 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/002.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림2. 기존 적대적 학습 기법(a, b)과 제안 방법론(c)에 대한 시각화&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-smoothmix-방법론-소개&quot;&gt;3. SmoothMix 방법론 소개&lt;/h1&gt;
+
+&lt;p&gt;SmoothMix의 가장 큰 특징은 적대적 입력 탐색에서 지역적 검색을 사용하지 않고, 해당 입력값과 원본 입력값 간의 mixup 학습 구조를 가진다는 점입니다.&lt;/p&gt;
+
+&lt;p&gt;이를 자세히 살펴보면, SmootMix는 기존 적대적 학습 기법에서 사용되었던 제한된 ε-ball 내부에서의 검색을 사용하지 않는 대신, 주어진 입력 x 주변의 over-confident한 입력을 찾습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/003.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이때 over-confident 입력값을 학습에 적용하기 위해, confidence 값을 uniform prediction으로 penalize하는데요. 해당 값과 원본 입력값 간의 차이를 측정하여 mixup [Zhang et al., 2017] 목적함수를 최소화하는 정규화 기법을 사용합니다. 이를 통해 두 입력값 간의 confidence를 조정하여 기존 적대적 학습 기법 대비 분류기의 강건함을 향상시켰습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/004.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/005.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;또한, SmoothMix는 SmoothAdv 기법을 통해 효과를 입증한 mixup 목적함수에 ‘single-step adversarial example’ 기법을 추가 제안하여 더욱 강건한 분류기 구조를 구성하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-성능-평가&quot;&gt;4. 성능 평가&lt;/h1&gt;
+
+&lt;p&gt;해당 방법론은 &lt;strong&gt;MNIST, CIFAR-10, ImagNet&lt;/strong&gt; 등의 이미지 분류 데이터셋에서 기존 방법론 대비 높은 성능을 보였습니다. 특히 모델의 정확도와 강인성의 최적 정도를 보여주는 ACR(Average Certified Radius) 수치를 평가하였고, 아래 표2, 표3과 같이 현재 SOTA(State-of-the-art)와 비교해 우수한 성능을 확인하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/006.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표1. 기존 방법론과의 성능 비교 (MNIST 데이터셋 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/007.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표2. 기존 방법론과의 성능 비교 (CIFAR-10 데이터셋 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-smoothmix/008.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표3. 기존 방법론과의 성능 비교 (ImageNet 데이터셋 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-향후-연구-계획&quot;&gt;5. 향후 연구 계획&lt;/h1&gt;
+
+&lt;p&gt;적대적 학습 기법은 노이즈에 강력한 모델을 구축하는데 큰 역할을 할 수 있습니다. 이로 인해 모델이 처음 보는 실서비스 데이터에서도 우수한 성능을 보일 수 있는데요. 이 기법은 다양한 AI 분야에 활용이 가능하지만, 특히 자율주행차, 의료 시스템 등 높은 정확도를 요구하는 영역에서 오판단을 줄여 그 성능을 크게 발휘할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;향후 카카오엔터프라이즈 연구팀은 해당 방법론을 기반으로 여러가지 컴퓨터 비전 문제를 해결하고, 서비스를 고도화해 나갈 계획입니다. 앞으로도 카카오엔터프라이즈 연구에 많은 관심과 응원 부탁드립니다. 감사합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;참고문헌&quot;&gt;참고문헌&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;[Goodfellow et al., 2014] Explaining and harnessing adversarial examples. arXiv 2014.&lt;/li&gt;
+  &lt;li&gt;[Madry et al., 2018] Towards Deep Learning Models Resistant to Adversarial Attacks, ICLR 2018.&lt;/li&gt;
+  &lt;li&gt;[Salman et al., 2019] Provably robust deep learning via adversarially trained smoothed classifiers, NeurIPS 2019.&lt;/li&gt;
+  &lt;li&gt;[Zhang et al., 2017] mixup: Beyond Empirical Risk Minimization, ICLR 2018.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;현재 카카오엔터프라이즈 AI Lab에서는 다양한 AI 연구와 서비스화를 함께 고민해나갈 여러분의 지원을 기다리고 있습니다. AI를 통해 더욱 가치있는 세상을 만들고, 꿈을 현실로 만들어가는 여정에 함께하세요!&lt;/p&gt;
+
+&lt;p&gt;👨🏻‍💻 &lt;a href=&quot;http://kko.to/ailab_career&quot;&gt;인재영입&lt;/a&gt;&lt;/p&gt;</content><author><name>정종현:카이스트</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Learning Debiased Representation via Disentangled Feature Augmentation</title><link href="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation" rel="alternate" type="text/html" title="Learning Debiased Representation via Disentangled Feature Augmentation" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+
+&lt;p&gt;Image classification models tend to make decisions based on peripheral attributes of data items that have strong correlation with a target variable (i.e., dataset bias). These biased models suffer from the poor generalization capability when evaluated on unbiased datasets. Existing approaches for debiasing often identify and emphasize those samples with no such correlation (i.e., bias-conflicting) without defining the bias type in advance. However, such bias-conflicting samples are significantly scarce in biased datasets, limiting the debiasing capability of these approaches. This paper first presents an empirical analysis revealing that training with “diverse” bias-conflicting samples beyond a given training set is crucial for debiasing as well as the generalization capability. Based on this observation, we propose a novel feature-level data augmentation technique in order to synthesize diverse bias-conflicting samples. To this end, our method learns the disentangled representation of (1) the intrinsic attributes (i.e., those inherently defining a certain class) and (2) bias attributes (i.e., peripheral attributes causing the bias), from a large number of bias-aligned samples, the bias attributes of which have strong correlation with the target variable. Using the disentangled representation, we synthesize bias-conflicting samples that contain the diverse intrinsic attributes of bias-aligned samples by swapping their latent features. By utilizing these diversified bias-conflicting features during the training, our approach achieves superior classification accuracy and debiasing results against the existing baselines on both synthetic as well as real-world datasets.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;본 글에서는 카카오엔터프라이즈와 카이스트 공동 연구팀이 데이터셋의 편향(bias) 문제를 개선하기 위해 새롭게 제안한 데이터 증강(data augmentation) 기법을 소개드리고자 합니다. 해당 연구 결과는 NeurIPS 2021 학회에서 oral presentation을 통해 공개되었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-기존-편향성-개선-연구의-한계&quot;&gt;1. 기존 편향성 개선 연구의 한계&lt;/h1&gt;
+
+&lt;p&gt;데이터셋의 편향 문제는 이미지 분류 모델의 학습 과정에서 흔하게 발생됩니다. 데이터를 수집, 가공하는 과정에서 자연스럽게 존재하게 되는 bias로 인해, 모델의 성능이 크게 좌우될 수 있습니다. 이로 인해 훈련 과정에서는 높은 정확도를 보였던 모델이 실제 편향되지 않은 데이터셋에 적용될 때, 낮은 성능을 보일 수 있는데요. 예를 들어 ‘새’ 이미지를 학습하는 과정에서 학습한 모든 이미지에 ‘하늘’이 있었다면, 하늘과 함께 있는 물체만 새로 인식하여 ‘땅’ 또는 ‘풀’ 위에 있는 새는 분류에 실패할 수 있습니다. 학습자의 의도와 관계 없이, 데이터셋 자체에 존재하는 편향성에 의해 모델의 성능이 저하될 수 있는건데요.&lt;/p&gt;
+
+&lt;p&gt;기존 연구들은 이러한 편향성을 제거하기 위해, 편향성을 제거한 샘플(bias-conflicting sample)을 추가하거나, 가중치를 조정하는 방식을 활용했습니다. 사실상 bias-conflicting 샘플을 수집하는 데에는 물리적, 시간적 어려움이 있기 때문에 이러한 방식에는 한계가 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-다양한-bias-conflicting-샘플의-중요성&quot;&gt;2. 다양한 bias-conflicting 샘플의 중요성&lt;/h1&gt;
+
+&lt;p&gt;딥러닝 학습에 있어 알고리즘 이상으로 중요한 것은 바로 데이터의 양입니다. 많은 데이터를 잘 활용하는 것이 모델의 성능을 좌우하는데요. 이에 공동 연구팀은 편향성 개선을 위해서는 ‘다양한 bias-conficting 샘플을 많이 활용하는 것이 모델 학습에 효과적’이라는 가설을 가지고, 이를 검증하기 위한 토이셋(toy-set) 실험을 진행하였습니다.&lt;/p&gt;
+
+&lt;p&gt;먼저 훈련 과정에는 그림1과 같이 두 가지 데이터셋(Colored MNIST, Corrupted CIFAR-10)을 활용하였습니다. 하나는 기존 MNIST 데이터셋에서 숫자에 특정 색상이 자주 나오도록 색상 bias를 설정한 Colored MNIST이고, 다른 하나는 기존 CIFAR-10 데이터셋에서 사물에 특정 텍스쳐(Corruption)가 반복되도록 텍스쳐 bias를 변형한 Corrupted CIFAR-10입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-Learning Debiased Representation/001.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림1. 데이터셋 형태
+(점선 위는 기존 bias-aligned 샘플이며, 점선 아래는 bias-conflicting 샘플임)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;아래 표1은 해당 데이터셋으로 학습한 모델에 편향성이 없는 테스트셋(unbiased test sets)을 적용했을 때의 분류 정확도를 나타냅니다. 다양한 bias-conflicting 샘플을 학습에 많이 활용한 경우가 가장 높은 정확도를 보였습니다. 여기서 주목할 점은 바로 샘플링 비율보다 다양성 비율이 높았을 때, 상대적으로 높은 정확도를 보였다는 점입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-Learning Debiased Representation/002.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표1. 편향성이 없는 테스트셋(unbiased test sets)에서의 분류 정확도&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;이를 통해 본 연구팀은 다양한 bias-conflicting 샘플의 활용이 편향 제거에 효과가 있다는 가설을 검증하였고,  bias-conflicting 샘플 데이터의 증강을 통해 편향성을 개선한 방법론을 제안하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-debiasing-via-disentangled-feature-augmentation-방법론-소개&quot;&gt;3. Debiasing via disentangled feature augmentation 방법론 소개&lt;/h1&gt;
+
+&lt;p&gt;해당 방법론의 가장 큰 특징은 각 이미지가 가진 고유속성과 편향속성을 교차합성하여 데이터를 증강시켰다는 점입니다.&lt;/p&gt;
+
+&lt;p&gt;전체 구조를 살펴보면 각각 고유속성(E&lt;sub&gt;i&lt;/sub&gt;), 편향속성(E&lt;sub&gt;b&lt;/sub&gt;)으로 구분되는 2개의 인코더가 있습니다. 하나의 이미지가 입력되면 해당 인코더를 거쳐 각각 고유속성과 편향속성의 disentangled feature로 Z&lt;sub&gt;i&lt;/sub&gt;, Z&lt;sub&gt;b&lt;/sub&gt;가 출력됩니다.&lt;/p&gt;
+
+&lt;p&gt;여기서 고유속성과 편향속성의 disentanglement를 학습하기 위해, 다음과 같은 학습과정을 진행합니다. 먼저 고유속성을 학습하는데 사용되는 E&lt;sub&gt;b&lt;/sub&gt;와 C&lt;sub&gt;b&lt;/sub&gt;를 기존 논문(Nam et al., “Learning from Failure: Training Debiased Classifier from Biased Classifier”)에서 제시한 Generalized Cross-Entropy Loss를 통해 “쉬운” 정보만을 학습하도록 강제합니다. 이를 통해 해당 인코더는 주어진 이미지로부터 편향속성을 주로 추출하게 되고, 이렇게 편향 학습된 인코더로부터 상대적으로 큰 Loss를 갖게 되는 이미지를 Bias-conflicting 샘플로 판단할 수 있게 됩니다. 이러한 이미지들에 대한 가중학습을 통해, E&lt;sub&gt;i&lt;/sub&gt;와 C&lt;sub&gt;i&lt;/sub&gt;는 편향속성이 아닌 고유속성을 주로 추출하는데 사용됩니다.&lt;/p&gt;
+
+&lt;p&gt;이때, 이 한 쌍의 피쳐들을 미니배치 내 다른 랜덤 이미지의 피쳐값과 교차 합성(swapping)을 함으로써 기존 고유속성과 편향속성 간의 강한 상관관계(correlation)가 끊어진 샘플을 생성할 수 있는데요. 이는 곧 편향성을 가지지 않는 새로운 bias-conflicting 샘플을 의미합니다. 이 과정을 통해 실제 편향성 개선에 효과적인 유의미한 합성 결과물을 구현할 수 있었습니다. 또한, 데이터 증강으로 훈련 데이터셋의 다양성을 증가시키고, 데이터의 품질 또한 높여 분류 정확도를 향상시킬 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-Learning Debiased Representation/003.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림2. 전체 모델의 구조&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-성능-평가&quot;&gt;4. 성능 평가&lt;/h1&gt;
+
+&lt;p&gt;보다 정량적인 성능 평가를 위해, 앞서 언급한 2가지 합성 데이터셋(Colored MNIST, Corrupted CIFAR-10)과 함께 BFFHQ 데이터셋을 활용하여 실험을 진행하였습니다. 여기서 BFFHQ는 기존 FFHQ 데이터셋이 가진 나이와 성별 편향성(대다수 데이터가 젊은 여자와 나이 든 남자로 구성됨)에 변형을 둔 데이터셋입니다.&lt;/p&gt;
+
+&lt;p&gt;이 세가지 데이터셋으로 학습한 모델을 각각 편향성이 없는 테스트셋으로 평가했을 때, 아래 표2와 같이 SOTA(State-of-the-art)를 뛰어넘는 우수한 성능을 보임을 확인하였습니다. 해당 방법론은 합성 데이터셋 뿐만 아니라 실서비스 상의 데이터셋에도 효과적이라는 사실을 알 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-12-06-NeurIPS-Learning Debiased Representation/004.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표2. 편향성이 없는 테스트셋(unbiased test sets)으로 평가한 분류 정확도&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-향후-연구-계획&quot;&gt;5. 향후 연구 계획&lt;/h1&gt;
+
+&lt;p&gt;Dataset Bias 문제 해결은 이미지 인식, 얼굴 인식 등 여러 컴퓨터 비전 과제를 해결하는데 큰 역할을 할 수 있습니다. 예를 들어 앞서 언급한 이미지 분류 문제에서 오식률을 개선하고, 모델의 성능을 높이는 데에도 활용될 수 있는데요. 보다 구체적으로는 딥러닝 모델이 성별, 인종, 나이 등과 같이 편향과 관련된 여러 민감한 문제에 대해 보다 신뢰성 높은 정답을 도출할 수 있도록 기여할 수 있을 것으로 기대됩니다.&lt;/p&gt;
+
+&lt;p&gt;향후 카카오엔터프라이즈 AI Lab 비전팀은 해당 방법론을 기반으로 여러가지 컴퓨터 비전 문제를 해결하고, 서비스를 고도화할 계획입니다. 앞으로도 카카오엔터프라이즈 연구에 많은 관심과 응원 부탁드립니다. 감사합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;현재 카카오엔터프라이즈 AI Lab에서는 다양한 AI 연구와 서비스화를 함께 고민해나갈 여러분의 지원을 기다리고 있습니다. AI를 통해 더욱 가치있는 세상을 만들고, 꿈을 현실로 만들어가는 여정에 함께하세요!&lt;/p&gt;
+
+&lt;p&gt;👨🏻‍💻 &lt;a href=&quot;http://kko.to/ailab_career&quot;&gt;인재영입&lt;/a&gt;&lt;/p&gt;</content><author><name>이정수:카이스트, 카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission</title><link href="https://kakaoenterprise.github.io/papers/wmt21-terminology-translation" rel="alternate" type="text/html" title="Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission" /><published>2021-11-19T00:00:00-06:00</published><updated>2021-11-19T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/wmt21-terminology-translation">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;This paper describes Kakao Enterprise’s submission to the WMT21 shared Machine Translation using Terminologies task. We integrate terminology constraints by pre-training with target lemma annotations and fine-tuning with exact target annotations utilizing the given terminology dataset. This approach yields a model that achieves outstanding results in terms of both translation quality and term consistency, ranking first based on COMET in the En→Fr language direction. Furthermore, we explore various methods such as back-translation, explicitly training terminologies as additional parallel data, and in-domain data selection.&lt;/p&gt;</content><author><name>juliette:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Capturing Speaker Incorrectness: Speaker-Focused Post-Correction for Abstractive Dialogue Summarization</title><link href="https://kakaoenterprise.github.io/papers/newsum-csi" rel="alternate" type="text/html" title="Capturing Speaker Incorrectness: Speaker-Focused Post-Correction for Abstractive Dialogue Summarization" /><published>2021-11-10T00:00:00-06:00</published><updated>2021-11-10T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/NewSum-CSI</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/newsum-csi">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
