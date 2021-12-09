@@ -1,5 +1,6 @@
 ---
 layout: post
+use-katex: true
 research-area: COMPUTER VISION
 title: "SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness"
 slug: neurips-smoothmix
@@ -22,7 +23,7 @@ tag:
 
 # Abstract
 
-Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against l<sub>2</sub>-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified l<sub>2</sub>-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.
+Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against $$l_{2}$$-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified $$l_{2}$$-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.
 
 <br/>
 
@@ -49,7 +50,7 @@ Randomized smoothing is currently a state-of-the-art method to construct a certi
 
 기존 연구들은 학습 과정에서 적대적 입력으로 데이터를 증강하는 학습 기법 [Madry et al., 2018]을 널리 사용해 왔습니다. 이에 비해 가우시안(Gaussian) 랜덤변수를 표방한 무작위 평활화(randomized smoothing) 기법은 충분히 연구되지 못했습니다.
 
-무작위 평활화 기법은 현재 가장 강력한 perturbation으로 알려진 l<sub>2</sub> adversarial perturbations에도 강건한 분류 성능을 보이는 SOTA(State-of-the-art) 방법론입니다. 최근 등장한 SmoothAdv 방법론 [Salman et al., 2019]은 무작위 평활화 기반 분류기에 직접적으로 적대적 학습을 적용해, 모델 성능이 향상될 수 있음을 보였습니다. 하지만, 이는 이미 지역적으로 강인성을 확보하고 있는 평활 분류기에 여전히 기존 방법론의 지역적 검색을 사용하는 등 일반 분류기와의 차이를 고려하지 못했다는 한계가 있었는데요. 이에 본 연구팀은 평활화 기반 분류기의 특성을 고려한 적대적 학습 기법을 새롭게 제안하고자 합니다.
+무작위 평활화 기법은 현재 가장 강력한 perturbation으로 알려진 $$l_{2}$$ adversarial perturbations에도 강건한 분류 성능을 보이는 SOTA(State-of-the-art) 방법론입니다. 최근 등장한 SmoothAdv 방법론 [Salman et al., 2019]은 무작위 평활화 기반 분류기에 직접적으로 적대적 학습을 적용해, 모델 성능이 향상될 수 있음을 보였습니다. 하지만, 이는 이미 지역적으로 강인성을 확보하고 있는 평활 분류기에 여전히 기존 방법론의 지역적 검색을 사용하는 등 일반 분류기와의 차이를 고려하지 못했다는 한계가 있었는데요. 이에 본 연구팀은 평활화 기반 분류기의 특성을 고려한 적대적 학습 기법을 새롭게 제안하고자 합니다.
 
 {% include image.html name="002.png" width="70%" align="center" %}
 <em class="center">그림2. 기존 적대적 학습 기법(a, b)과 제안 방법론(c)에 대한 시각화</em>

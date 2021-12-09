@@ -1,5 +1,6 @@
 ---
 layout: post
+use-katex: true
 research-area: COMPUTER VISION
 title: Learning Debiased Representation via Disentangled Feature Augmentation
 slug: neurips-learning-debiased-representation
@@ -64,9 +65,9 @@ Image classification models tend to make decisions based on peripheral attribute
 
 해당 방법론의 가장 큰 특징은 각 이미지가 가진 고유속성과 편향속성을 교차합성하여 데이터를 증강시켰다는 점입니다.
 
-전체 구조를 살펴보면 각각 고유속성(E<sub>i</sub>), 편향속성(E<sub>b</sub>)으로 구분되는 2개의 인코더가 있습니다. 하나의 이미지가 입력되면 해당 인코더를 거쳐 각각 고유속성과 편향속성의 disentangled feature로 Z<sub>i</sub>, Z<sub>b</sub>가 출력됩니다.
+전체 구조를 살펴보면 각각 고유속성($$E_{i}$$), 편향속성($$E_{b}$$)으로 구분되는 2개의 인코더가 있습니다. 하나의 이미지가 입력되면 해당 인코더를 거쳐 각각 고유속성과 편향속성의 disentangled feature로 $$Z_{i}$$, $$Z_{b}$$가 출력됩니다.
 
-여기서 고유속성과 편향속성의 disentanglement를 학습하기 위해, 다음과 같은 학습과정을 진행합니다. 먼저 고유속성을 학습하는데 사용되는 E<sub>b</sub>와 C<sub>b</sub>를 기존 논문(Nam et al., "Learning from Failure: Training Debiased Classifier from Biased Classifier")에서 제시한 Generalized Cross-Entropy Loss를 통해 "쉬운" 정보만을 학습하도록 강제합니다. 이를 통해 해당 인코더는 주어진 이미지로부터 편향속성을 주로 추출하게 되고, 이렇게 편향 학습된 인코더로부터 상대적으로 큰 Loss를 갖게 되는 이미지를 Bias-conflicting 샘플로 판단할 수 있게 됩니다. 이러한 이미지들에 대한 가중학습을 통해, E<sub>i</sub>와 C<sub>i</sub>는 편향속성이 아닌 고유속성을 주로 추출하는데 사용됩니다.
+여기서 고유속성과 편향속성의 disentanglement를 학습하기 위해, 다음과 같은 학습과정을 진행합니다. 먼저 고유속성을 학습하는데 사용되는 $$E_{b}$$와 $$C_{b}$$를 기존 논문(Nam et al., "Learning from Failure: Training Debiased Classifier from Biased Classifier")에서 제시한 Generalized Cross-Entropy Loss를 통해 "쉬운" 정보만을 학습하도록 강제합니다. 이를 통해 해당 인코더는 주어진 이미지로부터 편향속성을 주로 추출하게 되고, 이렇게 편향 학습된 인코더로부터 상대적으로 큰 Loss를 갖게 되는 이미지를 Bias-conflicting 샘플로 판단할 수 있게 됩니다. 이러한 이미지들에 대한 가중학습을 통해, $$E_{i}$$와 $$C_{i}$$는 편향속성이 아닌 고유속성을 주로 추출하는데 사용됩니다.
 
 이때, 이 한 쌍의 피쳐들을 미니배치 내 다른 랜덤 이미지의 피쳐값과 교차 합성(swapping)을 함으로써 기존 고유속성과 편향속성 간의 강한 상관관계(correlation)가 끊어진 샘플을 생성할 수 있는데요. 이는 곧 편향성을 가지지 않는 새로운 bias-conflicting 샘플을 의미합니다. 이 과정을 통해 실제 편향성 개선에 효과적인 유의미한 합성 결과물을 구현할 수 있었습니다. 또한, 데이터 증강으로 훈련 데이터셋의 다양성을 증가시키고, 데이터의 품질 또한 높여 분류 정확도를 향상시킬 수 있었습니다.
 
