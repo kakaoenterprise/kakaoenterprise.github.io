@@ -5,7 +5,7 @@ title: "Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0"
 slug: aaai-simmc
 description:
 published-date: 2022-02-28
-publisher: DSTC10 Challenge Wokrshop at AAAI
+publisher: DSTC10 Wokrshop at AAAI
 authors:
   - rung:카카오엔터프라이즈
   - mat:카카오엔터프라이즈
