@@ -1,6 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2022-02-09T22:07:35-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0</title><link href="https://kakaoenterprise.github.io/papers/aaai-simmc" rel="alternate" type="text/html" title="Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0" /><published>2022-02-28T00:00:00-06:00</published><updated>2022-02-28T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/aaai-simmc</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/aaai-simmc">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://kakaoenterprise.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kakaoenterprise.github.io/" rel="alternate" type="text/html" /><updated>2022-02-28T03:02:43-06:00</updated><id>https://kakaoenterprise.github.io/feed.xml</id><title type="html">카카오엔터프라이즈 AI Research</title><subtitle>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</subtitle><author><name>카카오엔터프라이즈</name></author><entry><title type="html">Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0</title><link href="https://kakaoenterprise.github.io/papers/aaai-simmc" rel="alternate" type="text/html" title="Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0" /><published>2022-02-28T00:00:00-06:00</published><updated>2022-02-28T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/aaai-simmc</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/aaai-simmc">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
-&lt;p&gt;This paper presents our work on the Situated Interactive MultiModal Conversations 2.0 challenge held at Dialog State Tracking Challenge 10. SIMMC 2.0 includes 4 subtasks, and we introduce our multimodal approaches for the subtask #1, #2 and the generation of subtask #4. SIMMC 2.0 dataset is a multimodal dataset containing image and text information, which is more challenging than the problem of only text-based conversations because it must be solved by understanding the relationship between image and text. Therefore, since there is a limit to solving only text models such as BERT or GPT2, we propose a multimodal model combining image and text. We first pretrain the multimodal model to understand the relationship between image and text, then finetune our model for each task. We achieve the 3rd best performance in subtask #1, #2 and a runner-up in the generation of subtask #4. The source code is available at https://github.com/rungjoo/simmc2.0.&lt;/p&gt;</content><author><name>rung:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Proxyless Neural Architecture Adaptation for Supervised Learning and Self-Supervised Learning</title><link href="https://kakaoenterprise.github.io/papers/aaai-pnaa" rel="alternate" type="text/html" title="Proxyless Neural Architecture Adaptation for Supervised Learning and Self-Supervised Learning" /><published>2022-02-28T00:00:00-06:00</published><updated>2022-02-28T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/aaai-pnaa</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/aaai-pnaa">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;This paper presents our work on the Situated Interactive MultiModal Conversations 2.0 challenge held at Dialog State Tracking Challenge 10. SIMMC 2.0 includes 4 subtasks, and we introduce our multimodal approaches for the subtask #1, #2 and the generation of subtask #4. SIMMC 2.0 dataset is a multimodal dataset containing image and text information, which is more challenging than the problem of only text-based conversations because it must be solved by understanding the relationship between image and text. Therefore, since there is a limit to solving only text models such as BERT or GPT2, we propose a multimodal model combining image and text. We first pretrain the multimodal model to understand the relationship between image and text, then finetune our model for each task. We achieve the 3rd best performance in subtask #1, #2 and a runner-up in the generation of subtask #4. The source code is available at https://github.com/rungjoo/simmc2.0.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;카카오엔터프라이즈 연구팀은 지난해 10월 개최된 &lt;strong&gt;Situated Interactive MultiModal Conversations 2.0&lt;/strong&gt; (이하 SIMMC 2.0) 챌린지에 참여하여 subtask #1과 #2에서는 &lt;strong&gt;3위&lt;/strong&gt;를, #4에서는 &lt;strong&gt;2위&lt;/strong&gt;를 달성하는 성과를 거두었습니다. 본 논문을 통해 챌린지 참여 과정을 소개하고자 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-챌린지-소개&quot;&gt;1. 챌린지 소개&lt;/h1&gt;
+
+&lt;p&gt;먼저 해당 챌린지에 대해 짧게 소개드리려고 합니다. 지난해 2회째를 맞은 SIMMC 2.0는 AI 대화 시스템 분야의 대표적인 국제 경진대회인 &lt;strong&gt;DSTC(Dialog State Tracking Challenge)10&lt;/strong&gt;을 통해 개최되었습니다.
+대회 주제는 바로, 멀티모달 데이터셋을 활용해 실생활에 쓰일 수 있는 어시스턴트(assistant) 모델을 만드는 것이었는데요. 주어진 데이터셋은 쇼핑 도메인에 특화된 목적지향 대화(task-oriented dialog) 데이터로 구성되어 있었고, 이 데이터셋을 활용해 사용자가 의류 또는 가구를 쇼핑하는 상황에서 AI 어시스턴트가 얼마나 대화 맥락에 적절한 응답을 생성하는지를 평가하는 과제들이 주어졌습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-과제-소개&quot;&gt;2. 과제 소개&lt;/h1&gt;
+
+&lt;p&gt;연구팀은 SIMMC 2.0에서 주어진 4가지 과제 중, subtask #1, #2와 #4에 참여하였습니다. 각 subtask마다 사용 가능한 데이터와 모델링에 있어 차이가 있었고, 학습과 테스트 과정에서 활용 가능한 데이터에서도 제한이 있었습니다. 특히 모든 테스트 과정에서 객체의 시각적 메타데이터, 라벨링된 사용자 정보, 대화에 언급된 모든 객체 리스트 정보는 사용할 수 없었는데요. 다만, 객체의 비시각적 메타데이터, 시스템 발화에서 언급된 객체 리스트, 대화에 해당하는 배경이미지, 모든 객체의 경계 박스(bounding box) 데이터는 모두 활용 가능했습니다. 참고로, 여기서 객체는 의류 도메인 상에서 의류 이미지에 해당됩니다.&lt;/p&gt;
+
+&lt;p&gt;좀 더 자세히 각 과제 내용을 살펴보면, &lt;strong&gt;#1 Multimodal Disambiguation&lt;/strong&gt;은 배경 전체 이미지와 대화 맥락이 주어질 때, 이 상황에서 마지막 발화의 명확성을 판단(True/False)하는 과제입니다. 예를 들어 오른쪽 옷걸이에 파란색 옷 3가지가 걸려있다고 가정했을 때, 아래와 같은 방식으로 발화가 이루어진다면 어떤 옷을 가르키는지 명확히 알 수 없기 때문에 불명확함을 의미하는 False를 도출하게 됩니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;발화1 : 파란색 옷이 어디 있나요?&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;발화2 : 저기 오른쪽 위에 있습니다.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;다음으로 &lt;strong&gt;#2 Multimodal Coreference Resolution&lt;/strong&gt;은 사용자의 발화에 언급된 객체를 찾는 과제로, #1 과제와 동일한 테스트 데이터 사용이 가능했습니다. 이어 &lt;strong&gt;#4 Multimodal Dialog Response Generation &amp;amp; Retrieval&lt;/strong&gt;에서는 사용자 발화에 적절한 시스템 응답을 생성하거나 검색하는 과제였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-과제-해결과정&quot;&gt;3. 과제 해결과정&lt;/h1&gt;
+
+&lt;p&gt;연구팀은 과제 해결을 위해, 기존 텍스트 기반의 BERT와 GPT2에서 더 나아간 멀티모달 모델을 새롭게 고안하였습니다. 멀티모달 데이터셋은 이미지와 텍스트 정보를 모두 포함하고 있어, 텍스트로만 구성된 데이터셋보다 어려운 문제로 볼 수 있는데요. 이미지와 텍스트 간의 관계를 미리 이해할 수 있도록 멀티모달 사전학습(pre-training) 과정을 거쳤습니다.
+사전학습에는 그림1과 같이 총 2가지 모델이 사용되었습니다. 하나는 객체 이미지와 텍스트 설명(description)이 일치하는지 판단하는 모델(ITM)이었고, 다른 하나는 배경 이미지와 대화 맥락(context)이 일치하는지 판단하는 모델(BTM)이었습니다. 두 가지 모델을 결합한 뒤 이를 각 태스크에 맞춰 미세 조정하는 방식으로, 하나의 멀티모달 모델을 사용해 전체 과제를 해결하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/001.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림1. 멀티모달 사전학습 과정&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;전체적인 모델 구조는 그림2와 같은데요. 앞서 그림1에서 사전학습된 모델들을 모듈화해 전체 태스크에서 사용하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/002.png&quot; width=&quot;90%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림2. 전체 모델 구조&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;각 구조를 살펴보면 &lt;strong&gt;subtask #1&lt;/strong&gt;에서는 발화의 명확성을 판단하기 위해 전체 컨텍스트가 담긴 멀티모달 사전학습이 되지 않은 RoBERTa에 사전학습된 DeIT-I을 사용하여 주어진 이미지에서 의류 형태만 크롭한 후, 객체 설명과 일치하는지를 판단하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;subtask #2&lt;/strong&gt;에서는 #1과 데이터는 동일하게 사용하였지만, 사용자의 발화에 언급된 객체를 찾기 위해 대화맥락, 객체, 배경 정보를 모두 활용하는 구조를 사용했습니다. 먼저 context feature를 추출하기 위해, 그림3과 같은 구조 하에 두 가지 멀티태스크 러닝을 추가로 수행하였습니다. 1단계(utterance classification)에서는 매칭 판단에 유의미하지 않은 발화를 제거하기 위해 발화와 객체의 일치성을 판단하고, 2단계(system matching)에서는 이 객체를 이전 시스템 발화에 해당하는 &lt;code&gt;object_ids&lt;/code&gt;에 매칭하였습니다. 여기서 모델이 학습하는 데이터에 따라 추론과정도 조금 달라지게 되는데요. 학습 데이터로 어떤 &lt;code&gt;mention_objects&lt;/code&gt;를 사용하냐에 따라 모델의 강점이 달라집니다. 이에 따라 이전 발화에 언급됐던 &lt;code&gt;related objects&lt;/code&gt;는 1 또는 matching으로, 관련이 없는 &lt;code&gt;unrelated objects&lt;/code&gt;는 0으로, 이외 나머지를 의미하는 &lt;code&gt;others&lt;/code&gt;는 0 또는 matching으로 결과값을 도출합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/003.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림3. 주어진 발화에서 객체의 포함여부를 판단하는 로직 (two multi-task learning)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;예를 들어 그림4와 같이 유저와 시스템의 발화쌍이 있다면, 시스템 1과 시스템 2의 system matching 여부를 판단하는 건데요. Case1에서는 &lt;strong&gt;“파란색 옷”&lt;/strong&gt;으로 일치하기 때문에 1이, Case2에서는 &lt;strong&gt;“검은색과 빨간색 바지”&lt;/strong&gt;, &lt;strong&gt;“파란색 옷”&lt;/strong&gt;으로 일치하지 않기 때문에 0이 도출됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/004.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림4. 그림3의 로직 판단 예시 (유저 발화:파란색, 시스템 발화:노란색)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;이처럼 대화 특성상 앞서 언급된 단어가 뒤에도 동일하게 언급될 가능성이 높기 때문에, 최종적으로 system matching이 1로 판별된 시스템 발화의 objects만을 사용하여 객체의 후보군을 축소시키고자 하였습니다. 여기서 이 정보에 object feature와 background feature를 추출하는 DeIT-I와 DeIT-B 값을 매칭해 최종적으로 발화에 언급된 객체를 판단할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로, 사용자 발화에 적절한 시스템 응답을 생성하거나 검색하는 &lt;strong&gt;subtask #4&lt;/strong&gt;에서는 응답 생성만을 진행하였습니다. 여기서는 텍스트 모델로 GPT2-Large를 활용하여 전체 발화를 입력하였고, 시스템이 말할 다음 발화에 해당하는 이미지 정보(slot values)는  DeIT-I를 사용하여 object feature를 추출해 활용하였습니다. 다른 태스크와 달리, 이번 태스크에서는 현재 순서에 대한 주석 정보(system_transcript_annnotated)를 사용할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-챌린지-성과-소개&quot;&gt;4. 챌린지 성과 소개&lt;/h1&gt;
+
+&lt;p&gt;학습에는 hugingface library를 사용하였고, 결과값은 아래 표와 같습니다. 전반적으로 베이스모델인 GPT2 대비 우수한 성능을 보였으며, 그결과 최종적으로 subtask #1, #2에서 각각 3위, #4 생성 분야에서는 준우승을 기록했습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/005.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표1. subtask #1 성능 비교&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/006.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표2. subtask #2 성능 비교&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-SIMMC/007.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표3. subtask #4 성능 비교&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;5-마치며&quot;&gt;5. 마치며&lt;/h1&gt;
+
+&lt;p&gt;챌린지에 참여한 상세한 소스 코드는 &lt;a href=&quot;https://github.com/rungjoo/simmc2.0&quot;&gt;깃허브&lt;/a&gt;를 통해 확인하실 수 있습니다. 앞으로 카카오엔터프라이즈 연구팀은 보다 사람같은 챗봇 서비스 구현을 위해, 이번 연구결과를 적극 활용할 계획입니다.&lt;/p&gt;
+
+&lt;p&gt;카카오엔터프라이즈의 AI 연구에 많은 관심 부탁드리며, 스몰톡 챗봇 ‘외개인아가’와 카카오엔터프라이즈 연구팀에 대해 궁금하시다면 아래 링크를 참고해주세요!&lt;/p&gt;
+
+&lt;p&gt;🐶 &lt;a href=&quot;https://pf.kakao.com/_lKxoMT&quot;&gt;외개인아가 만나러가기&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;👨🏻‍💻 &lt;a href=&quot;http://kko.to/ailab_career&quot;&gt;인재영입&lt;/a&gt;&lt;/p&gt;</content><author><name>rung:카카오엔터프라이즈</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">Proxyless Neural Architecture Adaptation for Supervised Learning and Self-Supervised Learning</title><link href="https://kakaoenterprise.github.io/papers/aaai-pnaa" rel="alternate" type="text/html" title="Proxyless Neural Architecture Adaptation for Supervised Learning and Self-Supervised Learning" /><published>2022-02-28T00:00:00-06:00</published><updated>2022-02-28T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/aaai-pnaa</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/aaai-pnaa">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Recently, Neural Architecture Search (NAS) methods are introduced and show impressive performance on many benchmarks.
 Among those NAS studies, Neural Architecture Transformer (NAT) aims to adapt the given neural architecture to improve performance while maintaining computational costs.
@@ -8,7 +103,77 @@ However, NAT lacks reproducibility and it requires an additional architecture ad
 In this paper, we propose proxyless neural architecture adaptation that is reproducible and efficient.
 Our method can be applied to both supervised learning and self-supervised learning.
 The proposed method shows stable performance on various architectures.
-Extensive reproducibility experiments on two datasets, i.e., CIFAR-10 and Tiny Imagenet, present that the proposed method definitely outperforms NAT and be applicable to other models and datasets.&lt;/p&gt;</content><author><name>김도국:인하대학교</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+Extensive reproducibility experiments on two datasets, i.e., CIFAR-10 and Tiny Imagenet, present that the proposed method definitely outperforms NAT and be applicable to other models and datasets.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;본 글에서는 카카오엔터프라이즈와 인하대 공동 연구팀이 연산 자원을 많이 사용하는 기존 NAS의 단점을 보완하고자, 새롭게 제안한 알고리즘에 대해 소개드리려고 합니다. 해당 연구 결과는 AAAI 2022 학회에서 Workshop으로 개최된 &lt;strong&gt;Learning Network Architecture during Training&lt;/strong&gt; 을 통해 공개되었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;1-nasneural-architecture-search의-등장&quot;&gt;1. NAS(Neural Architecture Search)의 등장&lt;/h1&gt;
+
+&lt;p&gt;일반적으로 딥러닝에서 높은 성능을 얻기 위해서는 주어진 task와 데이터셋에 최적화된 모델 구조를 찾는 과정이 필요합니다. 이를 위해 사람이 직접 각 레이어와 필터 개수 등 여러 설정을 일일이 미세조정하고 설계하는 과정을 거치는데요. 최적화된 모델 구조는 각 task와 데이터셋에 따라 달라지기 때문에, 해당 구조의 성능은 실제 학습을 진행한 뒤 그 결과로만 판단할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;바로 이러한 불편함을 개선하고자 등장한 연구 분야가 &lt;strong&gt;NAS(Neural Architecture Search)&lt;/strong&gt; 입니다. NAS는 자동화를 통해 주어진 task에 최적화된 모델 구조를 편리하고 빠르게 탐색하는 방법론으로, 여러 벤치마크 데이터셋에서 눈에 띄는 우수한 연구성과들을 보이고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;여기서 더 나아가, 최근에는 NAS의 이점은 유지하면서 연산비용을 줄인 여러 연구가 주목받고 있는데요. 그 중 하나로는, 기존에 방대한 아키텍처 후보군(Search Space)을 아주 작게 줄여서 최적의 아키텍처를 찾는 &lt;strong&gt;NAT(Neural Architecture Transformer)&lt;/strong&gt; 방식이 있습니다. 하지만, NAT은 알고리즘의 재현성(reproducibility)이 떨어지고, 동일한 셀 아키텍처 구조 하에서만 탐색이 가능하다는 단점이 있는데요.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;2-proxyless-neural-architecture-adaption-방법론-소개&quot;&gt;2. Proxyless Neural Architecture Adaption 방법론 소개&lt;/h1&gt;
+
+&lt;p&gt;본 연구에서는 NAT의 단점을 개선한 &lt;strong&gt;Proxyless Neural Architecture Adaption&lt;/strong&gt; 방법론을 새롭게 제안하였습니다.&lt;/p&gt;
+
+&lt;p&gt;이 방법론은 NAT과 비교해 재현성이 높고, 효율적이라는 점이 특징인데요. NAT에서는 추가적인 아키텍처 서치 과정이 필요하기 때문에 학습시간과 GPU 자원 소모가 큰데 반해, 본 방법론은 아키텍처 서치와 모델 학습을 동시에 진행하여 자원을 크게 절감할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;또한, 하나의 셀(cell) 단위가 아닌 다양한 셀 아키텍처를 가진 매크로블록(macroblock) 기반 탐색으로 전체 범위를 탐색할 수도 있습니다. 이뿐만 아니라, 지도학습(Supervised Learning)과 자기지도학습(Self-Supervised Learning)에 모두 적용될 수 있어 활용도가 높은데요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-PNAA/001.png&quot; width=&quot;70%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;그림1. Proxyless Neural Architecture Adaption 방법론을 적용한 네트워크 아키텍처 검색 구조&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;3-성능-비교&quot;&gt;3. 성능 비교&lt;/h1&gt;
+
+&lt;p&gt;이 방법론의 성능과 광범위한 재현성을 검증하기 위해 &lt;strong&gt;CIFAR-10&lt;/strong&gt;과 &lt;strong&gt;Tiny Imagenet&lt;/strong&gt; 데이터셋에 여러가지 모델로 실험을 진행했습니다.&lt;/p&gt;
+
+&lt;p&gt;먼저 지도학습 환경에서 수작업으로 설계된 Resnet20과 MobilentV2, NAS 모델인 DARTS와 Proxyless NAS 모델을 활용하여 테스트를 진행하였습니다. 기존 방식과 NAT, 본 방법론으로 실험을 진행한 결과, [표1]과 같이 다양한 아키텍처에서 기존 방법론 대비 뛰어난 성능을 확인했습니다. 더불어 전체적인 연산비용 측면에서도 NAT과 비교해 더 적은 비용을 사용할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-PNAA/002.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표1. 지도학습에서의 평균 정확도, 표준편차, 연산시간 비교 (CIFAR-10 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;표2에서는 마찬가지로 CIFAR-10 데이터셋 상에서 5번의 무작위 시도를 거쳐 재현성을 테스트 진행하였고, 안정적인 성능을 확인할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-PNAA/003.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표2. 지도학습에서의 재현성 비교 (CIFAR-10 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-PNAA/004.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표3. 지도학습에서의 평균 정확도, 표준편차, 연산시간 비교 (Tiny Imagenet 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;또한, 자기지도학습 환경에서도 성능을 확인하기 위해 NAS모델인 DARTS와 Proxyless NAS에 추가적인 테스트를 진행하였고, 여기에서도 기존 방식 대비 우수한 성능을 확인하였습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2022-02-28-AAAI-PNAA/005.png&quot; width=&quot;50%&quot; align=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em class=&quot;center&quot;&gt;표4. 자기지도학습에서의 정확도 비교 (CIFAR-10 기준)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;4-향후-연구-계획&quot;&gt;4. 향후 연구 계획&lt;/h1&gt;
+
+&lt;p&gt;카카오엔터프라이즈 연구팀은 해당 방법론을 활용하여 정확도를 넘어, 결과가 도출되는 시간, 속도(latency)까지 고려한 모델을 만들고자 합니다. 특히 컴퓨터비전 분야 연구에 적용해 최적의 모델 구조를 빠르고, 저비용으로 탐색하는 데에 중점을 둘 계획입니다.&lt;/p&gt;
+
+&lt;p&gt;앞으로도 카카오엔터프라이즈의 AI 연구에 많은 관심 부탁드리며, &lt;strong&gt;카카오엔터프라이즈 AI Lab &amp;amp; Service&lt;/strong&gt;에 대해 궁금하시다면 아래 링크를 참고해주세요!&lt;/p&gt;
+
+&lt;p&gt;👨🏻‍💻 &lt;a href=&quot;http://kko.to/ailab_career&quot;&gt;인재영입&lt;/a&gt;&lt;/p&gt;</content><author><name>김도국:인하대학교</name></author><category term="papers" /><summary type="html">Abstract</summary></entry><entry><title type="html">SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title><link href="https://kakaoenterprise.github.io/papers/neurips-smoothmix" rel="alternate" type="text/html" title="SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness" /><published>2021-12-06T00:00:00-06:00</published><updated>2021-12-06T00:00:00-06:00</updated><id>https://kakaoenterprise.github.io/papers/neurips-smoothmix</id><content type="html" xml:base="https://kakaoenterprise.github.io/papers/neurips-smoothmix">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
 
 &lt;p&gt;Randomized smoothing is currently a state-of-the-art method to construct a certifiably robust classifier from neural networks against \(l_{2}\)-adversarial perturbations. Under the paradigm, the robustness of a classifier is aligned with the prediction confidence, i.e., the higher confidence from a smoothed classifier implies the better robustness. This motivates us to rethink the fundamental trade-off between accuracy and robustness in terms of calibrating confidences of smoothed classifier. In this paper, we propose a simple training scheme, coined SmoothMix, to control the robustness of smoothed classifiers via self-mixup: it trains convex combinations of samples along the direction of adversarial perturbation for each input. The proposed procedure effectively identifies over-confident, near off-class samples as a cause of limited robustness in case of smoothed classifiers, and offers an intuitive way to adaptively set a new decision boundary between these samples for better robustness. Our experimental results demonstrate that the proposed method can significantly improve the certified \(l_{2}\)-robustness of smoothed classifiers compared to existing state-of-the-art robust training methods.&lt;/p&gt;
 
