@@ -36,6 +36,22 @@
 	</url>
 	
 	<url>
+		<loc>https://kakaoenterprise.github.io/papers/arxiv-apeach</loc>
+		
+		<lastmod>2022-02-25T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
 		<loc>https://kakaoenterprise.github.io/papers/neurips-smoothmix</loc>
 		
 		<lastmod>2021-12-06T00:00:00-06:00</lastmod>
