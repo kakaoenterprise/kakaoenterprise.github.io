@@ -5,9 +5,33 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2022 20:48:33 -0500</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2022 20:48:33 -0500</lastBuildDate>
+    <pubDate>Fri, 08 Apr 2022 02:52:37 -0500</pubDate>
+    <lastBuildDate>Fri, 08 Apr 2022 02:52:37 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Revisiting Interactive Recommender System with Reinforcement Learning</title>
+        <description></description>
+        <pubDate>Mon, 11 Jul 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/sigir-rl-irs</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigir-rl-irs</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>CoMPM: Context Modeling with Speaker's Pre-trained Memory Tracking for Emotion Recognition in Conversation</title>
+        <description></description>
+        <pubDate>Sun, 10 Jul 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/naacl-compm</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/naacl-compm</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0</title>
@@ -99,36 +123,6 @@
         <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>AligNART: Non-autoregressive Neural Machine Translation by Jointly Learning to Estimate Alignment and Translate</title>
-        <description></description>
-        <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/emnlp-alignart</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-alignart</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Distilling Global and Local Logits with Densely Connected Relations</title>
-        <description></description>
-        <pubDate>Mon, 11 Oct 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/iccv-distilling-global-and-local-logits</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/iccv-distilling-global-and-local-logits</guid>
-        
-        <category>ICCV</category>
-        
-        <category>distillation</category>
-        
-        <category>GLD</category>
         
         
         <category>papers</category>
