@@ -284,6 +284,20 @@ pin:
   web:
   description: 한글 자연어처리에 관심이 많은 개발자입니다. 자연어처리 기술을 이용한 한국어 서비스 개발을 위해 노력하고 있습니다.
 
+ria:
+  korean_name: 김아리
+  profile:
+  github:
+  web:
+  description:
+
+rob:
+  korean_name: 김진현
+  profile: 
+  github:
+  web:
+  description:
+
 rung:
   korean_name: 이주성
   profile: rung.png
