@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Apr 2022 02:52:37 -0500</pubDate>
-    <lastBuildDate>Fri, 08 Apr 2022 02:52:37 -0500</lastBuildDate>
+    <pubDate>Sun, 17 Apr 2022 20:38:29 -0500</pubDate>
+    <lastBuildDate>Sun, 17 Apr 2022 20:38:29 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -27,6 +27,18 @@
         <pubDate>Sun, 10 Jul 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/naacl-compm</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/naacl-compm</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Vacillating Human Correlation of SacreBLEU in Unprotected Languages</title>
+        <description></description>
+        <pubDate>Sun, 22 May 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</guid>
         
         
         <category>papers</category>
@@ -111,18 +123,6 @@
         <pubDate>Wed, 10 Nov 2021 00:00:00 -0600</pubDate>
         <link>https://kakaoenterprise.github.io/papers/newsum-csi</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/newsum-csi</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>An Evaluation Dataset and Strategy for Building Robust Multi-turn Response Selection Model</title>
-        <description></description>
-        <pubDate>Sun, 07 Nov 2021 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-evaluation-dataset-and-strategy</guid>
         
         
         <category>papers</category>
