@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 18 Apr 2022 00:22:02 -0500</pubDate>
-    <lastBuildDate>Mon, 18 Apr 2022 00:22:02 -0500</lastBuildDate>
+    <pubDate>Sun, 24 Apr 2022 19:51:49 -0500</pubDate>
+    <lastBuildDate>Sun, 24 Apr 2022 19:51:49 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -27,6 +27,20 @@
         <pubDate>Sun, 10 Jul 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/naacl-compm</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/naacl-compm</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Contrastive Regularization for Semi-Supervised Learning</title>
+        <description></description>
+        <pubDate>Mon, 20 Jun 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization</guid>
+        
+        <category>Machine_Learning</category>
         
         
         <category>papers</category>
@@ -111,18 +125,6 @@
         <pubDate>Fri, 19 Nov 2021 00:00:00 -0600</pubDate>
         <link>https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Capturing Speaker Incorrectness: Speaker-Focused Post-Correction for Abstractive Dialogue Summarization</title>
-        <description></description>
-        <pubDate>Wed, 10 Nov 2021 00:00:00 -0600</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/newsum-csi</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/newsum-csi</guid>
         
         
         <category>papers</category>
