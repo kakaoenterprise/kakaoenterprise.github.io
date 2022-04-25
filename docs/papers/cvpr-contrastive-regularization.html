@@ -6,24 +6,24 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Vacillating Human Correlation of SacreBLEU in Unprotected Languages" />
-<meta name="author" content="ria:카카오엔터프라이즈" />
+<meta property="og:title" content="Contrastive Regularization for Semi-Supervised Learning" />
+<meta name="author" content="이도엽:POSTECH,카카오브레인" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="https://kakaoenterprise.github.io/papers/humeval-meta-evaluation" />
-<meta property="og:url" content="https://kakaoenterprise.github.io/papers/humeval-meta-evaluation" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization" />
 <meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-05-22T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-06-20T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Vacillating Human Correlation of SacreBLEU in Unprotected Languages" />
+<meta property="twitter:title" content="Contrastive Regularization for Semi-Supervised Learning" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"ria:카카오엔터프라이즈"},"description":"Abstract","@type":"BlogPosting","url":"https://kakaoenterprise.github.io/papers/humeval-meta-evaluation","headline":"Vacillating Human Correlation of SacreBLEU in Unprotected Languages","dateModified":"2022-05-22T00:00:00-05:00","datePublished":"2022-05-22T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/humeval-meta-evaluation"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"이도엽:POSTECH,카카오브레인"},"description":"Abstract","@type":"BlogPosting","url":"https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization","headline":"Contrastive Regularization for Semi-Supervised Learning","dateModified":"2022-06-20T00:00:00-05:00","datePublished":"2022-06-20T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-  <title> Vacillating Human Correlation of SacreBLEU in Unprotected Languages | 카카오엔터프라이즈 AI Research </title>
+  <title> Contrastive Regularization for Semi-Supervised Learning | 카카오엔터프라이즈 AI Research </title>
   
 
   <!-- CSS -->
@@ -81,23 +81,37 @@
     <main>
       <article class="post">
   <header class="post-header">
-    <h4 class="catalogue-research-area">NLP</h4>
-    <h1 class="post-title">Vacillating Human Correlation of SacreBLEU in Unprotected Languages</h1>
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">Contrastive Regularization for Semi-Supervised Learning</h1>
 
     
 
     
 
-    김아리(카카오엔터프라이즈), 김진현(카카오엔터프라이즈)
+    이도엽(POSTECH,카카오브레인), 김성웅(카카오브레인), 김일두(카카오브레인), 천영재(카카오엔터프라이즈), 조민수(POSTECH), 한욱신(POSTECH)
 
     <h4>
         
-          Human Evaluation of NLP Systems Workshop at ACL
+          L3D-IVU Workshop at CVPR
         
     </h4>
 
-    <h4>2022-05-22</h4>
+    <h4>2022-06-20</h4>
 
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/2201.06247.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
     
   </header>
 
@@ -106,14 +120,15 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>SacreBLEU, by incorporating a text normalizing step in the pipeline, has become a rising automatic evaluation metric in recent MT studies. With agglutinative languages such as Korean, however, the lexical-level metric cannot provide a conceivable result without a customized pre-tokenization. In this regard, this paper endeavors to examine the influence of diversified tokenization schemes –-word, morpheme, subword, character, and consonants &amp; vowels (CV)–- on the metric, after its protective layer is peeled off.<br />
-By performing meta-evaluation with manually-constructed into-Korean resources, our empirical study demonstrates that the human correlation of the surface-based metric and other homogeneous ones (as an extension) vacillates greatly by the token type. Moreover, the human correlation of the metric often deteriorates due to some tokenization, with CV one of its culprits. Guiding through the proper usage of tokenizers for the given metric, we discover i) the feasibility of the character tokens, and ii) the deficit of CV in the Korean MT evaluation.</p>
+<p>Consistency regularization on label predictions becomes a fundamental technique in semi-supervised learning, but it still requires a large number of training iterations for high performance. In this study, we analyze that the consistency regularization restricts the propagation of labeling information due to the exclusion of samples with unconfident pseudo-labels in the model updates. Then, we propose contrastive regularization to improve both efficiency and accuracy of the consistency regularization by well-clustered features of unlabeled data. In specific, after strongly augmented samples are assigned to clusters by their pseudo-labels, our contrastive regularization updates the model so that the features with confident pseudo-labels aggregate the features in the same cluster, while pushing away features in different clusters. As a result, the information of confident pseudo-labels can be effectively propagated into more unlabeled samples during training by the well-clustered features. On benchmarks of semi-supervised learning tasks, our contrastive regularization improves the previous consistency-based methods and achieves state-of-the-art results, especially with fewer training iterations. Our method also shows robust performance on open-set semi-supervised learning where unlabeled data includes out-of-distribution samples.</p>
 
   </div>
 
   <div class="post-line"></div>
 
   <div class="post-tag-box-container">
+    
+      <div class="post-tag-box">#Machine_Learning</div>
     
   </div>
 </article>
