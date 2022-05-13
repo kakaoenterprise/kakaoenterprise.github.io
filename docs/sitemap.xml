@@ -4,6 +4,22 @@
 		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<url>
+		<loc>https://kakaoenterprise.github.io/papers/icpr-comdense</loc>
+		
+		<lastmod>2022-08-21T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
 		<loc>https://kakaoenterprise.github.io/papers/sigir-rl-irs</loc>
 		
 		<lastmod>2022-07-11T00:00:00-05:00</lastmod>
@@ -54,7 +70,7 @@
 	<url>
 		<loc>https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</loc>
 		
-		<lastmod>2022-05-22T00:00:00-05:00</lastmod>
+		<lastmod>2022-05-27T00:00:00-05:00</lastmod>
 		
 
 		

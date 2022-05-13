@@ -15,11 +15,9 @@ authors:
 paper: 
 code: 
 tag:
-
 ---
 
 # Abstract
-
 
 Interactive Recommender Systems (IRS) have drawn a lot of attention, due to their ability in modeling the interactive process between the user and the recommender system. Recently, numerous works have adopted Reinforcement Learning (RL) algorithms, which directly maximize the user’s cumulative rewards, in IRS.
 In IRS, researchers commonly utilize the publicly available review datasets to compare and evaluate the algorithms. However, the user feedbacks provided in the public datasets only include an instant response (e.g., rating), without any inclusion of delayed response (e.g., dwell-time, lifetime value). Thus, the question remains whether the review datasets are an appropriate choice to evaluate the long-term effects in IRS.  

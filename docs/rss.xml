@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 24 Apr 2022 19:51:49 -0500</pubDate>
-    <lastBuildDate>Sun, 24 Apr 2022 19:51:49 -0500</lastBuildDate>
+    <pubDate>Fri, 13 May 2022 03:04:21 -0500</pubDate>
+    <lastBuildDate>Fri, 13 May 2022 03:04:21 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>ComDensE : Combined Dense Embedding of Relation-aware and Common Features for Knowledge Graph Completion</title>
+        <description></description>
+        <pubDate>Sun, 21 Aug 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icpr-comdense</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icpr-comdense</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Revisiting Interactive Recommender System with Reinforcement Learning</title>
@@ -50,7 +62,7 @@
       <item>
         <title>Vacillating Human Correlation of SacreBLEU in Unprotected Languages</title>
         <description></description>
-        <pubDate>Sun, 22 May 2022 00:00:00 -0500</pubDate>
+        <pubDate>Fri, 27 May 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</guid>
         
@@ -113,18 +125,6 @@
         <pubDate>Mon, 06 Dec 2021 00:00:00 -0600</pubDate>
         <link>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Kakao Enterprise’s WMT21 Machine Translation using Terminologies Task Submission</title>
-        <description></description>
-        <pubDate>Fri, 19 Nov 2021 00:00:00 -0600</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/wmt21-terminology-translation</guid>
         
         
         <category>papers</category>
