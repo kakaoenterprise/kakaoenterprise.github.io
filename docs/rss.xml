@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 May 2022 03:04:21 -0500</pubDate>
-    <lastBuildDate>Fri, 13 May 2022 03:04:21 -0500</lastBuildDate>
+    <pubDate>Thu, 19 May 2022 21:07:44 -0500</pubDate>
+    <lastBuildDate>Thu, 19 May 2022 21:07:44 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Classification-based Multi-task Learning for Efficient Pose Estimation Network</title>
+        <description></description>
+        <pubDate>Sun, 21 Aug 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icpr-pose-estimation</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icpr-pose-estimation</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>ComDensE : Combined Dense Embedding of Relation-aware and Common Features for Knowledge Graph Completion</title>
@@ -15,6 +27,18 @@
         <pubDate>Sun, 21 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/icpr-comdense</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icpr-comdense</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>A Statistical Manifold Framework for Point Cloud Data</title>
+        <description></description>
+        <pubDate>Sun, 17 Jul 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icml-point-cloud-data</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml-point-cloud-data</guid>
         
         
         <category>papers</category>
@@ -101,30 +125,6 @@
         <pubDate>Fri, 25 Feb 2022 00:00:00 -0600</pubDate>
         <link>https://kakaoenterprise.github.io/papers/arxiv-apeach</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/arxiv-apeach</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>SmoothMix: Training Confidence-calibrated Smoothed Classifiers for Certified Robustness</title>
-        <description></description>
-        <pubDate>Mon, 06 Dec 2021 00:00:00 -0600</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/neurips-smoothmix</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/neurips-smoothmix</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Learning Debiased Representation via Disentangled Feature Augmentation</title>
-        <description></description>
-        <pubDate>Mon, 06 Dec 2021 00:00:00 -0600</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/neurips-learning-debiased-representation</guid>
         
         
         <category>papers</category>
