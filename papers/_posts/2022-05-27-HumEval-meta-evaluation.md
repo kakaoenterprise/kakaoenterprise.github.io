@@ -4,7 +4,7 @@ research-area: NLP
 title: "Vacillating Human Correlation of SacreBLEU in Unprotected Languages"
 slug: HumEval-meta-evaluation
 description:
-published-date: 2022-05-22
+published-date: 2022-05-27
 publisher: Human Evaluation of NLP Systems Workshop at ACL
 authors:
   - ria:카카오엔터프라이즈
@@ -12,7 +12,6 @@ authors:
 paper: 
 code: 
 tag:
-
 ---
 
 # Abstract

@@ -25,6 +25,13 @@ annie:
   web:
   description:
 
+benjamin:
+  korean_name: 강동오
+  profile:
+  github:
+  web:
+  description:
+
 chris:
   korean_name: 김의성
   profile: kobi.png
@@ -249,6 +256,13 @@ louis:
   web:
   description: 
 
+lucas:
+  korean_name: 김민상
+  profile:
+  github:
+  web:
+  description: 
+
 mat:
     korean_name: 한기종
     profile:
@@ -298,12 +312,26 @@ rob:
   web:
   description:
 
+royce:
+  korean_name: 최진원
+  profile:
+  github:
+  web:
+  description:
+
 rung:
   korean_name: 이주성
   profile: rung.png
   github:
   web:
   description: 연구에 막연한 환상을 품고 대학원에 진학, 이미지의 신호를 처리하는 AI 세계에 첫 발을 내딛었습니다. 그러다, 새로운 분야를 개척하고 싶어하는 제 지적 호기심이 저를 언어처리 분야로 이끌었습니다. 이에 현재는 카카오엔터프라이즈 자연어처리파트에서 사람처럼 대화를 나누는 인공지능 모델을 만들고 있습니다. 사람들에게 신선함을 주는 AI, 그리고 더 많은 분야에서의 AI를 만들며 성장해나가고자 합니다
+
+sam:
+  korean_name: 김한샘
+  profile:
+  github:
+  web:
+  description:
 
 samantha:
   korean_name: 이수경
