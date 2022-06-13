@@ -1,0 +1,21 @@
+---
+layout: post
+research-area: MACHINE LEARNING
+title: "Connecting a Low Loss Subspace for Personalized Federated Learning"
+slug: KDD-federated-learning
+description:
+published-date: 2022-08-14
+publisher: KDD Research Track
+publisher-fullname: KDD 2022 Research Track
+authors:
+  - 한석주:UNIST, 카카오엔터프라이즈
+  - lloyd:카카오엔터프라이즈
+  - 이정혜:UNIST
+paper: https://arxiv.org/pdf/2109.07628.pdf
+code: 
+tag:
+---
+
+# Abstract
+
+Due to the curse of statistical heterogeneity across clients, adopting a personalized federated learning method has become an essential choice for the successful deployment of federated learning-based services. Among diverse branches of personalization techniques, a model mixture-based personalization method is preferred as each client has their own personalized model as a result of federated learning. It usually requires a local model and a federated model, but this approach is either limited to partial parameter exchange or requires additional local updates, each of which is helpless to novel clients and burdensome to the client’s computational capacity. As the existence of a connected subspace containing diverse low-loss solutions between two or more independent deep networks has been discovered, we combined this interesting property with the model mixture-based personalized federated learning method for improved performance of personalization. We proposed SuPerFed, a personalized federated learning method that induces an explicit connection between the optima of the local and the federated model in weight space for boosting each other. Through extensive experiments on several benchmark datasets, we demonstrated that our method achieves consistent gains in both personalization performance and robustness to problematic scenarios possible in realistic services.

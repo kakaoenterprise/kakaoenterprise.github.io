@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: Reinforcement Learning
+research-area: REINFORCEMENT LEARNING
 title: "Revisiting Interactive Recommender System with Reinforcement Learning"
 slug: SIGIR-RL-IRS
 description:
