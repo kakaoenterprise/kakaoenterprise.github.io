@@ -1,6 +1,6 @@
 ---
 layout: post
-research-area: Knowledge Graph
+research-area: KNOWLEDGE GRAPH
 title: "ComDensE : Combined Dense Embedding of Relation-aware and Common Features for Knowledge Graph Completion"
 slug: ICPR-ComDensE
 description:
