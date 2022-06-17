@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learningh" />
+<meta name="author" content="chris:카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/interspeech-pronunciation" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/interspeech-pronunciation" />
+<meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-18T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learningh" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"chris:카카오엔터프라이즈"},"description":"Abstract","@type":"BlogPosting","url":"https://kakaoenterprise.github.io/papers/interspeech-pronunciation","headline":"Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learningh","dateModified":"2022-09-18T00:00:00-05:00","datePublished":"2022-09-18T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/interspeech-pronunciation"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <title> Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learningh | 카카오엔터프라이즈 AI Research </title>
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="카카오엔터프라이즈 AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+
+  <!-- Google Search -->
+  <meta name="google-site-verification" content="g1aJ_c07rYqVQwi6hpDDBI9jGk1wrEqOOj2bJI_CWHE" />
+
+  <!-- Naver Search-->
+  <meta name="naver-site-verification" content="faa46269506eaffea0caefdeeb1feb5166961947" />
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="https://tech.kakaoenterprise.com/" target="_blank">Tech&</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">SPEECH/AUDIO</h4>
+    <h1 class="post-title">Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learningh</h1>
+
+    
+
+    
+
+    김의성(카카오엔터프라이즈), 전재진(카카오엔터프라이즈), 서혜지(카카오엔터프라이즈), 김훈(카카오엔터프라이즈)
+
+    <h4>
+        
+          Conference of the International Speech Communication Association (INTERSPEECH)
+        
+    </h4>
+
+    <h4>2022-09-18</h4>
+
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>Self-supervised learning (SSL) approaches such as wav2vec 2.0 and HuBERT models have shown promising results in various downstream tasks in the speech community. In particular, speech representations learned by SSL models have been shown to be effective for encoding various speech-related characteristics. In this context, we propose a novel automatic pronunciation assessment method based on SSL models. First, the proposed method fine-tunes the pre-trained SSL models with connectionist temporal classification to adapt the English pronunciation of English-as-a-second-language (ESL) learners in a data environment. Then, the layer-wise contextual representations are extracted from all across the transformer layers of the SSL models. Finally, the automatic pronunciation score is estimated using bidirectional long short-term memory with the layer-wise contextual representations and the corresponding text. We show that the proposed SSL model-based methods outperform the baselines, in terms of the Pearson correlation coefficient, on datasets of Korean ESL learner children and Speechocean762. Furthermore, we analyze how different representations of transformer layers in the SSL model affect the performance of the pronunciation assessment task.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+
+    <!-- Naver Analytics -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "d6495f190ca3e0";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+  </body>
+</html>
