@@ -10,7 +10,7 @@ publisher-fullname: Conference of the International Speech Communication Associa
 authors:
   - 김준태:SK텔레콤
   - jessie:카카오엔터프라이즈
-paper: 
+paper: https://arxiv.org/pdf/2108.10752.pdf
 code: 
 tag:
 ---
