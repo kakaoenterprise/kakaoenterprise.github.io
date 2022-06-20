@@ -1,7 +1,7 @@
 ---
 layout: post
 research-area: SPEECH/AUDIO
-title: "Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learningh"
+title: "Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learning"
 slug: interspeech-pronunciation
 description:
 published-date: 2022-09-18
