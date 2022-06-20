@@ -67,6 +67,13 @@ eileen:
   web:
   description: 한국어를 자동으로 이해하고 분석하는 자연어처리에 관한 전반적인 언어지식을 연구, 개발하는 언어공학자입니다.
 
+eldon:
+  korean_name: 김훈
+  profile:
+  github:
+  web:
+  description: 
+
 erin:
   korean_name: 홍은빈
   profile: erin.png
@@ -174,6 +181,13 @@ jeff:
 
 jeffrey:
   korean_name: 전재진
+  profile:
+  github:
+  web:
+  description:
+
+jessie:
+  korean_name: 이지혜
   profile:
   github:
   web:
@@ -314,6 +328,13 @@ ria:
 
 rob:
   korean_name: 김진현
+  profile: 
+  github:
+  web:
+  description:
+
+ronda:
+  korean_name: 정성희
   profile: 
   github:
   web:

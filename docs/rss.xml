@@ -5,9 +5,57 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Jun 2022 00:42:58 -0500</pubDate>
-    <lastBuildDate>Mon, 13 Jun 2022 00:42:58 -0500</lastBuildDate>
+    <pubDate>Sun, 19 Jun 2022 21:45:02 -0500</pubDate>
+    <lastBuildDate>Sun, 19 Jun 2022 21:45:02 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Generalizing RNN-Transducer to Out-Domain Audio via Sparse Self-Attention Layers</title>
+        <description></description>
+        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech-rnn-t</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-rnn-t</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learning</title>
+        <description></description>
+        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech-pronunciation</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-pronunciation</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>The Emotion is Not One-hot Encoding: Learning with Grayscale Label for Emotion Recognition in Conversation</title>
+        <description></description>
+        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech-emotion-recognition</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-emotion-recognition</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>JETS: Jointly Training FastSpeech2 and HiFi-GAN for End to End Text to Speech</title>
+        <description></description>
+        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech-jets</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-jets</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Classification-based Multi-task Learning for Efficient Pose Estimation Network</title>
@@ -75,56 +123,6 @@
         <pubDate>Mon, 11 Jul 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/sigir-rl-irs</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigir-rl-irs</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>CoMPM: Context Modeling with Speaker's Pre-trained Memory Tracking for Emotion Recognition in Conversation</title>
-        <description></description>
-        <pubDate>Sun, 10 Jul 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/naacl-compm</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/naacl-compm</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Contrastive Regularization for Semi-Supervised Learning</title>
-        <description></description>
-        <pubDate>Mon, 20 Jun 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization</guid>
-        
-        <category>Machine_Learning</category>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Vacillating Human Correlation of SacreBLEU in Unprotected Languages</title>
-        <description></description>
-        <pubDate>Fri, 27 May 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/humeval-meta-evaluation</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Multimodal Interactions Using Pretrained Unimodal Models for SIMMC 2.0</title>
-        <description></description>
-        <pubDate>Mon, 28 Feb 2022 00:00:00 -0600</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/aaai-simmc</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/aaai-simmc</guid>
         
         
         <category>papers</category>
