@@ -100,7 +100,23 @@
 	</url>
 	
 	<url>
-		<loc>https://kakaoenterprise.github.io/papers/kdd-federated-learning</loc>
+		<loc>https://kakaoenterprise.github.io/papers/sigkdd-oasys</loc>
+		
+		<lastmod>2022-08-15T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/sigkdd-federated-learning</loc>
 		
 		<lastmod>2022-08-14T00:00:00-05:00</lastmod>
 		
@@ -183,6 +199,22 @@
 		<loc>https://kakaoenterprise.github.io/papers/cvpr-contrastive-regularization</loc>
 		
 		<lastmod>2022-06-20T00:00:00-05:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/cvpr-xvit</loc>
+		
+		<lastmod>2022-06-19T00:00:00-05:00</lastmod>
 		
 
 		

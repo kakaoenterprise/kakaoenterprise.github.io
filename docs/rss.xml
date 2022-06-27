@@ -5,8 +5,8 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Jun 2022 21:45:02 -0500</pubDate>
-    <lastBuildDate>Sun, 19 Jun 2022 21:45:02 -0500</lastBuildDate>
+    <pubDate>Sun, 26 Jun 2022 21:14:15 -0500</pubDate>
+    <lastBuildDate>Sun, 26 Jun 2022 21:14:15 -0500</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -82,11 +82,23 @@
       </item>
     
       <item>
+        <title>OASYS: Domain-Agnostic Automated System for Constructing Knowledge Base from Unstructured Text</title>
+        <description></description>
+        <pubDate>Mon, 15 Aug 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/sigkdd-oasys</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-oasys</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
         <title>Connecting a Low Loss Subspace for Personalized Federated Learning</title>
         <description></description>
         <pubDate>Sun, 14 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/kdd-federated-learning</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/kdd-federated-learning</guid>
+        <link>https://kakaoenterprise.github.io/papers/sigkdd-federated-learning</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-federated-learning</guid>
         
         
         <category>papers</category>
@@ -111,18 +123,6 @@
         <pubDate>Sun, 17 Jul 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/icml-point-cloud-data</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml-point-cloud-data</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Revisiting Interactive Recommender System with Reinforcement Learning</title>
-        <description></description>
-        <pubDate>Mon, 11 Jul 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/sigir-rl-irs</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigir-rl-irs</guid>
         
         
         <category>papers</category>
