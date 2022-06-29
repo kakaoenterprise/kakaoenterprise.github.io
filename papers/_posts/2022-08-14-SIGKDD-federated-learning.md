@@ -2,11 +2,11 @@
 layout: post
 research-area: MACHINE LEARNING
 title: "Connecting a Low Loss Subspace for Personalized Federated Learning"
-slug: KDD-federated-learning
+slug: SIGKDD-federated-learning
 description:
 published-date: 2022-08-14
-publisher: KDD Research Track
-publisher-fullname: KDD 2022 Research Track
+publisher: SIGKDD Research Track
+publisher-fullname: ACM's Special Interest Group on Knowledge Discovery and Data Mining (SIGKDD) Research Track 
 authors:
   - 한석주:UNIST, 카카오엔터프라이즈
   - lloyd:카카오엔터프라이즈

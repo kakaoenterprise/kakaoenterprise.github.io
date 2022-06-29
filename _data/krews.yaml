@@ -46,6 +46,13 @@ dan:
     web:
     description: 
 
+dan.j:
+    korean_name: 제상현
+    profile: 
+    github:
+    web:
+    description: 
+
 daniel:
     korean_name: 이다니엘
     profile: daniel.png
@@ -69,6 +76,13 @@ eileen:
 
 eldon:
   korean_name: 김훈
+  profile:
+  github:
+  web:
+  description: 
+
+ellie:
+  korean_name: 박은주
   profile:
   github:
   web:
@@ -318,6 +332,13 @@ pin:
   github:
   web:
   description: 한글 자연어처리에 관심이 많은 개발자입니다. 자연어처리 기술을 이용한 한국어 서비스 개발을 위해 노력하고 있습니다.
+
+po:
+  korean_name: 송정근
+  profile:
+  github:
+  web:
+  description:
 
 ria:
   korean_name: 김아리
