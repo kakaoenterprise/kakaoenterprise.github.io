@@ -10,7 +10,7 @@ publisher-fullname: International Conference on Pattern Recognition (ICPR)
 authors:
   - lucas:카카오엔터프라이즈
   - 백승준:고려대
-paper: 
+paper: https://arxiv.org/pdf/2206.14925.pdf
 code: 
 tag:
 ---

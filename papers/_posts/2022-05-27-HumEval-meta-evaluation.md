@@ -9,7 +9,7 @@ publisher: Human Evaluation of NLP Systems Workshop at ACL
 authors:
   - ria:카카오엔터프라이즈
   - rob:카카오엔터프라이즈
-paper: 
+paper: https://aclanthology.org/2022.humeval-1.1.pdf
 code: 
 tag:
 ---
