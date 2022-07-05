@@ -10,7 +10,7 @@ publisher-fullname: North American Chapter of the Association for Computational 
 authors:
   - rung:카카오엔터프라이즈
   - dan:카카오엔터프라이즈
-paper: 
+paper: https://arxiv.org/pdf/2108.11626.pdf
 code: 
 tag:
 ---
