@@ -10,7 +10,7 @@ authors:
   - lucas:카카오엔터프라이즈
   - dan.j:카카오엔터프라이즈
   - ellie:카카오엔터프라이즈
-paper:
+paper: https://arxiv.org/pdf/2207.07597.pdf
 code:
 tag:
 ---
