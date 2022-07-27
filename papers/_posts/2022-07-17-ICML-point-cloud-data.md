@@ -12,8 +12,7 @@ authors:
   - 김승연:서울대
   - royce:카카오엔터프라이즈
   - 박종우:서울대
-
-paper: 
+paper: https://proceedings.mlr.press/v162/lee22d/lee22d.pdf
 code: 
 tag:
 ---

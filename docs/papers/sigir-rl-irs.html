@@ -6,7 +6,7 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Revisiting Interactive Recommender System with Reinforcement Learning" />
+<meta property="og:title" content="Towards Validating Long-Term User Feedbacks in Interactive Recommendation Systems" />
 <meta name="author" content="이호준:카이스트" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
@@ -17,13 +17,13 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-07-11T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Revisiting Interactive Recommender System with Reinforcement Learning" />
+<meta property="twitter:title" content="Towards Validating Long-Term User Feedbacks in Interactive Recommendation Systems" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"이호준:카이스트"},"dateModified":"2022-07-11T00:00:00-05:00","datePublished":"2022-07-11T00:00:00-05:00","description":"Abstract","headline":"Revisiting Interactive Recommender System with Reinforcement Learning","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/sigir-rl-irs"},"url":"https://kakaoenterprise.github.io/papers/sigir-rl-irs"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"이호준:카이스트"},"dateModified":"2022-07-11T00:00:00-05:00","datePublished":"2022-07-11T00:00:00-05:00","description":"Abstract","headline":"Towards Validating Long-Term User Feedbacks in Interactive Recommendation Systems","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/sigir-rl-irs"},"url":"https://kakaoenterprise.github.io/papers/sigir-rl-irs"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-  <title> Revisiting Interactive Recommender System with Reinforcement Learning | 카카오엔터프라이즈 AI Research </title>
+  <title> Towards Validating Long-Term User Feedbacks in Interactive Recommendation Systems | 카카오엔터프라이즈 AI Research </title>
   
 
   <!-- CSS -->
@@ -83,7 +83,7 @@
       <article class="post">
   <header class="post-header">
     <h4 class="catalogue-research-area">REINFORCEMENT LEARNING</h4>
-    <h1 class="post-title">Revisiting Interactive Recommender System with Reinforcement Learning</h1>
+    <h1 class="post-title">Towards Validating Long-Term User Feedbacks in Interactive Recommendation Systems</h1>
 
     
 
@@ -100,6 +100,20 @@
     <h4>2022-07-11</h4>
 
     
+      <div class="link-button-group">
+        
+          <a href="https://dl.acm.org/doi/abs/10.1145/3477495.3531869" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
   </header>
 
   <div class="post-line"></div>
@@ -107,9 +121,7 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>Interactive Recommender Systems (IRS) have drawn a lot of attention, due to their ability in modeling the interactive process between the user and the recommender system. Recently, numerous works have adopted Reinforcement Learning (RL) algorithms, which directly maximize the user’s cumulative rewards, in IRS.
-In IRS, researchers commonly utilize the publicly available review datasets to compare and evaluate the algorithms. However, the user feedbacks provided in the public datasets only include an instant response (e.g., rating), without any inclusion of delayed response (e.g., dwell-time, lifetime value). Thus, the question remains whether the review datasets are an appropriate choice to evaluate the long-term effects in IRS.<br />
-In this work, we revisit the experiments on the IRS with the review datasets and compare the RL-based models with a simple reward model that greedily recommends the item with the highest one-step reward. Through extensive experiments, we found the followings: First, a simple greedy reward model outperforms the RL-based models in maximizing the cumulative rewards. Second, applying more weights on long-term rewards degrades the recommendation performance. Third, recommended items have mere long-term effects in the benchmark datasets. From these findings, we conclude that a dataset must be carefully verified and a simple greedy baseline should be included for a proper evaluation in the RL-based IRS.</p>
+<p>Interactive Recommender Systems (IRSs) have attracted a lot of attention, due to their ability to model interactive processes between users and recommender systems. Numerous approaches have adopted Reinforcement Learning (RL) algorithms, as these can directly maximize users’ cumulative rewards. In IRS, researchers commonly utilize publicly available review datasets to compare and evaluate algorithms. However, user feedback provided in public datasets merely includes instant responses (e.g., a rating), with no inclusion of delayed responses (e.g., the dwell time and the lifetime value). Thus, the question remains whether these review datasets are an appropriate choice to evaluate the long-term effects in IRS. In this work, we revisited experiments on IRS with review datasets and compared RL-based models with a simple reward model that greedily recommends the item with the highest one-step reward. Following extensive analysis, we can reveal three main findings: First, a simple greedy reward model consistently outperforms RL-based models in maximizing cumulative rewards. Second, applying higher weighting to long-term rewards leads to degradation of recommendation performance. Third, user feedbacks have mere long-term effects in the benchmark datasets. Based on our findings, we conclude that a dataset has to be carefully verified and that a simple greedy baseline should be included for a proper evaluation of RL-based IRS approaches. Our code and dataset are available at https://github.com/dojeon-ai/irs_validation.</p>
 
   </div>
 
