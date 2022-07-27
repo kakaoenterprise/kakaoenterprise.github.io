@@ -5,7 +5,7 @@ title: "Towards Validating Long-Term User Feedbacks in Interactive Recommendatio
 slug: SIGIR-RL-IRS
 description:
 published-date: 2022-07-11
-publisher: SIGIR (Best Short Paper)
+publisher: SIGIR (Best Short Paper Honorable Mention)
 publisher-fullname: Special Interest Group on Information Retrieval (SIGIR)
 authors:
   - 이호준:카이스트
