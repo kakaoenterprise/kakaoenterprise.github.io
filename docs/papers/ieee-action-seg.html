@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Efficient Two-Stream Network for Online Video Action Segmentation" />
+<meta name="author" content="marcus:카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/ieee-action-seg" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/ieee-action-seg" />
+<meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-24T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Efficient Two-Stream Network for Online Video Action Segmentation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"marcus:카카오엔터프라이즈"},"dateModified":"2022-08-24T00:00:00-05:00","datePublished":"2022-08-24T00:00:00-05:00","description":"Abstract","headline":"Efficient Two-Stream Network for Online Video Action Segmentation","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/ieee-action-seg"},"url":"https://kakaoenterprise.github.io/papers/ieee-action-seg"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <title> Efficient Two-Stream Network for Online Video Action Segmentation | 카카오엔터프라이즈 AI Research </title>
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="카카오엔터프라이즈 AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+
+  <!-- Google Search -->
+  <meta name="google-site-verification" content="g1aJ_c07rYqVQwi6hpDDBI9jGk1wrEqOOj2bJI_CWHE" />
+
+  <!-- Naver Search-->
+  <meta name="naver-site-verification" content="faa46269506eaffea0caefdeeb1feb5166961947" />
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="https://tech.kakaoenterprise.com/" target="_blank">Tech&</a></li>
+      <li><a href="http://kko.to/icW8PeHsT" target="_blank">Careers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">Efficient Two-Stream Network for Online Video Action Segmentation</h1>
+
+    
+
+    
+
+    강민석(카카오엔터프라이즈), 박래홍(서강대), 박형민(서강대)
+
+    <h4>
+        
+          IEEE Access
+        
+    </h4>
+
+    <h4>2022-08-24</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://ieeexplore.ieee.org/abstract/document/9866031" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>Temporal action segmentation is a task of predicting frame-level classes of untrimmed long-termed videos. It can be widely used in various applications including customer analysis, data collection, video indexing, and surveillance. Learning good representations from videos such as motion and spatial representation is a critical factor for model performance. Furthermore, the used model should make reliable decisions with low latency for practical use in a resource-constrained environment. However, many works in action segmentation consider just an accuracy using the pre-calculated representations from heavy 3-dimensional(3D) networks. In this paper, we propose a two-stream action segmentation pipeline that can learn motion and spatial information efficiently and operate online. While the temporal stream combines frame-grouping and TSM for capturing short-term dynamics and long-term temporal information at the same time, the spatial stream captures information on color and appearance complementary to representations from the temporal stream. In addition, the results of both the streams are combined by a cross-attention module to provide a desired classification result for the task. Since it can be operated without heavy 3D convolutional neural networks (CNNs), it takes much less memory and computation than conventional 3D-CNN-based methods. Our proposed network using a non-overlapping sliding window achieved segmentation performance on two action segmentation datasets comparable to many recent works that require full temporal resolution and pre-calculated features of 3D CNNs.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+
+    <!-- Naver Analytics -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "d6495f190ca3e0";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+  </body>
+</html>
