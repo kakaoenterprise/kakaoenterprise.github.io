@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Jul 2022 03:09:13 -0500</pubDate>
-    <lastBuildDate>Wed, 27 Jul 2022 03:09:13 -0500</lastBuildDate>
+    <pubDate>Thu, 29 Sep 2022 01:17:52 -0500</pubDate>
+    <lastBuildDate>Thu, 29 Sep 2022 01:17:52 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Persona-Knowledge Dialogue Multi-Context Retrieval and Enhanced Decoding Methods</title>
+        <description></description>
+        <pubDate>Sun, 16 Oct 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/coling-multi-context-retrieval</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/coling-multi-context-retrieval</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Generalizing RNN-Transducer to Out-Domain Audio via Sparse Self-Attention Layers</title>
@@ -58,6 +70,30 @@
       </item>
     
       <item>
+        <title>Proxyless Neural Architecture Adaptation at Once</title>
+        <description></description>
+        <pubDate>Thu, 15 Sep 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/ieee-pnaa</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieee-pnaa</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Efficient Two-Stream Network for Online Video Action Segmentation</title>
+        <description></description>
+        <pubDate>Wed, 24 Aug 2022 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/ieee-action-seg</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieee-action-seg</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
         <title>Classification-based Multi-task Learning for Efficient Pose Estimation Network</title>
         <description></description>
         <pubDate>Sun, 21 Aug 2022 00:00:00 -0500</pubDate>
@@ -87,42 +123,6 @@
         <pubDate>Mon, 15 Aug 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/sigkdd-oasys</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-oasys</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Connecting a Low Loss Subspace for Personalized Federated Learning</title>
-        <description></description>
-        <pubDate>Sun, 14 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/sigkdd-federated-learning</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-federated-learning</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Paraphrasing via Ranking Many Candidates</title>
-        <description></description>
-        <pubDate>Mon, 18 Jul 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/inlg-paraphrasing</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/inlg-paraphrasing</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>A Statistical Manifold Framework for Point Cloud Data</title>
-        <description></description>
-        <pubDate>Sun, 17 Jul 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/icml-point-cloud-data</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml-point-cloud-data</guid>
         
         
         <category>papers</category>
