@@ -5,9 +5,57 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Sep 2022 01:17:52 -0500</pubDate>
-    <lastBuildDate>Thu, 29 Sep 2022 01:17:52 -0500</lastBuildDate>
+    <pubDate>Mon, 24 Oct 2022 22:44:06 -0500</pubDate>
+    <lastBuildDate>Mon, 24 Oct 2022 22:44:06 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Efficient Skeleton-Based Action Recognition via Joint-Mapping strategies</title>
+        <description></description>
+        <pubDate>Tue, 03 Jan 2023 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/wacv-action-recognition</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/wacv-action-recognition</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>Normalizing Mutual Information for Robust Adaptive Training for Translation</title>
+        <description></description>
+        <pubDate>Wed, 07 Dec 2022 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/emnlp-translation</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-translation</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>LittleBird: Efficient Faster &amp; Longer Transformer for Question Answering</title>
+        <description></description>
+        <pubDate>Wed, 07 Dec 2022 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/emnlp-littlebird</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-littlebird</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>APEACH: Attacking Pejorative Expressions with Analysis on Crowd-Generated Hate Speech Evaluation Datasets</title>
+        <description></description>
+        <pubDate>Wed, 07 Dec 2022 00:00:00 -0600</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/emnlp-apeach</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/emnlp-apeach</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Persona-Knowledge Dialogue Multi-Context Retrieval and Enhanced Decoding Methods</title>
@@ -75,54 +123,6 @@
         <pubDate>Thu, 15 Sep 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/ieee-pnaa</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieee-pnaa</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Efficient Two-Stream Network for Online Video Action Segmentation</title>
-        <description></description>
-        <pubDate>Wed, 24 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/ieee-action-seg</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/ieee-action-seg</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Classification-based Multi-task Learning for Efficient Pose Estimation Network</title>
-        <description></description>
-        <pubDate>Sun, 21 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/icpr-pose-estimation</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icpr-pose-estimation</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>ComDensE : Combined Dense Embedding of Relation-aware and Common Features for Knowledge Graph Completion</title>
-        <description></description>
-        <pubDate>Sun, 21 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/icpr-comdense</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icpr-comdense</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>OASYS: Domain-Agnostic Automated System for Constructing Knowledge Base from Unstructured Text</title>
-        <description></description>
-        <pubDate>Mon, 15 Aug 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/sigkdd-oasys</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/sigkdd-oasys</guid>
         
         
         <category>papers</category>

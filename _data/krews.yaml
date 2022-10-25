@@ -270,6 +270,13 @@ leo:
   web:
   description: 카카오 엔터프라이즈의 훌륭한 동료와 함께 음성합성 기술을 연구하고 만듭니다.
 
+lambda:
+  korean_name: 이호진
+  profile: 
+  github:
+  web:
+  description: 
+
 leonard:
   korean_name: 민규식
   profile: 
@@ -332,6 +339,13 @@ montae:
   github:
   web:
   description: 훌륭한 동료들과 함께, 보다 자연스럽고 편안한 음성 합성 기술을 만들고 있습니다. 이 기술이 모두의 삶의 질을 높이는 데 도움이 됐으면 좋겠습니다.
+
+phil:
+  korean_name: 이민철
+  profile:
+  github:
+  web:
+  description:
 
 pin:
   korean_name: 박일남

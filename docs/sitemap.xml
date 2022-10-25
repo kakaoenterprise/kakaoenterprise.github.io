@@ -4,6 +4,70 @@
 		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<url>
+		<loc>https://kakaoenterprise.github.io/papers/wacv-action-recognition</loc>
+		
+		<lastmod>2023-01-03T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/emnlp-translation</loc>
+		
+		<lastmod>2022-12-07T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/emnlp-littlebird</loc>
+		
+		<lastmod>2022-12-07T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
+		<loc>https://kakaoenterprise.github.io/papers/emnlp-apeach</loc>
+		
+		<lastmod>2022-12-07T00:00:00-06:00</lastmod>
+		
+
+		
+		<changefreq>weekly</changefreq>
+		
+
+		
+		<priority>0.5</priority>
+		
+
+	</url>
+	
+	<url>
 		<loc>https://kakaoenterprise.github.io/papers/coling-multi-context-retrieval</loc>
 		
 		<lastmod>2022-10-16T00:00:00-05:00</lastmod>
@@ -311,22 +375,6 @@
 		<loc>https://kakaoenterprise.github.io/papers/aaai-pnaa</loc>
 		
 		<lastmod>2022-02-28T00:00:00-06:00</lastmod>
-		
-
-		
-		<changefreq>weekly</changefreq>
-		
-
-		
-		<priority>0.5</priority>
-		
-
-	</url>
-	
-	<url>
-		<loc>https://kakaoenterprise.github.io/papers/arxiv-apeach</loc>
-		
-		<lastmod>2022-02-25T00:00:00-06:00</lastmod>
 		
 
 		

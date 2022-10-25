@@ -1,0 +1,21 @@
+---
+layout: post
+research-area: NLP
+title: "APEACH: Attacking Pejorative Expressions with Analysis on Crowd-Generated Hate Speech Evaluation Datasets"
+slug: emnlp-apeach
+description:
+published-date: 2022-12-07
+publisher: Findings of EMNLP
+publisher-fullname : Findings of Empirical Methods in Natural Language Processing (EMNLP)
+authors:
+  - 양기창:카카오, 카카오엔터프라이즈, 숭실대
+  - 장원준:카카오, 숭실대
+  - 조원익:서울대
+paper: https://arxiv.org/pdf/2202.12459.pdf
+code: https://github.com/jason9693/APEACH
+tag:
+---
+
+# Abstract
+
+In hate speech detection, developing training and evaluation datasets across various domains is the critical issue. Whereas, major approaches crawl social media texts and hire crowd-workers to annotate the data. Following this convention often restricts the scope of pejorative expressions to a single domain lacking generalization. Sometimes domain overlap between training corpus and evaluation set overestimate the prediction performance when pretraining language models on low-data language. To alleviate these problems in Korean, we propose APEACH that asks unspecified users to generate hate speech examples followed by minimal post-labeling. We find that APEACH can collect useful datasets that are less sensitive to the lexical overlaps between the pretraining corpus and the evaluation set, thereby properly measuring the model performance.
