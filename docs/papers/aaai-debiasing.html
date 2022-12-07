@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Revisiting the Importance of Amplifying Bias for Debiasing" />
+<meta name="author" content="이정수:카이스트, 카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/aaai-debiasing" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/aaai-debiasing" />
+<meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-07T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Revisiting the Importance of Amplifying Bias for Debiasing" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"이정수:카이스트, 카카오엔터프라이즈"},"dateModified":"2023-02-07T00:00:00-06:00","datePublished":"2023-02-07T00:00:00-06:00","description":"Abstract","headline":"Revisiting the Importance of Amplifying Bias for Debiasing","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/aaai-debiasing"},"url":"https://kakaoenterprise.github.io/papers/aaai-debiasing"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <title> Revisiting the Importance of Amplifying Bias for Debiasing | 카카오엔터프라이즈 AI Research </title>
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="카카오엔터프라이즈 AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+
+  <!-- Google Search -->
+  <meta name="google-site-verification" content="g1aJ_c07rYqVQwi6hpDDBI9jGk1wrEqOOj2bJI_CWHE" />
+
+  <!-- Naver Search-->
+  <meta name="naver-site-verification" content="faa46269506eaffea0caefdeeb1feb5166961947" />
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="https://tech.kakaoenterprise.com/" target="_blank">Tech&</a></li>
+      <li><a href="http://kko.to/icW8PeHsT" target="_blank">Careers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">COMPUTER VISION</h4>
+    <h1 class="post-title">Revisiting the Importance of Amplifying Bias for Debiasing</h1>
+
+    
+
+    
+
+    이정수(카이스트, 카카오엔터프라이즈), 박정훈(카이스트), 김대영(카이스트), 이주영(카카오엔터프라이즈), 최윤재(카이스트), 주재걸(카이스트)
+
+    <h4>
+        
+          Association for the Advancement of Artificial Intelligence (AAAI)
+        
+    </h4>
+
+    <h4>2023-02-07</h4>
+
+    
+      <div class="link-button-group">
+        
+          <a href="https://arxiv.org/pdf/2205.14594.pdf" target="_blank">
+            <button class="link-button">
+              <i class="far fa-file-alt"></i> Paper
+            </button>
+          </a>
+        
+
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>In image classification, debiasing aims to train a classifier to be less susceptible to dataset bias, the strong correlation between peripheral attributes of data samples and a target class. For example, even if the frog class in the dataset mainly consists of frog images with a swamp background (i.e., biasaligned samples), a debiased classifier should be able to correctly classify a frog at a beach (i.e., bias-conflicting samples). Recent debiasing approaches commonly use two components for debiasing, a biased model f<sub>B</sub> and a debiased
+model f<sub>D</sub>. f<sub>B</sub> is trained to focus on bias-aligned samples (i.e., overfitted to the bias) while f<sub>D</sub> is mainly trained with bias-conflicting samples by concentrating on samples which f<sub>B</sub> fails to learn, leading f<sub>D</sub> to be less susceptible to the dataset bias. While the state-of-the-art debiasing techniques have aimed to better train f<sub>D</sub>, we focus on training f<sub>B</sub>, an overlooked component until now. Our empirical analysis reveals that removing the bias-conflicting samples from the training set for f<sub>B</sub> is important for improving the debiasing performance of f<sub>D</sub>. This is due to the fact that the biasconflicting samples work as noisy samples for amplifying the bias for f<sub>B</sub> since those samples do not include the bias attribute. To this end, we propose a simple yet effective data sample selection method which removes the bias-conflicting samples to construct a bias-amplified dataset for training f<sub>B</sub>. Our data sample selection method can be directly applied to
+existing reweighting-based debiasing approaches, obtaining
+consistent performance boost and achieving the state-of-theart performance on both synthetic and real-world datasets.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+
+    <!-- Naver Analytics -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "d6495f190ca3e0";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+  </body>
+</html>
