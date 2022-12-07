@@ -9,7 +9,7 @@ publisher: AAAI
 publisher-fullname: Association for the Advancement of Artificial Intelligence (AAAI)
 authors:
   - 이정수:카이스트, 카카오엔터프라이즈
-  - 박정훈:카이스트
+  - 박정훈:카이스트, 카카오엔터프라이즈
   - 김대영:카이스트
   - michael:카카오엔터프라이즈
   - 최윤재:카이스트

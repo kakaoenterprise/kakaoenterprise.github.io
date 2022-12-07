@@ -109,7 +109,7 @@
 
 <p>당시 개발한 모델이 주로 학습한 데이터셋에는 서양인 얼굴이 많이 포함돼 있어 동양인 얼굴을 제대로 인식하지 못하는 문제가 있었습니다. 동양인 얼굴 이미지 수집 및 레이블링, 모델을 개선하면 좋겠다는 논의를 바탕으로 새로운 얼굴 인식 모듈 개발에 성공한 카카오는 이전보다 훨씬 더 정확한 라이브픽 서비스를 제공할 수 있게 됐습니다.</p>
 
-<p>여기서 더 나아가 카카오엔터프라이즈 AI Lab(이하 AI Lab)은 자사가 보유한 얼굴 인식 모델의 객관적인 성능을 측정하면 좋겠다고 판단했습니다. 그 결과, 팀(신종주, 김홍락, 김용현)을 이뤄 참가하게 된 안면인식 공급업체 테스트(FRVT<sup>face recognition vendor test</sup>)<sup><a href="#7b79:fn:1" class="footnote" id="7b79:fn-back:1">1</a></sup>의 경쟁 주제 중 하나인 1:1 검증<sup>verification</sup> 일반 이미지(wild) 부문에서 100여 팀 중 3등(2020년 5월 21일 기준)을 차지하는 성과를 달성했습니다.</p>
+<p>여기서 더 나아가 카카오엔터프라이즈 AI Lab(이하 AI Lab)은 자사가 보유한 얼굴 인식 모델의 객관적인 성능을 측정하면 좋겠다고 판단했습니다. 그 결과, 팀(신종주, 김홍락, 김용현)을 이뤄 참가하게 된 안면인식 공급업체 테스트(FRVT<sup>face recognition vendor test</sup>)<sup><a href="#5a6c:fn:1" class="footnote" id="5a6c:fn-back:1">1</a></sup>의 경쟁 주제 중 하나인 1:1 검증<sup>verification</sup> 일반 이미지(wild) 부문에서 100여 팀 중 3등(2020년 5월 21일 기준)을 차지하는 성과를 달성했습니다.</p>
 
 <p>이번 글에서는 AI Lab이 도전한 대회를 소개하고, AI Lab만의 문제 해결 방식, 성능 평가 척도 및 향후 연구 계획에 대해 다루고자 합니다. 이를 위해 AI Lab AI기술팀 멀티미디어처리파트의 신종주 연구원을 만나 그 자세한 이야기를 들어봤습니다.</p>
 
@@ -123,23 +123,23 @@
 
 <h1 id="frvt-11-검증-챌린지를-소개합니다">FRVT 1:1 검증 챌린지를 소개합니다</h1>
 
-<p>미국국립표준기술연구소(NIST)가 주관하는 FRVT는 얼굴 정보 대조를 통한 출입국심사, 여권 불법 복제 탐지, 아동(미성년자) 성범죄 피해자 식별<sup><a href="#7b79:fn:2" class="footnote" id="7b79:fn-back:2">2</a></sup>처럼  민간∙사법∙국가 보안 영역에서 활용되는 자동화된 얼굴 인식 응용 프로그램의 성능을 측정하는 대회입니다. 대회가 열리는 2~3년의 기간 동안 참가자는 4개월에 한 번씩 새로운 알고리즘을 제출할 수 있습니다. 주최 측은 한 업체가 최근 제출한 2개의 알고리즘의 성능을 평가해 그 결과를 리포트 형태로 발표합니다.</p>
+<p>미국국립표준기술연구소(NIST)가 주관하는 FRVT는 얼굴 정보 대조를 통한 출입국심사, 여권 불법 복제 탐지, 아동(미성년자) 성범죄 피해자 식별<sup><a href="#5a6c:fn:2" class="footnote" id="5a6c:fn-back:2">2</a></sup>처럼  민간∙사법∙국가 보안 영역에서 활용되는 자동화된 얼굴 인식 응용 프로그램의 성능을 측정하는 대회입니다. 대회가 열리는 2~3년의 기간 동안 참가자는 4개월에 한 번씩 새로운 알고리즘을 제출할 수 있습니다. 주최 측은 한 업체가 최근 제출한 2개의 알고리즘의 성능을 평가해 그 결과를 리포트 형태로 발표합니다.</p>
 
 <p>대회 참가자는 검증(1:1 매칭), 식별(1:N 매칭), 모프(morph), 품질(quality) 등 총 4개의 경쟁 주제 중 원하는 분야를 선택해 참가할 수 있습니다. ‘검증’은 시스템에 입력된 두 이미지 속 인물의 동일인 여부를 판별하는 능력을 측정합니다. ‘식별’은 시스템에 입력된 얼굴 이미지가 내부 데이터베이스(DB)에 저장된 인물 중 누구와 가장 유사한지를 판단하는 데 활용됩니다. ‘모프’는 시스템에 입력된 얼굴 이미지를 인식해 그 합성 여부를 제대로 판단하는지를 평가합니다. ‘품질’에서는 화질, 얼굴 촬영 각도, 조명 등에 따른 입력 영상의 품질을 판별하는 능력을 측정합니다.</p>
 
-<p>이 중에서도 AI Lab이 참가한 1:1 검증에 대해 더 자세히 설명해보겠습니다. 1:1 검증 참가자는 미국 입국자의 비자(visa) 사진과 범인 식별용 상반신(mugshot) 사진, 실생활 환경에서 촬영된 일반 얼굴 사진(wild), 공항 출입국심사대에서 촬영된 사진(visaboarder) 부문에서 주어진 두 얼굴 이미지쌍의 동일인 여부를 판별하는 실력을 겨룹니다([그림 2]). 새롭게 신설된 네번째 부문<sup><a href="#7b79:fn:3" class="footnote" id="7b79:fn-back:3">3</a></sup>에서의 관건은 고품질 영상의 비자 사진과 웹카메라로 촬영한 중저품질 영상 속 인물의 동일인 여부를 판별하는 데 있습니다.</p>
+<p>이 중에서도 AI Lab이 참가한 1:1 검증에 대해 더 자세히 설명해보겠습니다. 1:1 검증 참가자는 미국 입국자의 비자(visa) 사진과 범인 식별용 상반신(mugshot) 사진, 실생활 환경에서 촬영된 일반 얼굴 사진(wild), 공항 출입국심사대에서 촬영된 사진(visaboarder) 부문에서 주어진 두 얼굴 이미지쌍의 동일인 여부를 판별하는 실력을 겨룹니다([그림 2]). 새롭게 신설된 네번째 부문<sup><a href="#5a6c:fn:3" class="footnote" id="5a6c:fn-back:3">3</a></sup>에서의 관건은 고품질 영상의 비자 사진과 웹카메라로 촬영한 중저품질 영상 속 인물의 동일인 여부를 판별하는 데 있습니다.</p>
 
 <p><img src="/assets/img/2020-06-16-200616/002.png" width="80%" align="" /></p>
 
 <p><em class="center">[ 그림 2 ] FRVT 1:1 검증에서 얼굴 인식 알고리즘 성능 평가에 사용하는 사진 종류 (출처 : NIST)</em></p>
 
-<p>NIST는 참가자로부터 받은 코드를 평가 플랫폼에서 직접 가동하는 방식을 채택했습니다. CPU 싱글스레드<sup><a href="#7b79:fn:4" class="footnote" id="7b79:fn-back:4">4</a></sup>를 이용한 C++ 추론 모델로 영상 하나당 1초 안에 정답(동일인입니다. 또는 비동일인입니다)을 도출해야 한다는 유의점을 사전 고지했습니다. NIST에서는 사용자가 제출한 리눅스<sup>Linux</sup> 라이브러리 파일을 직접 실행해 각 테스트 데이터셋 얼굴 이미지쌍을 상대로 얼굴 인식 알고리즘의 성능 정확도를 평가합니다.</p>
+<p>NIST는 참가자로부터 받은 코드를 평가 플랫폼에서 직접 가동하는 방식을 채택했습니다. CPU 싱글스레드<sup><a href="#5a6c:fn:4" class="footnote" id="5a6c:fn-back:4">4</a></sup>를 이용한 C++ 추론 모델로 영상 하나당 1초 안에 정답(동일인입니다. 또는 비동일인입니다)을 도출해야 한다는 유의점을 사전 고지했습니다. NIST에서는 사용자가 제출한 리눅스<sup>Linux</sup> 라이브러리 파일을 직접 실행해 각 테스트 데이터셋 얼굴 이미지쌍을 상대로 얼굴 인식 알고리즘의 성능 정확도를 평가합니다.</p>
 
 <p><br /></p>
 
 <h1 id="ai-lab이-과제를-해결한-방법">AI Lab이 과제를 해결한 방법</h1>
 
-<p>AI Lab은 얼굴 인식 분야에서 많이 사용하는 모델인 ResNet-100<sup><a href="#7b79:fn:5" class="footnote" id="7b79:fn-back:5">5</a></sup><a href="#7b79:rf:1" class="reference" id="7b79:rf-back:1">[1]</a>을 훈련했습니다. 학습에는 AI Lab이 자체적으로 확보한 10만 명의 인물로부터 획득한 1,000만 여장의 얼굴 이미지를 활용했으며, 검증에는 NIST에서 공개한 일반 사진 데이터셋(IJB<sup><a href="#7b79:fn:6" class="footnote" id="7b79:fn-back:6">6</a></sup>-B,C)과 FRVT에서 제공한 상반신 사진을 활용했습니다.</p>
+<p>AI Lab은 얼굴 인식 분야에서 많이 사용하는 모델인 ResNet-100<sup><a href="#5a6c:fn:5" class="footnote" id="5a6c:fn-back:5">5</a></sup><a href="#5a6c:rf:1" class="reference" id="5a6c:rf-back:1">[1]</a>을 훈련했습니다. 학습에는 AI Lab이 자체적으로 확보한 10만 명의 인물로부터 획득한 1,000만 여장의 얼굴 이미지를 활용했으며, 검증에는 NIST에서 공개한 일반 사진 데이터셋(IJB<sup><a href="#5a6c:fn:6" class="footnote" id="5a6c:fn-back:6">6</a></sup>-B,C)과 FRVT에서 제공한 상반신 사진을 활용했습니다.</p>
 
 <p>문제는 추론이었습니다. 주최 측의 설명대로라면, 단 1초 안에 [그림 3]에 기술된 1~4단계를 거쳐 추론 결과를 제시하는 제약이 걸려있기 때문입니다. 이에 AI Lab은 총 3차례에 걸친 도전을 통해 제시간 내로 더 정확한 추론 결과를 내는 전략을 고민했습니다.</p>
 
@@ -149,21 +149,21 @@
 
 <h2 id="1적절한-컴퓨팅-환경-설정하기">1.적절한 컴퓨팅 환경 설정하기</h2>
 
-<p>NIST에서는 서버 운영체제를 CentOS<sup><a href="#7b79:fn:7" class="footnote" id="7b79:fn-back:7">7</a></sup>로 제한했습니다. 이에 AI Lab은 운영체제 설치와 반납이 쉬운 사내 가상 서버에 CentOS를 설치했습니다. 하지만 NIST가 제약을 둔 동일한 컴퓨팅 환경이 아니라서 알고리즘의 추론 속도를 정확하게 산출하기가 쉽지 않은 문제가 있었습니다. 가상 서버에서의 CPU 동작 속도가 기대치보다 더 느렸기 때문이죠.</p>
+<p>NIST에서는 서버 운영체제를 CentOS<sup><a href="#5a6c:fn:7" class="footnote" id="5a6c:fn-back:7">7</a></sup>로 제한했습니다. 이에 AI Lab은 운영체제 설치와 반납이 쉬운 사내 가상 서버에 CentOS를 설치했습니다. 하지만 NIST가 제약을 둔 동일한 컴퓨팅 환경이 아니라서 알고리즘의 추론 속도를 정확하게 산출하기가 쉽지 않은 문제가 있었습니다. 가상 서버에서의 CPU 동작 속도가 기대치보다 더 느렸기 때문이죠.</p>
 
 <p>첫 번째 제출 이후 AI Lab은 개발 환경 개선 작업에 나섰습니다. 제출 당시 사용했던 가상 서버 환경이 NIST가 제시한 것보다 느렸던 점을 고려하며 상대적인 속도를 측정했습니다. 그 결과, 두 번째 제출부터는 NIST가 제시한 것과 유사한 컴퓨팅 환경을 구축할 수 있었습니다.</p>
 
 <h2 id="2추론-플랫폼-통일하기">2.추론 플랫폼 통일하기</h2>
 
-<p>AI Lab은 자사가 보유한 얼굴 검출 모듈과 얼굴 정렬 모듈은 파이토치<sup>Pytorch</sup>로, 얼굴 인식 모듈은 mxnet에서 학습돼 도커<sup>docker</sup><sup><a href="#7b79:fn:8" class="footnote" id="7b79:fn-back:8">8</a></sup>8로 각기 따로 서비스하고 있습니다. 문제는 앞서 설명한 대로 대회에 참가하기 위해서는 서로 의존성이 없는 세 모듈을 C++<sup><a href="#7b79:fn:9" class="footnote" id="7b79:fn-back:9">9</a></sup>로 동작할 수 있게 만들어야만 하는 데 있었습니다.</p>
+<p>AI Lab은 자사가 보유한 얼굴 검출 모듈과 얼굴 정렬 모듈은 파이토치<sup>Pytorch</sup>로, 얼굴 인식 모듈은 mxnet에서 학습돼 도커<sup>docker</sup><sup><a href="#5a6c:fn:8" class="footnote" id="5a6c:fn-back:8">8</a></sup>8로 각기 따로 서비스하고 있습니다. 문제는 앞서 설명한 대로 대회에 참가하기 위해서는 서로 의존성이 없는 세 모듈을 C++<sup><a href="#5a6c:fn:9" class="footnote" id="5a6c:fn-back:9">9</a></sup>로 동작할 수 있게 만들어야만 하는 데 있었습니다.</p>
 
 <p>시간이 촉박했던 1차 제출에서는 AI Lab가 기존에 보유하던 3가지 모듈을 급하게 합치느라 코드를 충분하게 검토하지 못했습니다. 파이토치, mxnet을 비롯한 대다수의 딥러닝 플랫폼은 파이썬<sup>Python</sup> 뿐만 아니라 C++에서도 모델 파일을 읽어 들여서 추론하는 기능을 제공합니다. AI Lab은 효율적인 운영을 위해 딥러닝 플랫폼 단일화가 좋겠다고 판단했습니다. 그 구조가 복잡해 플랫폼 변경이 쉽지 않은 얼굴 검출 모듈에 사용된 파이토치를 기준 삼아, 얼굴 인식 모듈을 파이토치로 변환하기로 하였습니다.</p>
 
-<p>이미 파이토치로 구현된 얼굴 검출 모듈과 얼굴 정렬 모듈은 C++에서 사용 가능한 torch script<sup><a href="#7b79:fn:10" class="footnote" id="7b79:fn-back:10">10</a></sup> 파일로 쉽게 변환할 수 있었습니다. 아쉽게도 1차에서는 MMdnn<sup><a href="#7b79:fn:11" class="footnote" id="7b79:fn-back:11">11</a></sup>를 이용해 mxnet으로 구현된 얼굴 인식 모듈을 파이토치 코드로 변환할 때, 배치분포 정규화<sup>batch normalization</sup><sup><a href="#7b79:fn:12" class="footnote" id="7b79:fn-back:12">12</a></sup> 층의 매개변수<sup>parameter</sup> 값을 그대로 복사하지 못하는 문제를 인지하지 못했습니다. 이렇게 되면 0.00000x 차이로도 출력 결과가 달라져 성능 저하에 큰 영향을 미치게 되죠. 2차 제출에서는 이 문제를 해결해 추론 정확도를 대폭 높였으나, 상위권에 오르기에는 다소 부족했습니다.</p>
+<p>이미 파이토치로 구현된 얼굴 검출 모듈과 얼굴 정렬 모듈은 C++에서 사용 가능한 torch script<sup><a href="#5a6c:fn:10" class="footnote" id="5a6c:fn-back:10">10</a></sup> 파일로 쉽게 변환할 수 있었습니다. 아쉽게도 1차에서는 MMdnn<sup><a href="#5a6c:fn:11" class="footnote" id="5a6c:fn-back:11">11</a></sup>를 이용해 mxnet으로 구현된 얼굴 인식 모듈을 파이토치 코드로 변환할 때, 배치분포 정규화<sup>batch normalization</sup><sup><a href="#5a6c:fn:12" class="footnote" id="5a6c:fn-back:12">12</a></sup> 층의 매개변수<sup>parameter</sup> 값을 그대로 복사하지 못하는 문제를 인지하지 못했습니다. 이렇게 되면 0.00000x 차이로도 출력 결과가 달라져 성능 저하에 큰 영향을 미치게 되죠. 2차 제출에서는 이 문제를 해결해 추론 정확도를 대폭 높였으나, 상위권에 오르기에는 다소 부족했습니다.</p>
 
-<p>세 번째 제출에서 AI Lab은 세 모델을 torch script 대신, 인텔 CPU에 최적화되어 빠른 추론 속도를 제공하는 openvino 파일로 변환했습니다. 컴퓨터 비전 딥러닝 모델에서 주로 활용하는 컨볼루션<sup>convolution</sup><sup><a href="#7b79:fn:13" class="footnote" id="7b79:fn-back:13">13</a></sup>과 배치분포 정규화 층의 매개변수를 합쳐 한 번의 연산만 수행할 수 있어(layer fusion) 속도 향상을 기대할 수 있다고 내다봤기 때문입니다. AI Lab이 자사 서비스 개발에 openvino를 사용해본 경험도 이 결정에 영향을 미쳤습니다.</p>
+<p>세 번째 제출에서 AI Lab은 세 모델을 torch script 대신, 인텔 CPU에 최적화되어 빠른 추론 속도를 제공하는 openvino 파일로 변환했습니다. 컴퓨터 비전 딥러닝 모델에서 주로 활용하는 컨볼루션<sup>convolution</sup><sup><a href="#5a6c:fn:13" class="footnote" id="5a6c:fn-back:13">13</a></sup>과 배치분포 정규화 층의 매개변수를 합쳐 한 번의 연산만 수행할 수 있어(layer fusion) 속도 향상을 기대할 수 있다고 내다봤기 때문입니다. AI Lab이 자사 서비스 개발에 openvino를 사용해본 경험도 이 결정에 영향을 미쳤습니다.</p>
 
-<p>다만 openvino는 기본적으로 멀티스레드<sup>multi-thread</sup><sup><a href="#7b79:fn:14" class="footnote" id="7b79:fn-back:14">14</a></sup>로 동작합니다. 몇몇 매개변수를 조절해봐도 최소 3개의 쓰레드를 사용하도록 강제하죠. AI Lab은 openvino 내부 코드 중 필요가 없는 스레드를 제거해 싱글스레드로 동작할 수 있도록 했습니다.</p>
+<p>다만 openvino는 기본적으로 멀티스레드<sup>multi-thread</sup><sup><a href="#5a6c:fn:14" class="footnote" id="5a6c:fn-back:14">14</a></sup>로 동작합니다. 몇몇 매개변수를 조절해봐도 최소 3개의 쓰레드를 사용하도록 강제하죠. AI Lab은 openvino 내부 코드 중 필요가 없는 스레드를 제거해 싱글스레드로 동작할 수 있도록 했습니다.</p>
 
 <h2 id="3추론-정확도-높이기">3.추론 정확도 높이기</h2>
 
@@ -171,7 +171,7 @@
 
 <p>하나의 이미지를 여러 관점에서 관찰할 수 있도록 이미지를 좌우로 뒤집거나(flipping) 자르는(cropping) 등 다양한 기법을 아우르는 어그먼테이션은 모델의 추론 정확도를 끌어올리는 주요 방법론 중 하나입니다. TTA는 각기 서로 다른 어그먼테이션 기법을 적용한 테스트 데이터를 최종 모델(훈련 데이터와 검증 데이터로 학습을 마친 모델)에 입력하는 방식으로 성능을 끌어올립니다. 마치 서로 다른 어그먼테이션 기법을 적용한 학습 모델을 앙상블<sup>ensemble</sup>한 것과 비슷한 성능 향상 효과를 기대할 수 있습니다.  테스트 데이터를 모델에 여러 차례 입력하기 때문에 정답을 추론하는 시간은 좀 더 길 수는 있습니다. 하지만 최종 모델의 매개변수를 변경하지 않고도 추론 성능을 높일 수 있어서 시간과 비용을 획기적으로 줄이는 데 도움이 됩니다.</p>
 
-<p>AI Lab은 이미지 한 장의 좌우를 뒤집으면 그렇지 않을 때보다 전체 추론 시간이 2배 더 가까이 소모된다는 점에서 다양한 어그먼테이션 기법을 적용하기 어렵다고 판단했습니다. 이에 앞서 두 차례 제출에서 어그먼테이션 미적용시 추론 결과 도출까지 0.5초를 넘지 않았던 경험을 바탕으로, 테스트 단계에서 이미지를 좌우로 뒤집는 플립 기법<a href="#7b79:rf:2" class="reference" id="7b79:rf-back:2">[2]</a>을 적용해 코드를 구현했습니다.</p>
+<p>AI Lab은 이미지 한 장의 좌우를 뒤집으면 그렇지 않을 때보다 전체 추론 시간이 2배 더 가까이 소모된다는 점에서 다양한 어그먼테이션 기법을 적용하기 어렵다고 판단했습니다. 이에 앞서 두 차례 제출에서 어그먼테이션 미적용시 추론 결과 도출까지 0.5초를 넘지 않았던 경험을 바탕으로, 테스트 단계에서 이미지를 좌우로 뒤집는 플립 기법<a href="#5a6c:rf:2" class="reference" id="5a6c:rf-back:2">[2]</a>을 적용해 코드를 구현했습니다.</p>
 
 <p><br /></p>
 
@@ -245,30 +245,30 @@
 
 <h1 id="참고-문헌">참고 문헌</h1>
 
-<p><a id="7b79:rf:1" class="referencebody"><a href="#7b79:rf-back:1" class="backlink">[1]</a>  ArcFace: Additive Angular Margin Loss for Deep Face Recognition (2019) by Jiankang Deng, Jia Guo, Niannan Xue, Stefanos Zafeiriou in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</a><br /></p>
+<p><a id="5a6c:rf:1" class="referencebody"><a href="#5a6c:rf-back:1" class="backlink">[1]</a>  ArcFace: Additive Angular Margin Loss for Deep Face Recognition (2019) by Jiankang Deng, Jia Guo, Niannan Xue, Stefanos Zafeiriou in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</a><br /></p>
 
-<p><a id="7b79:rf:2" class="referencebody"><a href="#7b79:rf-back:2" class="backlink">[2]</a>  ImageNet Classification with Deep Convolutional Neural Networks (2012) by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton in Advances in Neural Information Processing Systems 25 (NIPS)</a><br /></p>
+<p><a id="5a6c:rf:2" class="referencebody"><a href="#5a6c:rf-back:2" class="backlink">[2]</a>  ImageNet Classification with Deep Convolutional Neural Networks (2012) by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton in Advances in Neural Information Processing Systems 25 (NIPS)</a><br /></p>
 
 <p><br /></p>
 
 <h1 id="각주">각주</h1>
 
 <ol class="footnotelist">
-<li id="7b79:fn:1" class="footnotebody" value="1"><p> 지난 대회는 2000년, 2002년, 2006년, 2010년, 2013년에 열렸다. 이를 보아 FRVT는 비정기적으로 열리는 대회인 것으로 추측된다.<a href="#7b79:fn-back:1" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:2" class="footnotebody" value="2"><p> 미국 법무부에서는 성범죄 피해 아동을 찾는 데 얼굴 인식 프로그램을 적극적으로 활용하고 있다. 다만 대부분의 학습 데이터가 성인 얼굴만으로 구성돼 있다보니 아동 식별 정확도가 낮다고 알려져 있다.<a href="#7b79:fn-back:2" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:3" class="footnotebody" value="3"><p> 주최 측은 서로 다른 방식으로 촬영된 영상물을 대조하는 과제도 언젠가는 선보인다는 계획을 발표한 바 있다.<a href="#7b79:fn-back:3" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:4" class="footnotebody" value="4"><p> 연산을 하나의 CPU로 순차 처리하는 방식<a href="#7b79:fn-back:4" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:5" class="footnotebody" value="5"><p> 지난 2015년 마이크로소프트 리서치(Microsoft Research)가 제출해 대용량 영상 분류 및 객체 검출을 위한 대회인 ILSVRC<sup>ImageNet Large Scale Visual Recognition Competition</sup>에서 우승을 거머쥔 딥러닝 모델을 일컫는다. 최근에는 이를 변형한 ResNet-100이 얼굴 인식 분야에서 좋은 성과를 내고 있다.<a href="#7b79:fn-back:5" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:6" class="footnotebody" value="6"><p> NIST와 정보고등연구계획국(IARPA)이 함께 운영하는 얼굴 인식 평가용 데이터셋<a href="#7b79:fn-back:6" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:7" class="footnotebody" value="7"><p> 레드햇(Red Hat)에서 무료로 배포하는 리눅스 운영체제<a href="#7b79:fn-back:7" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:8" class="footnotebody" value="8"><p> 하나의 서버에 분리된 공간을 만들어 개발자가 원하는 프로그램을 설치하고 동작할 수 있게 만든다. 예를 들어, 도커를 이용하면 GPU 메모리를 나눠서 여러개의 서비스를 동시에 가동할 수 있다는 점에서 GPU 사용 효율성을 높일 수 있다.<a href="#7b79:fn-back:8" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:9" class="footnotebody" value="9"><p> 프로그래밍 언어 중 하나<a href="#7b79:fn-back:9" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:10" class="footnotebody" value="10"><p> C++에서는 torch script 파일을 읽어서 추론 결과를 내놓는다.<a href="#7b79:fn-back:10" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:11" class="footnotebody" value="11"><p> 여러 딥러닝 플랫폼에서 만든 모델을 서로 변환하는 기능을 제공하는 프로그램<a href="#7b79:fn-back:11" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:12" class="footnotebody" value="12"><p> 데이터의 분포가 평균 0, 분산 1 근처일 때 신경망 학습이 잘 되는 것으로 알려져 있다. 이 때문에 데이터의 분포를 미리 조정하는 일(normalization)은 신경망 학습의 가장 기초적인 전처리과정 중 하나다. 데이터가 깊은 신경망을 통과하면서 이 분포가 무너진다는 데 있다. 내재 분포 이동(internal covariate shift)이라 불리는 이 현상은 깊은 신경망의 느린 학습의 주범 중 하나였다. 층마다 다시 데이터의 분포를 표준화<sup>normalization</sup>하는 배치 분포 정규화를 통해 이 문제가 해결됐다.<a href="#7b79:fn-back:12" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:13" class="footnotebody" value="13"><p> 이미지에서 숨은 특징을 추출하는 층<a href="#7b79:fn-back:13" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:14" class="footnotebody" value="14"><p> 서버내 여러 CPU 자원을 동시에 사용해 연산 속도를 높이는 방식<a href="#7b79:fn-back:14" class="backlink"> ↩</a></p></li>
-<li id="7b79:fn:15" class="footnotebody" value="15"><p> 독립변수(실험변수) 외 종속변수(결과변수)에 영향을 줄 수 있어서 통제해야하는 변수<a href="#7b79:fn-back:15" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:1" class="footnotebody" value="1"><p> 지난 대회는 2000년, 2002년, 2006년, 2010년, 2013년에 열렸다. 이를 보아 FRVT는 비정기적으로 열리는 대회인 것으로 추측된다.<a href="#5a6c:fn-back:1" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:2" class="footnotebody" value="2"><p> 미국 법무부에서는 성범죄 피해 아동을 찾는 데 얼굴 인식 프로그램을 적극적으로 활용하고 있다. 다만 대부분의 학습 데이터가 성인 얼굴만으로 구성돼 있다보니 아동 식별 정확도가 낮다고 알려져 있다.<a href="#5a6c:fn-back:2" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:3" class="footnotebody" value="3"><p> 주최 측은 서로 다른 방식으로 촬영된 영상물을 대조하는 과제도 언젠가는 선보인다는 계획을 발표한 바 있다.<a href="#5a6c:fn-back:3" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:4" class="footnotebody" value="4"><p> 연산을 하나의 CPU로 순차 처리하는 방식<a href="#5a6c:fn-back:4" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:5" class="footnotebody" value="5"><p> 지난 2015년 마이크로소프트 리서치(Microsoft Research)가 제출해 대용량 영상 분류 및 객체 검출을 위한 대회인 ILSVRC<sup>ImageNet Large Scale Visual Recognition Competition</sup>에서 우승을 거머쥔 딥러닝 모델을 일컫는다. 최근에는 이를 변형한 ResNet-100이 얼굴 인식 분야에서 좋은 성과를 내고 있다.<a href="#5a6c:fn-back:5" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:6" class="footnotebody" value="6"><p> NIST와 정보고등연구계획국(IARPA)이 함께 운영하는 얼굴 인식 평가용 데이터셋<a href="#5a6c:fn-back:6" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:7" class="footnotebody" value="7"><p> 레드햇(Red Hat)에서 무료로 배포하는 리눅스 운영체제<a href="#5a6c:fn-back:7" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:8" class="footnotebody" value="8"><p> 하나의 서버에 분리된 공간을 만들어 개발자가 원하는 프로그램을 설치하고 동작할 수 있게 만든다. 예를 들어, 도커를 이용하면 GPU 메모리를 나눠서 여러개의 서비스를 동시에 가동할 수 있다는 점에서 GPU 사용 효율성을 높일 수 있다.<a href="#5a6c:fn-back:8" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:9" class="footnotebody" value="9"><p> 프로그래밍 언어 중 하나<a href="#5a6c:fn-back:9" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:10" class="footnotebody" value="10"><p> C++에서는 torch script 파일을 읽어서 추론 결과를 내놓는다.<a href="#5a6c:fn-back:10" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:11" class="footnotebody" value="11"><p> 여러 딥러닝 플랫폼에서 만든 모델을 서로 변환하는 기능을 제공하는 프로그램<a href="#5a6c:fn-back:11" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:12" class="footnotebody" value="12"><p> 데이터의 분포가 평균 0, 분산 1 근처일 때 신경망 학습이 잘 되는 것으로 알려져 있다. 이 때문에 데이터의 분포를 미리 조정하는 일(normalization)은 신경망 학습의 가장 기초적인 전처리과정 중 하나다. 데이터가 깊은 신경망을 통과하면서 이 분포가 무너진다는 데 있다. 내재 분포 이동(internal covariate shift)이라 불리는 이 현상은 깊은 신경망의 느린 학습의 주범 중 하나였다. 층마다 다시 데이터의 분포를 표준화<sup>normalization</sup>하는 배치 분포 정규화를 통해 이 문제가 해결됐다.<a href="#5a6c:fn-back:12" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:13" class="footnotebody" value="13"><p> 이미지에서 숨은 특징을 추출하는 층<a href="#5a6c:fn-back:13" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:14" class="footnotebody" value="14"><p> 서버내 여러 CPU 자원을 동시에 사용해 연산 속도를 높이는 방식<a href="#5a6c:fn-back:14" class="backlink"> ↩</a></p></li>
+<li id="5a6c:fn:15" class="footnotebody" value="15"><p> 독립변수(실험변수) 외 종속변수(결과변수)에 영향을 줄 수 있어서 통제해야하는 변수<a href="#5a6c:fn-back:15" class="backlink"> ↩</a></p></li>
 </ol>
 
 
