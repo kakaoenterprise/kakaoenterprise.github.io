@@ -11,7 +11,7 @@ authors:
   - marcus:카카오엔터프라이즈
   - benjamin:카카오엔터프라이즈
   - sam:카카오엔터프라이즈
-paper:
+paper: https://openaccess.thecvf.com/content/WACV2023/papers/Kang_Efficient_Skeleton-Based_Action_Recognition_via_Joint-Mapping_Strategies_WACV_2023_paper.pdf
 code: 
 tag:
 ---

@@ -12,7 +12,7 @@ authors:
   - louis:카카오엔터프라이즈
   - lambda:카카오엔터프라이즈
   - 황승원:서울대
-paper: 
+paper: https://aclanthology.org/2022.emnlp-main.547.pdf
 code: 
 tag:
 ---
