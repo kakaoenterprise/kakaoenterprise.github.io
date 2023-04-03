@@ -5,9 +5,21 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Dec 2022 19:21:25 -0600</pubDate>
-    <lastBuildDate>Tue, 06 Dec 2022 19:21:25 -0600</lastBuildDate>
+    <pubDate>Mon, 03 Apr 2023 01:48:15 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Apr 2023 01:48:15 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Local 3D Editing via 3D Distillation of CLIP Knowledge</title>
+        <description></description>
+        <pubDate>Tue, 20 Jun 2023 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/cvpr-lenerf</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/cvpr-lenerf</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Revisiting the Importance of Amplifying Bias for Debiasing</title>
@@ -111,18 +123,6 @@
         <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/interspeech-emotion-recognition</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-emotion-recognition</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>JETS: Jointly Training FastSpeech2 and HiFi-GAN for End to End Text to Speech</title>
-        <description></description>
-        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/interspeech-jets</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-jets</guid>
         
         
         <category>papers</category>

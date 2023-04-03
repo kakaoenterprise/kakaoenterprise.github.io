@@ -13,7 +13,7 @@ authors:
   - sam:카카오엔터프라이즈
   - 김용현:가우스랩스
   - 이성환:고려대
-paper: 
+paper: https://ieeexplore.ieee.org/document/9956539
 code: 
 tag:
 ---

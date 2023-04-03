@@ -6,24 +6,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Classification-based Multi-task Learning for Efficient Pose Estimation Network" />
-<meta name="author" content="benjamin:카카오엔터프라이즈" />
+<meta property="og:title" content="Local 3D Editing via 3D Distillation of CLIP Knowledge" />
+<meta name="author" content="형준하:카이스트 AI, 카카오엔터프라이즈" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Abstract" />
 <meta property="og:description" content="Abstract" />
-<link rel="canonical" href="https://kakaoenterprise.github.io/papers/icpr-pose-estimation" />
-<meta property="og:url" content="https://kakaoenterprise.github.io/papers/icpr-pose-estimation" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/cvpr-lenerf" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/cvpr-lenerf" />
 <meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-21T00:00:00-05:00" />
+<meta property="article:published_time" content="2023-06-20T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Classification-based Multi-task Learning for Efficient Pose Estimation Network" />
+<meta property="twitter:title" content="Local 3D Editing via 3D Distillation of CLIP Knowledge" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"benjamin:카카오엔터프라이즈"},"dateModified":"2022-08-21T00:00:00-05:00","datePublished":"2022-08-21T00:00:00-05:00","description":"Abstract","headline":"Classification-based Multi-task Learning for Efficient Pose Estimation Network","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/icpr-pose-estimation"},"url":"https://kakaoenterprise.github.io/papers/icpr-pose-estimation"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"형준하:카이스트 AI, 카카오엔터프라이즈"},"dateModified":"2023-06-20T00:00:00-05:00","datePublished":"2023-06-20T00:00:00-05:00","description":"Abstract","headline":"Local 3D Editing via 3D Distillation of CLIP Knowledge","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/cvpr-lenerf"},"url":"https://kakaoenterprise.github.io/papers/cvpr-lenerf"}</script>
 <!-- End Jekyll SEO tag -->
 
   
-  <title> Classification-based Multi-task Learning for Efficient Pose Estimation Network | 카카오엔터프라이즈 AI Research </title>
+  <title> Local 3D Editing via 3D Distillation of CLIP Knowledge | 카카오엔터프라이즈 AI Research </title>
   
 
   <!-- CSS -->
@@ -83,36 +83,22 @@
       <article class="post">
   <header class="post-header">
     <h4 class="catalogue-research-area">COMPUTER VISION</h4>
-    <h1 class="post-title">Classification-based Multi-task Learning for Efficient Pose Estimation Network</h1>
+    <h1 class="post-title">Local 3D Editing via 3D Distillation of CLIP Knowledge</h1>
 
     
 
     
 
-    강동오(카카오엔터프라이즈), 노명철(카카오엔터프라이즈), 김한샘(카카오엔터프라이즈), 김용현(가우스랩스), 이성환(고려대)
+    형준하(카이스트 AI, 카카오엔터프라이즈), 황성원(카이스트 AI), 김대진(스캐터랩), 이현지(카이스트 AI), 주재걸(카이스트 AI)
 
     <h4>
         
-          International Conference on Pattern Recognition (ICPR)
+          Computer Vision and Pattern Recognition (CVPR)
         
     </h4>
 
-    <h4>2022-08-21</h4>
+    <h4>2023-06-20</h4>
 
-    
-      <div class="link-button-group">
-        
-          <a href="https://ieeexplore.ieee.org/document/9956539" target="_blank">
-            <button class="link-button">
-              <i class="far fa-file-alt"></i> Paper
-            </button>
-          </a>
-        
-
-        
-
-        
-      </div>
     
   </header>
 
@@ -121,9 +107,7 @@
   <div class="post-body">
     <h1 id="abstract">Abstract</h1>
 
-<p>Human pose estimation is an interesting and underlying topic in various fields such as action recognition and human-computer interaction. Although many methods have been developed recently, they are still far from perfect in accuracy and speed at a time. In this paper, we propose a Classification-based Pose Estimation Network with Multi-task Learning (CPENML) based on the low-resolution feature map to improve accuracy and inference time simultaneously. The proposed CPENML consists of two ideas. Firstly, novel proposed keypoint and offset estimation
-tasks based on classification achieve better performance than regression. Secondly, the proposed Multi-Scale Network
-(MSN) makes robust feature maps and balances the keypoint and offset tasks to maximize performance. To prove the effectiveness of the proposed method, we conduct ablation studies on the COCO dataset for proposed ideas. Compared to benchmarks, we demonstrate the superiority of our proposed method on COCO dataset in terms of inference time and accuracy.</p>
+<p>3D content manipulation is an important computer vision task with many real-world applications (e.g., product design, cartoon generation, and 3D Avatar editing). Recently proposed 3D GANs can generate diverse photorealistic 3D-aware contents using Neural Radiance fields (NeRF). However, manipulation of NeRF still remains a challenging problem since the visual quality tends to degrade after manipulation and suboptimal control handles such as 2D semantic maps are used for manipulations. While text-guided manipulations have shown potential in 3D editing, such approaches often lack locality. To overcome these problems, we propose Local Editing NeRF (LENeRF), which only requires text inputs for fine-grained and localized manipulation. Specifically, we present three add-on modules of LENeRF, the Latent Residual Mapper, the Attention Field Network, and the Deformation Network, which are jointly used for local manipulations of 3D features by estimating a 3D attention field. The 3D attention field is learned in an unsupervised way, by distilling the zero-shot mask generation capability of CLIP to the 3D space with multi-view guidance. We conduct diverse experiments and thorough evaluations both quantitatively and qualitatively.</p>
 
   </div>
 
