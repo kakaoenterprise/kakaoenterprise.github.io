@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="On the Importance of Feature Decorrelation for Unsupervised Representation Learning in Reinforcement Learning" />
+<meta name="author" content="이호준:카이스트, 카카오엔터프라이즈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract" />
+<meta property="og:description" content="Abstract" />
+<link rel="canonical" href="https://kakaoenterprise.github.io/papers/icml-rl" />
+<meta property="og:url" content="https://kakaoenterprise.github.io/papers/icml-rl" />
+<meta property="og:site_name" content="카카오엔터프라이즈 AI Research" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-07-23T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="On the Importance of Feature Decorrelation for Unsupervised Representation Learning in Reinforcement Learning" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"이호준:카이스트, 카카오엔터프라이즈"},"dateModified":"2023-07-23T00:00:00-05:00","datePublished":"2023-07-23T00:00:00-05:00","description":"Abstract","headline":"On the Importance of Feature Decorrelation for Unsupervised Representation Learning in Reinforcement Learning","mainEntityOfPage":{"@type":"WebPage","@id":"https://kakaoenterprise.github.io/papers/icml-rl"},"url":"https://kakaoenterprise.github.io/papers/icml-rl"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <title> On the Importance of Feature Decorrelation for Unsupervised Representation Learning in Reinforcement Learning | 카카오엔터프라이즈 AI Research </title>
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/assets/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+
+  <!-- Icon -->
+  <script src="https://kit.fontawesome.com/29661d1774.js" crossorigin="anonymous"></script>
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://kakaoenterprise.github.io/feed.xml" title="카카오엔터프라이즈 AI Research" />
+
+  <!-- Google Analytics-->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVX7R4680W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YVX7R4680W');
+</script>
+
+  
+
+  <!-- Google Search -->
+  <meta name="google-site-verification" content="g1aJ_c07rYqVQwi6hpDDBI9jGk1wrEqOOj2bJI_CWHE" />
+
+  <!-- Naver Search-->
+  <meta name="naver-site-verification" content="faa46269506eaffea0caefdeeb1feb5166961947" />
+
+  <!-- katex -->
+  
+</head>
+
+  <body>
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">Kakao Enterprise AI Research</h2>
+    </a>
+    <ul>
+      <li><a href="/papers">Papers</a></li>
+      <li><a href="https://tech.kakaoenterprise.com/" target="_blank">Tech&</a></li>
+      <li><a href="http://kko.to/icW8PeHsT" target="_blank">Careers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <main>
+      <article class="post">
+  <header class="post-header">
+    <h4 class="catalogue-research-area">REINFORCEMENT LEARNING</h4>
+    <h1 class="post-title">On the Importance of Feature Decorrelation for Unsupervised Representation Learning in Reinforcement Learning</h1>
+
+    
+
+    
+
+    이호준(카이스트, 카카오엔터프라이즈), 이관호(카이스트), 황동윤(카이스트), 이현호(카카오엔터프라이즈), 이병근(카이스트), 주재걸(카이스트)
+
+    <h4>
+        
+          International Conference on Machine Learning (ICML)
+        
+    </h4>
+
+    <h4>2023-07-23</h4>
+
+    
+      <div class="link-button-group">
+        
+
+        
+          <a href="https://github.com/dojeon-ai/SimTPR" target="_blank">
+            <button class="link-button">
+              <i class="fab fa-github"></i> Code
+            </button>
+          </a>
+        
+
+        
+      </div>
+    
+  </header>
+
+  <div class="post-line"></div>
+
+  <div class="post-body">
+    <h1 id="abstract">Abstract</h1>
+
+<p>Recently, unsupervised representation learning (URL) has improved the sample efficiency of Reinforcement Learning (RL) by pretraining a model from a large unlabeled dataset. The underlying principle of these methods is to learn temporally predictive representations by predicting future states in the latent space. However, an important challenge of this approach is the representational collapse, where the subspace of the latent representations collapses into a low-dimensional manifold. To address this issue, we propose a novel URL framework that causally predicts future states while increasing the dimension of the latent manifold by decorrelating the features in the latent space. Through extensive empirical studies, we demonstrate that our framework effectively learns predictive representations without collapse, which significantly improves the sample efficiency of state-of-the-art URL methods on the Atari 100k benchmark. The code is available at https://github.com/dojeon-ai/SimTPR.</p>
+
+  </div>
+
+  <div class="post-line"></div>
+
+  <div class="post-tag-box-container">
+    
+  </div>
+</article>
+<div class="pagination">
+    <a onclick="window.history.back()" class="left arrow" style="cursor: pointer;">&#8592; 목록으로</a>
+</div>
+
+    </main>
+    <footer>
+  <a class="footer-link" href="https://github.com/kakaoenterprise" target="_blank">
+    <img src="/assets/GitHub-Mark.png" alt="Kakao Enterprise GitHub" />GitHub</a>
+  <br/>
+  <a class="footer-copyright">Copyright © Kakao Enterprise All rights reserved.</a>
+
+</footer>
+
+
+    <!-- Naver Analytics -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "d6495f190ca3e0";
+    if(window.wcs) {
+    wcs_do();
+    }
+    </script>
+  </body>
+</html>

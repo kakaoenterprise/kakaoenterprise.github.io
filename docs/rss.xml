@@ -5,9 +5,33 @@
     <description>카카오엔터프라이즈 AI Lab에서 발표한 AI 논문과 연구 성과를 소개합니다.</description>
     <link>https://kakaoenterprise.github.io/</link>
     <atom:link href="https://kakaoenterprise.github.io/rss" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 31 May 2023 03:01:41 -0500</pubDate>
-    <lastBuildDate>Wed, 31 May 2023 03:01:41 -0500</lastBuildDate>
+    <pubDate>Wed, 31 May 2023 03:04:47 -0500</pubDate>
+    <lastBuildDate>Wed, 31 May 2023 03:04:47 -0500</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>FastFit: Towards Real-Time Iterative Neural Vocoder by Replacing U-Net Encoder With Multiple STFTs</title>
+        <description></description>
+        <pubDate>Sun, 20 Aug 2023 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/interspeech-fastfit</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-fastfit</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
+    
+      <item>
+        <title>On the Importance of Feature Decorrelation for Unsupervised Representation Learning in Reinforcement Learning</title>
+        <description></description>
+        <pubDate>Sun, 23 Jul 2023 00:00:00 -0500</pubDate>
+        <link>https://kakaoenterprise.github.io/papers/icml-rl</link>
+        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/icml-rl</guid>
+        
+        
+        <category>papers</category>
+        
+      </item>
     
       <item>
         <title>Local 3D Editing via 3D Distillation of CLIP Knowledge</title>
@@ -99,30 +123,6 @@
         <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
         <link>https://kakaoenterprise.github.io/papers/interspeech-rnn-t</link>
         <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-rnn-t</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>Automatic Pronunciation Assessment using Self-Supervised Speech Representation Learning</title>
-        <description></description>
-        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/interspeech-pronunciation</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-pronunciation</guid>
-        
-        
-        <category>papers</category>
-        
-      </item>
-    
-      <item>
-        <title>The Emotion is Not One-hot Encoding: Learning with Grayscale Label for Emotion Recognition in Conversation</title>
-        <description></description>
-        <pubDate>Sun, 18 Sep 2022 00:00:00 -0500</pubDate>
-        <link>https://kakaoenterprise.github.io/papers/interspeech-emotion-recognition</link>
-        <guid isPermaLink="true">https://kakaoenterprise.github.io/papers/interspeech-emotion-recognition</guid>
         
         
         <category>papers</category>
